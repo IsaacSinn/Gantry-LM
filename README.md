@@ -5,15 +5,15 @@
 
 Available Tool calls: 
 ```
-ROTATE <motor_id> <degree> <direction>
+ROTATE <motor_id> <direction> <degree> 
 - direction: 0 (CCW), 1 (CW)
 - degree: positive float
 
-MOVE <motor_id> <distance>
+MOVE <motor_id> <direction> <distance>
 - distance: in cm
 
-SPEED <motor_id> <speed> <direction> <duration>
-- duraction in seconds
+SPEED <motor_id> <direction> <speed> <duration>
+- duration in seconds
 - speed in degree per second
 ```
 
@@ -25,5 +25,5 @@ Output tokens:
 ROTATE
 MOVE
 SPEED
-
+0-9
 ```
