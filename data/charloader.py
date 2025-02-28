@@ -58,9 +58,11 @@ def parse_tokens_from_file(filepath:str) -> Sequence[tuple[Sequence[str], Sequen
                 else:
                     # Normal character
                     if found_eoi:
-                        tokens_after_eoi.append(line[i])
+                        if line[i] != '\n':
+                            tokens_after_eoi.append(line[i])
                     else:
-                        tokens_before_eoi.append(line[i])
+                        if line[i] != '\n':
+                            tokens_before_eoi.append(line[i])
                     i += 1
 
             result.append((tokens_before_eoi, tokens_after_eoi))

@@ -21,6 +21,7 @@ token_types = {"<MOVE>": "tool", "<SPEED>": "tool", "<ROTATE>": "tool", "<SC>": 
 tool_weight = 5
 misc_weight = 3
 normal_weight = 1
+OUTPUT_TOKENS = ["<MOVE>", "<SPEED>", "<ROTATE>", "<SC>", "<EC>", "<EOS>", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", " ", "."]
 
 def weight_function(t_i: str) -> int:
     if t_i in TOOL_TOKENS:
@@ -60,16 +61,18 @@ def metric(T: Sequence[str], P: Sequence[str]) -> float:
         return 1 - (numerator / denominator)
 
 def train_rnn() -> RNN:
-    train_data: Sequence[Sequence[str]] = parse_tokens_from_file("./data/chatgpt_train")
+    train_data: Sequence[Sequence[str]] = parse_tokens_from_file("./data/dev")
+
+    print(train_data[0])
 
     saved_model_path = None
     if os.path.exists("./weights/rnn_1.model"):
         saved_model_path = "./weights/rnn_1.model"
 
-    return RNN(train_data, saved_model_path=saved_model_path, num_epochs=10)
+    return RNN(train_data, saved_model_path=saved_model_path, num_epochs=1)
 
 def dev_rnn(m: RNN) -> Tuple[int, int]:
-    dev_data: Sequence[tuple[Sequence[str], Sequence[str]]] = parse_tokens_from_file("./data/chatgpt_dev")
+    dev_data: Sequence[tuple[Sequence[str], Sequence[str]]] = parse_tokens_from_file("./data/dev")
 
     metric_sum: int = 0
     total: int = 0
@@ -84,7 +87,7 @@ def dev_rnn(m: RNN) -> Tuple[int, int]:
         eoi = False
         sample_out = []
 
-        for c_input, c_actual in ([START_TOKEN] + input):
+        for c_input in ([START_TOKEN] + input):
             q, p = m.step(q, m.vocab.numberize(c_input))
 
             if c_input == "<EOI>":
@@ -92,7 +95,9 @@ def dev_rnn(m: RNN) -> Tuple[int, int]:
                 continue
 
             if eoi:
-                sample_out.append(m.vocab[p])
+                # Max index 
+                p = pt.argmax(p)
+                sample_out.append(OUTPUT_TOKENS[p])
 
         metric_sum += metric(output, sample_out)
         total += max(len(output), len(sample_out))
@@ -102,8 +107,8 @@ def dev_rnn(m: RNN) -> Tuple[int, int]:
 
 def main() -> None:
     m: RNN = train_rnn()
-    # num_correct, total = dev_rnn(m)
-    # print(f"Accuracy: {num_correct}/{total} = {num_correct/total:.2f}")
+    metric_total, total = dev_rnn(m)
+    print(f"WTAS: {metric_total}/{total} = {metric_total/total:.2f}")
 
 if __name__ == "__main__":
     main()
