@@ -12,7 +12,7 @@ RNNType: Type = Type["RNN"]
 StateType: Type = pt.Tensor
 
 class RNN(pt.nn.Module):
-    def __init__(self: RNNType, data: Sequence[Sequence[str]], saved_model_path: str = None, num_epochs: int = 1) -> None:
+    def __init__(self: RNNType, data: Sequence[Tuple[Sequence[str], Sequence[str]]], saved_model_path: str = None, num_epochs: int = 1) -> None:
         super().__init__()
 
         self.vocab = Vocab()
@@ -20,8 +20,7 @@ class RNN(pt.nn.Module):
         self.vocab.add(START_TOKEN)
 
         for line in data: 
-            for w in list(line) + [END_TOKEN]:
-                self.vocab.add(w)
+            task, command = line[0], line[1]
 
         # |vocab| -> 64 -> |vocab| 
         

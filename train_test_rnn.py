@@ -66,7 +66,7 @@ def train_rnn() -> RNN:
     if os.path.exists("./weights/rnn_1.model"):
         saved_model_path = "./weights/rnn_1.model"
 
-    # return RNN(train_data, saved_model_path=saved_model_path, num_epochs=10)
+    return RNN(train_data, saved_model_path=saved_model_path, num_epochs=10)
 
 def dev_rnn(m: RNN) -> Tuple[int, int]:
     dev_data: Sequence[tuple[Sequence[str], Sequence[str]]] = parse_tokens_from_file("./data/chatgpt_dev")
@@ -102,8 +102,8 @@ def dev_rnn(m: RNN) -> Tuple[int, int]:
 
 def main() -> None:
     m: RNN = train_rnn()
-    num_correct, total = dev_rnn(m)
-    print(f"Accuracy: {num_correct}/{total} = {num_correct/total:.2f}")
+    # num_correct, total = dev_rnn(m)
+    # print(f"Accuracy: {num_correct}/{total} = {num_correct/total:.2f}")
 
 if __name__ == "__main__":
     main()

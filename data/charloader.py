@@ -64,7 +64,5 @@ def parse_tokens_from_file(filepath:str) -> Sequence[tuple[Sequence[str], Sequen
                     i += 1
 
             result.append((tokens_before_eoi, tokens_after_eoi))
-    
-    print(result)
 
     return result
