@@ -17,3 +17,503 @@ Perform a fast diagonal sweep then rotate the vertical motor 90 degrees clockwis
 Slowly rotate horizontal motor 0 counterclockwise 360 degrees while moving up 10 cm concurrently. <EOI> <SC> ROTATE 0 0 360 MOVE 1 0 10 <EC>
 
 Set motor 0 speed to 60 deg/sec for 3 seconds then move vertical motor down 5 cm. <EOI> SPEED 0 1 60 3 MOVE 1 1 5
+
+Move gantry from center (25,25) to right edge (50,25) horizontally. <EOI> MOVE 0 1 25
+
+Move gantry from center (25,25) to left edge (0,25) horizontally. <EOI> MOVE 0 0 25
+
+Move gantry from center (25,25) to bottom edge (25,50) vertically. <EOI> MOVE 1 1 25
+
+Move gantry from center (25,25) to top edge (25,0) vertically. <EOI> MOVE 1 0 25
+
+Rotate horizontal axis 90 degrees clockwise. <EOI> ROTATE 0 1 90
+
+Rotate vertical axis 90 degrees clockwise. <EOI> ROTATE 1 1 90
+
+Rotate horizontal axis 45 degrees counterclockwise. <EOI> ROTATE 0 0 45
+
+Rotate vertical axis 45 degrees counterclockwise. <EOI> ROTATE 1 0 45
+
+Move diagonally down-right 10 cm concurrently. <EOI> <SC> MOVE 0 1 10 MOVE 1 1 10 <EC>
+
+Move diagonally up-left 10 cm concurrently. <EOI> <SC> MOVE 0 0 10 MOVE 1 0 10 <EC>
+
+Trace a square of 10 cm starting at current position. <EOI> MOVE 0 1 10 MOVE 1 1 10 MOVE 0 0 10 MOVE 1 0 10
+
+Draw a rectangle 15 cm wide and 10 cm tall by moving right, down, left, then up. <EOI> MOVE 0 1 15 MOVE 1 1 10 MOVE 0 0 15 MOVE 1 0 10
+
+Rotate both axes concurrently: horizontal 60° CW and vertical 60° CCW. <EOI> <SC> ROTATE 0 1 60 ROTATE 1 0 60 <EC>
+
+Set motor 0 to speed 45 deg/sec for 4 seconds. <EOI> SPEED 0 1 45 4
+
+Set motor 1 to speed 30 deg/sec for 3 seconds moving upward. <EOI> SPEED 1 0 30 3
+
+Simultaneously rotate motor 0 120° CCW and move down 12 cm. <EOI> <SC> ROTATE 0 0 120 MOVE 1 1 12 <EC>
+
+Move right 20 cm then rotate vertical motor 90° clockwise. <EOI> MOVE 0 1 20 ROTATE 1 1 90
+
+Draw a diagonal line up-right 15 cm concurrently. <EOI> <SC> MOVE 0 1 15 MOVE 1 0 15 <EC>
+
+Perform a quick 180° rotation on motor 0 clockwise. <EOI> ROTATE 0 1 180
+
+Move upward 5 cm and right 5 cm concurrently. <EOI> <SC> MOVE 1 0 5 MOVE 0 1 5 <EC>
+
+Trace an L-shape: move right 10 cm then down 10 cm. <EOI> MOVE 0 1 10 MOVE 1 1 10
+
+Trace an inverted L: move up 10 cm then right 10 cm. <EOI> MOVE 1 0 10 MOVE 0 1 10
+
+Rotate vertical motor 270° counterclockwise. <EOI> ROTATE 1 0 270
+
+Rotate horizontal motor 270° clockwise. <EOI> ROTATE 0 1 270
+
+Move diagonally down-left 8 cm concurrently. <EOI> <SC> MOVE 0 0 8 MOVE 1 1 8 <EC>
+
+Move diagonally up-right 8 cm concurrently. <EOI> <SC> MOVE 0 1 8 MOVE 1 0 8 <EC>
+
+Set motor 0 to speed 90 deg/sec for 2 seconds. <EOI> SPEED 0 1 90 2
+
+Set motor 1 to speed 90 deg/sec for 2 seconds upward. <EOI> SPEED 1 0 90 2
+
+Rotate both motors 30° clockwise concurrently. <EOI> <SC> ROTATE 0 1 30 ROTATE 1 1 30 <EC>
+
+Rotate both motors 30° counterclockwise concurrently. <EOI> <SC> ROTATE 0 0 30 ROTATE 1 0 30 <EC>
+
+Move right 12 cm then up 7 cm sequentially. <EOI> MOVE 0 1 12 MOVE 1 0 7
+
+Move left 12 cm then down 7 cm sequentially. <EOI> MOVE 0 0 12 MOVE 1 1 7
+
+Perform a spiral move: move right 5 cm and then down 5 cm concurrently. <EOI> <SC> MOVE 0 1 5 MOVE 1 1 5 <EC>
+
+Rotate horizontal motor 60° counterclockwise then move left 8 cm. <EOI> ROTATE 0 0 60 MOVE 0 0 8
+
+Rotate vertical motor 60° clockwise then move down 8 cm. <EOI> ROTATE 1 1 60 MOVE 1 1 8
+
+Draw a small square of side 6 cm from current position. <EOI> MOVE 0 1 6 MOVE 1 1 6 MOVE 0 0 6 MOVE 1 0 6
+
+Rotate motor 0 45° clockwise and then motor 1 45° clockwise sequentially. <EOI> ROTATE 0 1 45 ROTATE 1 1 45
+
+Move gantry diagonally up-left 20 cm concurrently. <EOI> <SC> MOVE 0 0 20 MOVE 1 0 20 <EC>
+
+Move gantry diagonally down-right 20 cm concurrently. <EOI> <SC> MOVE 0 1 20 MOVE 1 1 20 <EC>
+
+Set motor 0 speed to 75 deg/sec for 5 seconds. <EOI> SPEED 0 1 75 5
+
+Set motor 1 speed to 75 deg/sec for 5 seconds moving upward. <EOI> SPEED 1 0 75 5
+
+Rotate horizontal motor 360° clockwise slowly. <EOI> ROTATE 0 1 360
+
+Rotate vertical motor 360° counterclockwise slowly. <EOI> ROTATE 1 0 360
+
+Move right 5 cm, then down 5 cm, concurrently with a slight rotation of 90° CW on motor 0. <EOI> <SC> MOVE 0 1 5 ROTATE 0 1 90 <EC> MOVE 1 1 5
+
+Rotate both motors 90° concurrently in opposite directions. <EOI> <SC> ROTATE 0 1 90 ROTATE 1 0 90 <EC>
+
+Move left 7 cm then up 7 cm sequentially. <EOI> MOVE 0 0 7 MOVE 1 0 7
+
+Move right 7 cm then down 7 cm sequentially. <EOI> MOVE 0 1 7 MOVE 1 1 7
+
+Draw a rectangle with 20 cm width and 5 cm height starting from current position. <EOI> MOVE 0 1 20 MOVE 1 1 5 MOVE 0 0 20 MOVE 1 0 5
+
+Rotate motor 1 120° clockwise and then move up 10 cm. <EOI> ROTATE 1 1 120 MOVE 1 0 10
+
+Rotate motor 0 120° counterclockwise and then move right 10 cm. <EOI> ROTATE 0 0 120 MOVE 0 1 10
+
+Move diagonally up-right 12.5 cm concurrently while rotating motor 1 45° clockwise. <EOI> <SC> MOVE 0 1 12.5 MOVE 1 0 12.5 ROTATE 1 1 45 <EC>
+
+Move diagonally down-left 12.5 cm concurrently while rotating motor 0 45° counterclockwise. <EOI> <SC> MOVE 0 0 12.5 MOVE 1 1 12.5 ROTATE 0 0 45 <EC>
+
+Set horizontal motor to speed 50 deg/sec for 4 seconds and then move right 8 cm. <EOI> SPEED 0 1 50 4 MOVE 0 1 8
+
+Set vertical motor to speed 50 deg/sec for 4 seconds and then move down 8 cm. <EOI> SPEED 1 1 50 4 MOVE 1 1 8
+
+Perform a concurrent maneuver: rotate both motors 180° in opposite directions. <EOI> <SC> ROTATE 0 1 180 ROTATE 1 0 180 <EC>
+
+Draw a horizontal line of 30 cm to the right. <EOI> MOVE 0 1 30
+
+Draw a vertical line of 30 cm downward. <EOI> MOVE 1 1 30
+
+Draw a vertical line of 30 cm upward. <EOI> MOVE 1 0 30
+
+Draw a horizontal line of 30 cm to the left. <EOI> MOVE 0 0 30
+
+Move diagonally up-right 5 cm concurrently with a rotation of 30° CW on motor 0. <EOI> <SC> MOVE 0 1 5 ROTATE 0 1 30 <EC> MOVE 1 0 5
+
+Move diagonally down-left 5 cm concurrently with a rotation of 30° CCW on motor 1. <EOI> <SC> MOVE 0 0 5 MOVE 1 1 5 ROTATE 1 0 30 <EC>
+
+Rotate motor 0 15° clockwise and then move right 3 cm. <EOI> ROTATE 0 1 15 MOVE 0 1 3
+
+Rotate motor 1 15° counterclockwise and then move up 3 cm. <EOI> ROTATE 1 0 15 MOVE 1 0 3
+
+Set motor 0 speed to 100 deg/sec for 1 second. <EOI> SPEED 0 1 100 1
+
+Set motor 1 speed to 100 deg/sec for 1 second upward. <EOI> SPEED 1 0 100 1
+
+Rotate both motors 10° concurrently in the same direction clockwise. <EOI> <SC> ROTATE 0 1 10 ROTATE 1 1 10 <EC>
+
+Rotate both motors 10° concurrently in the same direction counterclockwise. <EOI> <SC> ROTATE 0 0 10 ROTATE 1 0 10 <EC>
+
+Draw a zigzag: move right 10 cm, then down 5 cm, then right 10 cm. <EOI> MOVE 0 1 10 MOVE 1 1 5 MOVE 0 1 10
+
+Draw a zigzag: move left 10 cm, then up 5 cm, then left 10 cm. <EOI> MOVE 0 0 10 MOVE 1 0 5 MOVE 0 0 10
+
+Perform a complex move: move right 5 cm, down 5 cm concurrently, then rotate motor 0 90° CW. <EOI> <SC> MOVE 0 1 5 MOVE 1 1 5 <EC> ROTATE 0 1 90
+
+Draw a small circle approximation: move right 4 cm, down 4 cm, left 4 cm, and up 4 cm sequentially. <EOI> MOVE 0 1 4 MOVE 1 1 4 MOVE 0 0 4 MOVE 1 0 4
+
+Rotate vertical motor 90° clockwise then 90° counterclockwise sequentially. <EOI> ROTATE 1 1 90 ROTATE 1 0 90
+
+Rotate horizontal motor 90° clockwise then 90° counterclockwise sequentially. <EOI> ROTATE 0 1 90 ROTATE 0 0 90
+
+Move right 15 cm and then left 15 cm to retrace the path. <EOI> MOVE 0 1 15 MOVE 0 0 15
+
+Move down 15 cm and then up 15 cm to return to start. <EOI> MOVE 1 1 15 MOVE 1 0 15
+
+Move diagonally up-left 7 cm then down-right 7 cm to balance the movement. <EOI> <SC> MOVE 0 0 7 MOVE 1 0 7 <EC> <SC> MOVE 0 1 7 MOVE 1 1 7 <EC>
+
+Rotate both motors 135° clockwise concurrently. <EOI> <SC> ROTATE 0 1 135 ROTATE 1 1 135 <EC>
+
+Rotate both motors 135° counterclockwise concurrently. <EOI> <SC> ROTATE 0 0 135 ROTATE 1 0 135 <EC>
+
+Move right 18 cm then up 8 cm sequentially. <EOI> MOVE 0 1 18 MOVE 1 0 8
+
+Move left 18 cm then down 8 cm sequentially. <EOI> MOVE 0 0 18 MOVE 1 1 8
+
+Draw a horizontal line of 40 cm then a vertical line of 10 cm. <EOI> MOVE 0 1 40 MOVE 1 1 10
+
+Draw a vertical line of 10 cm then a horizontal line of 40 cm. <EOI> MOVE 1 1 10 MOVE 0 1 40
+
+Rotate motor 0 75° clockwise then move right 12 cm. <EOI> ROTATE 0 1 75 MOVE 0 1 12
+
+Rotate motor 1 75° counterclockwise then move up 12 cm. <EOI> ROTATE 1 0 75 MOVE 1 0 12
+
+Set motor 0 speed to 80 deg/sec for 2 seconds then move right 10 cm. <EOI> SPEED 0 1 80 2 MOVE 0 1 10
+
+Set motor 1 speed to 80 deg/sec for 2 seconds then move down 10 cm. <EOI> SPEED 1 1 80 2 MOVE 1 1 10
+
+Perform concurrent action: move diagonally down-right 8 cm while rotating both motors 45° clockwise. <EOI> <SC> MOVE 0 1 8 MOVE 1 1 8 ROTATE 0 1 45 ROTATE 1 1 45 <EC>
+
+Perform concurrent action: move diagonally up-left 8 cm while rotating both motors 45° counterclockwise. <EOI> <SC> MOVE 0 0 8 MOVE 1 0 8 ROTATE 0 0 45 ROTATE 1 0 45 <EC>
+
+Rotate motor 0 200° clockwise. <EOI> ROTATE 0 1 200
+
+Rotate motor 1 200° counterclockwise. <EOI> ROTATE 1 0 200
+
+Move right 22 cm sequentially then move down 12 cm. <EOI> MOVE 0 1 22 MOVE 1 1 12
+
+Move left 22 cm sequentially then move up 12 cm. <EOI> MOVE 0 0 22 MOVE 1 0 12
+
+Draw an L shape: move down 10 cm then right 15 cm. <EOI> MOVE 1 1 10 MOVE 0 1 15
+
+Draw an inverted L shape: move up 10 cm then left 15 cm. <EOI> MOVE 1 0 10 MOVE 0 0 15
+
+Rotate motor 0 30° clockwise, then 60° clockwise. <EOI> ROTATE 0 1 30 ROTATE 0 1 60
+
+Rotate motor 1 30° counterclockwise, then 60° counterclockwise. <EOI> ROTATE 1 0 30 ROTATE 1 0 60
+
+Move diagonally up-right 6 cm concurrently and then move right 4 cm. <EOI> <SC> MOVE 0 1 6 MOVE 1 0 6 <EC> MOVE 0 1 4
+
+Move diagonally down-left 6 cm concurrently and then move left 4 cm. <EOI> <SC> MOVE 0 0 6 MOVE 1 1 6 <EC> MOVE 0 0 4
+
+Set motor 0 to speed 65 deg/sec for 3 seconds then rotate 90° clockwise. <EOI> SPEED 0 1 65 3 ROTATE 0 1 90
+
+Set motor 1 to speed 65 deg/sec for 3 seconds then rotate 90° counterclockwise. <EOI> SPEED 1 0 65 3 ROTATE 1 0 90
+
+Draw a square of 12 cm starting from current position. <EOI> MOVE 0 1 12 MOVE 1 1 12 MOVE 0 0 12 MOVE 1 0 12
+
+Draw a rectangle of 8 cm by 16 cm starting from current position. <EOI> MOVE 0 1 16 MOVE 1 1 8 MOVE 0 0 16 MOVE 1 0 8
+
+Rotate both motors 90° concurrently in opposite directions. <EOI> <SC> ROTATE 0 1 90 ROTATE 1 0 90 <EC>
+
+Move right 14 cm then up 14 cm sequentially. <EOI> MOVE 0 1 14 MOVE 1 0 14
+
+Move left 14 cm then down 14 cm sequentially. <EOI> MOVE 0 0 14 MOVE 1 1 14
+
+Perform a diagonal sweep: move up-right 10 cm concurrently. <EOI> <SC> MOVE 0 1 10 MOVE 1 0 10 <EC>
+
+Perform a diagonal sweep: move down-left 10 cm concurrently. <EOI> <SC> MOVE 0 0 10 MOVE 1 1 10 <EC>
+
+Rotate horizontal motor 150° clockwise then move right 8 cm. <EOI> ROTATE 0 1 150 MOVE 0 1 8
+
+Rotate vertical motor 150° counterclockwise then move up 8 cm. <EOI> ROTATE 1 0 150 MOVE 1 0 8
+
+Set motor 0 speed to 55 deg/sec for 6 seconds. <EOI> SPEED 0 1 55 6
+
+Set motor 1 speed to 55 deg/sec for 6 seconds upward. <EOI> SPEED 1 0 55 6
+
+Move right 9 cm and then left 9 cm to return. <EOI> MOVE 0 1 9 MOVE 0 0 9
+
+Move down 9 cm and then up 9 cm to retrace. <EOI> MOVE 1 1 9 MOVE 1 0 9
+
+Rotate both motors 45° clockwise concurrently then rotate further 45° counterclockwise sequentially. <EOI> <SC> ROTATE 0 1 45 ROTATE 1 1 45 <EC> ROTATE 0 0 45 ROTATE 1 0 45
+
+Move diagonally down-right 16 cm concurrently. <EOI> <SC> MOVE 0 1 16 MOVE 1 1 16 <EC>
+
+Move diagonally up-left 16 cm concurrently. <EOI> <SC> MOVE 0 0 16 MOVE 1 0 16 <EC>
+
+Draw a rectangle: right 10 cm, down 5 cm, left 10 cm, up 5 cm. <EOI> MOVE 0 1 10 MOVE 1 1 5 MOVE 0 0 10 MOVE 1 0 5
+
+Rotate motor 0 110° clockwise then motor 0 70° clockwise sequentially. <EOI> ROTATE 0 1 110 ROTATE 0 1 70
+
+Rotate motor 1 110° counterclockwise then motor 1 70° counterclockwise sequentially. <EOI> ROTATE 1 0 110 ROTATE 1 0 70
+
+Set motor 0 speed to 85 deg/sec for 2 seconds and move right 10 cm. <EOI> SPEED 0 1 85 2 MOVE 0 1 10
+
+Set motor 1 speed to 85 deg/sec for 2 seconds and move down 10 cm. <EOI> SPEED 1 1 85 2 MOVE 1 1 10
+
+Perform concurrent commands: move right 7 cm and down 7 cm, then rotate both motors 60° clockwise. <EOI> <SC> MOVE 0 1 7 MOVE 1 1 7 ROTATE 0 1 60 ROTATE 1 1 60 <EC>
+
+Perform concurrent commands: move left 7 cm and up 7 cm, then rotate both motors 60° counterclockwise. <EOI> <SC> MOVE 0 0 7 MOVE 1 0 7 ROTATE 0 0 60 ROTATE 1 0 60 <EC>
+
+Move right 11 cm then down 9 cm sequentially. <EOI> MOVE 0 1 11 MOVE 1 1 9
+
+Move left 11 cm then up 9 cm sequentially. <EOI> MOVE 0 0 11 MOVE 1 0 9
+
+Rotate motor 0 50° clockwise and then move right 5 cm. <EOI> ROTATE 0 1 50 MOVE 0 1 5
+
+Rotate motor 1 50° counterclockwise and then move up 5 cm. <EOI> ROTATE 1 0 50 MOVE 1 0 5
+
+Draw a small square of 5 cm side. <EOI> MOVE 0 1 5 MOVE 1 1 5 MOVE 0 0 5 MOVE 1 0 5
+
+Rotate both motors 25° concurrently clockwise. <EOI> <SC> ROTATE 0 1 25 ROTATE 1 1 25 <EC>
+
+Rotate both motors 25° concurrently counterclockwise. <EOI> <SC> ROTATE 0 0 25 ROTATE 1 0 25 <EC>
+
+Move diagonally up-right 14 cm concurrently. <EOI> <SC> MOVE 0 1 14 MOVE 1 0 14 <EC>
+
+Move diagonally down-left 14 cm concurrently. <EOI> <SC> MOVE 0 0 14 MOVE 1 1 14 <EC>
+
+Set motor 0 speed to 95 deg/sec for 3 seconds then rotate 45° clockwise. <EOI> SPEED 0 1 95 3 ROTATE 0 1 45
+
+Set motor 1 speed to 95 deg/sec for 3 seconds then rotate 45° counterclockwise. <EOI> SPEED 1 0 95 3 ROTATE 1 0 45
+
+Draw a rectangle: move right 18 cm, down 6 cm, left 18 cm, and up 6 cm. <EOI> MOVE 0 1 18 MOVE 1 1 6 MOVE 0 0 18 MOVE 1 0 6
+
+Rotate horizontal motor 180° clockwise then 180° counterclockwise. <EOI> ROTATE 0 1 180 ROTATE 0 0 180
+
+Rotate vertical motor 180° clockwise then 180° counterclockwise. <EOI> ROTATE 1 1 180 ROTATE 1 0 180
+
+Move right 8 cm, then move left 8 cm to return. <EOI> MOVE 0 1 8 MOVE 0 0 8
+
+Move down 8 cm, then move up 8 cm to retrace. <EOI> MOVE 1 1 8 MOVE 1 0 8
+
+Perform concurrent commands: move diagonally up-right 10 cm and rotate motor 0 30° clockwise. <EOI> <SC> MOVE 0 1 10 MOVE 1 0 10 ROTATE 0 1 30 <EC>
+
+Perform concurrent commands: move diagonally down-left 10 cm and rotate motor 1 30° counterclockwise. <EOI> <SC> MOVE 0 0 10 MOVE 1 1 10 ROTATE 1 0 30 <EC>
+
+Set motor 0 to speed 70 deg/sec for 4 seconds then move right 6 cm. <EOI> SPEED 0 1 70 4 MOVE 0 1 6
+
+Set motor 1 to speed 70 deg/sec for 4 seconds then move down 6 cm. <EOI> SPEED 1 1 70 4 MOVE 1 1 6
+
+Move right 10 cm then rotate horizontal motor 90° counterclockwise. <EOI> MOVE 0 1 10 ROTATE 0 0 90
+
+Move down 10 cm then rotate vertical motor 90° clockwise. <EOI> MOVE 1 1 10 ROTATE 1 1 90
+
+Draw an L shape: move up 12 cm then right 12 cm. <EOI> MOVE 1 0 12 MOVE 0 1 12
+
+Draw an inverted L shape: move left 12 cm then down 12 cm. <EOI> MOVE 0 0 12 MOVE 1 1 12
+
+Rotate both motors 50° clockwise concurrently then move right 5 cm. <EOI> <SC> ROTATE 0 1 50 ROTATE 1 1 50 <EC> MOVE 0 1 5
+
+Rotate both motors 50° counterclockwise concurrently then move up 5 cm. <EOI> <SC> ROTATE 0 0 50 ROTATE 1 0 50 <EC> MOVE 1 0 5
+
+Set motor 0 speed to 60 deg/sec for 5 seconds then rotate 120° clockwise. <EOI> SPEED 0 1 60 5 ROTATE 0 1 120
+
+Set motor 1 speed to 60 deg/sec for 5 seconds then rotate 120° counterclockwise. <EOI> SPEED 1 0 60 5 ROTATE 1 0 120
+
+Move diagonally up-right 9 cm concurrently then move right 3 cm. <EOI> <SC> MOVE 0 1 9 MOVE 1 0 9 <EC> MOVE 0 1 3
+
+Move diagonally down-left 9 cm concurrently then move left 3 cm. <EOI> <SC> MOVE 0 0 9 MOVE 1 1 9 <EC> MOVE 0 0 3
+
+Rotate motor 0 100° clockwise and then 50° clockwise. <EOI> ROTATE 0 1 100 ROTATE 0 1 50
+
+Rotate motor 1 100° counterclockwise and then 50° counterclockwise. <EOI> ROTATE 1 0 100 ROTATE 1 0 50
+
+Draw a square of 14 cm starting from current position. <EOI> MOVE 0 1 14 MOVE 1 1 14 MOVE 0 0 14 MOVE 1 0 14
+
+Draw a rectangle of 7 cm by 21 cm starting from current position. <EOI> MOVE 0 1 21 MOVE 1 1 7 MOVE 0 0 21 MOVE 1 0 7
+
+Rotate both motors 20° concurrently clockwise then 20° counterclockwise concurrently. <EOI> <SC> ROTATE 0 1 20 ROTATE 1 1 20 <EC> <SC> ROTATE 0 0 20 ROTATE 1 0 20 <EC>
+
+Move right 13 cm then down 13 cm sequentially. <EOI> MOVE 0 1 13 MOVE 1 1 13
+
+Move left 13 cm then up 13 cm sequentially. <EOI> MOVE 0 0 13 MOVE 1 0 13
+
+Set motor 0 to speed 40 deg/sec for 7 seconds. <EOI> SPEED 0 1 40 7
+
+Set motor 1 to speed 40 deg/sec for 7 seconds upward. <EOI> SPEED 1 0 40 7
+
+Perform a concurrent action: rotate both motors 75° clockwise while moving diagonally down-right 7 cm. <EOI> <SC> ROTATE 0 1 75 MOVE 0 1 7 MOVE 1 1 7 ROTATE 1 1 75 <EC>
+
+Perform a concurrent action: rotate both motors 75° counterclockwise while moving diagonally up-left 7 cm. <EOI> <SC> ROTATE 0 0 75 MOVE 0 0 7 MOVE 1 0 7 ROTATE 1 0 75 <EC>
+
+Move right 17 cm then up 9 cm sequentially. <EOI> MOVE 0 1 17 MOVE 1 0 9
+
+Move left 17 cm then down 9 cm sequentially. <EOI> MOVE 0 0 17 MOVE 1 1 9
+
+Rotate motor 0 85° clockwise then move right 11 cm. <EOI> ROTATE 0 1 85 MOVE 0 1 11
+
+Rotate motor 1 85° counterclockwise then move up 11 cm. <EOI> ROTATE 1 0 85 MOVE 1 0 11
+
+Draw a diagonal line up-right 20 cm concurrently. <EOI> <SC> MOVE 0 1 20 MOVE 1 0 20 <EC>
+
+Draw a diagonal line down-left 20 cm concurrently. <EOI> <SC> MOVE 0 0 20 MOVE 1 1 20 <EC>
+
+Set motor 0 speed to 110 deg/sec for 2 seconds then move right 7 cm. <EOI> SPEED 0 1 110 2 MOVE 0 1 7
+
+Set motor 1 speed to 110 deg/sec for 2 seconds then move down 7 cm. <EOI> SPEED 1 1 110 2 MOVE 1 1 7
+
+Rotate both motors 95° concurrently clockwise. <EOI> <SC> ROTATE 0 1 95 ROTATE 1 1 95 <EC>
+
+Rotate both motors 95° concurrently counterclockwise. <EOI> <SC> ROTATE 0 0 95 ROTATE 1 0 95 <EC>
+
+Move right 16 cm then left 16 cm to return. <EOI> MOVE 0 1 16 MOVE 0 0 16
+
+Move down 16 cm then up 16 cm to retrace. <EOI> MOVE 1 1 16 MOVE 1 0 16
+
+Perform a concurrent maneuver: rotate motor 0 135° clockwise while moving right 8 cm. <EOI> <SC> ROTATE 0 1 135 MOVE 0 1 8 <EC>
+
+Perform a concurrent maneuver: rotate motor 1 135° counterclockwise while moving up 8 cm. <EOI> <SC> ROTATE 1 0 135 MOVE 1 0 8 <EC>
+
+Draw a zigzag pattern: move right 8 cm, down 4 cm, right 8 cm, up 4 cm. <EOI> MOVE 0 1 8 MOVE 1 1 4 MOVE 0 1 8 MOVE 1 0 4
+
+Draw a zigzag pattern in reverse: move left 8 cm, up 4 cm, left 8 cm, down 4 cm. <EOI> MOVE 0 0 8 MOVE 1 0 4 MOVE 0 0 8 MOVE 1 1 4
+
+Rotate horizontal motor 45° clockwise and then 45° counterclockwise. <EOI> ROTATE 0 1 45 ROTATE 0 0 45
+
+Rotate vertical motor 45° clockwise and then 45° counterclockwise. <EOI> ROTATE 1 1 45 ROTATE 1 0 45
+
+Set motor 0 speed to 120 deg/sec for 1 second. <EOI> SPEED 0 1 120 1
+
+Set motor 1 speed to 120 deg/sec for 1 second upward. <EOI> SPEED 1 0 120 1
+
+Move diagonally up-right 11 cm concurrently then move right 4 cm. <EOI> <SC> MOVE 0 1 11 MOVE 1 0 11 <EC> MOVE 0 1 4
+
+Move diagonally down-left 11 cm concurrently then move left 4 cm. <EOI> <SC> MOVE 0 0 11 MOVE 1 1 11 <EC> MOVE 0 0 4
+
+Rotate both motors 40° concurrently clockwise then 40° counterclockwise concurrently. <EOI> <SC> ROTATE 0 1 40 ROTATE 1 1 40 <EC> <SC> ROTATE 0 0 40 ROTATE 1 0 40 <EC>
+
+Move right 20 cm and then left 20 cm sequentially. <EOI> MOVE 0 1 20 MOVE 0 0 20
+
+Move down 20 cm and then up 20 cm sequentially. <EOI> MOVE 1 1 20 MOVE 1 0 20
+
+Perform concurrent action: move diagonally up-left 12 cm while rotating motor 0 30° CCW. <EOI> <SC> MOVE 0 0 12 MOVE 1 0 12 ROTATE 0 0 30 <EC>
+
+Perform concurrent action: move diagonally down-right 12 cm while rotating motor 1 30° CW. <EOI> <SC> MOVE 0 1 12 MOVE 1 1 12 ROTATE 1 1 30 <EC>
+
+Set motor 0 speed to 100 deg/sec for 3 seconds then move right 9 cm. <EOI> SPEED 0 1 100 3 MOVE 0 1 9
+
+Set motor 1 speed to 100 deg/sec for 3 seconds then move down 9 cm. <EOI> SPEED 1 1 100 3 MOVE 1 1 9
+
+Rotate motor 0 80° clockwise followed by 40° counterclockwise. <EOI> ROTATE 0 1 80 ROTATE 0 0 40
+
+Rotate motor 1 80° counterclockwise followed by 40° clockwise. <EOI> ROTATE 1 0 80 ROTATE 1 1 40
+
+Draw a square of 16 cm side from current position. <EOI> MOVE 0 1 16 MOVE 1 1 16 MOVE 0 0 16 MOVE 1 0 16
+
+Draw a rectangle of 10 cm by 20 cm from current position. <EOI> MOVE 0 1 20 MOVE 1 1 10 MOVE 0 0 20 MOVE 1 0 10
+
+Rotate both motors 55° concurrently clockwise then 55° counterclockwise concurrently. <EOI> <SC> ROTATE 0 1 55 ROTATE 1 1 55 <EC> <SC> ROTATE 0 0 55 ROTATE 1 0 55 <EC>
+
+Move right 10 cm, then down 10 cm, then left 10 cm, then up 10 cm to complete a square. <EOI> MOVE 0 1 10 MOVE 1 1 10 MOVE 0 0 10 MOVE 1 0 10
+
+Move left 10 cm, then up 10 cm, then right 10 cm, then down 10 cm to retrace. <EOI> MOVE 0 0 10 MOVE 1 0 10 MOVE 0 1 10 MOVE 1 1 10
+
+Perform concurrent commands: rotate motor 0 30° CW and move right 5 cm. <EOI> <SC> ROTATE 0 1 30 MOVE 0 1 5 <EC>
+
+Perform concurrent commands: rotate motor 1 30° CCW and move up 5 cm. <EOI> <SC> ROTATE 1 0 30 MOVE 1 0 5 <EC>
+
+Set motor 0 to speed 90 deg/sec for 4 seconds then move right 12 cm. <EOI> SPEED 0 1 90 4 MOVE 0 1 12
+
+Set motor 1 to speed 90 deg/sec for 4 seconds then move down 12 cm. <EOI> SPEED 1 1 90 4 MOVE 1 1 12
+
+Rotate horizontal motor 65° clockwise followed by 65° counterclockwise. <EOI> ROTATE 0 1 65 ROTATE 0 0 65
+
+Rotate vertical motor 65° clockwise followed by 65° counterclockwise. <EOI> ROTATE 1 1 65 ROTATE 1 0 65
+
+Move diagonally up-right 15 cm concurrently and then move up 5 cm. <EOI> <SC> MOVE 0 1 15 MOVE 1 0 15 <EC> MOVE 1 0 5
+
+Move diagonally down-left 15 cm concurrently and then move down 5 cm. <EOI> <SC> MOVE 0 0 15 MOVE 1 1 15 <EC> MOVE 1 1 5
+
+Rotate motor 0 25° clockwise then 25° clockwise again. <EOI> ROTATE 0 1 25 ROTATE 0 1 25
+
+Rotate motor 1 25° counterclockwise then 25° counterclockwise again. <EOI> ROTATE 1 0 25 ROTATE 1 0 25
+
+Draw a horizontal line of 22 cm and then a vertical line of 22 cm. <EOI> MOVE 0 1 22 MOVE 1 1 22
+
+Draw a vertical line of 22 cm and then a horizontal line of 22 cm. <EOI> MOVE 1 1 22 MOVE 0 1 22
+
+Move right 8 cm then rotate horizontal motor 30° clockwise. <EOI> MOVE 0 1 8 ROTATE 0 1 30
+
+Move left 8 cm then rotate horizontal motor 30° counterclockwise. <EOI> MOVE 0 0 8 ROTATE 0 0 30
+
+Set motor 0 speed to 70 deg/sec for 5 seconds then move right 14 cm. <EOI> SPEED 0 1 70 5 MOVE 0 1 14
+
+Set motor 1 speed to 70 deg/sec for 5 seconds then move down 14 cm. <EOI> SPEED 1 1 70 5 MOVE 1 1 14
+
+Perform concurrent commands: move diagonally up-right 10 cm while rotating motor 0 20° CW. <EOI> <SC> MOVE 0 1 10 MOVE 1 0 10 ROTATE 0 1 20 <EC>
+
+Perform concurrent commands: move diagonally down-left 10 cm while rotating motor 1 20° CCW. <EOI> <SC> MOVE 0 0 10 MOVE 1 1 10 ROTATE 1 0 20 <EC>
+
+Rotate both motors 80° concurrently clockwise and then 80° concurrently counterclockwise. <EOI> <SC> ROTATE 0 1 80 ROTATE 1 1 80 <EC> <SC> ROTATE 0 0 80 ROTATE 1 0 80 <EC>
+
+Move right 19 cm then left 19 cm to retrace the path. <EOI> MOVE 0 1 19 MOVE 0 0 19
+
+Move down 19 cm then up 19 cm to retrace the path. <EOI> MOVE 1 1 19 MOVE 1 0 19
+
+Rotate horizontal motor 35° clockwise followed by 35° counterclockwise. <EOI> ROTATE 0 1 35 ROTATE 0 0 35
+
+Rotate vertical motor 35° clockwise followed by 35° counterclockwise. <EOI> ROTATE 1 1 35 ROTATE 1 0 35
+
+Set motor 0 to speed 100 deg/sec for 2 seconds then move right 15 cm. <EOI> SPEED 0 1 100 2 MOVE 0 1 15
+
+Set motor 1 to speed 100 deg/sec for 2 seconds then move down 15 cm. <EOI> SPEED 1 1 100 2 MOVE 1 1 15
+
+Perform concurrent action: move diagonally up-left 13 cm while rotating motor 0 40° CCW. <EOI> <SC> MOVE 0 0 13 MOVE 1 0 13 ROTATE 0 0 40 <EC>
+
+Perform concurrent action: move diagonally down-right 13 cm while rotating motor 1 40° CW. <EOI> <SC> MOVE 0 1 13 MOVE 1 1 13 ROTATE 1 1 40 <EC>
+
+Rotate motor 0 90° clockwise then 90° clockwise again. <EOI> ROTATE 0 1 90 ROTATE 0 1 90
+
+Rotate motor 1 90° counterclockwise then 90° counterclockwise again. <EOI> ROTATE 1 0 90 ROTATE 1 0 90
+
+Draw a square of 18 cm starting from current position. <EOI> MOVE 0 1 18 MOVE 1 1 18 MOVE 0 0 18 MOVE 1 0 18
+
+Draw a rectangle of 9 cm by 27 cm starting from current position. <EOI> MOVE 0 1 27 MOVE 1 1 9 MOVE 0 0 27 MOVE 1 0 9
+
+Rotate both motors 100° concurrently clockwise then 100° concurrently counterclockwise. <EOI> <SC> ROTATE 0 1 100 ROTATE 1 1 100 <EC> <SC> ROTATE 0 0 100 ROTATE 1 0 100 <EC>
+
+Move right 10 cm, then down 10 cm, then left 10 cm, then up 10 cm to form a loop. <EOI> MOVE 0 1 10 MOVE 1 1 10 MOVE 0 0 10 MOVE 1 0 10
+
+Move left 10 cm, then up 10 cm, then right 10 cm, then down 10 cm to form a loop. <EOI> MOVE 0 0 10 MOVE 1 0 10 MOVE 0 1 10 MOVE 1 1 10
+
+Perform concurrent commands: rotate motor 0 55° CW and motor 1 55° CW. <EOI> <SC> ROTATE 0 1 55 ROTATE 1 1 55 <EC>
+
+Perform concurrent commands: rotate motor 0 55° CCW and motor 1 55° CCW. <EOI> <SC> ROTATE 0 0 55 ROTATE 1 0 55 <EC>
+
+Set motor 0 speed to 65 deg/sec for 5 seconds then move right 8 cm. <EOI> SPEED 0 1 65 5 MOVE 0 1 8
+
+Set motor 1 speed to 65 deg/sec for 5 seconds then move down 8 cm. <EOI> SPEED 1 1 65 5 MOVE 1 1 8
+
+Rotate horizontal motor 20° clockwise followed by 20° clockwise. <EOI> ROTATE 0 1 20 ROTATE 0 1 20
+
+Rotate vertical motor 20° counterclockwise followed by 20° counterclockwise. <EOI> ROTATE 1 0 20 ROTATE 1 0 20
+
+Move diagonally up-right 13 cm concurrently and then move up 4 cm. <EOI> <SC> MOVE 0 1 13 MOVE 1 0 13 <EC> MOVE 1 0 4
+
+Move diagonally down-left 13 cm concurrently and then move down 4 cm. <EOI> <SC> MOVE 0 0 13 MOVE 1 1 13 <EC> MOVE 1 1 4
+
+Perform concurrent commands: move right 10 cm while rotating motor 0 30° CW. <EOI> <SC> MOVE 0 1 10 ROTATE 0 1 30 <EC>
+
+Perform concurrent commands: move left 10 cm while rotating motor 0 30° CCW. <EOI> <SC> MOVE 0 0 10 ROTATE 0 0 30 <EC>
+
+Set motor 0 to speed 75 deg/sec for 3 seconds then move right 9 cm. <EOI> SPEED 0 1 75 3 MOVE 0 1 9
+
+Set motor 1 to speed 75 deg/sec for 3 seconds then move down 9 cm. <EOI> SPEED 1 1 75 3 MOVE 1 1 9
+
+Rotate both motors 35° concurrently clockwise then 35° concurrently counterclockwise. <EOI> <SC> ROTATE 0 1 35 ROTATE 1 1 35 <EC> <SC> ROTATE 0 0 35 ROTATE 1 0 35 <EC>
+
+Move right 12 cm then up 12 cm sequentially. <EOI> MOVE 0 1 12 MOVE 1 0 12
+
+Move left 12 cm then down 12 cm sequentially. <EOI> MOVE 0 0 12 MOVE 1 1 12
+
+Perform concurrent actions: move diagonally up-right 10 cm while rotating motor 1 40° CW. <EOI> <SC> MOVE 0 1 10 MOVE 1 0 10 ROTATE 1 1 40 <EC>
