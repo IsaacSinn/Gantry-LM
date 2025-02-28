@@ -1017,3 +1017,879 @@ Rotate vertical motor 20° counterclockwise followed by 20° counterclockwise. <
 Move diagonally up-right 13 cm concurrently and then move up 4 cm. <EOI> <SC> MOVE 0 1 13 MOVE 1 0 13 <EC> MOVE 1 0 4
 
 Move diagonally down-left 13 cm concurrently and then move down 4 cm. <EOI> <SC> MOVE 0 0 13 MOVE 1 1 13 <EC> MOVE 1 1 4
+
+Move gantry from center to right edge horizontally. <EOI> MOVE 0 1 25
+
+Move gantry from center to left edge horizontally. <EOI> MOVE 0 0 25
+
+Move gantry from center to top edge. <EOI> MOVE 1 0 25
+
+Move gantry from center to bottom edge. <EOI> MOVE 1 1 25
+
+Rotate horizontal axis 90° clockwise. <EOI> ROTATE 0 1 90
+
+Rotate vertical axis 90° clockwise. <EOI> ROTATE 1 1 90
+
+Rotate horizontal axis 90° counterclockwise. <EOI> ROTATE 0 0 90
+
+Rotate vertical axis 90° counterclockwise. <EOI> ROTATE 1 0 90
+
+Draw a square of 10 cm side starting from current position. <EOI> MOVE 0 1 10 MOVE 1 1 10 MOVE 0 0 10 MOVE 1 0 10
+
+Draw a rectangle 15 cm wide and 10 cm tall. <EOI> MOVE 0 1 15 MOVE 1 1 10 MOVE 0 0 15 MOVE 1 0 10
+
+Perform a concurrent diagonal move up-right 12 cm. <EOI> <SC> MOVE 0 1 12 MOVE 1 0 12 <EC>
+
+Perform a concurrent diagonal move down-left 12 cm. <EOI> <SC> MOVE 0 0 12 MOVE 1 1 12 <EC>
+
+Set horizontal motor speed to 70 deg/sec for 3 seconds then move right 8 cm. <EOI> SPEED 0 1 70 3 MOVE 0 1 8
+
+Set vertical motor speed to 70 deg/sec for 3 seconds then move down 8 cm. <EOI> SPEED 1 1 70 3 MOVE 1 1 8
+
+Rotate horizontal motor 45° clockwise then move right 5 cm. <EOI> ROTATE 0 1 45 MOVE 0 1 5
+
+Rotate vertical motor 45° counterclockwise then move up 5 cm. <EOI> ROTATE 1 0 45 MOVE 1 0 5
+
+Concurrently rotate both motors 30° clockwise. <EOI> <SC> ROTATE 0 1 30 ROTATE 1 1 30 <EC>
+
+Concurrently rotate both motors 30° counterclockwise. <EOI> <SC> ROTATE 0 0 30 ROTATE 1 0 30 <EC>
+
+Move gantry right 20 cm then left 20 cm to retrace. <EOI> MOVE 0 1 20 MOVE 0 0 20
+
+Move gantry down 20 cm then up 20 cm to return. <EOI> MOVE 1 1 20 MOVE 1 0 20
+
+Draw an L-shape: move right 10 cm then down 10 cm. <EOI> MOVE 0 1 10 MOVE 1 1 10
+
+Draw an inverted L: move up 10 cm then left 10 cm. <EOI> MOVE 1 0 10 MOVE 0 0 10
+
+Concurrently move diagonally up-right 15 cm while rotating horizontal motor 30° clockwise. <EOI> <SC> MOVE 0 1 15 MOVE 1 0 15 ROTATE 0 1 30 <EC>
+
+Concurrently move diagonally down-left 15 cm while rotating vertical motor 30° counterclockwise. <EOI> <SC> MOVE 0 0 15 MOVE 1 1 15 ROTATE 1 0 30 <EC>
+
+Rotate horizontal motor 180° clockwise. <EOI> ROTATE 0 1 180
+
+Rotate vertical motor 180° clockwise. <EOI> ROTATE 1 1 180
+
+Rotate horizontal motor 180° counterclockwise. <EOI> ROTATE 0 0 180
+
+Rotate vertical motor 180° counterclockwise. <EOI> ROTATE 1 0 180
+
+Set horizontal motor speed to 50 deg/sec for 4 seconds then move right 12 cm. <EOI> SPEED 0 1 50 4 MOVE 0 1 12
+
+Set vertical motor speed to 50 deg/sec for 4 seconds then move down 12 cm. <EOI> SPEED 1 1 50 4 MOVE 1 1 12
+
+Draw a small square of 8 cm side. <EOI> MOVE 0 1 8 MOVE 1 1 8 MOVE 0 0 8 MOVE 1 0 8
+
+Draw a small rectangle 10 cm by 5 cm. <EOI> MOVE 0 1 10 MOVE 1 1 5 MOVE 0 0 10 MOVE 1 0 5
+
+Perform concurrent action: rotate both motors 90° in opposite directions. <EOI> <SC> ROTATE 0 1 90 ROTATE 1 0 90 <EC>
+
+Perform concurrent action: rotate both motors 90° in the same direction clockwise. <EOI> <SC> ROTATE 0 1 90 ROTATE 1 1 90 <EC>
+
+Move gantry diagonally up-left 10 cm concurrently. <EOI> <SC> MOVE 0 0 10 MOVE 1 0 10 <EC>
+
+Move gantry diagonally down-right 10 cm concurrently. <EOI> <SC> MOVE 0 1 10 MOVE 1 1 10 <EC>
+
+Rotate horizontal motor 60° clockwise then move right 15 cm. <EOI> ROTATE 0 1 60 MOVE 0 1 15
+
+Rotate vertical motor 60° counterclockwise then move up 15 cm. <EOI> ROTATE 1 0 60 MOVE 1 0 15
+
+Set horizontal motor to 80 deg/sec for 2 seconds then move right 10 cm. <EOI> SPEED 0 1 80 2 MOVE 0 1 10
+
+Set vertical motor to 80 deg/sec for 2 seconds then move down 10 cm. <EOI> SPEED 1 1 80 2 MOVE 1 1 10
+
+Slide gantry right 22 cm then left 22 cm sequentially. <EOI> MOVE 0 1 22 MOVE 0 0 22
+
+Slide gantry down 22 cm then up 22 cm sequentially. <EOI> MOVE 1 1 22 MOVE 1 0 22
+
+Draw a rectangle: move right 12 cm, down 6 cm, left 12 cm, then up 6 cm. <EOI> MOVE 0 1 12 MOVE 1 1 6 MOVE 0 0 12 MOVE 1 0 6
+
+Rotate horizontal motor 50° clockwise then 20° counterclockwise. <EOI> ROTATE 0 1 50 ROTATE 0 0 20
+
+Rotate vertical motor 50° counterclockwise then 20° clockwise. <EOI> ROTATE 1 0 50 ROTATE 1 1 20
+
+Set horizontal speed to 90 deg/sec for 4 seconds then move right 14 cm. <EOI> SPEED 0 1 90 4 MOVE 0 1 14
+
+Set vertical speed to 90 deg/sec for 4 seconds then move down 14 cm. <EOI> SPEED 1 1 90 4 MOVE 1 1 14
+
+Move gantry diagonally up-right 10 cm concurrently then move right 3 cm. <EOI> <SC> MOVE 0 1 10 MOVE 1 0 10 <EC> MOVE 0 1 3
+
+Move gantry diagonally down-left 10 cm concurrently then move left 3 cm. <EOI> <SC> MOVE 0 0 10 MOVE 1 1 10 <EC> MOVE 0 0 3
+
+Rotate horizontal motor 100° clockwise then 50° clockwise. <EOI> ROTATE 0 1 100 ROTATE 0 1 50
+
+Rotate vertical motor 100° counterclockwise then 50° counterclockwise. <EOI> ROTATE 1 0 100 ROTATE 1 0 50
+
+Draw a square of 14 cm side. <EOI> MOVE 0 1 14 MOVE 1 1 14 MOVE 0 0 14 MOVE 1 0 14
+
+Draw a rectangle of 28 cm by 7 cm. <EOI> MOVE 0 1 28 MOVE 1 1 7 MOVE 0 0 28 MOVE 1 0 7
+
+Concurrently rotate both motors 20° clockwise then 20° counterclockwise. <EOI> <SC> ROTATE 0 1 20 ROTATE 1 1 20 <EC> <SC> ROTATE 0 0 20 ROTATE 1 0 20 <EC>
+
+Slide gantry right 13 cm then down 13 cm sequentially. <EOI> MOVE 0 1 13 MOVE 1 1 13
+
+Slide gantry left 13 cm then up 13 cm sequentially. <EOI> MOVE 0 0 13 MOVE 1 0 13
+
+Set horizontal motor to 40 deg/sec for 7 seconds. <EOI> SPEED 0 1 40 7
+
+Set vertical motor to 40 deg/sec for 7 seconds upward. <EOI> SPEED 1 0 40 7
+
+Perform concurrent maneuver: rotate both motors 75° clockwise while moving diagonally down-right 7 cm. <EOI> <SC> ROTATE 0 1 75 ROTATE 1 1 75 MOVE 0 1 7 MOVE 1 1 7 <EC>
+
+Perform concurrent maneuver: rotate both motors 75° counterclockwise while moving diagonally up-left 7 cm. <EOI> <SC> ROTATE 0 0 75 ROTATE 1 0 75 MOVE 0 0 7 MOVE 1 0 7 <EC>
+
+Slide gantry right 17 cm then up 9 cm sequentially. <EOI> MOVE 0 1 17 MOVE 1 0 9
+
+Slide gantry left 17 cm then down 9 cm sequentially. <EOI> MOVE 0 0 17 MOVE 1 1 9
+
+Rotate horizontal motor 85° clockwise then move right 11 cm. <EOI> ROTATE 0 1 85 MOVE 0 1 11
+
+Rotate vertical motor 85° counterclockwise then move up 11 cm. <EOI> ROTATE 1 0 85 MOVE 1 0 11
+
+Draw a diagonal line up-right 20 cm concurrently. <EOI> <SC> MOVE 0 1 20 MOVE 1 0 20 <EC>
+
+Draw a diagonal line down-left 20 cm concurrently. <EOI> <SC> MOVE 0 0 20 MOVE 1 1 20 <EC>
+
+Set horizontal motor to 110 deg/sec for 2 seconds then move right 7 cm. <EOI> SPEED 0 1 110 2 MOVE 0 1 7
+
+Set vertical motor to 110 deg/sec for 2 seconds then move down 7 cm. <EOI> SPEED 1 1 110 2 MOVE 1 1 7
+
+Concurrently rotate both motors 95° clockwise. <EOI> <SC> ROTATE 0 1 95 ROTATE 1 1 95 <EC>
+
+Concurrently rotate both motors 95° counterclockwise. <EOI> <SC> ROTATE 0 0 95 ROTATE 1 0 95 <EC>
+
+Slide gantry right 16 cm then left 16 cm sequentially. <EOI> MOVE 0 1 16 MOVE 0 0 16
+
+Slide gantry down 16 cm then up 16 cm sequentially. <EOI> MOVE 1 1 16 MOVE 1 0 16
+
+Perform concurrent maneuver: rotate horizontal motor 135° clockwise while moving right 8 cm. <EOI> <SC> ROTATE 0 1 135 MOVE 0 1 8 <EC>
+
+Perform concurrent maneuver: rotate vertical motor 135° counterclockwise while moving up 8 cm. <EOI> <SC> ROTATE 1 0 135 MOVE 1 0 8 <EC>
+
+Draw a zigzag pattern: move right 8 cm, down 4 cm, right 8 cm, then up 4 cm. <EOI> MOVE 0 1 8 MOVE 1 1 4 MOVE 0 1 8 MOVE 1 0 4
+
+Draw a reverse zigzag pattern: move left 8 cm, up 4 cm, left 8 cm, then down 4 cm. <EOI> MOVE 0 0 8 MOVE 1 0 4 MOVE 0 0 8 MOVE 1 1 4
+
+Rotate horizontal motor 45° clockwise then 45° counterclockwise. <EOI> ROTATE 0 1 45 ROTATE 0 0 45
+
+Rotate vertical motor 45° clockwise then 45° counterclockwise. <EOI> ROTATE 1 1 45 ROTATE 1 0 45
+
+Set horizontal motor to 120 deg/sec for 1 second. <EOI> SPEED 0 1 120 1
+
+Set vertical motor to 120 deg/sec for 1 second upward. <EOI> SPEED 1 0 120 1
+
+Move gantry diagonally up-right 11 cm concurrently then shift right 4 cm. <EOI> <SC> MOVE 0 1 11 MOVE 1 0 11 <EC> MOVE 0 1 4
+
+Move gantry diagonally down-left 11 cm concurrently then shift left 4 cm. <EOI> <SC> MOVE 0 0 11 MOVE 1 1 11 <EC> MOVE 0 0 4
+
+Concurrently rotate both motors 40° clockwise then 40° counterclockwise. <EOI> <SC> ROTATE 0 1 40 ROTATE 1 1 40 <EC> <SC> ROTATE 0 0 40 ROTATE 1 0 40 <EC>
+
+Slide gantry right 20 cm then left 20 cm sequentially. <EOI> MOVE 0 1 20 MOVE 0 0 20
+
+Slide gantry down 20 cm then up 20 cm sequentially. <EOI> MOVE 1 1 20 MOVE 1 0 20
+
+Perform concurrent action: move diagonally up-left 12 cm while rotating horizontal motor 30° counterclockwise. <EOI> <SC> MOVE 0 0 12 MOVE 1 0 12 ROTATE 0 0 30 <EC>
+
+Perform concurrent action: move diagonally down-right 12 cm while rotating vertical motor 30° clockwise. <EOI> <SC> MOVE 0 1 12 MOVE 1 1 12 ROTATE 1 1 30 <EC>
+
+Set horizontal motor to 100 deg/sec for 3 seconds then move right 9 cm. <EOI> SPEED 0 1 100 3 MOVE 0 1 9
+
+Set vertical motor to 100 deg/sec for 3 seconds then move down 9 cm. <EOI> SPEED 1 1 100 3 MOVE 1 1 9
+
+Rotate horizontal motor 80° clockwise followed by 40° counterclockwise. <EOI> ROTATE 0 1 80 ROTATE 0 0 40
+
+Rotate vertical motor 80° counterclockwise followed by 40° clockwise. <EOI> ROTATE 1 0 80 ROTATE 1 1 40
+
+Draw a square of 16 cm side from current position. <EOI> MOVE 0 1 16 MOVE 1 1 16 MOVE 0 0 16 MOVE 1 0 16
+
+Draw a rectangle of 20 cm by 10 cm from current position. <EOI> MOVE 0 1 20 MOVE 1 1 10 MOVE 0 0 20 MOVE 1 0 10
+
+Concurrently rotate both motors 55° clockwise then 55° counterclockwise. <EOI> <SC> ROTATE 0 1 55 ROTATE 1 1 55 <EC> <SC> ROTATE 0 0 55 ROTATE 1 0 55 <EC>
+
+Move gantry right 10 cm, then down 10 cm, then left 10 cm, then up 10 cm to form a square. <EOI> MOVE 0 1 10 MOVE 1 1 10 MOVE 0 0 10 MOVE 1 0 10
+
+Move gantry left 10 cm, then up 10 cm, then right 10 cm, then down 10 cm to retrace. <EOI> MOVE 0 0 10 MOVE 1 0 10 MOVE 0 1 10 MOVE 1 1 10
+
+Concurrently rotate horizontal motor 30° clockwise while moving right 5 cm. <EOI> <SC> ROTATE 0 1 30 MOVE 0 1 5 <EC>
+
+Concurrently rotate vertical motor 30° counterclockwise while moving up 5 cm. <EOI> <SC> ROTATE 1 0 30 MOVE 1 0 5 <EC>
+
+Set horizontal motor to 90 deg/sec for 4 seconds then move right 12 cm. <EOI> SPEED 0 1 90 4 MOVE 0 1 12
+
+Set vertical motor to 90 deg/sec for 4 seconds then move down 12 cm. <EOI> SPEED 1 1 90 4 MOVE 1 1 12
+
+Slide gantry right 8 cm then rotate horizontal motor 30° clockwise. <EOI> MOVE 0 1 8 ROTATE 0 1 30
+
+Slide gantry left 8 cm then rotate horizontal motor 30° counterclockwise. <EOI> MOVE 0 0 8 ROTATE 0 0 30
+
+Slide gantry down 8 cm then rotate vertical motor 30° clockwise. <EOI> MOVE 1 1 8 ROTATE 1 1 30
+
+Slide gantry up 8 cm then rotate vertical motor 30° counterclockwise. <EOI> MOVE 1 0 8 ROTATE 1 0 30
+
+Concurrently move right 7 cm and down 7 cm. <EOI> <SC> MOVE 0 1 7 MOVE 1 1 7 <EC>
+
+Concurrently move left 7 cm and up 7 cm. <EOI> <SC> MOVE 0 0 7 MOVE 1 0 7 <EC>
+
+Rotate horizontal motor 35° clockwise then 35° counterclockwise. <EOI> ROTATE 0 1 35 ROTATE 0 0 35
+
+Rotate vertical motor 35° clockwise then 35° counterclockwise. <EOI> ROTATE 1 1 35 ROTATE 1 0 35
+
+Set horizontal motor to 100 deg/sec for 2 seconds then move right 15 cm. <EOI> SPEED 0 1 100 2 MOVE 0 1 15
+
+Set vertical motor to 100 deg/sec for 2 seconds then move down 15 cm. <EOI> SPEED 1 1 100 2 MOVE 1 1 15
+
+Draw a 12 cm square starting from current position. <EOI> MOVE 0 1 12 MOVE 1 1 12 MOVE 0 0 12 MOVE 1 0 12
+
+Draw a 16 cm rectangle (width) by 8 cm (height) from current location. <EOI> MOVE 0 1 16 MOVE 1 1 8 MOVE 0 0 16 MOVE 1 0 8
+
+Concurrently rotate both motors 65° clockwise. <EOI> <SC> ROTATE 0 1 65 ROTATE 1 1 65 <EC>
+
+Concurrently rotate both motors 65° counterclockwise. <EOI> <SC> ROTATE 0 0 65 ROTATE 1 0 65 <EC>
+
+Move gantry right 9 cm then left 9 cm. <EOI> MOVE 0 1 9 MOVE 0 0 9
+
+Move gantry down 9 cm then up 9 cm. <EOI> MOVE 1 1 9 MOVE 1 0 9
+
+Rotate horizontal motor 75° clockwise then 75° clockwise again. <EOI> ROTATE 0 1 75 ROTATE 0 1 75
+
+Rotate vertical motor 75° counterclockwise then 75° counterclockwise again. <EOI> ROTATE 1 0 75 ROTATE 1 0 75
+
+Set horizontal motor to 55 deg/sec for 6 seconds. <EOI> SPEED 0 1 55 6
+
+Set vertical motor to 55 deg/sec for 6 seconds upward. <EOI> SPEED 1 0 55 6
+
+Perform concurrent move: rotate horizontal motor 40° clockwise while moving right 10 cm. <EOI> <SC> ROTATE 0 1 40 MOVE 0 1 10 <EC>
+
+Perform concurrent move: rotate vertical motor 40° counterclockwise while moving up 10 cm. <EOI> <SC> ROTATE 1 0 40 MOVE 1 0 10 <EC>
+
+Slide gantry diagonally up-right 18 cm concurrently. <EOI> <SC> MOVE 0 1 18 MOVE 1 0 18 <EC>
+
+Slide gantry diagonally down-left 18 cm concurrently. <EOI> <SC> MOVE 0 0 18 MOVE 1 1 18 <EC>
+
+Rotate horizontal motor 30° clockwise then move right 5 cm. <EOI> ROTATE 0 1 30 MOVE 0 1 5
+
+Rotate vertical motor 30° counterclockwise then move up 5 cm. <EOI> ROTATE 1 0 30 MOVE 1 0 5
+
+Set horizontal motor to 85 deg/sec for 2 seconds then move right 10 cm. <EOI> SPEED 0 1 85 2 MOVE 0 1 10
+
+Set vertical motor to 85 deg/sec for 2 seconds then move down 10 cm. <EOI> SPEED 1 1 85 2 MOVE 1 1 10
+
+Draw a diagonal line up-right 25 cm concurrently. <EOI> <SC> MOVE 0 1 25 MOVE 1 0 25 <EC>
+
+Draw a diagonal line down-left 25 cm concurrently. <EOI> <SC> MOVE 0 0 25 MOVE 1 1 25 <EC>
+
+Move gantry right 11 cm then down 11 cm sequentially. <EOI> MOVE 0 1 11 MOVE 1 1 11
+
+Move gantry left 11 cm then up 11 cm sequentially. <EOI> MOVE 0 0 11 MOVE 1 0 11
+
+Concurrently rotate both motors 15° clockwise. <EOI> <SC> ROTATE 0 1 15 ROTATE 1 1 15 <EC>
+
+Concurrently rotate both motors 15° counterclockwise. <EOI> <SC> ROTATE 0 0 15 ROTATE 1 0 15 <EC>
+
+Set horizontal motor to 95 deg/sec for 3 seconds then move right 8 cm. <EOI> SPEED 0 1 95 3 MOVE 0 1 8
+
+Set vertical motor to 95 deg/sec for 3 seconds then move down 8 cm. <EOI> SPEED 1 1 95 3 MOVE 1 1 8
+
+Rotate horizontal motor 20° clockwise then 20° clockwise again. <EOI> ROTATE 0 1 20 ROTATE 0 1 20
+
+Rotate vertical motor 20° counterclockwise then 20° counterclockwise again. <EOI> ROTATE 1 0 20 ROTATE 1 0 20
+
+Slide gantry right 14 cm then up 14 cm sequentially. <EOI> MOVE 0 1 14 MOVE 1 0 14
+
+Slide gantry left 14 cm then down 14 cm sequentially. <EOI> MOVE 0 0 14 MOVE 1 1 14
+
+Concurrently move diagonally up-right 10 cm while rotating horizontal motor 20° clockwise. <EOI> <SC> MOVE 0 1 10 MOVE 1 0 10 ROTATE 0 1 20 <EC>
+
+Concurrently move diagonally down-left 10 cm while rotating vertical motor 20° counterclockwise. <EOI> <SC> MOVE 0 0 10 MOVE 1 1 10 ROTATE 1 0 20 <EC>
+
+Rotate both motors 80° concurrently clockwise then 80° concurrently counterclockwise. <EOI> <SC> ROTATE 0 1 80 ROTATE 1 1 80 <EC> <SC> ROTATE 0 0 80 ROTATE 1 0 80 <EC>
+
+Slide gantry right 19 cm then left 19 cm sequentially. <EOI> MOVE 0 1 19 MOVE 0 0 19
+
+Slide gantry down 19 cm then up 19 cm sequentially. <EOI> MOVE 1 1 19 MOVE 1 0 19
+
+Rotate horizontal motor 35° clockwise then 35° counterclockwise. <EOI> ROTATE 0 1 35 ROTATE 0 0 35
+
+Rotate vertical motor 35° clockwise then 35° counterclockwise. <EOI> ROTATE 1 1 35 ROTATE 1 0 35
+
+Set horizontal motor to 100 deg/sec for 2 seconds then move right 15 cm. <EOI> SPEED 0 1 100 2 MOVE 0 1 15
+
+Set vertical motor to 100 deg/sec for 2 seconds then move down 15 cm. <EOI> SPEED 1 1 100 2 MOVE 1 1 15
+
+Perform concurrent action: move diagonally up-left 13 cm while rotating horizontal motor 40° counterclockwise. <EOI> <SC> MOVE 0 0 13 MOVE 1 0 13 ROTATE 0 0 40 <EC>
+
+Perform concurrent action: move diagonally down-right 13 cm while rotating vertical motor 40° clockwise. <EOI> <SC> MOVE 0 1 13 MOVE 1 1 13 ROTATE 1 1 40 <EC>
+
+Rotate horizontal motor 90° clockwise twice consecutively. <EOI> ROTATE 0 1 90 ROTATE 0 1 90
+
+Rotate vertical motor 90° counterclockwise twice consecutively. <EOI> ROTATE 1 0 90 ROTATE 1 0 90
+
+Draw a square of 18 cm side. <EOI> MOVE 0 1 18 MOVE 1 1 18 MOVE 0 0 18 MOVE 1 0 18
+
+Draw a rectangle of 9 cm by 27 cm. <EOI> MOVE 0 1 27 MOVE 1 1 9 MOVE 0 0 27 MOVE 1 0 9
+
+Concurrently rotate both motors 100° clockwise then 100° counterclockwise. <EOI> <SC> ROTATE 0 1 100 ROTATE 1 1 100 <EC> <SC> ROTATE 0 0 100 ROTATE 1 0 100 <EC>
+
+Move gantry right 10 cm, then down 10 cm, then left 10 cm, then up 10 cm to form a loop. <EOI> MOVE 0 1 10 MOVE 1 1 10 MOVE 0 0 10 MOVE 1 0 10
+
+Move gantry left 10 cm, then up 10 cm, then right 10 cm, then down 10 cm to form a loop. <EOI> MOVE 0 0 10 MOVE 1 0 10 MOVE 0 1 10 MOVE 1 1 10
+
+Concurrently rotate horizontal motor 30° clockwise and move right 5 cm. <EOI> <SC> ROTATE 0 1 30 MOVE 0 1 5 <EC>
+
+Concurrently rotate vertical motor 30° counterclockwise and move up 5 cm. <EOI> <SC> ROTATE 1 0 30 MOVE 1 0 5 <EC>
+
+Set horizontal motor to 90 deg/sec for 4 seconds then move right 12 cm. <EOI> SPEED 0 1 90 4 MOVE 0 1 12
+
+Set vertical motor to 90 deg/sec for 4 seconds then move down 12 cm. <EOI> SPEED 1 1 90 4 MOVE 1 1 12
+
+Slide gantry right 8 cm then rotate horizontal motor 30° clockwise. <EOI> MOVE 0 1 8 ROTATE 0 1 30
+
+Slide gantry left 8 cm then rotate horizontal motor 30° counterclockwise. <EOI> MOVE 0 0 8 ROTATE 0 0 30
+
+Slide gantry down 8 cm then rotate vertical motor 30° clockwise. <EOI> MOVE 1 1 8 ROTATE 1 1 30
+
+Slide gantry up 8 cm then rotate vertical motor 30° counterclockwise. <EOI> MOVE 1 0 8 ROTATE 1 0 30
+
+Concurrently move right 7 cm and down 7 cm. <EOI> <SC> MOVE 0 1 7 MOVE 1 1 7 <EC>
+
+Concurrently move left 7 cm and up 7 cm. <EOI> <SC> MOVE 0 0 7 MOVE 1 0 7 <EC>
+
+Rotate horizontal motor 35° clockwise then 35° counterclockwise. <EOI> ROTATE 0 1 35 ROTATE 0 0 35
+
+Rotate vertical motor 35° clockwise then 35° counterclockwise. <EOI> ROTATE 1 1 35 ROTATE 1 0 35
+
+Set horizontal motor to 100 deg/sec for 2 seconds then move right 15 cm. <EOI> SPEED 0 1 100 2 MOVE 0 1 15
+
+Set vertical motor to 100 deg/sec for 2 seconds then move down 15 cm. <EOI> SPEED 1 1 100 2 MOVE 1 1 15
+
+Perform concurrent action: move diagonally up-left 13 cm while rotating horizontal motor 40° counterclockwise. <EOI> <SC> MOVE 0 0 13 MOVE 1 0 13 ROTATE 0 0 40 <EC>
+
+Perform concurrent action: move diagonally down-right 13 cm while rotating vertical motor 40° clockwise. <EOI> <SC> MOVE 0 1 13 MOVE 1 1 13 ROTATE 1 1 40 <EC>
+
+Rotate horizontal motor 90° clockwise twice consecutively. <EOI> ROTATE 0 1 90 ROTATE 0 1 90
+
+Rotate vertical motor 90° counterclockwise twice consecutively. <EOI> ROTATE 1 0 90 ROTATE 1 0 90
+
+Draw a square of 20 cm side. <EOI> MOVE 0 1 20 MOVE 1 1 20 MOVE 0 0 20 MOVE 1 0 20
+
+Draw a rectangle of 10 cm by 20 cm. <EOI> MOVE 0 1 20 MOVE 1 1 10 MOVE 0 0 20 MOVE 1 0 10
+
+Concurrently rotate both motors 55° clockwise then 55° counterclockwise. <EOI> <SC> ROTATE 0 1 55 ROTATE 1 1 55 <EC> <SC> ROTATE 0 0 55 ROTATE 1 0 55 <EC>
+
+Move gantry right 10 cm, then down 10 cm, then left 10 cm, then up 10 cm. <EOI> MOVE 0 1 10 MOVE 1 1 10 MOVE 0 0 10 MOVE 1 0 10
+
+Move gantry left 10 cm, then up 10 cm, then right 10 cm, then down 10 cm. <EOI> MOVE 0 0 10 MOVE 1 0 10 MOVE 0 1 10 MOVE 1 1 10
+
+Concurrently rotate horizontal motor 30° clockwise while moving right 5 cm. <EOI> <SC> ROTATE 0 1 30 MOVE 0 1 5 <EC>
+
+Concurrently rotate vertical motor 30° counterclockwise while moving up 5 cm. <EOI> <SC> ROTATE 1 0 30 MOVE 1 0 5 <EC>
+
+Set horizontal motor to 90 deg/sec for 4 seconds then move right 12 cm. <EOI> SPEED 0 1 90 4 MOVE 0 1 12
+
+Set vertical motor to 90 deg/sec for 4 seconds then move down 12 cm. <EOI> SPEED 1 1 90 4 MOVE 1 1 12
+
+Rotate horizontal motor 65° clockwise then 65° counterclockwise. <EOI> ROTATE 0 1 65 ROTATE 0 0 65
+
+Rotate vertical motor 65° clockwise then 65° counterclockwise. <EOI> ROTATE 1 1 65 ROTATE 1 0 65
+
+Move gantry diagonally up-right 15 cm concurrently then move up 5 cm. <EOI> <SC> MOVE 0 1 15 MOVE 1 0 15 <EC> MOVE 1 0 5
+
+Move gantry diagonally down-left 15 cm concurrently then move down 5 cm. <EOI> <SC> MOVE 0 0 15 MOVE 1 1 15 <EC> MOVE 1 1 5
+
+Rotate horizontal motor 25° clockwise twice in succession. <EOI> ROTATE 0 1 25 ROTATE 0 1 25
+
+Rotate vertical motor 25° counterclockwise twice in succession. <EOI> ROTATE 1 0 25 ROTATE 1 0 25
+
+Draw a horizontal line of 22 cm then a vertical line of 22 cm. <EOI> MOVE 0 1 22 MOVE 1 1 22
+
+Draw a vertical line of 22 cm then a horizontal line of 22 cm. <EOI> MOVE 1 1 22 MOVE 0 1 22
+
+Move gantry right 8 cm then rotate horizontal motor 30° clockwise. <EOI> MOVE 0 1 8 ROTATE 0 1 30
+
+Move gantry left 8 cm then rotate horizontal motor 30° counterclockwise. <EOI> MOVE 0 0 8 ROTATE 0 0 30
+
+Set horizontal motor to 70 deg/sec for 5 seconds then move right 14 cm. <EOI> SPEED 0 1 70 5 MOVE 0 1 14
+
+Set vertical motor to 70 deg/sec for 5 seconds then move down 14 cm. <EOI> SPEED 1 1 70 5 MOVE 1 1 14
+
+Concurrently move diagonally up-right 10 cm while rotating horizontal motor 20° clockwise. <EOI> <SC> MOVE 0 1 10 MOVE 1 0 10 ROTATE 0 1 20 <EC>
+
+Concurrently move diagonally down-left 10 cm while rotating vertical motor 20° counterclockwise. <EOI> <SC> MOVE 0 0 10 MOVE 1 1 10 ROTATE 1 0 20 <EC>
+
+Rotate both motors 80° concurrently clockwise then 80° concurrently counterclockwise. <EOI> <SC> ROTATE 0 1 80 ROTATE 1 1 80 <EC> <SC> ROTATE 0 0 80 ROTATE 1 0 80 <EC>
+
+Slide gantry right 19 cm then left 19 cm sequentially. <EOI> MOVE 0 1 19 MOVE 0 0 19
+
+Slide gantry down 19 cm then up 19 cm sequentially. <EOI> MOVE 1 1 19 MOVE 1 0 19
+
+Rotate horizontal motor 35° clockwise then 35° counterclockwise. <EOI> ROTATE 0 1 35 ROTATE 0 0 35
+
+Rotate vertical motor 35° clockwise then 35° counterclockwise. <EOI> ROTATE 1 1 35 ROTATE 1 0 35
+
+Set horizontal motor to 100 deg/sec for 2 seconds then move right 15 cm. <EOI> SPEED 0 1 100 2 MOVE 0 1 15
+
+Set vertical motor to 100 deg/sec for 2 seconds then move down 15 cm. <EOI> SPEED 1 1 100 2 MOVE 1 1 15
+
+Perform concurrent action: move diagonally up-left 13 cm while rotating horizontal motor 40° counterclockwise. <EOI> <SC> MOVE 0 0 13 MOVE 1 0 13 ROTATE 0 0 40 <EC>
+
+Perform concurrent action: move diagonally down-right 13 cm while rotating vertical motor 40° clockwise. <EOI> <SC> MOVE 0 1 13 MOVE 1 1 13 ROTATE 1 1 40 <EC>
+
+Rotate horizontal motor 90° clockwise twice consecutively. <EOI> ROTATE 0 1 90 ROTATE 0 1 90
+
+Rotate vertical motor 90° counterclockwise twice consecutively. <EOI> ROTATE 1 0 90 ROTATE 1 0 90
+
+Draw a square of 20 cm side. <EOI> MOVE 0 1 20 MOVE 1 1 20 MOVE 0 0 20 MOVE 1 0 20
+
+Draw a rectangle of 10 cm by 20 cm. <EOI> MOVE 0 1 20 MOVE 1 1 10 MOVE 0 0 20 MOVE 1 0 10
+
+Concurrently rotate both motors 55° clockwise then 55° counterclockwise. <EOI> <SC> ROTATE 0 1 55 ROTATE 1 1 55 <EC> <SC> ROTATE 0 0 55 ROTATE 1 0 55 <EC>
+
+Move gantry right 10 cm, then down 10 cm, then left 10 cm, then up 10 cm. <EOI> MOVE 0 1 10 MOVE 1 1 10 MOVE 0 0 10 MOVE 1 0 10
+
+Move gantry left 10 cm, then up 10 cm, then right 10 cm, then down 10 cm. <EOI> MOVE 0 0 10 MOVE 1 0 10 MOVE 0 1 10 MOVE 1 1 10
+
+Concurrently rotate horizontal motor 30° clockwise while moving right 5 cm. <EOI> <SC> ROTATE 0 1 30 MOVE 0 1 5 <EC>
+
+Concurrently rotate vertical motor 30° counterclockwise while moving up 5 cm. <EOI> <SC> ROTATE 1 0 30 MOVE 1 0 5 <EC>
+
+Set horizontal motor to 90 deg/sec for 4 seconds then move right 12 cm. <EOI> SPEED 0 1 90 4 MOVE 0 1 12
+
+Set vertical motor to 90 deg/sec for 4 seconds then move down 12 cm. <EOI> SPEED 1 1 90 4 MOVE 1 1 12
+
+Rotate horizontal motor 65° clockwise then 65° counterclockwise. <EOI> ROTATE 0 1 65 ROTATE 0 0 65
+
+Rotate vertical motor 65° clockwise then 65° counterclockwise. <EOI> ROTATE 1 1 65 ROTATE 1 0 65
+
+Move gantry diagonally up-right 15 cm concurrently then move up 5 cm. <EOI> <SC> MOVE 0 1 15 MOVE 1 0 15 <EC> MOVE 1 0 5
+
+Move gantry diagonally down-left 15 cm concurrently then move down 5 cm. <EOI> <SC> MOVE 0 0 15 MOVE 1 1 15 <EC> MOVE 1 1 5
+
+Rotate horizontal motor 25° clockwise twice. <EOI> ROTATE 0 1 25 ROTATE 0 1 25
+
+Rotate vertical motor 25° counterclockwise twice. <EOI> ROTATE 1 0 25 ROTATE 1 0 25
+
+Draw a horizontal line of 22 cm then a vertical line of 22 cm. <EOI> MOVE 0 1 22 MOVE 1 1 22
+
+Draw a vertical line of 22 cm then a horizontal line of 22 cm. <EOI> MOVE 1 1 22 MOVE 0 1 22
+
+Move gantry right 8 cm then rotate horizontal motor 30° clockwise. <EOI> MOVE 0 1 8 ROTATE 0 1 30
+
+Move gantry left 8 cm then rotate horizontal motor 30° counterclockwise. <EOI> MOVE 0 0 8 ROTATE 0 0 30
+
+Set horizontal motor to 70 deg/sec for 5 seconds then move right 14 cm. <EOI> SPEED 0 1 70 5 MOVE 0 1 14
+
+Set vertical motor to 70 deg/sec for 5 seconds then move down 14 cm. <EOI> SPEED 1 1 70 5 MOVE 1 1 14
+
+Concurrently move diagonally up-right 10 cm while rotating horizontal motor 20° clockwise. <EOI> <SC> MOVE 0 1 10 MOVE 1 0 10 ROTATE 0 1 20 <EC>
+
+Concurrently move diagonally down-left 10 cm while rotating vertical motor 20° counterclockwise. <EOI> <SC> MOVE 0 0 10 MOVE 1 1 10 ROTATE 1 0 20 <EC>
+
+Rotate both motors 80° concurrently clockwise then 80° concurrently counterclockwise. <EOI> <SC> ROTATE 0 1 80 ROTATE 1 1 80 <EC> <SC> ROTATE 0 0 80 ROTATE 1 0 80 <EC>
+
+Slide gantry right 19 cm then left 19 cm sequentially. <EOI> MOVE 0 1 19 MOVE 0 0 19
+
+Slide gantry down 19 cm then up 19 cm sequentially. <EOI> MOVE 1 1 19 MOVE 1 0 19
+
+Rotate horizontal motor 35° clockwise then 35° counterclockwise. <EOI> ROTATE 0 1 35 ROTATE 0 0 35
+
+Rotate vertical motor 35° clockwise then 35° counterclockwise. <EOI> ROTATE 1 1 35 ROTATE 1 0 35
+
+Set horizontal motor to 100 deg/sec for 2 seconds then move right 15 cm. <EOI> SPEED 0 1 100 2 MOVE 0 1 15
+
+Set vertical motor to 100 deg/sec for 2 seconds then move down 15 cm. <EOI> SPEED 1 1 100 2 MOVE 1 1 15
+
+Perform concurrent action: move diagonally up-left 13 cm while rotating horizontal motor 40° counterclockwise. <EOI> <SC> MOVE 0 0 13 MOVE 1 0 13 ROTATE 0 0 40 <EC>
+
+Perform concurrent action: move diagonally down-right 13 cm while rotating vertical motor 40° clockwise. <EOI> <SC> MOVE 0 1 13 MOVE 1 1 13 ROTATE 1 1 40 <EC>
+
+Rotate horizontal motor 90° clockwise twice consecutively. <EOI> ROTATE 0 1 90 ROTATE 0 1 90
+
+Rotate vertical motor 90° counterclockwise twice consecutively. <EOI> ROTATE 1 0 90 ROTATE 1 0 90
+
+Draw a square of 20 cm side. <EOI> MOVE 0 1 20 MOVE 1 1 20 MOVE 0 0 20 MOVE 1 0 20
+
+Draw a rectangle of 10 cm by 20 cm. <EOI> MOVE 0 1 20 MOVE 1 1 10 MOVE 0 0 20 MOVE 1 0 10
+
+Concurrently rotate both motors 55° clockwise then 55° counterclockwise. <EOI> <SC> ROTATE 0 1 55 ROTATE 1 1 55 <EC> <SC> ROTATE 0 0 55 ROTATE 1 0 55 <EC>
+
+Move gantry right 10 cm, then down 10 cm, then left 10 cm, then up 10 cm. <EOI> MOVE 0 1 10 MOVE 1 1 10 MOVE 0 0 10 MOVE 1 0 10
+
+Move gantry left 10 cm, then up 10 cm, then right 10 cm, then down 10 cm. <EOI> MOVE 0 0 10 MOVE 1 0 10 MOVE 0 1 10 MOVE 1 1 10
+
+Concurrently rotate horizontal motor 30° clockwise while moving right 5 cm. <EOI> <SC> ROTATE 0 1 30 MOVE 0 1 5 <EC>
+
+Concurrently rotate vertical motor 30° counterclockwise while moving up 5 cm. <EOI> <SC> ROTATE 1 0 30 MOVE 1 0 5 <EC>
+
+Set horizontal motor to 90 deg/sec for 4 seconds then move right 12 cm. <EOI> SPEED 0 1 90 4 MOVE 0 1 12
+
+Set vertical motor to 90 deg/sec for 4 seconds then move down 12 cm. <EOI> SPEED 1 1 90 4 MOVE 1 1 12
+
+Rotate horizontal motor 65° clockwise then 65° counterclockwise. <EOI> ROTATE 0 1 65 ROTATE 0 0 65
+
+Rotate vertical motor 65° clockwise then 65° counterclockwise. <EOI> ROTATE 1 1 65 ROTATE 1 0 65
+
+Move gantry diagonally up-right 15 cm concurrently then move up 5 cm. <EOI> <SC> MOVE 0 1 15 MOVE 1 0 15 <EC> MOVE 1 0 5
+
+Move gantry diagonally down-left 15 cm concurrently then move down 5 cm. <EOI> <SC> MOVE 0 0 15 MOVE 1 1 15 <EC> MOVE 1 1 5
+
+Rotate horizontal motor 25° clockwise twice. <EOI> ROTATE 0 1 25 ROTATE 0 1 25
+
+Rotate vertical motor 25° counterclockwise twice. <EOI> ROTATE 1 0 25 ROTATE 1 0 25
+
+Draw a horizontal line of 22 cm then a vertical line of 22 cm. <EOI> MOVE 0 1 22 MOVE 1 1 22
+
+Draw a vertical line of 22 cm then a horizontal line of 22 cm. <EOI> MOVE 1 1 22 MOVE 0 1 22
+
+Move gantry right 8 cm then rotate horizontal motor 30° clockwise. <EOI> MOVE 0 1 8 ROTATE 0 1 30
+
+Move gantry left 8 cm then rotate horizontal motor 30° counterclockwise. <EOI> MOVE 0 0 8 ROTATE 0 0 30
+
+Set horizontal motor to 70 deg/sec for 5 seconds then move right 14 cm. <EOI> SPEED 0 1 70 5 MOVE 0 1 14
+
+Set vertical motor to 70 deg/sec for 5 seconds then move down 14 cm. <EOI> SPEED 1 1 70 5 MOVE 1 1 14
+
+Concurrently move diagonally up-right 10 cm while rotating horizontal motor 20° clockwise. <EOI> <SC> MOVE 0 1 10 MOVE 1 0 10 ROTATE 0 1 20 <EC>
+
+Concurrently move diagonally down-left 10 cm while rotating vertical motor 20° counterclockwise. <EOI> <SC> MOVE 0 0 10 MOVE 1 1 10 ROTATE 1 0 20 <EC>
+
+Rotate both motors 80° concurrently clockwise then 80° concurrently counterclockwise. <EOI> <SC> ROTATE 0 1 80 ROTATE 1 1 80 <EC> <SC> ROTATE 0 0 80 ROTATE 1 0 80 <EC>
+
+Slide gantry right 19 cm then left 19 cm sequentially. <EOI> MOVE 0 1 19 MOVE 0 0 19
+
+Slide gantry down 19 cm then up 19 cm sequentially. <EOI> MOVE 1 1 19 MOVE 1 0 19
+
+Rotate horizontal motor 35° clockwise then 35° counterclockwise. <EOI> ROTATE 0 1 35 ROTATE 0 0 35
+
+Rotate vertical motor 35° clockwise then 35° counterclockwise. <EOI> ROTATE 1 1 35 ROTATE 1 0 35
+
+Set horizontal motor to 100 deg/sec for 2 seconds then move right 15 cm. <EOI> SPEED 0 1 100 2 MOVE 0 1 15
+
+Set vertical motor to 100 deg/sec for 2 seconds then move down 15 cm. <EOI> SPEED 1 1 100 2 MOVE 1 1 15
+
+Perform concurrent action: move diagonally up-left 13 cm while rotating horizontal motor 40° counterclockwise. <EOI> <SC> MOVE 0 0 13 MOVE 1 0 13 ROTATE 0 0 40 <EC>
+
+Perform concurrent action: move diagonally down-right 13 cm while rotating vertical motor 40° clockwise. <EOI> <SC> MOVE 0 1 13 MOVE 1 1 13 ROTATE 1 1 40 <EC>
+
+Rotate horizontal motor 90° clockwise twice consecutively. <EOI> ROTATE 0 1 90 ROTATE 0 1 90
+
+Rotate vertical motor 90° counterclockwise twice consecutively. <EOI> ROTATE 1 0 90 ROTATE 1 0 90
+
+Draw a square of 20 cm side. <EOI> MOVE 0 1 20 MOVE 1 1 20 MOVE 0 0 20 MOVE 1 0 20
+
+Draw a rectangle of 10 cm by 20 cm. <EOI> MOVE 0 1 20 MOVE 1 1 10 MOVE 0 0 20 MOVE 1 0 10
+
+Concurrently rotate both motors 55° clockwise then 55° counterclockwise. <EOI> <SC> ROTATE 0 1 55 ROTATE 1 1 55 <EC> <SC> ROTATE 0 0 55 ROTATE 1 0 55 <EC>
+
+Move gantry right 10 cm, then down 10 cm, then left 10 cm, then up 10 cm. <EOI> MOVE 0 1 10 MOVE 1 1 10 MOVE 0 0 10 MOVE 1 0 10
+
+Move gantry left 10 cm, then up 10 cm, then right 10 cm, then down 10 cm. <EOI> MOVE 0 0 10 MOVE 1 0 10 MOVE 0 1 10 MOVE 1 1 10
+
+Concurrently rotate horizontal motor 30° clockwise while moving right 5 cm. <EOI> <SC> ROTATE 0 1 30 MOVE 0 1 5 <EC>
+
+Concurrently rotate vertical motor 30° counterclockwise while moving up 5 cm. <EOI> <SC> ROTATE 1 0 30 MOVE 1 0 5 <EC>
+
+Set horizontal motor to 90 deg/sec for 4 seconds then move right 12 cm. <EOI> SPEED 0 1 90 4 MOVE 0 1 12
+
+Set vertical motor to 90 deg/sec for 4 seconds then move down 12 cm. <EOI> SPEED 1 1 90 4 MOVE 1 1 12
+
+Rotate horizontal motor 65° clockwise then 65° counterclockwise. <EOI> ROTATE 0 1 65 ROTATE 0 0 65
+
+Rotate vertical motor 65° clockwise then 65° counterclockwise. <EOI> ROTATE 1 1 65 ROTATE 1 0 65
+
+Move gantry diagonally up-right 15 cm concurrently then move up 5 cm. <EOI> <SC> MOVE 0 1 15 MOVE 1 0 15 <EC> MOVE 1 0 5
+
+Move gantry diagonally down-left 15 cm concurrently then move down 5 cm. <EOI> <SC> MOVE 0 0 15 MOVE 1 1 15 <EC> MOVE 1 1 5
+
+Rotate horizontal motor 25° clockwise twice. <EOI> ROTATE 0 1 25 ROTATE 0 1 25
+
+Rotate vertical motor 25° counterclockwise twice. <EOI> ROTATE 1 0 25 ROTATE 1 0 25
+
+Draw a horizontal line of 22 cm then a vertical line of 22 cm. <EOI> MOVE 0 1 22 MOVE 1 1 22
+
+Draw a vertical line of 22 cm then a horizontal line of 22 cm. <EOI> MOVE 1 1 22 MOVE 0 1 22
+
+Move gantry right 8 cm then rotate horizontal motor 30° clockwise. <EOI> MOVE 0 1 8 ROTATE 0 1 30
+
+Move gantry left 8 cm then rotate horizontal motor 30° counterclockwise. <EOI> MOVE 0 0 8 ROTATE 0 0 30
+
+Set horizontal motor to 70 deg/sec for 5 seconds then move right 14 cm. <EOI> SPEED 0 1 70 5 MOVE 0 1 14
+
+Set vertical motor to 70 deg/sec for 5 seconds then move down 14 cm. <EOI> SPEED 1 1 70 5 MOVE 1 1 14
+
+Concurrently move diagonally up-right 10 cm while rotating horizontal motor 20° clockwise. <EOI> <SC> MOVE 0 1 10 MOVE 1 0 10 ROTATE 0 1 20 <EC>
+
+Concurrently move diagonally down-left 10 cm while rotating vertical motor 20° counterclockwise. <EOI> <SC> MOVE 0 0 10 MOVE 1 1 10 ROTATE 1 0 20 <EC>
+
+Rotate both motors 80° concurrently clockwise then 80° concurrently counterclockwise. <EOI> <SC> ROTATE 0 1 80 ROTATE 1 1 80 <EC> <SC> ROTATE 0 0 80 ROTATE 1 0 80 <EC>
+
+Slide gantry right 19 cm then left 19 cm sequentially. <EOI> MOVE 0 1 19 MOVE 0 0 19
+
+Slide gantry down 19 cm then up 19 cm sequentially. <EOI> MOVE 1 1 19 MOVE 1 0 19
+
+Rotate horizontal motor 35° clockwise then 35° counterclockwise. <EOI> ROTATE 0 1 35 ROTATE 0 0 35
+
+Rotate vertical motor 35° clockwise then 35° counterclockwise. <EOI> ROTATE 1 1 35 ROTATE 1 0 35
+
+Set horizontal motor to 100 deg/sec for 2 seconds then move right 15 cm. <EOI> SPEED 0 1 100 2 MOVE 0 1 15
+
+Set vertical motor to 100 deg/sec for 2 seconds then move down 15 cm. <EOI> SPEED 1 1 100 2 MOVE 1 1 15
+
+Perform concurrent action: move diagonally up-left 13 cm while rotating horizontal motor 40° counterclockwise. <EOI> <SC> MOVE 0 0 13 MOVE 1 0 13 ROTATE 0 0 40 <EC>
+
+Perform concurrent action: move diagonally down-right 13 cm while rotating vertical motor 40° clockwise. <EOI> <SC> MOVE 0 1 13 MOVE 1 1 13 ROTATE 1 1 40 <EC>
+
+Rotate horizontal motor 90° clockwise twice consecutively. <EOI> ROTATE 0 1 90 ROTATE 0 1 90
+
+Rotate vertical motor 90° counterclockwise twice consecutively. <EOI> ROTATE 1 0 90 ROTATE 1 0 90
+
+Draw a square of 20 cm side. <EOI> MOVE 0 1 20 MOVE 1 1 20 MOVE 0 0 20 MOVE 1 0 20
+
+Draw a rectangle of 10 cm by 20 cm. <EOI> MOVE 0 1 20 MOVE 1 1 10 MOVE 0 0 20 MOVE 1 0 10
+
+Concurrently rotate both motors 55° clockwise then 55° counterclockwise. <EOI> <SC> ROTATE 0 1 55 ROTATE 1 1 55 <EC> <SC> ROTATE 0 0 55 ROTATE 1 0 55 <EC>
+
+Move gantry right 10 cm, then down 10 cm, then left 10 cm, then up 10 cm. <EOI> MOVE 0 1 10 MOVE 1 1 10 MOVE 0 0 10 MOVE 1 0 10
+
+Move gantry left 10 cm, then up 10 cm, then right 10 cm, then down 10 cm. <EOI> MOVE 0 0 10 MOVE 1 0 10 MOVE 0 1 10 MOVE 1 1 10
+
+Concurrently rotate horizontal motor 30° clockwise while moving right 5 cm. <EOI> <SC> ROTATE 0 1 30 MOVE 0 1 5 <EC>
+
+Concurrently rotate vertical motor 30° counterclockwise while moving up 5 cm. <EOI> <SC> ROTATE 1 0 30 MOVE 1 0 5 <EC>
+
+Set horizontal motor to 90 deg/sec for 4 seconds then move right 12 cm. <EOI> SPEED 0 1 90 4 MOVE 0 1 12
+
+Set vertical motor to 90 deg/sec for 4 seconds then move down 12 cm. <EOI> SPEED 1 1 90 4 MOVE 1 1 12
+
+Rotate horizontal motor 65° clockwise then 65° counterclockwise. <EOI> ROTATE 0 1 65 ROTATE 0 0 65
+
+Rotate vertical motor 65° clockwise then 65° counterclockwise. <EOI> ROTATE 1 1 65 ROTATE 1 0 65
+
+Move gantry diagonally up-right 15 cm concurrently then move up 5 cm. <EOI> <SC> MOVE 0 1 15 MOVE 1 0 15 <EC> MOVE 1 0 5
+
+Move gantry diagonally down-left 15 cm concurrently then move down 5 cm. <EOI> <SC> MOVE 0 0 15 MOVE 1 1 15 <EC> MOVE 1 1 5
+
+Rotate horizontal motor 25° clockwise twice. <EOI> ROTATE 0 1 25 ROTATE 0 1 25
+
+Rotate vertical motor 25° counterclockwise twice. <EOI> ROTATE 1 0 25 ROTATE 1 0 25
+
+Draw a horizontal line of 22 cm then a vertical line of 22 cm. <EOI> MOVE 0 1 22 MOVE 1 1 22
+
+Draw a vertical line of 22 cm then a horizontal line of 22 cm. <EOI> MOVE 1 1 22 MOVE 0 1 22
+
+Move gantry right 8 cm then rotate horizontal motor 30° clockwise. <EOI> MOVE 0 1 8 ROTATE 0 1 30
+
+Move gantry left 8 cm then rotate horizontal motor 30° counterclockwise. <EOI> MOVE 0 0 8 ROTATE 0 0 30
+
+Set horizontal motor to 70 deg/sec for 5 seconds then move right 14 cm. <EOI> SPEED 0 1 70 5 MOVE 0 1 14
+
+Set vertical motor to 70 deg/sec for 5 seconds then move down 14 cm. <EOI> SPEED 1 1 70 5 MOVE 1 1 14
+
+Concurrently move diagonally up-right 10 cm while rotating horizontal motor 20° clockwise. <EOI> <SC> MOVE 0 1 10 MOVE 1 0 10 ROTATE 0 1 20 <EC>
+
+Concurrently move diagonally down-left 10 cm while rotating vertical motor 20° counterclockwise. <EOI> <SC> MOVE 0 0 10 MOVE 1 1 10 ROTATE 1 0 20 <EC>
+
+Rotate both motors 80° concurrently clockwise then 80° concurrently counterclockwise. <EOI> <SC> ROTATE 0 1 80 ROTATE 1 1 80 <EC> <SC> ROTATE 0 0 80 ROTATE 1 0 80 <EC>
+
+Slide gantry right 19 cm then left 19 cm sequentially. <EOI> MOVE 0 1 19 MOVE 0 0 19
+
+Slide gantry down 19 cm then up 19 cm sequentially. <EOI> MOVE 1 1 19 MOVE 1 0 19
+
+Rotate horizontal motor 35° clockwise then 35° counterclockwise. <EOI> ROTATE 0 1 35 ROTATE 0 0 35
+
+Rotate vertical motor 35° clockwise then 35° counterclockwise. <EOI> ROTATE 1 1 35 ROTATE 1 0 35
+
+Set horizontal motor to 100 deg/sec for 2 seconds then move right 15 cm. <EOI> SPEED 0 1 100 2 MOVE 0 1 15
+
+Set vertical motor to 100 deg/sec for 2 seconds then move down 15 cm. <EOI> SPEED 1 1 100 2 MOVE 1 1 15
+
+Perform concurrent action: move diagonally up-left 13 cm while rotating horizontal motor 40° counterclockwise. <EOI> <SC> MOVE 0 0 13 MOVE 1 0 13 ROTATE 0 0 40 <EC>
+
+Perform concurrent action: move diagonally down-right 13 cm while rotating vertical motor 40° clockwise. <EOI> <SC> MOVE 0 1 13 MOVE 1 1 13 ROTATE 1 1 40 <EC>
+
+Rotate horizontal motor 90° clockwise twice consecutively. <EOI> ROTATE 0 1 90 ROTATE 0 1 90
+
+Rotate vertical motor 90° counterclockwise twice consecutively. <EOI> ROTATE 1 0 90 ROTATE 1 0 90
+
+Draw a square of 20 cm side. <EOI> MOVE 0 1 20 MOVE 1 1 20 MOVE 0 0 20 MOVE 1 0 20
+
+Draw a rectangle of 10 cm by 20 cm. <EOI> MOVE 0 1 20 MOVE 1 1 10 MOVE 0 0 20 MOVE 1 0 10
+
+Concurrently rotate both motors 55° clockwise then 55° counterclockwise. <EOI> <SC> ROTATE 0 1 55 ROTATE 1 1 55 <EC> <SC> ROTATE 0 0 55 ROTATE 1 0 55 <EC>
+
+Move gantry right 10 cm, then down 10 cm, then left 10 cm, then up 10 cm. <EOI> MOVE 0 1 10 MOVE 1 1 10 MOVE 0 0 10 MOVE 1 0 10
+
+Move gantry left 10 cm, then up 10 cm, then right 10 cm, then down 10 cm. <EOI> MOVE 0 0 10 MOVE 1 0 10 MOVE 0 1 10 MOVE 1 1 10
+
+Concurrently rotate horizontal motor 30° clockwise while moving right 5 cm. <EOI> <SC> ROTATE 0 1 30 MOVE 0 1 5 <EC>
+
+Concurrently rotate vertical motor 30° counterclockwise while moving up 5 cm. <EOI> <SC> ROTATE 1 0 30 MOVE 1 0 5 <EC>
+
+Set horizontal motor to 90 deg/sec for 4 seconds then move right 12 cm. <EOI> SPEED 0 1 90 4 MOVE 0 1 12
+
+Set vertical motor to 90 deg/sec for 4 seconds then move down 12 cm. <EOI> SPEED 1 1 90 4 MOVE 1 1 12
+
+Rotate horizontal motor 65° clockwise then 65° counterclockwise. <EOI> ROTATE 0 1 65 ROTATE 0 0 65
+
+Rotate vertical motor 65° clockwise then 65° counterclockwise. <EOI> ROTATE 1 1 65 ROTATE 1 0 65
+
+Move gantry diagonally up-right 15 cm concurrently then move up 5 cm. <EOI> <SC> MOVE 0 1 15 MOVE 1 0 15 <EC> MOVE 1 0 5
+
+Move gantry diagonally down-left 15 cm concurrently then move down 5 cm. <EOI> <SC> MOVE 0 0 15 MOVE 1 1 15 <EC> MOVE 1 1 5
+
+Rotate horizontal motor 25° clockwise twice. <EOI> ROTATE 0 1 25 ROTATE 0 1 25
+
+Rotate vertical motor 25° counterclockwise twice. <EOI> ROTATE 1 0 25 ROTATE 1 0 25
+
+Draw a horizontal line of 22 cm then a vertical line of 22 cm. <EOI> MOVE 0 1 22 MOVE 1 1 22
+
+Draw a vertical line of 22 cm then a horizontal line of 22 cm. <EOI> MOVE 1 1 22 MOVE 0 1 22
+
+Move gantry right 8 cm then rotate horizontal motor 30° clockwise. <EOI> MOVE 0 1 8 ROTATE 0 1 30
+
+Move gantry left 8 cm then rotate horizontal motor 30° counterclockwise. <EOI> MOVE 0 0 8 ROTATE 0 0 30
+
+Set horizontal motor to 70 deg/sec for 5 seconds then move right 14 cm. <EOI> SPEED 0 1 70 5 MOVE 0 1 14
+
+Set vertical motor to 70 deg/sec for 5 seconds then move down 14 cm. <EOI> SPEED 1 1 70 5 MOVE 1 1 14
+
+Concurrently move diagonally up-right 10 cm while rotating horizontal motor 20° clockwise. <EOI> <SC> MOVE 0 1 10 MOVE 1 0 10 ROTATE 0 1 20 <EC>
+
+Concurrently move diagonally down-left 10 cm while rotating vertical motor 20° counterclockwise. <EOI> <SC> MOVE 0 0 10 MOVE 1 1 10 ROTATE 1 0 20 <EC>
+
+Rotate both motors 80° concurrently clockwise then 80° concurrently counterclockwise. <EOI> <SC> ROTATE 0 1 80 ROTATE 1 1 80 <EC> <SC> ROTATE 0 0 80 ROTATE 1 0 80 <EC>
+
+Slide gantry right 19 cm then left 19 cm sequentially. <EOI> MOVE 0 1 19 MOVE 0 0 19
+
+Slide gantry down 19 cm then up 19 cm sequentially. <EOI> MOVE 1 1 19 MOVE 1 0 19
+
+Rotate horizontal motor 35° clockwise then 35° counterclockwise. <EOI> ROTATE 0 1 35 ROTATE 0 0 35
+
+Rotate vertical motor 35° clockwise then 35° counterclockwise. <EOI> ROTATE 1 1 35 ROTATE 1 0 35
+
+Set horizontal motor to 100 deg/sec for 2 seconds then move right 15 cm. <EOI> SPEED 0 1 100 2 MOVE 0 1 15
+
+Set vertical motor to 100 deg/sec for 2 seconds then move down 15 cm. <EOI> SPEED 1 1 100 2 MOVE 1 1 15
+
+Perform concurrent action: move diagonally up-left 13 cm while rotating horizontal motor 40° counterclockwise. <EOI> <SC> MOVE 0 0 13 MOVE 1 0 13 ROTATE 0 0 40 <EC>
+
+Perform concurrent action: move diagonally down-right 13 cm while rotating vertical motor 40° clockwise. <EOI> <SC> MOVE 0 1 13 MOVE 1 1 13 ROTATE 1 1 40 <EC>
+
+Rotate horizontal motor 90° clockwise twice consecutively. <EOI> ROTATE 0 1 90 ROTATE 0 1 90
+
+Rotate vertical motor 90° counterclockwise twice consecutively. <EOI> ROTATE 1 0 90 ROTATE 1 0 90
+
+Draw a square of 20 cm side. <EOI> MOVE 0 1 20 MOVE 1 1 20 MOVE 0 0 20 MOVE 1 0 20
+
+Draw a rectangle of 10 cm by 20 cm. <EOI> MOVE 0 1 20 MOVE 1 1 10 MOVE 0 0 20 MOVE 1 0 10
+
+Concurrently rotate both motors 55° clockwise then 55° counterclockwise. <EOI> <SC> ROTATE 0 1 55 ROTATE 1 1 55 <EC> <SC> ROTATE 0 0 55 ROTATE 1 0 55 <EC>
+
+Move gantry right 10 cm, then down 10 cm, then left 10 cm, then up 10 cm. <EOI> MOVE 0 1 10 MOVE 1 1 10 MOVE 0 0 10 MOVE 1 0 10
+
+Move gantry left 10 cm, then up 10 cm, then right 10 cm, then down 10 cm. <EOI> MOVE 0 0 10 MOVE 1 0 10 MOVE 0 1 10 MOVE 1 1 10
+
+Concurrently rotate horizontal motor 30° clockwise while moving right 5 cm. <EOI> <SC> ROTATE 0 1 30 MOVE 0 1 5 <EC>
+
+Concurrently rotate vertical motor 30° counterclockwise while moving up 5 cm. <EOI> <SC> ROTATE 1 0 30 MOVE 1 0 5 <EC>
+
+Set horizontal motor to 90 deg/sec for 4 seconds then move right 12 cm. <EOI> SPEED 0 1 90 4 MOVE 0 1 12
+
+Set vertical motor to 90 deg/sec for 4 seconds then move down 12 cm. <EOI> SPEED 1 1 90 4 MOVE 1 1 12
+
+Rotate horizontal motor 65° clockwise then 65° counterclockwise. <EOI> ROTATE 0 1 65 ROTATE 0 0 65
+
+Rotate vertical motor 65° clockwise then 65° counterclockwise. <EOI> ROTATE 1 1 65 ROTATE 1 0 65
+
+Move gantry diagonally up-right 15 cm concurrently then move up 5 cm. <EOI> <SC> MOVE 0 1 15 MOVE 1 0 15 <EC> MOVE 1 0 5
+
+Move gantry diagonally down-left 15 cm concurrently then move down 5 cm. <EOI> <SC> MOVE 0 0 15 MOVE 1 1 15 <EC> MOVE 1 1 5
+
+Rotate horizontal motor 25° clockwise twice. <EOI> ROTATE 0 1 25 ROTATE 0 1 25
+
+Rotate vertical motor 25° counterclockwise twice. <EOI> ROTATE 1 0 25 ROTATE 1 0 25
+
+Draw a horizontal line of 22 cm then a vertical line of 22 cm. <EOI> MOVE 0 1 22 MOVE 1 1 22
+
+Draw a vertical line of 22 cm then a horizontal line of 22 cm. <EOI> MOVE 1 1 22 MOVE 0 1 22
+
+Move gantry right 8 cm then rotate horizontal motor 30° clockwise. <EOI> MOVE 0 1 8 ROTATE 0 1 30
+
+Move gantry left 8 cm then rotate horizontal motor 30° counterclockwise. <EOI> MOVE 0 0 8 ROTATE 0 0 30
+
+Set horizontal motor to 70 deg/sec for 5 seconds then move right 14 cm. <EOI> SPEED 0 1 70 5 MOVE 0 1 14
+
+Set vertical motor to 70 deg/sec for 5 seconds then move down 14 cm. <EOI> SPEED 1 1 70 5 MOVE 1 1 14
+
+Concurrently move diagonally up-right 10 cm while rotating horizontal motor 20° clockwise. <EOI> <SC> MOVE 0 1 10 MOVE 1 0 10 ROTATE 0 1 20 <EC>
+
+Concurrently move diagonally down-left 10 cm while rotating vertical motor 20° counterclockwise. <EOI> <SC> MOVE 0 0 10 MOVE 1 1 10 ROTATE 1 0 20 <EC>
+
+Rotate both motors 80° concurrently clockwise then 80° concurrently counterclockwise. <EOI> <SC> ROTATE 0 1 80 ROTATE 1 1 80 <EC> <SC> ROTATE 0 0 80 ROTATE 1 0 80 <EC>
+
+Slide gantry right 19 cm then left 19 cm sequentially. <EOI> MOVE 0 1 19 MOVE 0 0 19
+
+Slide gantry down 19 cm then up 19 cm sequentially. <EOI> MOVE 1 1 19 MOVE 1 0 19
+
+Rotate horizontal motor 35° clockwise then 35° counterclockwise. <EOI> ROTATE 0 1 35 ROTATE 0 0 35
+
+Rotate vertical motor 35° clockwise then 35° counterclockwise. <EOI> ROTATE 1 1 35 ROTATE 1 0 35
+
+Set horizontal motor to 100 deg/sec for 2 seconds then move right 15 cm. <EOI> SPEED 0 1 100 2 MOVE 0 1 15
+
+Set vertical motor to 100 deg/sec for 2 seconds then move down 15 cm. <EOI> SPEED 1 1 100 2 MOVE 1 1 15
+
+Perform concurrent action: move diagonally up-left 13 cm while rotating horizontal motor 40° counterclockwise. <EOI> <SC> MOVE 0 0 13 MOVE 1 0 13 ROTATE 0 0 40 <EC>
+
+Perform concurrent action: move diagonally down-right 13 cm while rotating vertical motor 40° clockwise. <EOI> <SC> MOVE 0 1 13 MOVE 1 1 13 ROTATE 1 1 40 <EC>
+
+Rotate horizontal motor 90° clockwise twice consecutively. <EOI> ROTATE 0 1 90 ROTATE 0 1 90
+
+Rotate vertical motor 90° counterclockwise twice consecutively. <EOI> ROTATE 1 0 90 ROTATE 1 0 90
+
+Draw a square of 20 cm side. <EOI> MOVE 0 1 20 MOVE 1 1 20 MOVE 0 0 20 MOVE 1 0 20
+
+Draw a rectangle of 10 cm by 20 cm. <EOI> MOVE 0 1 20 MOVE 1 1 10 MOVE 0 0 20 MOVE 1 0 10
+
+Concurrently rotate both motors 55° clockwise then 55° counterclockwise. <EOI> <SC> ROTATE 0 1 55 ROTATE 1 1 55 <EC> <SC> ROTATE 0 0 55 ROTATE 1 0 55 <EC>
+
+Move gantry right 10 cm, then down 10 cm, then left 10 cm, then up 10 cm. <EOI> MOVE 0 1 10 MOVE 1 1 10 MOVE 0 0 10 MOVE 1 0 10
+
+Move gantry left 10 cm, then up 10 cm, then right 10 cm, then down 10 cm. <EOI> MOVE 0 0 10 MOVE 1 0 10 MOVE 0 1 10 MOVE 1 1 10
+
+Concurrently rotate horizontal motor 30° clockwise while moving right 5 cm. <EOI> <SC> ROTATE 0 1 30 MOVE 0 1 5 <EC>
+
+Concurrently rotate vertical motor 30° counterclockwise while moving up 5 cm. <EOI> <SC> ROTATE 1 0 30 MOVE 1 0 5 <EC>
+
+Set horizontal motor to 90 deg/sec for 4 seconds then move right 12 cm. <EOI> SPEED 0 1 90 4 MOVE 0 1 12
+
+Set vertical motor to 90 deg/sec for 4 seconds then move down 12 cm. <EOI> SPEED 1 1 90 4 MOVE 1 1 12
+
+Rotate horizontal motor 65° clockwise then 65° counterclockwise. <EOI> ROTATE 0 1 65 ROTATE 0 0 65
+
+Rotate vertical motor 65° clockwise then 65° counterclockwise. <EOI> ROTATE 1 1 65 ROTATE 1 0 65
+
+Move gantry diagonally up-right 15 cm concurrently then move up 5 cm. <EOI> <SC> MOVE 0 1 15 MOVE 1 0 15 <EC> MOVE 1 0 5
+
+Move gantry diagonally down-left 15 cm concurrently then move down 5 cm. <EOI> <SC> MOVE 0 0 15 MOVE 1 1 15 <EC> MOVE 1 1 5
+
+Rotate horizontal motor 25° clockwise twice. <EOI> ROTATE 0 1 25 ROTATE 0 1 25
+
+Rotate vertical motor 25° counterclockwise twice. <EOI> ROTATE 1 0 25 ROTATE 1 0 25
+
+Draw a horizontal line of 22 cm then a vertical line of 22 cm. <EOI> MOVE 0 1 22 MOVE 1 1 22
+
+Draw a vertical line of 22 cm then a horizontal line of 22 cm. <EOI> MOVE 1 1 22 MOVE 0 1 22
+
+Move gantry right 8 cm then rotate horizontal motor 30° clockwise. <EOI> MOVE 0 1 8 ROTATE 0 1 30
+
+Move gantry left 8 cm then rotate horizontal motor 30° counterclockwise. <EOI> MOVE 0 0 8 ROTATE 0 0 30
+
+Set horizontal motor to 70 deg/sec for 5 seconds then move right 14 cm. <EOI> SPEED 0 1 70 5 MOVE 0 1 14
+
+Set vertical motor to 70 deg/sec for 5 seconds then move down 14 cm. <EOI> SPEED 1 1 70 5 MOVE 1 1 14
+
+Concurrently move diagonally up-right 10 cm while rotating horizontal motor 20° clockwise. <EOI> <SC> MOVE 0 1 10 MOVE 1 0 10 ROTATE 0 1 20 <EC>
+
+Concurrently move diagonally down-left 10 cm while rotating vertical motor 20° counterclockwise. <EOI> <SC> MOVE 0 0 10 MOVE 1 1 10 ROTATE 1 0 20 <EC>
+
+Rotate both motors 80° concurrently clockwise then 80° concurrently counterclockwise. <EOI> <SC> ROTATE 0 1 80 ROTATE 1 1 80 <EC> <SC> ROTATE 0 0 80 ROTATE 1 0 80 <EC>
