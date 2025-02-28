@@ -1,39 +1,19 @@
-Slide the gantry to the top right corner.
-MOVE 0 1 50
+Slide gantry from center (25,25) to top right (50,0) one axis at a time. <EOI> MOVE 0 1 25 MOVE 1 0 25
 
-Take the gantry from the top left to the center of the board.
-MOVE 0 1 25
-MOVE 1 1 25
+Rotate motor 0 180 degrees counterclockwise then move 10 cm left. <EOI> ROTATE 0 0 180 MOVE 0 0 10
 
-From the bottom left corner, move straight to the bottom right.
-MOVE 0 1 50
+Move diagonally down-right 20 cm concurrently. <EOI> <SC> MOVE 0 1 20 MOVE 1 1 20 <EC>
 
-Navigate from the center back to the top left corner.
-MOVE 0 0 25
-MOVE 1 0 25
+Slowly move vertical axis up for 5 seconds at 30 deg/sec. <EOI> SPEED 1 0 30 5
 
-Go diagonally from the top right to the bottom left corner.
-MOVE 0 0 50
-MOVE 1 1 50
+Draw a 10 cm square from position (10,10) by moving right, down, left, and up sequentially. <EOI> MOVE 0 1 10 MOVE 1 1 10 MOVE 0 0 10 MOVE 1 0 10
 
-From the starting point, move 10 cm right and then 20 cm down.
-MOVE 0 1 10
-MOVE 1 1 20
+Rotate both motors 45 degrees clockwise simultaneously. <EOI> <SC> ROTATE 0 1 45 ROTATE 1 1 45 <EC>
 
-Advance 15 cm to the right, then backtrack 5 cm, and finally drop 10 cm down.
-MOVE 0 1 15
-MOVE 0 0 5
-MOVE 1 1 10
+Move gantry from center (25,25) to left edge (0,25) in two steps. <EOI> MOVE 0 0 12.5 MOVE 0 0 12.5
 
-Creep slowly by shifting 5 cm right, then 5 cm down.
-MOVE 0 1 5
-MOVE 1 1 5
+Perform a fast diagonal sweep then rotate the vertical motor 90 degrees clockwise. <EOI> <SC> MOVE 0 1 15 MOVE 1 1 15 <EC> ROTATE 1 1 90
 
-Shift from the bottom right corner to the center of the board.
-MOVE 0 0 25
-MOVE 1 0 25
+Slowly rotate horizontal motor 0 counterclockwise 360 degrees while moving up 10 cm concurrently. <EOI> <SC> ROTATE 0 0 360 MOVE 1 0 10 <EC>
 
-For a smooth transition, first rotate the horizontal motor 90 degrees clockwise, then shift right 10 cm, and finally lower the gantry using speed mode on the vertical motor.
-ROTATE 0 1 90
-MOVE 0 1 10
-SPEED 1 1 60 1
+Set motor 0 speed to 60 deg/sec for 3 seconds then move vertical motor down 5 cm. <EOI> SPEED 0 1 60 3 MOVE 1 1 5

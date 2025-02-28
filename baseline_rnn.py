@@ -5,6 +5,8 @@ baseline rnn model to control a XY gantry with natural language commands
 import torch as pt
 from typing import Type, Tuple, Sequence, Mapping
 from vocab import Vocab, START_TOKEN, END_TOKEN
+from tqdm import tqdm
+import random
 
 RNNType: Type = Type["RNN"]
 StateType: Type = pt.Tensor
@@ -47,8 +49,14 @@ class RNN(pt.nn.Module):
                     for c_in, c_out in zip([START_TOKEN] + line, line + [END_TOKEN]):
                         train_chars += 1
                         q, p = self.step(q, self.vocab.numberize(c_in))
+
+                        print(c_in, c_out)
+                        print(self.vocab.numberize(c_out))
                         
                         ground_truth = pt.tensor([self.vocab.numberize(c_out)])
+
+                        # print dimension of p and ground truth
+                        print(p.shape, ground_truth.shape)
 
                         loss += self.error(p, ground_truth)
                     
