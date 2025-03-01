@@ -63,13 +63,11 @@ def metric(T: Sequence[str], P: Sequence[str]) -> float:
 def train_rnn() -> RNN:
     train_data: Sequence[Sequence[str]] = parse_tokens_from_file("./data/dev")
 
-    print(train_data[0])
-
     saved_model_path = None
     if os.path.exists("./weights/rnn_1.model"):
         saved_model_path = "./weights/rnn_1.model"
 
-    return RNN(train_data, saved_model_path=saved_model_path, num_epochs=1)
+    return RNN(train_data, saved_model_path=saved_model_path, num_epochs=10)
 
 def dev_rnn(m: RNN) -> Tuple[int, int]:
     dev_data: Sequence[tuple[Sequence[str], Sequence[str]]] = parse_tokens_from_file("./data/dev")

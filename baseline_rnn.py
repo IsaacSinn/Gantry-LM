@@ -55,14 +55,8 @@ class RNN(pt.nn.Module):
                     for c_in, c_out in zip([START_TOKEN] + line[0], line[1] + [END_TOKEN]):
                         train_chars += 1
                         q, p = self.step(q, self.vocab.numberize(c_in))
-
-                        print(c_in, c_out)
-                        print(self.vocab.numberize(c_out))
                         
                         ground_truth = pt.tensor([OUTPUT_TOKENS.index(c_out)])
-
-                        # print dimension of p and ground truth
-                        print(p.shape, ground_truth.shape)
 
                         loss += self.error(p, ground_truth)
                     
@@ -72,7 +66,7 @@ class RNN(pt.nn.Module):
 
                     pt.nn.utils.clip_grad_norm_(self.parameters(), 1.0)
 
-                pt.save(self.state_dict(), f"./rnn_{epoch}.model")
+                pt.save(self.state_dict(), f"./weights/rnn_{epoch}.model")
         else:
             print(f"loading model from {saved_model_path}")
             self.load_state_dict(pt.load(saved_model_path, weights_only=True))
