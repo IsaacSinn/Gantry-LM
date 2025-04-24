@@ -1,3 +1,5 @@
 *.pyc
 *.model
 .env
+data/train_1000.jsonl
+data/dev_100.jsonl

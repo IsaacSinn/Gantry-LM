@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup
 import argparse
 import random
 import openai
+import json
 from dotenv import load_dotenv
 
 # Load environment variables from .env file (for API key)
@@ -45,18 +46,6 @@ def download_gcode_content(repo_name, file_path):
     except Exception as e:
         print(f"Error downloading {file_path} from {repo_name}: {e}")
         return None
-
-def write_to_file(file_handle, repo_name, file_path, gcode_content):
-    """Write G-code content to file with metadata and a generated user command."""
-    # Generate a user command based on repo name and file path
-    user_command = generate_user_command(repo_name, file_path, gcode_content)
-
-    file_handle.write(f"{user_command}\n")
-    file_handle.write(gcode_content)
-    file_handle.write("<EOS>")
-    
-    # Count lines
-    return gcode_content.count('\n') + 1  # +1 for the user command
 
 def generate_user_command(repo_name, file_path, gcode_content):
     """Generate a plausible user command using OpenAI's ChatGPT API."""
@@ -106,7 +95,21 @@ def generate_user_command(repo_name, file_path, gcode_content):
         # Fallback to a simple description if API call fails
         return f"Process G-code for {os.path.basename(file_path)}"
 
-def main(train_lines=100000, dev_lines=10000, train_file="train.txt", dev_file="dev.txt", dev_ratio=0.1):
+def write_to_jsonl(file_handle, prompt, completion):
+    """Write a JSON line with prompt and completion fields to the file."""
+    # Create the JSON object
+    json_obj = {
+        "prompt": prompt,
+        "completion": completion + "<|endoftext|>"
+    }
+    
+    # Write the JSON line to the file
+    file_handle.write(json.dumps(json_obj) + "\n")
+    
+    # Return 1 for the line count
+    return 1
+
+def main(train_lines=100000, dev_lines=10000, train_file="train.jsonl", dev_file="dev.jsonl", dev_ratio=0.1):
     """Main function to download G-code and save to training and development files."""
     # Load just the metadata for G-code files
     ds = load_dataset("bigcode/the-stack-v2", "G-code", streaming=True, split="train")
@@ -132,20 +135,21 @@ def main(train_lines=100000, dev_lines=10000, train_file="train.txt", dev_file="
             gcode_content = download_gcode_content(repo_name, file_path)
             
             if gcode_content:
+                # Generate user command
+                user_command = generate_user_command(repo_name, file_path, gcode_content)
+                
                 # Decide whether to add to train or dev set
-                # If dev set needs more data, prioritize filling it based on the ratio
-                # Otherwise randomly assign based on dev_ratio
                 if dev_total_lines < dev_lines and (train_total_lines >= train_lines or 
                                                    random.random() < dev_ratio):
                     # Add to dev set
-                    lines_added = write_to_file(dev_f, repo_name, file_path, gcode_content)
-                    dev_total_lines += lines_added
-                    print(f"  Added {lines_added} lines to dev set (Total dev: {dev_total_lines})")
+                    write_to_jsonl(dev_f, user_command, gcode_content)
+                    dev_total_lines += 1
+                    print(f"  Added to dev set (Total dev: {dev_total_lines})")
                 else:
                     # Add to train set
-                    lines_added = write_to_file(train_f, repo_name, file_path, gcode_content)
-                    train_total_lines += lines_added
-                    print(f"  Added {lines_added} lines to train set (Total train: {train_total_lines})")
+                    write_to_jsonl(train_f, user_command, gcode_content)
+                    train_total_lines += 1
+                    print(f"  Added to train set (Total train: {train_total_lines})")
             else:
                 print(f"  Failed to download content")
             
@@ -154,23 +158,23 @@ def main(train_lines=100000, dev_lines=10000, train_file="train.txt", dev_file="
             
             # Check if we've reached the desired number of lines for both sets
             if train_total_lines >= train_lines and dev_total_lines >= dev_lines:
-                print(f"Reached targets: Train {train_lines} lines, Dev {dev_lines} lines. Stopping.")
+                print(f"Reached targets: Train {train_lines} examples, Dev {dev_lines} examples. Stopping.")
                 break
     
     print(f"Completed. Processed {processed_files} files.")
-    print(f"Training set: {train_total_lines} lines in {train_file}")
-    print(f"Development set: {dev_total_lines} lines in {dev_file}")
+    print(f"Training set: {train_total_lines} examples in {train_file}")
+    print(f"Development set: {dev_total_lines} examples in {dev_file}")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Download G-code files for training and development data')
     parser.add_argument('--train-lines', type=int, default=100000, 
-                        help='Target number of lines for training set (default: 100000)')
+                        help='Target number of examples for training set (default: 100000)')
     parser.add_argument('--dev-lines', type=int, default=10000, 
-                        help='Target number of lines for development set (default: 10000)')
-    parser.add_argument('--train-file', type=str, default='data/train.txt',
-                        help='Training output file path (default: train.txt)')
-    parser.add_argument('--dev-file', type=str, default='data/dev.txt',
-                        help='Development output file path (default: dev.txt)')
+                        help='Target number of examples for development set (default: 10000)')
+    parser.add_argument('--train-file', type=str, default='data/train.jsonl',
+                        help='Training output file path (default: data/train.jsonl)')
+    parser.add_argument('--dev-file', type=str, default='data/dev.jsonl',
+                        help='Development output file path (default: data/dev.jsonl)')
     parser.add_argument('--dev-ratio', type=float, default=0.1,
                         help='Ratio of files to allocate to dev set (default: 0.1)')
     
@@ -183,4 +187,4 @@ if __name__ == "__main__":
     
 
     # Example usage: 
-    # python huggingface_gcode.py --train-lines 1000000 --dev-lines 100000 --train-file data/train_1M.txt --dev-file data/dev_100k.txt
+    # python data\stacks_gcode_jsonl.py --train-lines 1000 --dev-lines 100 --train-file data\train.jsonl --dev-file data\dev.jsonl --dev-ratio 0.1
