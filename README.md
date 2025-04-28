@@ -1,23 +1,37 @@
 # Gantry LM
- language models to control a XY gantry with natural language commands
 
-## Vocab
-Output tokens: 
+Fine-tuned StarCoder2 3B language model to control an XY gantry with natural language commands by generating G-code.
+
+## Goal and Gantry Setup
+
+The system operates on a 50cm x 50cm 2D plane:
+- Top left of the plate is (0,0) and bottom right is (50,50)
+- `motor_id` 0 controls the X axis (horizontal plane)
+- `motor_id` 1 controls the Y axis (vertical plane)
+- Clockwise on X axis moves the gantry to the right
+- Clockwise on Y axis moves the gantry down
+
+Each motor has a shaft circumference of 2 cm, meaning every 360° rotation moves the gantry 2 cm. The goal is to move the gantry using natural language commands.
+
+## Approach Evolution
+
+### Initial Approach: Self-defined Vocabulary (not used)
+
+#### Output Tokens
 ```
 <EOS>: End of sequence
-<EOI>: End of instruction. This marks the end of the input instruction for the LM
-<SC>: Start of concurrent. Some instructions are required to be executed concurrently. For example, drawing a circle on the gantry
-<EC>: End of concurrent. marks end of cocurrent execution
-
+<EOI>: End of instruction (marks the end of input instruction)
+<SC>: Start of concurrent execution
+<EC>: End of concurrent execution
 ROTATE: tool call
 MOVE: tool call
 SPEED: tool call
 0-9: numbers 0 to 9
-" ": space (quotation not included in output token)
-".": decimal point (quotation not included in output token)
+" ": space
+".": decimal point
 ```
 
-Available Tool calls: 
+#### Available Tool Calls
 ```
 ROTATE <motor_id> <direction> <degree> 
 - direction: 0 (CCW / Counter Clockwise), 1 (CW / Clockwise)
@@ -31,13 +45,7 @@ SPEED <motor_id> <direction> <speed> <duration>
 - speed in degree per second
 ```
 
-## Gantry setup and motor specs 
-
-A 50cm x 50cm 2d plane, top left of the plate is (0,0) and bottom right is (50,50). The motor that controls the X axis or th horizontal plane is ```motor_id``` 0 and the motor that controls the Y axis, the vertical plane is ```motor_id``` 1. Clockwise on X axis / ```motor_id``` 0 moves the gantry to the right, clockwise on the Y axis / ```motor_id``` 1 moves the gantry down.
-
-Each motor has a shaft circumference of 2 cm. Therefore every 360 degree is 2 cm moved
-
-## Example data
+#### Example Data
 ```
 Move the header from top left to bottom right one servo at a time. <EOI> MOVE 0 1 50 MOVE 1 1 50
 ```
@@ -49,21 +57,47 @@ Rotate the first servo 90 degree clockwise and second servo 90 degree counterclo
 ```
 move in a square of length 10 cm in the middle of the board, the gantry system is currently in the center (25,25). <EOI> <SC> MOVE 0 0 5 MOVE 1 0 5 <EC> MOVE 0 1 10 MOVE 1 1 10 MOVE 0 0 10 MOVE 1 0 10
 ```
-Explanation: move from the middle to the top left of the square in a diaganol. And then draw the square one move at a time
+Explanation: move from the middle to the top left of the square in a diagonal. And then draw the square one move at a time.
 
 ```
 Move the motor 0 at a speed of 90 degree per second clockwise <EOI> SPEED 0 1 90
 ```
 
+#### Issues with Self-defined Vocabulary
+- Hard to find data to train on
+- Using LLM models to generate G-code (distillation) is challenging as LLMs are not trained on data with our custom vocabulary
 
-# Models
+### Current Approach: G-code (used)
 
-## Baseline RNN
+G-code is a standard language used to control CNC machines and 3D printers, specifically for controlling motor movements.
 
-token level: character level except special characters
+#### Example G-code
+```
+# draw a circle with radius 10 cm from the center of the board
+G1 X0 Y0 F1000 # move to the center of the board
+G2 X10 Y0 I10 J0 # draw a circle with radius 10 cm from the center of the board
+```
 
-input vector: one hot vectors ```1 x |Vocab|```
+#### Example Data Format (JSONL)
+```
+{
+    "prompt": "move to the center of the board and draw a circle with radius 10 cm from the center of the board",
+    "completion": "G1 X0 Y0 F1000\nG2 X10 Y0 I10 J0<|endoftext|>"
+}
+```
 
-RNN architecture: 1 hidden layer with 64 nodes
+#### Dataset Statistics
+- Training set: 1000 examples in data/train_1000.jsonl
+- Development set: 100 examples in data/dev_100.jsonl
 
-technique: next token prediction
+## Models
+
+### Baseline RNN
+- Token level: character level except special characters
+- Input vector: one-hot vectors `1 x |Vocab|`
+- RNN architecture: 1 hidden layer with 64 nodes
+- Technique: next token prediction
+
+### StarCoder2 3B
+- Documentation available in docs/starcoder.md
+```
