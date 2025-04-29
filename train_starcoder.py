@@ -1,68 +1,166 @@
-from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
-from datasets import load_dataset
-from trl import SFTTrainer
-from peft import LoraConfig
+'''
+To fine-tune efficiently with a low cost, we use PEFT library for Low-Rank Adaptation (LoRA) training
+and bitsandbytes for 4bit quantization. 
+We also use the SFTTrainer from TRL.
+
+Use command:
+accelerate launch train_starcoder.py --model_id "bigcode/starcoder2-3b" --dataset_name "json" --dataset_path "data/train_1000.jsonl" --dataset_text_field "completion" --prompt_field "prompt" --max_seq_length 1024 --max_steps 1000 --micro_batch_size 1 --gradient_accumulation_steps 4 --learning_rate 2e-4 --warmup_steps 100 --num_proc 8
+
+
+'''
+
+
+import argparse
+import multiprocessing
+import os
+
 import torch
-from accelerate import Accelerator
-
-# Model configuration
-model_id = "bigcode/starcoder2-3b"
-dataset_path = "data/train_sample.jsonl"  # Update with your full dataset path
-
-# Quantization for efficient training
-quantization_config = BitsAndBytesConfig(
-    load_in_4bit=True,
-    bnb_4bit_compute_dtype=torch.float16,
-    bnb_4bit_quant_type="nf4",
-    bnb_4bit_use_double_quant=True,
+import transformers
+from accelerate import PartialState
+from datasets import load_dataset
+from peft import LoraConfig
+from transformers import (
+    AutoModelForCausalLM,
+    BitsAndBytesConfig,
+    logging,
+    set_seed,
 )
+from trl import SFTTrainer, SFTConfig
 
-# Load model and tokenizer
-model = AutoModelForCausalLM.from_pretrained(
-    model_id,
-    quantization_config=quantization_config,
-    device_map="auto",
-)
-tokenizer = AutoTokenizer.from_pretrained(model_id)
-tokenizer.pad_token = tokenizer.eos_token
 
-# Load dataset
-dataset = load_dataset("json", data_files=dataset_path, split="train")
+def get_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--model_id", type=str, default="bigcode/starcoder2-3b")
+    parser.add_argument("--dataset_name", type=str, default="json")
+    parser.add_argument("--dataset_path", type=str, default="data/train_1000.jsonl")
+    parser.add_argument("--dataset_text_field", type=str, default="completion")
+    parser.add_argument("--prompt_field", type=str, default="prompt")
 
-# Configure LoRA
-peft_config = LoraConfig(
-    r=16,  # rank
-    lora_alpha=32,
-    lora_dropout=0.05,
-    bias="none",
-    task_type="CAUSAL_LM",
-    target_modules=["c_proj", "c_attn", "q_attn"],  # Typical target modules for StarCoder models
-)
+    parser.add_argument("--max_seq_length", type=int, default=1024)
+    parser.add_argument("--max_steps", type=int, default=1000)
+    parser.add_argument("--micro_batch_size", type=int, default=1)
+    parser.add_argument("--gradient_accumulation_steps", type=int, default=4)
+    parser.add_argument("--weight_decay", type=float, default=0.01)
+    parser.add_argument("--bf16", type=bool, default=True)
 
-# Configure the trainer
-trainer = SFTTrainer(
-    model=model,
-    train_dataset=dataset,
-    peft_config=peft_config,
-    dataset_text_field="prompt",  # Input field in your dataset
-    max_seq_length=1024,
-    tokenizer=tokenizer,
-    args=dict(
-        per_device_train_batch_size=1,
-        gradient_accumulation_steps=8,
-        warmup_steps=20,
-        max_steps=1000,  # Adjust based on your dataset size
-        learning_rate=2e-5,
-        fp16=True,
-        logging_steps=10,
-        output_dir="output/gcode-starcoder2-3b",
-        save_strategy="steps",
-        save_steps=100,
-    ),
-)
+    parser.add_argument("--attention_dropout", type=float, default=0.1)
+    parser.add_argument("--learning_rate", type=float, default=2e-4)
+    parser.add_argument("--lr_scheduler_type", type=str, default="cosine")
+    parser.add_argument("--warmup_steps", type=int, default=100)
+    parser.add_argument("--seed", type=int, default=0)
+    parser.add_argument("--output_dir", type=str, default="finetune_starcoder2")
+    parser.add_argument("--num_proc", type=int, default=None)
+    parser.add_argument("--push_to_hub", type=bool, default=True)
+    return parser.parse_args()
 
-# Start training
-trainer.train()
 
-# Save the model
-trainer.model.save_pretrained("output/gcode-starcoder2-3b")
+def print_trainable_parameters(model):
+    """
+    Prints the number of trainable parameters in the model.
+    """
+    trainable_params = 0
+    all_param = 0
+    for _, param in model.named_parameters():
+        all_param += param.numel()
+        if param.requires_grad:
+            trainable_params += param.numel()
+    print(
+        f"trainable params: {trainable_params} || all params: {all_param} || trainable%: {100 * trainable_params / all_param}"
+    )
+
+
+def main(args):
+    # config
+    bnb_config = BitsAndBytesConfig(
+        load_in_4bit=True,
+        bnb_4bit_quant_type="nf4",
+        bnb_4bit_compute_dtype=torch.bfloat16,
+    )
+    lora_config = LoraConfig(
+        r=8,
+        target_modules=[
+            "q_proj",
+            "o_proj",
+            "k_proj",
+            "v_proj",
+            "gate_proj",
+            "up_proj",
+            "down_proj",
+        ],
+        task_type="CAUSAL_LM",
+    )
+
+    # load model and dataset
+    token = os.environ.get("HF_TOKEN", None)
+    model = AutoModelForCausalLM.from_pretrained(
+        args.model_id,
+        quantization_config=bnb_config,
+        device_map={"": PartialState().process_index},
+        attention_dropout=args.attention_dropout,
+    )
+    print_trainable_parameters(model)
+
+    data = load_dataset(
+        args.dataset_name,
+        data_files=args.dataset_path,
+        split="train",
+        token=token,
+        num_proc=args.num_proc if args.num_proc else multiprocessing.cpu_count(),
+    )
+
+    # Function to format the data with prompt and completion
+    def format_data(example):
+        return {
+            "text": f"Prompt: {example[args.prompt_field]}\nCompletion: {example[args.dataset_text_field]}"
+        }
+    
+    # Apply the formatting
+    data = data.map(format_data, num_proc=args.num_proc if args.num_proc else multiprocessing.cpu_count())
+
+    # setup the trainer with SFTConfig
+    trainer = SFTTrainer(
+        model=model,
+        train_dataset=data,
+        args=SFTConfig(
+            per_device_train_batch_size=args.micro_batch_size,
+            gradient_accumulation_steps=args.gradient_accumulation_steps,
+            warmup_steps=args.warmup_steps,
+            max_steps=args.max_steps,
+            learning_rate=args.learning_rate,
+            lr_scheduler_type=args.lr_scheduler_type,
+            weight_decay=args.weight_decay,
+            bf16=args.bf16,
+            logging_strategy="steps",
+            logging_steps=10,
+            output_dir=args.output_dir,
+            optim="paged_adamw_8bit",
+            seed=args.seed,
+            run_name=f"train-{args.model_id.split('/')[-1]}",
+            report_to="wandb",
+            max_seq_length=args.max_seq_length,
+            dataset_text_field="text",  # Use our formatted text field
+            packing=False,
+            dataset_num_proc=args.num_proc if args.num_proc else multiprocessing.cpu_count(),
+        ),
+        peft_config=lora_config,
+    )
+
+    # launch
+    print("Training...")
+    trainer.train()
+
+    print("Saving the last checkpoint of the model")
+    model.save_pretrained(os.path.join(args.output_dir, "final_checkpoint/"))
+    if args.push_to_hub:
+        trainer.push_to_hub("Upload model")
+    print("Training Done! 💥")
+
+
+if __name__ == "__main__":
+    args = get_args()
+    set_seed(args.seed)
+    os.makedirs(args.output_dir, exist_ok=True)
+
+    logging.set_verbosity_error()
+
+    main(args)
