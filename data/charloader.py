@@ -1,6 +1,8 @@
 # SYSTEM IMPORTS
 from collections.abc import Sequence
 from collections import defaultdict
+import json
+import re
 
 # PYTHON PROJECT IMPORTS
 
@@ -68,3 +70,18 @@ def parse_tokens_from_file(filepath:str) -> Sequence[tuple[Sequence[str], Sequen
             result.append((tokens_before_eoi, tokens_after_eoi))
 
     return result
+
+def charloader_generator(filepath):
+    with open(filepath, 'r', encoding='utf-8') as f:
+        for line in f:
+            entry = json.loads(line)
+            prompt = entry['prompt']
+            completion = entry['completion']
+            # Clean G-code (remove comments)
+            completion_cleaned = re.sub(r';.*?(?=\n|$)', '', completion)
+
+            # Tokenize character-level for both
+            prompt_tokens = list(prompt.strip())
+            completion_tokens = list(completion_cleaned.strip())
+
+            yield prompt_tokens, completion_tokens

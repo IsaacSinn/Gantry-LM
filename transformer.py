@@ -7,116 +7,111 @@ from torch import nn
 from typing import Sequence, Tuple
 from vocab import Vocab, START_TOKEN, END_TOKEN
 from tqdm import tqdm
+from v_builder import vocab_builder
+from data.charloader import charloader_generator
 import random
 
 class TransformerModel(nn.Module):
     def __init__(self, data: Sequence[Tuple[Sequence[str], Sequence[str]]], saved_model_path: str = None, num_epochs: int = 1) -> None:
         super().__init__()
 
-        self.vocab = Vocab()
-        self.vocab.add(START_TOKEN)
-        self.vocab.add(END_TOKEN)
+        self.vocab = None
 
-        # Initialize vocab
-        for task, command in data:
-            for c in task:
-                self.vocab.add(c)
-            for c in command:
-                self.vocab.add(c)
+        # Load vocab from file if it exists
+        try:
+            with open('vocab.pkl', 'rb') as f:
+                print("Loading vocab from file.")
+                self.vocab = pt.load(f)
+        except FileNotFoundError:
+            print("Vocab file not found. Creating a new vocab.")
+            self.vocab = vocab_builder()
 
         self.vocab_size = len(self.vocab)
-        self.embedding_dim = 64
+        self.embedding_dim = 256
         self.num_heads = 4
-        self.num_layers = 2
-        self.output_tokens = 18
+        self.num_layers = 6
+        self.hidden_dim = 1024
+        self.max_seq_len = 2048
+        self.output_tokens = self.vocab_size
 
-        # Embedding layers
-        self.embedding = nn.Embedding(self.vocab_size, self.embedding_dim)
-        self.positional_encoding = self._generate_positional_encoding(100, self.embedding_dim)
+        # Embeddings
+        self.positional_embedding = nn.Embedding(self.max_seq_len, self.embedding_dim)
+        self.token_embedding = nn.Embedding(self.vocab_size, self.embedding_dim)
 
-        # Transformer layers
+        # Init Transformer
         self.transformer = nn.Transformer(
             d_model=self.embedding_dim,
             nhead=self.num_heads,
             num_encoder_layers=self.num_layers,
             num_decoder_layers=self.num_layers,
-            dim_feedforward=256,
+            dim_feedforward=self.hidden_dim,
             dropout=0.1,
-            activation='relu'
+            activation='relu',
+            batch_first=True
         )
 
-        # Output layer
-        self.fc_out = nn.Linear(self.embedding_dim, self.output_tokens)
+        self.output_layer = nn.Linear(self.embedding_dim, self.output_tokens)
 
-        # Loss and optimizer
-        self.error = nn.CrossEntropyLoss()
-        self.optimizer = pt.optim.Adam(self.parameters(), lr=1e-3)
+    def forward(self, src: pt.Tensor, tgt: pt.Tensor) -> pt.Tensor:
+        batch_size, seq_len = src.size()
+        _, tgt_len = tgt.size()
 
-        if saved_model_path is None:
-            for epoch in range(num_epochs):
-                random.shuffle(data)
-                train_chars = 0
+        device = src.device
 
-                for line in tqdm(data, desc=f"epoch {epoch}"):
-                    self.optimizer.zero_grad()
-                    loss = 0.
+        # Turn IDs into embeddings
+        src_embedding = self.token_embedding(src) + self.positional_embedding(pt.arange(seq_len, device=src.device).unsqueeze(0))
+        tgt_embedding = self.token_embedding(tgt) + self.positional_embedding(pt.arange(tgt_len, device=tgt.device).unsqueeze(0))
 
-                    input_seq = [START_TOKEN] + line[0]
-                    target_seq = line[1] + [END_TOKEN]
+        # Create a mask for the target sequence
+        target_mask = self.transformer.generate_square_subsequent_mask(tgt_len).to(device)
 
-                    input_indices = pt.tensor([self.vocab.numberize(c) for c in input_seq]).unsqueeze(1)
-                    target_indices = pt.tensor([self.vocab.numberize(c) for c in target_seq]).unsqueeze(1)
-
-                    input_emb = self._embed_with_positional_encoding(input_indices)
-                    target_emb = self._embed_with_positional_encoding(target_indices[:-1])
-
-                    output = self.transformer(
-                        src=input_emb,
-                        tgt=target_emb,
-                        src_key_padding_mask=None,
-                        tgt_key_padding_mask=None,
-                        memory_key_padding_mask=None
-                    )
-
-                    logits = self.fc_out(output)
-                    ground_truth = target_indices[1:].squeeze(1)
-
-                    loss = self.error(logits.view(-1, self.output_tokens), ground_truth)
-                    loss.backward()
-                    self.optimizer.step()
-
-                pt.save(self.state_dict(), f"./transformer_{epoch}.model")
-        else:
-            print(f"loading model from {saved_model_path}")
-            self.load_state_dict(pt.load(saved_model_path, weights_only=True))
-
-    def _generate_positional_encoding(self, max_len: int, d_model: int) -> pt.Tensor:
-        pe = pt.zeros(max_len, d_model)
-        position = pt.arange(0, max_len, dtype=pt.float).unsqueeze(1)
-        div_term = pt.exp(pt.arange(0, d_model, 2).float() * (-pt.log(pt.tensor(10000.0)) / d_model))
-        pe[:, 0::2] = pt.sin(position * div_term)
-        pe[:, 1::2] = pt.cos(position * div_term)
-        return pe.unsqueeze(0)
-
-    def _embed_with_positional_encoding(self, indices: pt.Tensor) -> pt.Tensor:
-        embeddings = self.embedding(indices).squeeze(1)
-        seq_len = embeddings.size(0)
-        return embeddings + self.positional_encoding[:, :seq_len, :]
-
-    def forward(self, input_seq: Sequence[str], target_seq: Sequence[str]) -> pt.Tensor:
-        input_indices = pt.tensor([self.vocab.numberize(c) for c in input_seq]).unsqueeze(1)
-        target_indices = pt.tensor([self.vocab.numberize(c) for c in target_seq]).unsqueeze(1)
-
-        input_emb = self._embed_with_positional_encoding(input_indices)
-        target_emb = self._embed_with_positional_encoding(target_indices[:-1])
-
+        # Pass through the transformer
         output = self.transformer(
-            src=input_emb,
-            tgt=target_emb,
-            src_key_padding_mask=None,
-            tgt_key_padding_mask=None,
-            memory_key_padding_mask=None
+            src_embedding,
+            tgt_embedding,
+            tgt_mask=target_mask
         )
 
-        logits = self.fc_out(output)
+        logits = self.output_layer(output)
+
         return logits
+    
+    def train_one_epoch(self, optimizer, loss_function, data_loader, device):
+        self.train()
+
+        total_loss = 0.0
+
+        for src, tgt in data_loader:
+            src = src.to(device)
+            tgt = tgt.to(device)
+
+            # Align target sequence
+            tgt_input = tgt[:, :-1]
+            tgt_output = tgt[:, 1:]
+
+            
+            # Flatten for loss function
+            logits = self(src, tgt_input)
+            flat_logits = logits.view(-1, logits.size(-1))
+            flat_targets = tgt_output.view(-1)
+            
+            # Calc loss and backprop
+            loss = loss_function(flat_logits, flat_targets)
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
+
+            total_loss += loss.item()
+
+        average_loss = total_loss / len(data_loader)
+        return average_loss
+    
+
+
+
+
+
+
+
+
+
