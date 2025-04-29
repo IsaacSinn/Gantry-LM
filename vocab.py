@@ -14,6 +14,7 @@ VocabType: Type = Type["Vocab"]
 START_TOKEN: str = "<BOS>"
 END_TOKEN: str = "<EOS>"
 UNK_TOKEN: str = "<UNK>"
+PADDING_TOKEN: str = "<PAD>"
 
 class Vocab(MutableSet):
     """Set-like data structure that can change words into numbers and back."""

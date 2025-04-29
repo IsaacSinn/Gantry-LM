@@ -1,115 +1,95 @@
-# SYSTEM IMPORTS
-from collections.abc import Sequence
-from typing import Tuple
-from pprint import pprint
-import argparse as ap
-import numpy as np
-import os
-import sys
 import torch as pt
-
-# PYTHON PROJECT IMPORTS
-from data.charloader import parse_tokens_from_file
 from transformer import TransformerModel
-from vocab import START_TOKEN, END_TOKEN
+from vocab import Vocab, START_TOKEN, END_TOKEN, UNK_TOKEN, PADDING_TOKEN
+from data.charloader import charloader_generator
+from tqdm import tqdm
+from typing import Sequence, Tuple
+from torch import nn
 
-# CONSTANTS
-SPECIAL_TOKENS = set(["<BOS>", "<EOS>", "<EOI>", "<MOVE>", "<SPEED>", "<ROTATE>", "<SC>", "<EC>"])
-TOOL_TOKENS = set(["<MOVE>", "<SPEED>", "<ROTATE>"])
-MISC_TOKENS = set(["<SC>", "<EC>", "<EOS>"])
-token_types = {"<MOVE>": "tool", "<SPEED>": "tool", "<ROTATE>": "tool", "<SC>": "misc", "<EC>": "misc", "<EOS>": "misc"}
-tool_weight = 5
-misc_weight = 3
-normal_weight = 1
-OUTPUT_TOKENS = ["<MOVE>", "<SPEED>", "<ROTATE>", "<SC>", "<EC>", "<EOS>", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", " ", "."]
+def train_transformer(model: TransformerModel, filepath: str, optimizer, loss_func, device) -> None:
+    print("Starting to train the model...")
+    model.train_model(
+        optimizer=optimizer,
+        loss_func=loss_func,
+        filepath=filepath,
+        device=device,
+        num_epochs= 50,
+        batch_size=32
+    )
+    print("Finished training the model!")
 
-def weight_function(t_i: str) -> int:
-    if t_i in TOOL_TOKENS:
-        return tool_weight
-    elif t_i in MISC_TOKENS:
-        return misc_weight
-    else:
-        return normal_weight
+def test_transformer(model: TransformerModel, filepath, device, batch_size: int = 32) -> None:
+    print("Starting to test the model...")
+    model.eval()
 
-def distance_function(t_i: str, p_i: str) -> float:
-    if t_i == p_i:
-        return 0
-    elif len(t_i) != len(p_i) or token_types[t_i] != token_types[p_i]:
-        return 1
-    else:
-        return 1 - (int(t_i) / int(p_i))
+    total_loss = 0.0
+    num_entries = 0
+    loss_function = nn.CrossEntropyLoss(ignore_index=model.vocab.numberize(PADDING_TOKEN))
 
-def metric(T: Sequence[str], P: Sequence[str]) -> float:
-    n = max(len(T), len(P))
+    batch = []
 
-    # Fill out the smaller one with <EOS> tokens
-    while len(T) < n:
-        T.append("<EOS>")
-    
-    while len(P) < n:
-        P.append("<EOS>")
+    with pt.no_grad():
+        for prompt_tokens, completion_tokens in charloader_generator(filepath):
+            prompt_ids = [model.vocab.numberize(token) for token in prompt_tokens]
+            completion_ids = [model.vocab.numberize(token) for token in completion_tokens]
 
-    numerator = 0
-    denominator = 0
+            batch.append((prompt_ids, completion_ids))
 
-    for i in range(n):
-        w_i = weight_function(T[i])
-        d_i = distance_function(T[i], P[i])
-        numerator += w_i * d_i
-        denominator += w_i
+            if len(batch) == batch_size:
+                src_batch, tgt_batch = model.collate_batch(batch, device)
 
-    return 1 - (numerator / denominator)
+                tgt_input = tgt_batch[:, :-1]
+                tgt_output = tgt_batch[:, 1:]
 
-def train_transformer() -> TransformerModel:
-    train_data: Sequence[Sequence[str]] = parse_tokens_from_file("./data/dev")
+                logits = model(src_batch, tgt_input)
 
-    print(train_data[0])
+                flat_logits = logits.view(-1, logits.size(-1))
+                flat_targets = tgt_output.view(-1)
 
-    saved_model_path = None
-    if os.path.exists("./weights/transformer_1.model"):
-        saved_model_path = "./weights/transformer_1.model"
+                loss = loss_function(flat_logits, flat_targets)
 
-    return TransformerModel(train_data, saved_model_path=saved_model_path, num_epochs=1)
+                total_loss += loss.item()
+                num_entries += len(batch)
+                batch = []
 
-def dev_transformer(m: TransformerModel) -> Tuple[int, int]:
-    dev_data: Sequence[tuple[Sequence[str], Sequence[str]]] = parse_tokens_from_file("./data/dev")
+        # Handle leftover data
+        if len(batch) > 0:
+            src_batch, tgt_batch = model.collate_batch(batch, device)
 
-    metric_sum: int = 0
-    total: int = 0
+            tgt_input = tgt_batch[:, :-1]
+            tgt_output = tgt_batch[:, 1:]
 
-    # We can summarize metric by averaging the metric of each line
+            logits = model(src_batch, tgt_input)
 
-    for line in dev_data:
-        input, output = line
-        output.append("<EOS>")
-        input_indices = [m.vocab.numberize(c) for c in [START_TOKEN] + input]
-        target_indices = [m.vocab.numberize(c) for c in output]
+            flat_logits = logits.view(-1, logits.size(-1))
+            flat_targets = tgt_output.view(-1)
 
-        input_tensor = pt.tensor(input_indices).unsqueeze(1)
-        target_tensor = pt.tensor(target_indices).unsqueeze(1)
+            loss = loss_function(flat_logits, flat_targets)
 
-        q = m.start()
-        eoi = False
-        sample_out = []
+            total_loss += loss.item()
+            num_entries += len(batch)
 
-        for c_input in input_tensor:
-            logits = m.forward(input_tensor, target_tensor[:-1])
-            p = pt.argmax(logits[-1], dim=-1).item()
-            sample_out.append(OUTPUT_TOKENS[p])
+        # Print Loss
+        print(f"Test Loss: {total_loss / num_entries:.4f}")
+        return total_loss, num_entries
 
-            if OUTPUT_TOKENS[p] == "<EOI>":
-                eoi = True
-                continue
+def main():
+    device = 'cuda' if pt.cuda.is_available() else 'cpu'
 
-        metric_sum += metric(output, sample_out)
-        total += max(len(output), len(sample_out))
+    transformer = TransformerModel()
+    transformer = transformer.to(device)
 
-    return metric_sum, total
+    optimizer = pt.optim.Adam(transformer.parameters(), lr=0.001)
+    loss_function = nn.CrossEntropyLoss(ignore_index=transformer.vocab.numberize(PADDING_TOKEN))
 
-def main() -> None:
-    m: TransformerModel = train_transformer()
-    metric_total, total = dev_transformer(m)
-    print(f"WTAS: {metric_total}/{total} = {metric_total/total:.2f}")
+    train_file = 'data/dev_100.jsonl'
+    test_file = 'data/dev_sample.jsonl'
+
+    # Train the model
+    train_transformer(transformer, train_file, optimizer, loss_function)
+
+    # Test the model
+    test_transformer(transformer, test_file, device)
 
 if __name__ == "__main__":
     main()

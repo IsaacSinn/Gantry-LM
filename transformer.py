@@ -5,14 +5,14 @@ Transformer model to control a XY gantry with natural language commands
 import torch as pt
 from torch import nn
 from typing import Sequence, Tuple
-from vocab import Vocab, START_TOKEN, END_TOKEN
+from vocab import Vocab, START_TOKEN, END_TOKEN, UNK_TOKEN, PADDING_TOKEN
 from tqdm import tqdm
 from v_builder import vocab_builder
 from data.charloader import charloader_generator
 import random
 
 class TransformerModel(nn.Module):
-    def __init__(self, data: Sequence[Tuple[Sequence[str], Sequence[str]]], saved_model_path: str = None, num_epochs: int = 1) -> None:
+    def __init__(self, saved_model_path: str = None) -> None:
         super().__init__()
 
         self.vocab = None
@@ -53,6 +53,11 @@ class TransformerModel(nn.Module):
         self.output_layer = nn.Linear(self.embedding_dim, self.output_tokens)
 
     def forward(self, src: pt.Tensor, tgt: pt.Tensor) -> pt.Tensor:
+        '''
+        Forward pass through the transformer model.
+        src: source sequence (input), (batch_size, seq_len), src[i][j] = token index of j-th token in i-th sequence
+        tgt: target sequence (output)
+        '''
         batch_size, seq_len = src.size()
         _, tgt_len = tgt.size()
 
@@ -76,7 +81,14 @@ class TransformerModel(nn.Module):
 
         return logits
     
-    def train_one_epoch(self, optimizer, loss_function, data_loader, device):
+    def train_one_epoch(self, optimizer, loss_function, data_loader, device) -> float:
+        '''
+        Train the model for one epoch.
+        optimizer: optimizer to use for training
+        loss_function: loss function to use for training
+        data_loader: data loader to use for training
+        device: device to use for training (CPU or GPU)
+        '''
         self.train()
 
         total_loss = 0.0
@@ -106,6 +118,69 @@ class TransformerModel(nn.Module):
         average_loss = total_loss / len(data_loader)
         return average_loss
     
+    def train_model(self, optimizer, loss_function, filepath, device, num_epochs=1000, batch_size=32) -> None:
+        '''
+        Train the model on the given data.
+        optimizer: optimizer to use for training
+        ...
+        '''
+        epoch_count = 0
+
+        for epoch in range(num_epochs):
+            total_loss = 0
+            batch = []
+
+            full_dataset = list(charloader_generator(filepath))
+            random.shuffle(full_dataset)
+
+            for prompt_tokens, completion_tokens in full_dataset:
+
+                # Need to pass these as vocab ID's, including UNK's
+
+                prompt_ids = [self.vocab.numberize(token) for token in prompt_tokens]
+                completion_ids = [self.vocab.numberize(token) for token in completion_tokens]
+
+                batch.append((prompt_ids, completion_ids))
+
+                # Train on this batch
+                if len(batch) == batch_size:
+                    src_batch, tgt_batch = self.collate_batch(batch, device)
+
+                    avg_loss = self.train_one_epoch(optimizer, loss_function, [(src_batch, tgt_batch)], device)
+                    total_loss += avg_loss
+
+                    batch = []
+
+            # Leftover data
+            if len(batch) > 0:
+                src_batch, tgt_batch = self.collate_batch(batch, device)
+                avg_loss = self.train_one_epoch(optimizer, loss_function, [(src_batch, tgt_batch)], device)
+                total_loss += avg_loss
+
+            epoch_count += 1
+            if epoch_count % 25 == 0:
+                # Save entire model
+                pt.save(self, f"model_epoch_{epoch_count}.pt")
+
+        print(f"Epoch {epoch+1}/{num_epochs} | Total Loss: {total_loss:.4f}")
+
+    def collate_batch(self, batch: Sequence[Tuple[Sequence[int], Sequence[int]]], device: str) -> Tuple[pt.Tensor, pt.Tensor]:
+        '''
+        Collate a batch of data into a tensor that can be passed to the model.
+        Pads the sequences to the same length and converts them to tensors.
+        '''
+
+        src_batch = []
+        tgt_batch = []
+
+        for prompt_ids, completion_ids in batch:
+            src_batch.append(pt.tensor(prompt_ids, dtype=pt.long))
+            tgt_batch.append(pt.tensor(completion_ids, dtype=pt.long))
+
+        src_padded = nn.utils.rnn.pad_sequence(src_batch, batch_first=True, padding_value=self.vocab.numberize(PADDING_TOKEN))
+        tgt_padded = nn.utils.rnn.pad_sequence(tgt_batch, batch_first=True, padding_value=self.vocab.numberize(PADDING_TOKEN))
+
+        return src_padded.to(device), tgt_padded.to(device)
 
 
 

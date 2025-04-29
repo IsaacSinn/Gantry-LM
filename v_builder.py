@@ -1,4 +1,4 @@
-from vocab import Vocab, START_TOKEN, END_TOKEN, UNK_TOKEN
+from vocab import Vocab, START_TOKEN, END_TOKEN, UNK_TOKEN, PADDING_TOKEN
 
 import string
 import pickle
@@ -20,6 +20,7 @@ def vocab_builder():
     vocab.add(START_TOKEN)
     vocab.add(END_TOKEN)
     vocab.add(UNK_TOKEN)
+    vocab.add(PADDING_TOKEN)
  
     return vocab
 
