@@ -5,6 +5,7 @@ import json
 import re
 
 # PYTHON PROJECT IMPORTS
+MAX_SEQ_LEN = 2048
 
 def load_chars_from_file(filepath: str) -> Sequence[str]:
     l: Sequence[str] = list()
@@ -81,7 +82,7 @@ def charloader_generator(filepath):
             completion_cleaned = re.sub(r';.*?(?=\n|$)', '', completion)
 
             # Tokenize character-level for both
-            prompt_tokens = list(prompt.strip())
-            completion_tokens = list(completion_cleaned.strip())
+            prompt_tokens = list(prompt.strip())[:MAX_SEQ_LEN]
+            completion_tokens = list(completion_cleaned.strip())[:MAX_SEQ_LEN]
 
             yield prompt_tokens, completion_tokens

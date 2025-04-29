@@ -10,6 +10,7 @@ from tqdm import tqdm
 from v_builder import vocab_builder
 from data.charloader import charloader_generator
 import random
+import pickle
 
 class TransformerModel(nn.Module):
     def __init__(self, saved_model_path: str = None) -> None:
@@ -21,10 +22,13 @@ class TransformerModel(nn.Module):
         try:
             with open('vocab.pkl', 'rb') as f:
                 print("Loading vocab from file.")
-                self.vocab = pt.load(f)
+                self.vocab = pickle.load(f)
         except FileNotFoundError:
             print("Vocab file not found. Creating a new vocab.")
             self.vocab = vocab_builder()
+
+        print("UNK token index:", self.vocab.word_to_num[UNK_TOKEN])
+        print("Vocab size:", len(self.vocab))
 
         self.vocab_size = len(self.vocab)
         self.embedding_dim = 256
@@ -79,6 +83,8 @@ class TransformerModel(nn.Module):
 
         logits = self.output_layer(output)
 
+        print("Logits shape:", logits.shape)
+
         return logits
     
     def train_one_epoch(self, optimizer, loss_function, data_loader, device) -> float:
@@ -101,11 +107,10 @@ class TransformerModel(nn.Module):
             tgt_input = tgt[:, :-1]
             tgt_output = tgt[:, 1:]
 
-            
             # Flatten for loss function
             logits = self(src, tgt_input)
-            flat_logits = logits.view(-1, logits.size(-1))
-            flat_targets = tgt_output.view(-1)
+            flat_logits = logits.reshape(-1, logits.size(-1))
+            flat_targets = tgt_output.reshape(-1)
             
             # Calc loss and backprop
             loss = loss_function(flat_logits, flat_targets)
@@ -118,7 +123,7 @@ class TransformerModel(nn.Module):
         average_loss = total_loss / len(data_loader)
         return average_loss
     
-    def train_model(self, optimizer, loss_function, filepath, device, num_epochs=1000, batch_size=32) -> None:
+    def train_model(self, optimizer, loss_function, filepath, device, num_epochs=1000, batch_size=8) -> None:
         '''
         Train the model on the given data.
         optimizer: optimizer to use for training
@@ -137,14 +142,18 @@ class TransformerModel(nn.Module):
 
                 # Need to pass these as vocab ID's, including UNK's
 
-                prompt_ids = [self.vocab.numberize(token) for token in prompt_tokens]
-                completion_ids = [self.vocab.numberize(token) for token in completion_tokens]
+                print(len(prompt_tokens), len(completion_tokens))  
+
+                prompt_ids = [self.vocab.numberize(token) for token in prompt_tokens][:self.max_seq_len]
+                completion_ids = [self.vocab.numberize(token) for token in completion_tokens][:self.max_seq_len]
 
                 batch.append((prompt_ids, completion_ids))
 
                 # Train on this batch
                 if len(batch) == batch_size:
                     src_batch, tgt_batch = self.collate_batch(batch, device)
+
+                    print("Sending a batch")
 
                     avg_loss = self.train_one_epoch(optimizer, loss_function, [(src_batch, tgt_batch)], device)
                     total_loss += avg_loss

@@ -10,11 +10,11 @@ def train_transformer(model: TransformerModel, filepath: str, optimizer, loss_fu
     print("Starting to train the model...")
     model.train_model(
         optimizer=optimizer,
-        loss_func=loss_func,
+        loss_function=loss_func,
         filepath=filepath,
         device=device,
         num_epochs= 50,
-        batch_size=32
+        batch_size=8
     )
     print("Finished training the model!")
 
@@ -86,7 +86,7 @@ def main():
     test_file = 'data/dev_sample.jsonl'
 
     # Train the model
-    train_transformer(transformer, train_file, optimizer, loss_function)
+    train_transformer(transformer, train_file, optimizer, loss_function, device)
 
     # Test the model
     test_transformer(transformer, test_file, device)
