@@ -15,7 +15,6 @@ import multiprocessing
 import os
 
 import torch
-import transformers
 from accelerate import PartialState
 from datasets import load_dataset
 from peft import LoraConfig
@@ -100,10 +99,21 @@ def main(args):
     )
     print_trainable_parameters(model)
 
-    data = load_dataset(
+    # Load training data
+    train_data = load_dataset(
         args.dataset_name,
         data_files=args.dataset_path,
         split="train",
+        token=token,
+        num_proc=args.num_proc if args.num_proc else multiprocessing.cpu_count(),
+    )
+    
+    # Load development data (assuming you have a dev.jsonl file)
+    # If your dev data is in a different format, adjust accordingly
+    dev_data = load_dataset(
+        args.dataset_name,
+        data_files="data/dev_100.jsonl",  # Path to your dev data
+        split="train",  # Using "train" split since we're loading from a file
         token=token,
         num_proc=args.num_proc if args.num_proc else multiprocessing.cpu_count(),
     )
@@ -114,15 +124,18 @@ def main(args):
             "text": f"Prompt: {example[args.prompt_field]}\nCompletion: {example[args.dataset_text_field]}"
         }
     
-    # Apply the formatting
-    data = data.map(format_data, num_proc=args.num_proc if args.num_proc else multiprocessing.cpu_count())
+    # Apply the formatting to both datasets
+    train_data = train_data.map(format_data, num_proc=args.num_proc if args.num_proc else multiprocessing.cpu_count())
+    dev_data = dev_data.map(format_data, num_proc=args.num_proc if args.num_proc else multiprocessing.cpu_count())
 
-    # setup the trainer with SFTConfig
+    # setup the trainer with SFTConfig and evaluation
     trainer = SFTTrainer(
         model=model,
-        train_dataset=data,
+        train_dataset=train_data,
+        eval_dataset=dev_data,  # Add the evaluation dataset
         args=SFTConfig(
             per_device_train_batch_size=args.micro_batch_size,
+            per_device_eval_batch_size=args.micro_batch_size,  # Eval batch size
             gradient_accumulation_steps=args.gradient_accumulation_steps,
             warmup_steps=args.warmup_steps,
             max_steps=args.max_steps,
@@ -130,6 +143,16 @@ def main(args):
             lr_scheduler_type=args.lr_scheduler_type,
             weight_decay=args.weight_decay,
             bf16=args.bf16,
+            
+            # Evaluation settings
+            eval_strategy="steps",  # Evaluate during training
+            eval_steps=10,  # Evaluate every 100 steps #TODO: change to 100
+            save_strategy="steps",  # Save checkpoints
+            save_steps=10,  # Save every 100 steps #TODO: change to 100
+            save_total_limit=3,  # Keep only the 3 most recent checkpoints
+            load_best_model_at_end=True,  # Load the best model at the end
+            metric_for_best_model="eval_loss",  # Use eval loss to determine best model
+            
             logging_strategy="steps",
             logging_steps=10,
             output_dir=args.output_dir,
