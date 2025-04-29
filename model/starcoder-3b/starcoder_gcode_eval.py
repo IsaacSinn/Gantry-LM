@@ -100,10 +100,8 @@ def calculate_command_metrics(pred_commands, true_commands):
     
     return precision, recall, f1
 
-# Calculate sequence similarity using difflib
 def sequence_similarity(pred, true):
-    matcher = difflib.SequenceMatcher(None, pred, true)
-    return matcher.ratio()
+    ...
 
 # Main evaluation function
 def evaluate_model():
@@ -141,7 +139,7 @@ def evaluate_model():
         results['command_f1'].append(f1)
         
         # Calculate sequence similarity
-        similarity = sequence_similarity(pred_completion, true_completion)
+        similarity = sequence_similarity(pred_commands, true_commands)
         results['sequence_similarity'].append(similarity)
         
         # Check for exact match
