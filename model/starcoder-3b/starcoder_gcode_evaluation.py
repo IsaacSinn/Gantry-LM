@@ -9,8 +9,8 @@ import re
 import difflib
 
 # Path to your checkpoint
-checkpoint_path = "finetune_starcoder2/checkpoint-20"
-eval_file_path = "data/dev_5.jsonl"
+checkpoint_path = "starcoder2-3b-gcode/checkpoint-20"
+eval_file_path = "data/dev_sample.jsonl"
 
 # Load the configuration
 config = PeftConfig.from_pretrained(checkpoint_path)
@@ -31,18 +31,21 @@ model.eval()
 
 # Function to generate text
 def generate_response(prompt, max_new_tokens=512):
-    formatted_prompt = f"Prompt: {prompt}\nCompletion: "
+    # formatted_prompt = f"Prompt: {prompt}\nCompletion: "
+    formatted_prompt = prompt
     
     inputs = tokenizer(formatted_prompt, return_tensors="pt").to(model.device)
     
     with torch.no_grad():
         outputs = model.generate(
-            input_ids=inputs.input_ids,
-            attention_mask=inputs.attention_mask,
-            max_new_tokens=max_new_tokens,
-            temperature=0.7,
-            top_p=0.9,
-            do_sample=False  # Set to False for deterministic output during evaluation
+            # NOTE: 
+            # input_ids=inputs.input_ids,
+            # attention_mask=inputs.attention_mask,
+            # max_new_tokens=max_new_tokens,
+            # temperature=0.7,
+            # top_p=0.9,
+            # do_sample=False  # Set to False for deterministic output during evaluation\
+            **inputs
         )
     
     generated_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
@@ -64,10 +67,25 @@ def normalize_gcode(gcode):
     gcode = re.sub(r';.*$', '', gcode, flags=re.MULTILINE)
     # Remove empty lines
     gcode = re.sub(r'\n\s*\n', '\n', gcode)
-    # Standardize whitespace
+    
+    # Temporarily replace newlines with a special marker
+    gcode = gcode.replace('\n', '<|NEWLINE|>')
+    
+    # Standardize whitespace (including \n)
     gcode = re.sub(r'\s+', ' ', gcode).strip()
-    # Split into commands
-    commands = [cmd.strip() for cmd in gcode.split('\n') if cmd.strip()]
+    
+    # Restore newlines
+    gcode = gcode.replace('<|NEWLINE|>', '\n')
+
+    # Remove the <|endoftext|>
+    gcode = gcode.split('<|endoftext|>')[0]
+
+    # Split into commands - now split by newlines and spaces
+    commands = []
+    for line in gcode.split('\n'):
+        if line.strip():
+            commands.append(line.strip())
+    
     return commands
 
 # Calculate command-level metrics
@@ -104,13 +122,17 @@ def evaluate_model():
     for item in tqdm(eval_data):
         prompt = item['prompt']
         true_completion = item['completion']
-        
+
         # Generate prediction
         pred_completion = generate_response(prompt)
-        
+
         # Normalize G-code for comparison
         pred_commands = normalize_gcode(pred_completion)
         true_commands = normalize_gcode(true_completion)
+
+        print(pred_commands)
+        print("--------------------------------")
+        print(true_commands)
         
         # Calculate command-level metrics
         precision, recall, f1 = calculate_command_metrics(pred_commands, true_commands)
@@ -140,7 +162,7 @@ def evaluate_model():
     return avg_results, results
 
 # Save detailed results to file
-def save_results(avg_results, detailed_results, output_file="evaluation_results.json"):
+def save_results(avg_results, detailed_results, output_file="model/starcoder-3b/evaluation_results.json"):
     with open(output_file, 'w') as f:
         json.dump({
             "average_metrics": avg_results,

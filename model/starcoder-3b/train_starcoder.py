@@ -4,6 +4,7 @@ and bitsandbytes for 4bit quantization.
 We also use the SFTTrainer from TRL.
 
 Use command:
+run in main directory
 accelerate launch train_starcoder.py --model_id "bigcode/starcoder2-3b" --dataset_name "json" --dataset_path "data/train_1000.jsonl" --dataset_text_field "completion" --prompt_field "prompt" --max_seq_length 1024 --max_steps 1000 --micro_batch_size 1 --gradient_accumulation_steps 4 --learning_rate 2e-4 --warmup_steps 100 --num_proc 8
 
 
@@ -47,7 +48,7 @@ def get_args():
     parser.add_argument("--lr_scheduler_type", type=str, default="cosine")
     parser.add_argument("--warmup_steps", type=int, default=100)
     parser.add_argument("--seed", type=int, default=0)
-    parser.add_argument("--output_dir", type=str, default="finetune_starcoder2")
+    parser.add_argument("--output_dir", type=str, default="starcoder2-3b-gcode")
     parser.add_argument("--num_proc", type=int, default=None)
     parser.add_argument("--push_to_hub", type=bool, default=True)
     return parser.parse_args()
@@ -146,9 +147,9 @@ def main(args):
             
             # Evaluation settings
             eval_strategy="steps",  # Evaluate during training
-            eval_steps=10,  # Evaluate every 100 steps #TODO: change to 100
+            eval_steps=100,  # Evaluate every 100 steps #TODO: change to 100
             save_strategy="steps",  # Save checkpoints
-            save_steps=10,  # Save every 100 steps #TODO: change to 100
+            save_steps=100,  # Save every 100 steps #TODO: change to 100
             save_total_limit=3,  # Keep only the 3 most recent checkpoints
             load_best_model_at_end=True,  # Load the best model at the end
             metric_for_best_model="eval_loss",  # Use eval loss to determine best model
