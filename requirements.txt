@@ -1,0 +1,6 @@
+wandb
+trl
+peft
+transformers>=4.34.0
+accelerate
+bitsandbytes>=0.41.0
