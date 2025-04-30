@@ -1,0 +1,19 @@
+Prompt: move to (-94,52) at 365 mm/s
+
+# +
+# %matplotlib inline
+
+import matplotlib.pyplot as plt
+import numpy
+
+Prompt: inside a equilateral triangle side 88 mm, draw a circle radius 44 mm
+
+Solution
+
+The area of the circle is:
+
+$A = \pi
+
+Prompt: draw a equilateral triangle side 45 mm
+
+The area of the triangle is 1/2 × 45 × 4

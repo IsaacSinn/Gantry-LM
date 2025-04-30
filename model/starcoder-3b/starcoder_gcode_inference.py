@@ -3,7 +3,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 from peft import PeftModel, PeftConfig
 
 # Path to your checkpoint
-checkpoint_path = "starcoder2-3b-gcode/checkpoint-40"
+checkpoint_path = "starcoder2-3b-gcode/checkpoint-8700"
 
 # Load the configuration
 config = PeftConfig.from_pretrained(checkpoint_path)
@@ -28,7 +28,7 @@ model = PeftModel.from_pretrained(base_model, checkpoint_path)
 model.eval()
 
 # Function to generate text
-def generate_response(prompt, max_new_tokens=1024):
+def generate_response(prompt, max_new_tokens=2048):
     # NOTE
     # formatted_prompt = f"Prompt: {prompt}\nCompletion: "
     formatted_prompt = prompt
@@ -39,13 +39,14 @@ def generate_response(prompt, max_new_tokens=1024):
     # Generate
     with torch.no_grad():
         outputs = model.generate(
-            # input_ids=inputs.input_ids,
-            # attention_mask=inputs.attention_mask,
-            # max_new_tokens=max_new_tokens,
-            # temperature=0.7,
-            # top_p=0.9,
-            # do_sample=True
-            **inputs
+            input_ids=inputs.input_ids,
+            attention_mask=inputs.attention_mask,
+            max_new_tokens=max_new_tokens,
+            temperature=0.7,
+            top_p=0.9,
+            do_sample=True
+            # min_length=inputs.input_ids.shape[1] + 50
+            # **inputs
         )
     
     # Decode the generated text
