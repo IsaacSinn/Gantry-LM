@@ -5,9 +5,7 @@ We also use the SFTTrainer from TRL.
 
 Use command:
 run in main directory
-accelerate launch model\starcoder-3b\train_starcoder.py --model_id "bigcode/starcoder2-7b" --dataset_name "json" --dataset_path "data/train_2200.jsonl" --dataset_text_field "completion" --prompt_field "prompt" --max_seq_length 4096 --max_steps 1000 --micro_batch_size 1 --gradient_accumulation_steps 4 --learning_rate 2e-4 --warmup_steps 100 --num_proc 8
-
-
+accelerate launch model\starcoder-3b\train_starcoder_stacksv2.py --model_id "bigcode/starcoder2-7b" --subset "G-code" --max_seq_length 4096 --max_steps 20000 --micro_batch_size 1 --gradient_accumulation_steps 4 --learning_rate 2e-4 --warmup_steps 100 --num_proc 8
 '''
 
 
@@ -17,7 +15,7 @@ import os
 
 import torch
 from accelerate import PartialState
-from datasets import load_dataset
+from datasets import load_dataset, concatenate_datasets
 from peft import LoraConfig
 from transformers import (
     AutoModelForCausalLM,
@@ -30,11 +28,11 @@ from trl import SFTTrainer, SFTConfig
 
 def get_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model_id", type=str, default="bigcode/starcoder2-3b")
-    parser.add_argument("--dataset_name", type=str, default="json")
-    parser.add_argument("--dataset_path", type=str, default="data/train_1000.jsonl")
-    parser.add_argument("--dataset_text_field", type=str, default="completion")
-    parser.add_argument("--prompt_field", type=str, default="prompt")
+    parser.add_argument("--model_id", type=str, default="bigcode/starcoder2-7b")
+    parser.add_argument("--dataset_name", type=str, default="bigcode/the-stack-v2")
+    parser.add_argument("--subset", type=str, default="G-code")  # G-code
+    parser.add_argument("--dataset_text_field", type=str, default="content")
+    parser.add_argument("--split", type=str, default="train")  # Use the train split from the dataset
 
     parser.add_argument("--max_seq_length", type=int, default=1024)
     parser.add_argument("--max_steps", type=int, default=1000)
@@ -48,9 +46,11 @@ def get_args():
     parser.add_argument("--lr_scheduler_type", type=str, default="cosine")
     parser.add_argument("--warmup_steps", type=int, default=100)
     parser.add_argument("--seed", type=int, default=0)
-    parser.add_argument("--output_dir", type=str, default="starcoder2-3b-gcode")
+    parser.add_argument("--output_dir", type=str, default="starcoder2-7b-gcode")
     parser.add_argument("--num_proc", type=int, default=None)
     parser.add_argument("--push_to_hub", type=bool, default=True)
+    parser.add_argument("--eval_steps", type=int, default=100)
+    parser.add_argument("--save_steps", type=int, default=100)
     return parser.parse_args()
 
 
@@ -100,43 +100,52 @@ def main(args):
     )
     print_trainable_parameters(model)
 
-    # Load training data
+    # Load training data from The Stack v2
     train_data = load_dataset(
         args.dataset_name,
-        data_files=args.dataset_path,
-        split="train",
+        args.subset,
+        split=args.split,
         token=token,
-        num_proc=args.num_proc if args.num_proc else multiprocessing.cpu_count(),
+        # num_proc=args.num_proc if args.num_proc else multiprocessing.cpu_count(),
+        streaming=True
     )
-    
-    # Load development data (assuming you have a dev.jsonl file)
-    # If your dev data is in a different format, adjust accordingly
-    dev_data = load_dataset(
-        args.dataset_name,
-        data_files="data/dev_100.jsonl",  # Path to your dev data
-        split="train",  # Using "train" split since we're loading from a file
-        token=token,
-        num_proc=args.num_proc if args.num_proc else multiprocessing.cpu_count(),
-    )
+
+    # # load training data from jsonl file
+    # train_data_jsonl = load_dataset(
+    #     "json",
+    #     data_files="data/train_synthetic_1100.jsonl",
+    #     split="train",
+    #     token=token,
+    #     num_proc=args.num_proc if args.num_proc else multiprocessing.cpu_count(),
+    # )
 
     # Function to format the data with prompt and completion
     def format_data(example):
         return {
-            "text": f"Prompt: {example[args.prompt_field]}\nCompletion: {example[args.dataset_text_field]}"
+            "content": f"Prompt: {example['prompt']} Completion: {example['completion']}"
         }
     
-    # Apply the formatting to both datasets
-    train_data = train_data.map(format_data, num_proc=args.num_proc if args.num_proc else multiprocessing.cpu_count())
+    # train_data_jsonl = train_data_jsonl.map(format_data, num_proc=args.num_proc if args.num_proc else multiprocessing.cpu_count())
+
+    # # combine train_data and train_data_jsonl
+    # train_data = concatenate_datasets([train_data, train_data_jsonl])
+    
+    dev_data = load_dataset(
+        "json",
+        data_files="data/dev_100.jsonl",
+        split="train",  # Using "train" split since we're loading from a file
+        token=token,
+        num_proc=args.num_proc if args.num_proc else multiprocessing.cpu_count(),
+    )
     dev_data = dev_data.map(format_data, num_proc=args.num_proc if args.num_proc else multiprocessing.cpu_count())
 
-    # setup the trainer with SFTConfig and evaluation
     trainer = SFTTrainer(
         model=model,
         train_dataset=train_data,
-        eval_dataset=dev_data,  # Add the evaluation dataset
+        eval_dataset=dev_data,
         args=SFTConfig(
             per_device_train_batch_size=args.micro_batch_size,
-            per_device_eval_batch_size=args.micro_batch_size,  # Eval batch size
+            per_device_eval_batch_size=args.micro_batch_size,
             gradient_accumulation_steps=args.gradient_accumulation_steps,
             warmup_steps=args.warmup_steps,
             max_steps=args.max_steps,
@@ -146,13 +155,13 @@ def main(args):
             bf16=args.bf16,
             
             # Evaluation settings
-            eval_strategy="steps",  # Evaluate during training
-            eval_steps=100,  # Evaluate every 100 steps #TODO: change to 100
-            save_strategy="steps",  # Save checkpoints
-            save_steps=100,  # Save every 100 steps #TODO: change to 100
-            save_total_limit=3,  # Keep only the 3 most recent checkpoints
-            load_best_model_at_end=True,  # Load the best model at the end
-            metric_for_best_model="eval_loss",  # Use eval loss to determine best model
+            eval_strategy="steps",
+            eval_steps=args.eval_steps,
+            save_strategy="steps",
+            save_steps=args.save_steps,
+            save_total_limit=3,
+            load_best_model_at_end=True,
+            metric_for_best_model="eval_loss",
             
             logging_strategy="steps",
             logging_steps=10,
@@ -162,7 +171,7 @@ def main(args):
             run_name=f"train-{args.model_id.split('/')[-1]}",
             report_to="wandb",
             max_seq_length=args.max_seq_length,
-            dataset_text_field="text",  # Use our formatted text field
+            dataset_text_field=args.dataset_text_field,  # content
             packing=False,
             dataset_num_proc=args.num_proc if args.num_proc else multiprocessing.cpu_count(),
         ),

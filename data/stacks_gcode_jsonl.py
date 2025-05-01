@@ -22,7 +22,7 @@ def download_gcode_content(repo_name, file_path):
     
     try:
         # Add delay to avoid rate limiting
-        time.sleep(1)
+        time.sleep(0.5)
         
         # Send request to GitHub
         response = requests.get(github_url)
@@ -100,7 +100,7 @@ def write_to_jsonl(file_handle, prompt, completion):
     # Create the JSON object
     json_obj = {
         "prompt": prompt,
-        "completion": completion + "<|endoftext|>"
+        "completion": completion
     }
     
     # Write the JSON line to the file
@@ -187,4 +187,4 @@ if __name__ == "__main__":
     
 
     # Example usage: 
-    # python data\stacks_gcode_jsonl.py --train-lines 1000 --dev-lines 100 --train-file data\train.jsonl --dev-file data\dev.jsonl --dev-ratio 0.1
+    # python data\stacks_gcode_jsonl.py --train-lines 10000 --dev-lines 1000 --train-file data\train_10000.jsonl --dev-file data\dev_1000.jsonl --dev-ratio 0.1

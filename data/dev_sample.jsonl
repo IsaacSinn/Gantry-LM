@@ -1,1 +1,0 @@
-{"prompt": "move to the center of the board and draw a circle with radius 10 cm from the center of the board", "completion": "G1 X0 Y0 F1000\nG2 X10 Y0 I10 J0<|endoftext|>"}
