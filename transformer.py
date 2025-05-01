@@ -167,11 +167,8 @@ class TransformerModel(nn.Module):
                 total_loss += avg_loss
 
             epoch_count += 1
-            if epoch_count % 25 == 0:
-                # Save entire model
-                pt.save(self, f"model_epoch_{epoch_count}.pt")
-
-        print(f"Epoch {epoch+1}/{num_epochs} | Total Loss: {total_loss:.4f}")
+            pt.save(self, f"model_epoch_{epoch_count}.pt")
+            print(f"Epoch {epoch_count}/{num_epochs} | Total Loss: {total_loss:.4f}")
 
     def collate_batch(self, batch: Sequence[Tuple[Sequence[int], Sequence[int]]], device: str) -> Tuple[pt.Tensor, pt.Tensor]:
         '''

@@ -74,6 +74,7 @@ def test_transformer(model: TransformerModel, filepath, device, batch_size: int 
         return total_loss, num_entries
 
 def main():
+    print("Starting")
     device = 'cuda' if pt.cuda.is_available() else 'cpu'
 
     transformer = TransformerModel()
