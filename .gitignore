@@ -6,3 +6,4 @@ data/dev_100.jsonl
 *.jsonl
 wandb/
 starcoder2-3b-gcode/
+graph.py
