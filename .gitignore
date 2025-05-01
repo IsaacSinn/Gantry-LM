@@ -7,3 +7,4 @@ data/dev_100.jsonl
 wandb/
 starcoder2-3b-gcode/
 graph.py
+StarCoder_model/
