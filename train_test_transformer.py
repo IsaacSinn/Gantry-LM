@@ -83,7 +83,7 @@ def main():
     optimizer = pt.optim.Adam(transformer.parameters(), lr=0.001)
     loss_function = nn.CrossEntropyLoss(ignore_index=transformer.vocab.numberize(PADDING_TOKEN))
 
-    train_file = 'data/dev_100.jsonl'
+    train_file = 'data/train_2200.jsonl'
     test_file = 'data/dev_sample.jsonl'
 
     # Train the model

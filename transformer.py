@@ -123,7 +123,7 @@ class TransformerModel(nn.Module):
         average_loss = total_loss / len(data_loader)
         return average_loss
     
-    def train_model(self, optimizer, loss_function, filepath, device, num_epochs=1000, batch_size=8) -> None:
+    def train_model(self, optimizer, loss_function, filepath, device, num_epochs=2000, batch_size=8) -> None:
         '''
         Train the model on the given data.
         optimizer: optimizer to use for training
@@ -133,6 +133,7 @@ class TransformerModel(nn.Module):
 
         for epoch in range(num_epochs):
             total_loss = 0
+            num_entries = 0
             batch = []
 
             full_dataset = list(charloader_generator(filepath))
@@ -159,6 +160,7 @@ class TransformerModel(nn.Module):
                     total_loss += avg_loss
 
                     batch = []
+                    num_entries += len(batch)
 
             # Leftover data
             if len(batch) > 0:
@@ -166,9 +168,17 @@ class TransformerModel(nn.Module):
                 avg_loss = self.train_one_epoch(optimizer, loss_function, [(src_batch, tgt_batch)], device)
                 total_loss += avg_loss
 
+                num_entries += len(batch)
+
             epoch_count += 1
             pt.save(self, f"model_epoch_{epoch_count}.pt")
-            print(f"Epoch {epoch_count}/{num_epochs} | Total Loss: {total_loss:.4f}")
+            print(f"Epoch {epoch_count} | Total Loss: {total_loss:.4f}")
+
+            # Write average loss to loss.txt
+            with open("loss.txt", "a") as f:
+                f.write(f"{total_loss / num_entries}\n")
+            
+            num_entries = 0
 
     def collate_batch(self, batch: Sequence[Tuple[Sequence[int], Sequence[int]]], device: str) -> Tuple[pt.Tensor, pt.Tensor]:
         '''
