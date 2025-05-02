@@ -21,9 +21,6 @@ tokenizer = AutoTokenizer.from_pretrained(config.base_model_name_or_path)
 # Load the LoRA model
 model = PeftModel.from_pretrained(base_model, checkpoint_path)
 
-# Optional: Merge LoRA weights with base model for faster inference
-# model = model.merge_and_unload()
-
 # Set to evaluation mode
 model.eval()
 
@@ -49,15 +46,12 @@ def generate_response(prompt, max_new_tokens=2048):
             # **inputs
         )
     
-    # Decode the generated text
     generated_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
     
-    # Extract just the completion part
     completion = generated_text.split("Completion: ")[-1].strip()
     
     return completion
 
-# Example usage
 if __name__ == "__main__":
     # Test with a sample prompt
     test_prompt = "write a gcode program to draw a circle with radius 10 cm from the center of the board"

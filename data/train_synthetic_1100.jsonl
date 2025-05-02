@@ -1,0 +1,1100 @@
+{"prompt": "draw an equilateral triangle with side 24 mm at speed 251", "completion": "G1 X24 Y0 F251\nG1 X12 Y21 F251\nG1 X0 Y0 F251<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 45 mm at speed 701", "completion": "G1 X45 Y0 F701\nG1 X22 Y39 F701\nG1 X0 Y0 F701<|endoftext|>"}
+{"prompt": "draw a line of length 18 mm at 270 degrees with speed 409", "completion": "G1 X0 Y-18 F409<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 79 mm at speed 378", "completion": "G1 X79 Y0 F378\nG1 X39 Y68 F378\nG1 X0 Y0 F378<|endoftext|>"}
+{"prompt": "draw a square with side 64 mm at speed 265", "completion": "G1 X64 Y0 F265\nG1 X64 Y64 F265\nG1 X0 Y64 F265\nG1 X0 Y0 F265<|endoftext|>"}
+{"prompt": "move to (-77, -45) at speed 676", "completion": "G1 X-77 Y-45 F676<|endoftext|>"}
+{"prompt": "draw a square with side 87 mm at speed 254", "completion": "G1 X87 Y0 F254\nG1 X87 Y87 F254\nG1 X0 Y87 F254\nG1 X0 Y0 F254<|endoftext|>"}
+{"prompt": "draw a square with side 35 mm at speed 1666", "completion": "G1 X35 Y0 F1666\nG1 X35 Y35 F1666\nG1 X0 Y35 F1666\nG1 X0 Y0 F1666<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 99 mm at speed 1316", "completion": "G1 X99 Y0 F1316\nG1 X49 Y86 F1316\nG1 X0 Y0 F1316<|endoftext|>"}
+{"prompt": "draw a rectangle 38 by 67 mm starting from current position at speed 1406", "completion": "G1 X38 Y0 F1406\nG1 X38 Y67 F1406\nG1 X0 Y67 F1406\nG1 X0 Y0 F1406<|endoftext|>"}
+{"prompt": "draw a full circle of radius 5 mm around current position at speed 1754", "completion": "G2 I5 J0 F1754\nG2 I-5 J0 F1754<|endoftext|>"}
+{"prompt": "draw a 270 degree counterclockwise arc with radius 15 mm at speed 896", "completion": "G3 X0 Y-15 I0 J15 F896<|endoftext|>"}
+{"prompt": "draw a full circle of radius 14 mm around current position at speed 640", "completion": "G2 I14 J0 F640\nG2 I-14 J0 F640<|endoftext|>"}
+{"prompt": "draw a 90 degree clockwise arc with radius 26 mm at speed 978", "completion": "G2 X0 Y-26 I0 J-26 F978<|endoftext|>"}
+{"prompt": "move to (-9, -12) at speed 1436", "completion": "G1 X-9 Y-12 F1436<|endoftext|>"}
+{"prompt": "draw a full circle of radius 7 mm around current position at speed 1694", "completion": "G2 I7 J0 F1694\nG2 I-7 J0 F1694<|endoftext|>"}
+{"prompt": "draw a rectangle 78 by 25 mm starting from current position at speed 975", "completion": "G1 X78 Y0 F975\nG1 X78 Y25 F975\nG1 X0 Y25 F975\nG1 X0 Y0 F975<|endoftext|>"}
+{"prompt": "move to (41, -25) at speed 1898", "completion": "G1 X41 Y-25 F1898<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 89 mm at speed 1964", "completion": "G1 X89 Y0 F1964\nG1 X44 Y77 F1964\nG1 X0 Y0 F1964<|endoftext|>"}
+{"prompt": "draw a full circle of radius 41 mm around current position at speed 593", "completion": "G2 I41 J0 F593\nG2 I-41 J0 F593<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 18 mm at speed 293", "completion": "G1 X18 Y0 F293\nG1 X9 Y16 F293\nG1 X0 Y0 F293<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 39 mm at speed 1783", "completion": "G1 X39 Y0 F1783\nG1 X19 Y34 F1783\nG1 X0 Y0 F1783<|endoftext|>"}
+{"prompt": "draw a full circle of radius 10 mm around current position at speed 1951", "completion": "G2 I10 J0 F1951\nG2 I-10 J0 F1951<|endoftext|>"}
+{"prompt": "draw a line of length 13 mm at 135 degrees with speed 769", "completion": "G1 X-9 Y9 F769<|endoftext|>"}
+{"prompt": "draw a rectangle 91 by 56 mm starting from current position at speed 533", "completion": "G1 X91 Y0 F533\nG1 X91 Y56 F533\nG1 X0 Y56 F533\nG1 X0 Y0 F533<|endoftext|>"}
+{"prompt": "draw a full circle of radius 27 mm around current position at speed 629", "completion": "G2 I27 J0 F629\nG2 I-27 J0 F629<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 44 mm at speed 1637", "completion": "G1 X44 Y0 F1637\nG1 X22 Y38 F1637\nG1 X0 Y0 F1637<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 92 mm at speed 346", "completion": "G1 X92 Y0 F346\nG1 X46 Y80 F346\nG1 X0 Y0 F346<|endoftext|>"}
+{"prompt": "draw a square with side 91 mm at speed 550", "completion": "G1 X91 Y0 F550\nG1 X91 Y91 F550\nG1 X0 Y91 F550\nG1 X0 Y0 F550<|endoftext|>"}
+{"prompt": "draw a square with side 41 mm at speed 534", "completion": "G1 X41 Y0 F534\nG1 X41 Y41 F534\nG1 X0 Y41 F534\nG1 X0 Y0 F534<|endoftext|>"}
+{"prompt": "draw a rectangle 58 by 44 mm starting from current position at speed 1510", "completion": "G1 X58 Y0 F1510\nG1 X58 Y44 F1510\nG1 X0 Y44 F1510\nG1 X0 Y0 F1510<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 81 mm at speed 649", "completion": "G1 X81 Y0 F649\nG1 X40 Y70 F649\nG1 X0 Y0 F649<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 51 mm at speed 1926", "completion": "G1 X51 Y0 F1926\nG1 X25 Y44 F1926\nG1 X0 Y0 F1926<|endoftext|>"}
+{"prompt": "draw a 90 degree clockwise arc with radius 8 mm at speed 1848", "completion": "G2 X0 Y-8 I0 J-8 F1848<|endoftext|>"}
+{"prompt": "draw a full circle of radius 30 mm around current position at speed 748", "completion": "G2 I30 J0 F748\nG2 I-30 J0 F748<|endoftext|>"}
+{"prompt": "move to (-46, 45) at speed 1994", "completion": "G1 X-46 Y45 F1994<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 50 mm at speed 635", "completion": "G1 X50 Y0 F635\nG1 X25 Y43 F635\nG1 X0 Y0 F635<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 73 mm at speed 1010", "completion": "G1 X73 Y0 F1010\nG1 X36 Y63 F1010\nG1 X0 Y0 F1010<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 68 mm at speed 492", "completion": "G1 X68 Y0 F492\nG1 X34 Y59 F492\nG1 X0 Y0 F492<|endoftext|>"}
+{"prompt": "draw a full circle of radius 13 mm around current position at speed 705", "completion": "G2 I13 J0 F705\nG2 I-13 J0 F705<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 81 mm at speed 1303", "completion": "G1 X81 Y0 F1303\nG1 X40 Y70 F1303\nG1 X0 Y0 F1303<|endoftext|>"}
+{"prompt": "draw a full circle of radius 42 mm around current position at speed 1077", "completion": "G2 I42 J0 F1077\nG2 I-42 J0 F1077<|endoftext|>"}
+{"prompt": "draw a square with side 61 mm at speed 941", "completion": "G1 X61 Y0 F941\nG1 X61 Y61 F941\nG1 X0 Y61 F941\nG1 X0 Y0 F941<|endoftext|>"}
+{"prompt": "draw a line of length 18 mm at 180 degrees with speed 1210", "completion": "G1 X-18 Y0 F1210<|endoftext|>"}
+{"prompt": "move to (93, -88) at speed 1963", "completion": "G1 X93 Y-88 F1963<|endoftext|>"}
+{"prompt": "move to (-61, 60) at speed 527", "completion": "G1 X-61 Y60 F527<|endoftext|>"}
+{"prompt": "draw a 180 degree clockwise arc with radius 48 mm at speed 988", "completion": "G2 X-48 Y0 I0 J-48 F988<|endoftext|>"}
+{"prompt": "draw a rectangle 86 by 69 mm starting from current position at speed 1283", "completion": "G1 X86 Y0 F1283\nG1 X86 Y69 F1283\nG1 X0 Y69 F1283\nG1 X0 Y0 F1283<|endoftext|>"}
+{"prompt": "draw a full circle of radius 40 mm around current position at speed 1962", "completion": "G2 I40 J0 F1962\nG2 I-40 J0 F1962<|endoftext|>"}
+{"prompt": "move to (74, 84) at speed 434", "completion": "G1 X74 Y84 F434<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 78 mm at speed 1737", "completion": "G1 X78 Y0 F1737\nG1 X39 Y68 F1737\nG1 X0 Y0 F1737<|endoftext|>"}
+{"prompt": "draw a full circle of radius 46 mm around current position at speed 896", "completion": "G2 I46 J0 F896\nG2 I-46 J0 F896<|endoftext|>"}
+{"prompt": "move to (-25, 11) at speed 523", "completion": "G1 X-25 Y11 F523<|endoftext|>"}
+{"prompt": "draw a rectangle 10 by 43 mm starting from current position at speed 1225", "completion": "G1 X10 Y0 F1225\nG1 X10 Y43 F1225\nG1 X0 Y43 F1225\nG1 X0 Y0 F1225<|endoftext|>"}
+{"prompt": "draw a 270 degree clockwise arc with radius 16 mm at speed 1982", "completion": "G2 X0 Y16 I0 J-16 F1982<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 48 mm at speed 1923", "completion": "G1 X48 Y0 F1923\nG1 X24 Y42 F1923\nG1 X0 Y0 F1923<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 74 mm at speed 1447", "completion": "G1 X74 Y0 F1447\nG1 X37 Y64 F1447\nG1 X0 Y0 F1447<|endoftext|>"}
+{"prompt": "draw a line of length 20 mm at 45 degrees with speed 1761", "completion": "G1 X14 Y14 F1761<|endoftext|>"}
+{"prompt": "draw a line of length 70 mm at 180 degrees with speed 201", "completion": "G1 X-70 Y0 F201<|endoftext|>"}
+{"prompt": "draw a square with side 51 mm at speed 1200", "completion": "G1 X51 Y0 F1200\nG1 X51 Y51 F1200\nG1 X0 Y51 F1200\nG1 X0 Y0 F1200<|endoftext|>"}
+{"prompt": "move to (-72, -8) at speed 1999", "completion": "G1 X-72 Y-8 F1999<|endoftext|>"}
+{"prompt": "draw a 90 degree clockwise arc with radius 24 mm at speed 693", "completion": "G2 X0 Y-24 I0 J-24 F693<|endoftext|>"}
+{"prompt": "draw a square with side 20 mm at speed 375", "completion": "G1 X20 Y0 F375\nG1 X20 Y20 F375\nG1 X0 Y20 F375\nG1 X0 Y0 F375<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 72 mm at speed 1871", "completion": "G1 X72 Y0 F1871\nG1 X36 Y62 F1871\nG1 X0 Y0 F1871<|endoftext|>"}
+{"prompt": "move to (94, 36) at speed 1768", "completion": "G1 X94 Y36 F1768<|endoftext|>"}
+{"prompt": "draw a line of length 17 mm at 270 degrees with speed 1173", "completion": "G1 X0 Y-17 F1173<|endoftext|>"}
+{"prompt": "draw a square with side 31 mm at speed 742", "completion": "G1 X31 Y0 F742\nG1 X31 Y31 F742\nG1 X0 Y31 F742\nG1 X0 Y0 F742<|endoftext|>"}
+{"prompt": "draw a square with side 87 mm at speed 1066", "completion": "G1 X87 Y0 F1066\nG1 X87 Y87 F1066\nG1 X0 Y87 F1066\nG1 X0 Y0 F1066<|endoftext|>"}
+{"prompt": "draw a line of length 70 mm at 270 degrees with speed 1612", "completion": "G1 X0 Y-70 F1612<|endoftext|>"}
+{"prompt": "draw a line of length 92 mm at 45 degrees with speed 1017", "completion": "G1 X65 Y65 F1017<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 93 mm at speed 964", "completion": "G1 X93 Y0 F964\nG1 X46 Y81 F964\nG1 X0 Y0 F964<|endoftext|>"}
+{"prompt": "draw a rectangle 76 by 67 mm starting from current position at speed 447", "completion": "G1 X76 Y0 F447\nG1 X76 Y67 F447\nG1 X0 Y67 F447\nG1 X0 Y0 F447<|endoftext|>"}
+{"prompt": "draw a line of length 29 mm at 0 degrees with speed 892", "completion": "G1 X29 Y0 F892<|endoftext|>"}
+{"prompt": "move to (50, 41) at speed 671", "completion": "G1 X50 Y41 F671<|endoftext|>"}
+{"prompt": "draw a square with side 38 mm at speed 214", "completion": "G1 X38 Y0 F214\nG1 X38 Y38 F214\nG1 X0 Y38 F214\nG1 X0 Y0 F214<|endoftext|>"}
+{"prompt": "move to (81, 61) at speed 320", "completion": "G1 X81 Y61 F320<|endoftext|>"}
+{"prompt": "draw a line of length 9 mm at 0 degrees with speed 1960", "completion": "G1 X9 Y0 F1960<|endoftext|>"}
+{"prompt": "draw a full circle of radius 9 mm around current position at speed 1252", "completion": "G2 I9 J0 F1252\nG2 I-9 J0 F1252<|endoftext|>"}
+{"prompt": "draw a line of length 36 mm at 270 degrees with speed 1194", "completion": "G1 X0 Y-36 F1194<|endoftext|>"}
+{"prompt": "draw a line of length 70 mm at 90 degrees with speed 1681", "completion": "G1 X0 Y70 F1681<|endoftext|>"}
+{"prompt": "draw a square with side 83 mm at speed 1168", "completion": "G1 X83 Y0 F1168\nG1 X83 Y83 F1168\nG1 X0 Y83 F1168\nG1 X0 Y0 F1168<|endoftext|>"}
+{"prompt": "draw a line of length 61 mm at 135 degrees with speed 589", "completion": "G1 X-43 Y43 F589<|endoftext|>"}
+{"prompt": "move to (-76, 68) at speed 1082", "completion": "G1 X-76 Y68 F1082<|endoftext|>"}
+{"prompt": "draw a full circle of radius 32 mm around current position at speed 1041", "completion": "G2 I32 J0 F1041\nG2 I-32 J0 F1041<|endoftext|>"}
+{"prompt": "draw a rectangle 16 by 96 mm starting from current position at speed 1538", "completion": "G1 X16 Y0 F1538\nG1 X16 Y96 F1538\nG1 X0 Y96 F1538\nG1 X0 Y0 F1538<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 22 mm at speed 324", "completion": "G1 X22 Y0 F324\nG1 X11 Y19 F324\nG1 X0 Y0 F324<|endoftext|>"}
+{"prompt": "draw a rectangle 53 by 23 mm starting from current position at speed 709", "completion": "G1 X53 Y0 F709\nG1 X53 Y23 F709\nG1 X0 Y23 F709\nG1 X0 Y0 F709<|endoftext|>"}
+{"prompt": "draw a line of length 25 mm at 180 degrees with speed 1118", "completion": "G1 X-25 Y0 F1118<|endoftext|>"}
+{"prompt": "draw a line of length 55 mm at 90 degrees with speed 770", "completion": "G1 X0 Y55 F770<|endoftext|>"}
+{"prompt": "draw a rectangle 41 by 19 mm starting from current position at speed 1107", "completion": "G1 X41 Y0 F1107\nG1 X41 Y19 F1107\nG1 X0 Y19 F1107\nG1 X0 Y0 F1107<|endoftext|>"}
+{"prompt": "draw a 90 degree clockwise arc with radius 40 mm at speed 1535", "completion": "G2 X0 Y-40 I0 J-40 F1535<|endoftext|>"}
+{"prompt": "draw a square with side 11 mm at speed 391", "completion": "G1 X11 Y0 F391\nG1 X11 Y11 F391\nG1 X0 Y11 F391\nG1 X0 Y0 F391<|endoftext|>"}
+{"prompt": "draw a 90 degree counterclockwise arc with radius 20 mm at speed 1194", "completion": "G3 X0 Y20 I0 J20 F1194<|endoftext|>"}
+{"prompt": "draw a rectangle 37 by 61 mm starting from current position at speed 320", "completion": "G1 X37 Y0 F320\nG1 X37 Y61 F320\nG1 X0 Y61 F320\nG1 X0 Y0 F320<|endoftext|>"}
+{"prompt": "draw a line of length 49 mm at 0 degrees with speed 999", "completion": "G1 X49 Y0 F999<|endoftext|>"}
+{"prompt": "draw a full circle of radius 34 mm around current position at speed 784", "completion": "G2 I34 J0 F784\nG2 I-34 J0 F784<|endoftext|>"}
+{"prompt": "draw a rectangle 99 by 81 mm starting from current position at speed 1555", "completion": "G1 X99 Y0 F1555\nG1 X99 Y81 F1555\nG1 X0 Y81 F1555\nG1 X0 Y0 F1555<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 72 mm at speed 517", "completion": "G1 X72 Y0 F517\nG1 X36 Y62 F517\nG1 X0 Y0 F517<|endoftext|>"}
+{"prompt": "draw a line of length 38 mm at 90 degrees with speed 319", "completion": "G1 X0 Y38 F319<|endoftext|>"}
+{"prompt": "draw a square with side 79 mm at speed 324", "completion": "G1 X79 Y0 F324\nG1 X79 Y79 F324\nG1 X0 Y79 F324\nG1 X0 Y0 F324<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 50 mm at speed 317", "completion": "G1 X50 Y0 F317\nG1 X25 Y43 F317\nG1 X0 Y0 F317<|endoftext|>"}
+{"prompt": "move to (49, 22) at speed 1229", "completion": "G1 X49 Y22 F1229<|endoftext|>"}
+{"prompt": "draw a 90 degree clockwise arc with radius 38 mm at speed 1240", "completion": "G2 X0 Y-38 I0 J-38 F1240<|endoftext|>"}
+{"prompt": "move to (-53, -83) at speed 1418", "completion": "G1 X-53 Y-83 F1418<|endoftext|>"}
+{"prompt": "move to (72, -40) at speed 1026", "completion": "G1 X72 Y-40 F1026<|endoftext|>"}
+{"prompt": "move to (45, -37) at speed 1385", "completion": "G1 X45 Y-37 F1385<|endoftext|>"}
+{"prompt": "draw a square with side 15 mm at speed 1468", "completion": "G1 X15 Y0 F1468\nG1 X15 Y15 F1468\nG1 X0 Y15 F1468\nG1 X0 Y0 F1468<|endoftext|>"}
+{"prompt": "move to (7, 68) at speed 1395", "completion": "G1 X7 Y68 F1395<|endoftext|>"}
+{"prompt": "draw a square with side 76 mm at speed 847", "completion": "G1 X76 Y0 F847\nG1 X76 Y76 F847\nG1 X0 Y76 F847\nG1 X0 Y0 F847<|endoftext|>"}
+{"prompt": "draw a full circle of radius 18 mm around current position at speed 1571", "completion": "G2 I18 J0 F1571\nG2 I-18 J0 F1571<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 50 mm at speed 688", "completion": "G1 X50 Y0 F688\nG1 X25 Y43 F688\nG1 X0 Y0 F688<|endoftext|>"}
+{"prompt": "draw a full circle of radius 30 mm around current position at speed 468", "completion": "G2 I30 J0 F468\nG2 I-30 J0 F468<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 92 mm at speed 814", "completion": "G1 X92 Y0 F814\nG1 X46 Y80 F814\nG1 X0 Y0 F814<|endoftext|>"}
+{"prompt": "draw a rectangle 50 by 19 mm starting from current position at speed 219", "completion": "G1 X50 Y0 F219\nG1 X50 Y19 F219\nG1 X0 Y19 F219\nG1 X0 Y0 F219<|endoftext|>"}
+{"prompt": "draw a rectangle 89 by 82 mm starting from current position at speed 404", "completion": "G1 X89 Y0 F404\nG1 X89 Y82 F404\nG1 X0 Y82 F404\nG1 X0 Y0 F404<|endoftext|>"}
+{"prompt": "move to (37, -46) at speed 1236", "completion": "G1 X37 Y-46 F1236<|endoftext|>"}
+{"prompt": "draw a full circle of radius 13 mm around current position at speed 914", "completion": "G2 I13 J0 F914\nG2 I-13 J0 F914<|endoftext|>"}
+{"prompt": "move to (-38, -6) at speed 783", "completion": "G1 X-38 Y-6 F783<|endoftext|>"}
+{"prompt": "draw a line of length 57 mm at 180 degrees with speed 1640", "completion": "G1 X-57 Y0 F1640<|endoftext|>"}
+{"prompt": "draw a full circle of radius 44 mm around current position at speed 1852", "completion": "G2 I44 J0 F1852\nG2 I-44 J0 F1852<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 77 mm at speed 216", "completion": "G1 X77 Y0 F216\nG1 X38 Y67 F216\nG1 X0 Y0 F216<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 80 mm at speed 813", "completion": "G1 X80 Y0 F813\nG1 X40 Y69 F813\nG1 X0 Y0 F813<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 23 mm at speed 1998", "completion": "G1 X23 Y0 F1998\nG1 X11 Y20 F1998\nG1 X0 Y0 F1998<|endoftext|>"}
+{"prompt": "draw a line of length 34 mm at 0 degrees with speed 419", "completion": "G1 X34 Y0 F419<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 80 mm at speed 518", "completion": "G1 X80 Y0 F518\nG1 X40 Y69 F518\nG1 X0 Y0 F518<|endoftext|>"}
+{"prompt": "draw a full circle of radius 23 mm around current position at speed 1438", "completion": "G2 I23 J0 F1438\nG2 I-23 J0 F1438<|endoftext|>"}
+{"prompt": "draw a line of length 92 mm at 45 degrees with speed 616", "completion": "G1 X65 Y65 F616<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 91 mm at speed 1946", "completion": "G1 X91 Y0 F1946\nG1 X45 Y79 F1946\nG1 X0 Y0 F1946<|endoftext|>"}
+{"prompt": "draw a full circle of radius 37 mm around current position at speed 1200", "completion": "G2 I37 J0 F1200\nG2 I-37 J0 F1200<|endoftext|>"}
+{"prompt": "draw a full circle of radius 8 mm around current position at speed 389", "completion": "G2 I8 J0 F389\nG2 I-8 J0 F389<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 64 mm at speed 1898", "completion": "G1 X64 Y0 F1898\nG1 X32 Y55 F1898\nG1 X0 Y0 F1898<|endoftext|>"}
+{"prompt": "draw a full circle of radius 7 mm around current position at speed 207", "completion": "G2 I7 J0 F207\nG2 I-7 J0 F207<|endoftext|>"}
+{"prompt": "draw a full circle of radius 13 mm around current position at speed 1504", "completion": "G2 I13 J0 F1504\nG2 I-13 J0 F1504<|endoftext|>"}
+{"prompt": "draw a full circle of radius 15 mm around current position at speed 1718", "completion": "G2 I15 J0 F1718\nG2 I-15 J0 F1718<|endoftext|>"}
+{"prompt": "draw a rectangle 80 by 100 mm starting from current position at speed 1075", "completion": "G1 X80 Y0 F1075\nG1 X80 Y100 F1075\nG1 X0 Y100 F1075\nG1 X0 Y0 F1075<|endoftext|>"}
+{"prompt": "draw a square with side 11 mm at speed 429", "completion": "G1 X11 Y0 F429\nG1 X11 Y11 F429\nG1 X0 Y11 F429\nG1 X0 Y0 F429<|endoftext|>"}
+{"prompt": "move to (76, -62) at speed 1317", "completion": "G1 X76 Y-62 F1317<|endoftext|>"}
+{"prompt": "move to (-6, 49) at speed 1331", "completion": "G1 X-6 Y49 F1331<|endoftext|>"}
+{"prompt": "draw a line of length 56 mm at 90 degrees with speed 285", "completion": "G1 X0 Y56 F285<|endoftext|>"}
+{"prompt": "draw a full circle of radius 28 mm around current position at speed 1830", "completion": "G2 I28 J0 F1830\nG2 I-28 J0 F1830<|endoftext|>"}
+{"prompt": "draw a 180 degree clockwise arc with radius 7 mm at speed 1596", "completion": "G2 X-7 Y0 I0 J-7 F1596<|endoftext|>"}
+{"prompt": "draw a line of length 86 mm at 0 degrees with speed 924", "completion": "G1 X86 Y0 F924<|endoftext|>"}
+{"prompt": "draw a 180 degree clockwise arc with radius 40 mm at speed 684", "completion": "G2 X-40 Y0 I0 J-40 F684<|endoftext|>"}
+{"prompt": "draw a 90 degree counterclockwise arc with radius 15 mm at speed 250", "completion": "G3 X0 Y15 I0 J15 F250<|endoftext|>"}
+{"prompt": "draw a line of length 95 mm at 45 degrees with speed 1802", "completion": "G1 X67 Y67 F1802<|endoftext|>"}
+{"prompt": "draw a rectangle 95 by 41 mm starting from current position at speed 746", "completion": "G1 X95 Y0 F746\nG1 X95 Y41 F746\nG1 X0 Y41 F746\nG1 X0 Y0 F746<|endoftext|>"}
+{"prompt": "draw a line of length 90 mm at 0 degrees with speed 983", "completion": "G1 X90 Y0 F983<|endoftext|>"}
+{"prompt": "draw a 180 degree clockwise arc with radius 7 mm at speed 608", "completion": "G2 X-7 Y0 I0 J-7 F608<|endoftext|>"}
+{"prompt": "draw a 180 degree counterclockwise arc with radius 34 mm at speed 1880", "completion": "G3 X-34 Y0 I0 J34 F1880<|endoftext|>"}
+{"prompt": "draw a 90 degree clockwise arc with radius 19 mm at speed 1551", "completion": "G2 X0 Y-19 I0 J-19 F1551<|endoftext|>"}
+{"prompt": "draw a line of length 52 mm at 45 degrees with speed 770", "completion": "G1 X37 Y37 F770<|endoftext|>"}
+{"prompt": "draw a 180 degree counterclockwise arc with radius 9 mm at speed 1513", "completion": "G3 X-9 Y0 I0 J9 F1513<|endoftext|>"}
+{"prompt": "draw a square with side 61 mm at speed 1591", "completion": "G1 X61 Y0 F1591\nG1 X61 Y61 F1591\nG1 X0 Y61 F1591\nG1 X0 Y0 F1591<|endoftext|>"}
+{"prompt": "draw a 180 degree clockwise arc with radius 39 mm at speed 436", "completion": "G2 X-39 Y0 I0 J-39 F436<|endoftext|>"}
+{"prompt": "draw a full circle of radius 16 mm around current position at speed 1389", "completion": "G2 I16 J0 F1389\nG2 I-16 J0 F1389<|endoftext|>"}
+{"prompt": "draw a full circle of radius 7 mm around current position at speed 422", "completion": "G2 I7 J0 F422\nG2 I-7 J0 F422<|endoftext|>"}
+{"prompt": "draw a square with side 65 mm at speed 907", "completion": "G1 X65 Y0 F907\nG1 X65 Y65 F907\nG1 X0 Y65 F907\nG1 X0 Y0 F907<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 50 mm at speed 1093", "completion": "G1 X50 Y0 F1093\nG1 X25 Y43 F1093\nG1 X0 Y0 F1093<|endoftext|>"}
+{"prompt": "draw a square with side 75 mm at speed 436", "completion": "G1 X75 Y0 F436\nG1 X75 Y75 F436\nG1 X0 Y75 F436\nG1 X0 Y0 F436<|endoftext|>"}
+{"prompt": "draw a rectangle 83 by 34 mm starting from current position at speed 721", "completion": "G1 X83 Y0 F721\nG1 X83 Y34 F721\nG1 X0 Y34 F721\nG1 X0 Y0 F721<|endoftext|>"}
+{"prompt": "move to (81, 11) at speed 203", "completion": "G1 X81 Y11 F203<|endoftext|>"}
+{"prompt": "draw a square with side 78 mm at speed 1606", "completion": "G1 X78 Y0 F1606\nG1 X78 Y78 F1606\nG1 X0 Y78 F1606\nG1 X0 Y0 F1606<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 95 mm at speed 603", "completion": "G1 X95 Y0 F603\nG1 X47 Y82 F603\nG1 X0 Y0 F603<|endoftext|>"}
+{"prompt": "draw a full circle of radius 32 mm around current position at speed 343", "completion": "G2 I32 J0 F343\nG2 I-32 J0 F343<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 52 mm at speed 1476", "completion": "G1 X52 Y0 F1476\nG1 X26 Y45 F1476\nG1 X0 Y0 F1476<|endoftext|>"}
+{"prompt": "draw a full circle of radius 47 mm around current position at speed 1936", "completion": "G2 I47 J0 F1936\nG2 I-47 J0 F1936<|endoftext|>"}
+{"prompt": "move to (84, -24) at speed 1238", "completion": "G1 X84 Y-24 F1238<|endoftext|>"}
+{"prompt": "draw a full circle of radius 47 mm around current position at speed 1036", "completion": "G2 I47 J0 F1036\nG2 I-47 J0 F1036<|endoftext|>"}
+{"prompt": "draw a full circle of radius 30 mm around current position at speed 1627", "completion": "G2 I30 J0 F1627\nG2 I-30 J0 F1627<|endoftext|>"}
+{"prompt": "draw a full circle of radius 40 mm around current position at speed 460", "completion": "G2 I40 J0 F460\nG2 I-40 J0 F460<|endoftext|>"}
+{"prompt": "draw a line of length 54 mm at 270 degrees with speed 976", "completion": "G1 X0 Y-54 F976<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 32 mm at speed 1460", "completion": "G1 X32 Y0 F1460\nG1 X16 Y28 F1460\nG1 X0 Y0 F1460<|endoftext|>"}
+{"prompt": "draw a square with side 48 mm at speed 1031", "completion": "G1 X48 Y0 F1031\nG1 X48 Y48 F1031\nG1 X0 Y48 F1031\nG1 X0 Y0 F1031<|endoftext|>"}
+{"prompt": "draw a square with side 10 mm at speed 822", "completion": "G1 X10 Y0 F822\nG1 X10 Y10 F822\nG1 X0 Y10 F822\nG1 X0 Y0 F822<|endoftext|>"}
+{"prompt": "draw a full circle of radius 18 mm around current position at speed 1080", "completion": "G2 I18 J0 F1080\nG2 I-18 J0 F1080<|endoftext|>"}
+{"prompt": "draw a 270 degree counterclockwise arc with radius 42 mm at speed 1152", "completion": "G3 X0 Y-42 I0 J42 F1152<|endoftext|>"}
+{"prompt": "draw a rectangle 66 by 96 mm starting from current position at speed 637", "completion": "G1 X66 Y0 F637\nG1 X66 Y96 F637\nG1 X0 Y96 F637\nG1 X0 Y0 F637<|endoftext|>"}
+{"prompt": "draw a square with side 70 mm at speed 1825", "completion": "G1 X70 Y0 F1825\nG1 X70 Y70 F1825\nG1 X0 Y70 F1825\nG1 X0 Y0 F1825<|endoftext|>"}
+{"prompt": "draw a 270 degree clockwise arc with radius 15 mm at speed 781", "completion": "G2 X0 Y15 I0 J-15 F781<|endoftext|>"}
+{"prompt": "draw a square with side 94 mm at speed 1496", "completion": "G1 X94 Y0 F1496\nG1 X94 Y94 F1496\nG1 X0 Y94 F1496\nG1 X0 Y0 F1496<|endoftext|>"}
+{"prompt": "draw a square with side 52 mm at speed 391", "completion": "G1 X52 Y0 F391\nG1 X52 Y52 F391\nG1 X0 Y52 F391\nG1 X0 Y0 F391<|endoftext|>"}
+{"prompt": "draw a 270 degree counterclockwise arc with radius 20 mm at speed 660", "completion": "G3 X0 Y-20 I0 J20 F660<|endoftext|>"}
+{"prompt": "draw a 90 degree clockwise arc with radius 17 mm at speed 294", "completion": "G2 X0 Y-17 I0 J-17 F294<|endoftext|>"}
+{"prompt": "draw a line of length 61 mm at 180 degrees with speed 1940", "completion": "G1 X-61 Y0 F1940<|endoftext|>"}
+{"prompt": "draw a 180 degree counterclockwise arc with radius 9 mm at speed 1489", "completion": "G3 X-9 Y0 I0 J9 F1489<|endoftext|>"}
+{"prompt": "draw a square with side 34 mm at speed 1671", "completion": "G1 X34 Y0 F1671\nG1 X34 Y34 F1671\nG1 X0 Y34 F1671\nG1 X0 Y0 F1671<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 59 mm at speed 1212", "completion": "G1 X59 Y0 F1212\nG1 X29 Y51 F1212\nG1 X0 Y0 F1212<|endoftext|>"}
+{"prompt": "draw a rectangle 41 by 28 mm starting from current position at speed 1543", "completion": "G1 X41 Y0 F1543\nG1 X41 Y28 F1543\nG1 X0 Y28 F1543\nG1 X0 Y0 F1543<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 10 mm at speed 1737", "completion": "G1 X10 Y0 F1737\nG1 X5 Y9 F1737\nG1 X0 Y0 F1737<|endoftext|>"}
+{"prompt": "draw a 180 degree clockwise arc with radius 11 mm at speed 560", "completion": "G2 X-11 Y0 I0 J-11 F560<|endoftext|>"}
+{"prompt": "draw a 270 degree counterclockwise arc with radius 49 mm at speed 302", "completion": "G3 X0 Y-49 I0 J49 F302<|endoftext|>"}
+{"prompt": "draw a square with side 41 mm at speed 1937", "completion": "G1 X41 Y0 F1937\nG1 X41 Y41 F1937\nG1 X0 Y41 F1937\nG1 X0 Y0 F1937<|endoftext|>"}
+{"prompt": "move to (16, -66) at speed 1841", "completion": "G1 X16 Y-66 F1841<|endoftext|>"}
+{"prompt": "draw a rectangle 95 by 77 mm starting from current position at speed 1344", "completion": "G1 X95 Y0 F1344\nG1 X95 Y77 F1344\nG1 X0 Y77 F1344\nG1 X0 Y0 F1344<|endoftext|>"}
+{"prompt": "draw a square with side 50 mm at speed 1746", "completion": "G1 X50 Y0 F1746\nG1 X50 Y50 F1746\nG1 X0 Y50 F1746\nG1 X0 Y0 F1746<|endoftext|>"}
+{"prompt": "draw a rectangle 88 by 74 mm starting from current position at speed 1073", "completion": "G1 X88 Y0 F1073\nG1 X88 Y74 F1073\nG1 X0 Y74 F1073\nG1 X0 Y0 F1073<|endoftext|>"}
+{"prompt": "draw a 180 degree clockwise arc with radius 40 mm at speed 1723", "completion": "G2 X-40 Y0 I0 J-40 F1723<|endoftext|>"}
+{"prompt": "draw a 180 degree counterclockwise arc with radius 35 mm at speed 1739", "completion": "G3 X-35 Y0 I0 J35 F1739<|endoftext|>"}
+{"prompt": "draw a line of length 82 mm at 45 degrees with speed 1768", "completion": "G1 X58 Y58 F1768<|endoftext|>"}
+{"prompt": "draw a 180 degree clockwise arc with radius 38 mm at speed 762", "completion": "G2 X-38 Y0 I0 J-38 F762<|endoftext|>"}
+{"prompt": "draw a rectangle 19 by 46 mm starting from current position at speed 680", "completion": "G1 X19 Y0 F680\nG1 X19 Y46 F680\nG1 X0 Y46 F680\nG1 X0 Y0 F680<|endoftext|>"}
+{"prompt": "draw a full circle of radius 26 mm around current position at speed 854", "completion": "G2 I26 J0 F854\nG2 I-26 J0 F854<|endoftext|>"}
+{"prompt": "draw a square with side 20 mm at speed 483", "completion": "G1 X20 Y0 F483\nG1 X20 Y20 F483\nG1 X0 Y20 F483\nG1 X0 Y0 F483<|endoftext|>"}
+{"prompt": "draw a line of length 30 mm at 135 degrees with speed 1621", "completion": "G1 X-21 Y21 F1621<|endoftext|>"}
+{"prompt": "draw a line of length 91 mm at 90 degrees with speed 331", "completion": "G1 X0 Y91 F331<|endoftext|>"}
+{"prompt": "draw a rectangle 62 by 52 mm starting from current position at speed 1311", "completion": "G1 X62 Y0 F1311\nG1 X62 Y52 F1311\nG1 X0 Y52 F1311\nG1 X0 Y0 F1311<|endoftext|>"}
+{"prompt": "draw a rectangle 63 by 17 mm starting from current position at speed 623", "completion": "G1 X63 Y0 F623\nG1 X63 Y17 F623\nG1 X0 Y17 F623\nG1 X0 Y0 F623<|endoftext|>"}
+{"prompt": "draw a 180 degree clockwise arc with radius 31 mm at speed 1954", "completion": "G2 X-31 Y0 I0 J-31 F1954<|endoftext|>"}
+{"prompt": "draw a 180 degree counterclockwise arc with radius 41 mm at speed 212", "completion": "G3 X-41 Y0 I0 J41 F212<|endoftext|>"}
+{"prompt": "draw a full circle of radius 24 mm around current position at speed 1743", "completion": "G2 I24 J0 F1743\nG2 I-24 J0 F1743<|endoftext|>"}
+{"prompt": "draw a rectangle 63 by 78 mm starting from current position at speed 1730", "completion": "G1 X63 Y0 F1730\nG1 X63 Y78 F1730\nG1 X0 Y78 F1730\nG1 X0 Y0 F1730<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 79 mm at speed 1838", "completion": "G1 X79 Y0 F1838\nG1 X39 Y68 F1838\nG1 X0 Y0 F1838<|endoftext|>"}
+{"prompt": "draw a square with side 38 mm at speed 1199", "completion": "G1 X38 Y0 F1199\nG1 X38 Y38 F1199\nG1 X0 Y38 F1199\nG1 X0 Y0 F1199<|endoftext|>"}
+{"prompt": "draw a line of length 35 mm at 135 degrees with speed 1194", "completion": "G1 X-25 Y25 F1194<|endoftext|>"}
+{"prompt": "move to (-1, -14) at speed 1569", "completion": "G1 X-1 Y-14 F1569<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 61 mm at speed 1683", "completion": "G1 X61 Y0 F1683\nG1 X30 Y53 F1683\nG1 X0 Y0 F1683<|endoftext|>"}
+{"prompt": "draw a line of length 60 mm at 90 degrees with speed 1474", "completion": "G1 X0 Y60 F1474<|endoftext|>"}
+{"prompt": "draw a square with side 13 mm at speed 1006", "completion": "G1 X13 Y0 F1006\nG1 X13 Y13 F1006\nG1 X0 Y13 F1006\nG1 X0 Y0 F1006<|endoftext|>"}
+{"prompt": "draw a square with side 82 mm at speed 1557", "completion": "G1 X82 Y0 F1557\nG1 X82 Y82 F1557\nG1 X0 Y82 F1557\nG1 X0 Y0 F1557<|endoftext|>"}
+{"prompt": "move to (-79, 64) at speed 1077", "completion": "G1 X-79 Y64 F1077<|endoftext|>"}
+{"prompt": "draw a line of length 60 mm at 90 degrees with speed 302", "completion": "G1 X0 Y60 F302<|endoftext|>"}
+{"prompt": "draw a full circle of radius 29 mm around current position at speed 870", "completion": "G2 I29 J0 F870\nG2 I-29 J0 F870<|endoftext|>"}
+{"prompt": "draw a line of length 59 mm at 45 degrees with speed 891", "completion": "G1 X42 Y42 F891<|endoftext|>"}
+{"prompt": "draw a 180 degree counterclockwise arc with radius 29 mm at speed 716", "completion": "G3 X-29 Y0 I0 J29 F716<|endoftext|>"}
+{"prompt": "draw a 180 degree clockwise arc with radius 10 mm at speed 1734", "completion": "G2 X-10 Y0 I0 J-10 F1734<|endoftext|>"}
+{"prompt": "draw a square with side 16 mm at speed 916", "completion": "G1 X16 Y0 F916\nG1 X16 Y16 F916\nG1 X0 Y16 F916\nG1 X0 Y0 F916<|endoftext|>"}
+{"prompt": "draw a line of length 84 mm at 0 degrees with speed 1799", "completion": "G1 X84 Y0 F1799<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 15 mm at speed 1744", "completion": "G1 X15 Y0 F1744\nG1 X7 Y13 F1744\nG1 X0 Y0 F1744<|endoftext|>"}
+{"prompt": "move to (-37, -49) at speed 1918", "completion": "G1 X-37 Y-49 F1918<|endoftext|>"}
+{"prompt": "move to (59, -61) at speed 688", "completion": "G1 X59 Y-61 F688<|endoftext|>"}
+{"prompt": "draw a line of length 61 mm at 270 degrees with speed 434", "completion": "G1 X0 Y-61 F434<|endoftext|>"}
+{"prompt": "draw a square with side 37 mm at speed 1152", "completion": "G1 X37 Y0 F1152\nG1 X37 Y37 F1152\nG1 X0 Y37 F1152\nG1 X0 Y0 F1152<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 42 mm at speed 1770", "completion": "G1 X42 Y0 F1770\nG1 X21 Y36 F1770\nG1 X0 Y0 F1770<|endoftext|>"}
+{"prompt": "draw a full circle of radius 15 mm around current position at speed 1440", "completion": "G2 I15 J0 F1440\nG2 I-15 J0 F1440<|endoftext|>"}
+{"prompt": "draw a square with side 24 mm at speed 1792", "completion": "G1 X24 Y0 F1792\nG1 X24 Y24 F1792\nG1 X0 Y24 F1792\nG1 X0 Y0 F1792<|endoftext|>"}
+{"prompt": "draw a 180 degree clockwise arc with radius 15 mm at speed 1385", "completion": "G2 X-15 Y0 I0 J-15 F1385<|endoftext|>"}
+{"prompt": "move to (-21, 47) at speed 1587", "completion": "G1 X-21 Y47 F1587<|endoftext|>"}
+{"prompt": "draw a rectangle 60 by 35 mm starting from current position at speed 355", "completion": "G1 X60 Y0 F355\nG1 X60 Y35 F355\nG1 X0 Y35 F355\nG1 X0 Y0 F355<|endoftext|>"}
+{"prompt": "draw a square with side 98 mm at speed 1901", "completion": "G1 X98 Y0 F1901\nG1 X98 Y98 F1901\nG1 X0 Y98 F1901\nG1 X0 Y0 F1901<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 41 mm at speed 408", "completion": "G1 X41 Y0 F408\nG1 X20 Y36 F408\nG1 X0 Y0 F408<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 48 mm at speed 1941", "completion": "G1 X48 Y0 F1941\nG1 X24 Y42 F1941\nG1 X0 Y0 F1941<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 86 mm at speed 1849", "completion": "G1 X86 Y0 F1849\nG1 X43 Y74 F1849\nG1 X0 Y0 F1849<|endoftext|>"}
+{"prompt": "move to (44, 100) at speed 284", "completion": "G1 X44 Y100 F284<|endoftext|>"}
+{"prompt": "draw a full circle of radius 39 mm around current position at speed 1077", "completion": "G2 I39 J0 F1077\nG2 I-39 J0 F1077<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 57 mm at speed 341", "completion": "G1 X57 Y0 F341\nG1 X28 Y49 F341\nG1 X0 Y0 F341<|endoftext|>"}
+{"prompt": "draw a square with side 92 mm at speed 898", "completion": "G1 X92 Y0 F898\nG1 X92 Y92 F898\nG1 X0 Y92 F898\nG1 X0 Y0 F898<|endoftext|>"}
+{"prompt": "move to (7, 25) at speed 416", "completion": "G1 X7 Y25 F416<|endoftext|>"}
+{"prompt": "draw a rectangle 56 by 91 mm starting from current position at speed 1897", "completion": "G1 X56 Y0 F1897\nG1 X56 Y91 F1897\nG1 X0 Y91 F1897\nG1 X0 Y0 F1897<|endoftext|>"}
+{"prompt": "draw a rectangle 100 by 29 mm starting from current position at speed 1091", "completion": "G1 X100 Y0 F1091\nG1 X100 Y29 F1091\nG1 X0 Y29 F1091\nG1 X0 Y0 F1091<|endoftext|>"}
+{"prompt": "draw a line of length 94 mm at 180 degrees with speed 1532", "completion": "G1 X-94 Y0 F1532<|endoftext|>"}
+{"prompt": "draw a full circle of radius 44 mm around current position at speed 1855", "completion": "G2 I44 J0 F1855\nG2 I-44 J0 F1855<|endoftext|>"}
+{"prompt": "draw a square with side 71 mm at speed 1152", "completion": "G1 X71 Y0 F1152\nG1 X71 Y71 F1152\nG1 X0 Y71 F1152\nG1 X0 Y0 F1152<|endoftext|>"}
+{"prompt": "draw a rectangle 85 by 44 mm starting from current position at speed 860", "completion": "G1 X85 Y0 F860\nG1 X85 Y44 F860\nG1 X0 Y44 F860\nG1 X0 Y0 F860<|endoftext|>"}
+{"prompt": "draw a 90 degree counterclockwise arc with radius 20 mm at speed 1123", "completion": "G3 X0 Y20 I0 J20 F1123<|endoftext|>"}
+{"prompt": "draw a line of length 97 mm at 135 degrees with speed 1367", "completion": "G1 X-69 Y69 F1367<|endoftext|>"}
+{"prompt": "draw a square with side 95 mm at speed 976", "completion": "G1 X95 Y0 F976\nG1 X95 Y95 F976\nG1 X0 Y95 F976\nG1 X0 Y0 F976<|endoftext|>"}
+{"prompt": "draw a full circle of radius 6 mm around current position at speed 1212", "completion": "G2 I6 J0 F1212\nG2 I-6 J0 F1212<|endoftext|>"}
+{"prompt": "draw a 90 degree counterclockwise arc with radius 25 mm at speed 634", "completion": "G3 X0 Y25 I0 J25 F634<|endoftext|>"}
+{"prompt": "draw a full circle of radius 21 mm around current position at speed 897", "completion": "G2 I21 J0 F897\nG2 I-21 J0 F897<|endoftext|>"}
+{"prompt": "draw a full circle of radius 43 mm around current position at speed 1636", "completion": "G2 I43 J0 F1636\nG2 I-43 J0 F1636<|endoftext|>"}
+{"prompt": "draw a full circle of radius 40 mm around current position at speed 220", "completion": "G2 I40 J0 F220\nG2 I-40 J0 F220<|endoftext|>"}
+{"prompt": "draw a square with side 34 mm at speed 375", "completion": "G1 X34 Y0 F375\nG1 X34 Y34 F375\nG1 X0 Y34 F375\nG1 X0 Y0 F375<|endoftext|>"}
+{"prompt": "draw a line of length 93 mm at 135 degrees with speed 1200", "completion": "G1 X-66 Y66 F1200<|endoftext|>"}
+{"prompt": "draw a square with side 40 mm at speed 1614", "completion": "G1 X40 Y0 F1614\nG1 X40 Y40 F1614\nG1 X0 Y40 F1614\nG1 X0 Y0 F1614<|endoftext|>"}
+{"prompt": "draw a rectangle 92 by 72 mm starting from current position at speed 1117", "completion": "G1 X92 Y0 F1117\nG1 X92 Y72 F1117\nG1 X0 Y72 F1117\nG1 X0 Y0 F1117<|endoftext|>"}
+{"prompt": "draw a 90 degree counterclockwise arc with radius 6 mm at speed 653", "completion": "G3 X0 Y6 I0 J6 F653<|endoftext|>"}
+{"prompt": "draw a rectangle 98 by 41 mm starting from current position at speed 827", "completion": "G1 X98 Y0 F827\nG1 X98 Y41 F827\nG1 X0 Y41 F827\nG1 X0 Y0 F827<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 84 mm at speed 955", "completion": "G1 X84 Y0 F955\nG1 X42 Y73 F955\nG1 X0 Y0 F955<|endoftext|>"}
+{"prompt": "draw a rectangle 80 by 77 mm starting from current position at speed 904", "completion": "G1 X80 Y0 F904\nG1 X80 Y77 F904\nG1 X0 Y77 F904\nG1 X0 Y0 F904<|endoftext|>"}
+{"prompt": "draw a rectangle 80 by 52 mm starting from current position at speed 920", "completion": "G1 X80 Y0 F920\nG1 X80 Y52 F920\nG1 X0 Y52 F920\nG1 X0 Y0 F920<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 68 mm at speed 754", "completion": "G1 X68 Y0 F754\nG1 X34 Y59 F754\nG1 X0 Y0 F754<|endoftext|>"}
+{"prompt": "draw a full circle of radius 21 mm around current position at speed 672", "completion": "G2 I21 J0 F672\nG2 I-21 J0 F672<|endoftext|>"}
+{"prompt": "move to (84, -51) at speed 846", "completion": "G1 X84 Y-51 F846<|endoftext|>"}
+{"prompt": "move to (90, 37) at speed 1760", "completion": "G1 X90 Y37 F1760<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 33 mm at speed 592", "completion": "G1 X33 Y0 F592\nG1 X16 Y29 F592\nG1 X0 Y0 F592<|endoftext|>"}
+{"prompt": "draw a line of length 95 mm at 135 degrees with speed 766", "completion": "G1 X-67 Y67 F766<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 85 mm at speed 1756", "completion": "G1 X85 Y0 F1756\nG1 X42 Y74 F1756\nG1 X0 Y0 F1756<|endoftext|>"}
+{"prompt": "draw a square with side 86 mm at speed 779", "completion": "G1 X86 Y0 F779\nG1 X86 Y86 F779\nG1 X0 Y86 F779\nG1 X0 Y0 F779<|endoftext|>"}
+{"prompt": "move to (-51, -25) at speed 665", "completion": "G1 X-51 Y-25 F665<|endoftext|>"}
+{"prompt": "draw a full circle of radius 16 mm around current position at speed 819", "completion": "G2 I16 J0 F819\nG2 I-16 J0 F819<|endoftext|>"}
+{"prompt": "move to (81, 36) at speed 459", "completion": "G1 X81 Y36 F459<|endoftext|>"}
+{"prompt": "draw a full circle of radius 7 mm around current position at speed 311", "completion": "G2 I7 J0 F311\nG2 I-7 J0 F311<|endoftext|>"}
+{"prompt": "draw a square with side 47 mm at speed 1628", "completion": "G1 X47 Y0 F1628\nG1 X47 Y47 F1628\nG1 X0 Y47 F1628\nG1 X0 Y0 F1628<|endoftext|>"}
+{"prompt": "draw a line of length 82 mm at 135 degrees with speed 410", "completion": "G1 X-58 Y58 F410<|endoftext|>"}
+{"prompt": "draw a 270 degree counterclockwise arc with radius 5 mm at speed 1161", "completion": "G3 X0 Y-5 I0 J5 F1161<|endoftext|>"}
+{"prompt": "draw a rectangle 66 by 53 mm starting from current position at speed 577", "completion": "G1 X66 Y0 F577\nG1 X66 Y53 F577\nG1 X0 Y53 F577\nG1 X0 Y0 F577<|endoftext|>"}
+{"prompt": "move to (-36, 22) at speed 433", "completion": "G1 X-36 Y22 F433<|endoftext|>"}
+{"prompt": "draw a 180 degree counterclockwise arc with radius 9 mm at speed 351", "completion": "G3 X-9 Y0 I0 J9 F351<|endoftext|>"}
+{"prompt": "draw a square with side 90 mm at speed 1605", "completion": "G1 X90 Y0 F1605\nG1 X90 Y90 F1605\nG1 X0 Y90 F1605\nG1 X0 Y0 F1605<|endoftext|>"}
+{"prompt": "move to (-62, -62) at speed 1861", "completion": "G1 X-62 Y-62 F1861<|endoftext|>"}
+{"prompt": "draw a square with side 48 mm at speed 374", "completion": "G1 X48 Y0 F374\nG1 X48 Y48 F374\nG1 X0 Y48 F374\nG1 X0 Y0 F374<|endoftext|>"}
+{"prompt": "draw a line of length 16 mm at 180 degrees with speed 1765", "completion": "G1 X-16 Y0 F1765<|endoftext|>"}
+{"prompt": "draw a rectangle 87 by 86 mm starting from current position at speed 1819", "completion": "G1 X87 Y0 F1819\nG1 X87 Y86 F1819\nG1 X0 Y86 F1819\nG1 X0 Y0 F1819<|endoftext|>"}
+{"prompt": "draw a square with side 38 mm at speed 1788", "completion": "G1 X38 Y0 F1788\nG1 X38 Y38 F1788\nG1 X0 Y38 F1788\nG1 X0 Y0 F1788<|endoftext|>"}
+{"prompt": "draw a square with side 58 mm at speed 1122", "completion": "G1 X58 Y0 F1122\nG1 X58 Y58 F1122\nG1 X0 Y58 F1122\nG1 X0 Y0 F1122<|endoftext|>"}
+{"prompt": "draw a rectangle 48 by 85 mm starting from current position at speed 1078", "completion": "G1 X48 Y0 F1078\nG1 X48 Y85 F1078\nG1 X0 Y85 F1078\nG1 X0 Y0 F1078<|endoftext|>"}
+{"prompt": "draw a full circle of radius 41 mm around current position at speed 1471", "completion": "G2 I41 J0 F1471\nG2 I-41 J0 F1471<|endoftext|>"}
+{"prompt": "move to (56, 89) at speed 403", "completion": "G1 X56 Y89 F403<|endoftext|>"}
+{"prompt": "draw a 270 degree clockwise arc with radius 18 mm at speed 741", "completion": "G2 X0 Y18 I0 J-18 F741<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 20 mm at speed 521", "completion": "G1 X20 Y0 F521\nG1 X10 Y17 F521\nG1 X0 Y0 F521<|endoftext|>"}
+{"prompt": "draw a line of length 23 mm at 180 degrees with speed 353", "completion": "G1 X-23 Y0 F353<|endoftext|>"}
+{"prompt": "draw a line of length 1 mm at 135 degrees with speed 1122", "completion": "G1 X-1 Y1 F1122<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 86 mm at speed 1162", "completion": "G1 X86 Y0 F1162\nG1 X43 Y74 F1162\nG1 X0 Y0 F1162<|endoftext|>"}
+{"prompt": "draw a full circle of radius 7 mm around current position at speed 674", "completion": "G2 I7 J0 F674\nG2 I-7 J0 F674<|endoftext|>"}
+{"prompt": "draw a full circle of radius 50 mm around current position at speed 779", "completion": "G2 I50 J0 F779\nG2 I-50 J0 F779<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 68 mm at speed 345", "completion": "G1 X68 Y0 F345\nG1 X34 Y59 F345\nG1 X0 Y0 F345<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 39 mm at speed 741", "completion": "G1 X39 Y0 F741\nG1 X19 Y34 F741\nG1 X0 Y0 F741<|endoftext|>"}
+{"prompt": "draw a 270 degree clockwise arc with radius 45 mm at speed 1070", "completion": "G2 X0 Y45 I0 J-45 F1070<|endoftext|>"}
+{"prompt": "move to (39, -43) at speed 1526", "completion": "G1 X39 Y-43 F1526<|endoftext|>"}
+{"prompt": "draw a line of length 35 mm at 90 degrees with speed 346", "completion": "G1 X0 Y35 F346<|endoftext|>"}
+{"prompt": "move to (-58, -22) at speed 1418", "completion": "G1 X-58 Y-22 F1418<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 82 mm at speed 791", "completion": "G1 X82 Y0 F791\nG1 X41 Y71 F791\nG1 X0 Y0 F791<|endoftext|>"}
+{"prompt": "draw a rectangle 25 by 69 mm starting from current position at speed 1610", "completion": "G1 X25 Y0 F1610\nG1 X25 Y69 F1610\nG1 X0 Y69 F1610\nG1 X0 Y0 F1610<|endoftext|>"}
+{"prompt": "draw a full circle of radius 49 mm around current position at speed 1024", "completion": "G2 I49 J0 F1024\nG2 I-49 J0 F1024<|endoftext|>"}
+{"prompt": "draw a full circle of radius 37 mm around current position at speed 1305", "completion": "G2 I37 J0 F1305\nG2 I-37 J0 F1305<|endoftext|>"}
+{"prompt": "draw a rectangle 66 by 20 mm starting from current position at speed 1424", "completion": "G1 X66 Y0 F1424\nG1 X66 Y20 F1424\nG1 X0 Y20 F1424\nG1 X0 Y0 F1424<|endoftext|>"}
+{"prompt": "move to (10, 88) at speed 860", "completion": "G1 X10 Y88 F860<|endoftext|>"}
+{"prompt": "draw a square with side 42 mm at speed 252", "completion": "G1 X42 Y0 F252\nG1 X42 Y42 F252\nG1 X0 Y42 F252\nG1 X0 Y0 F252<|endoftext|>"}
+{"prompt": "move to (-42, 72) at speed 1912", "completion": "G1 X-42 Y72 F1912<|endoftext|>"}
+{"prompt": "draw a 270 degree clockwise arc with radius 41 mm at speed 1766", "completion": "G2 X0 Y41 I0 J-41 F1766<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 44 mm at speed 1380", "completion": "G1 X44 Y0 F1380\nG1 X22 Y38 F1380\nG1 X0 Y0 F1380<|endoftext|>"}
+{"prompt": "move to (95, 93) at speed 558", "completion": "G1 X95 Y93 F558<|endoftext|>"}
+{"prompt": "draw a rectangle 76 by 93 mm starting from current position at speed 1105", "completion": "G1 X76 Y0 F1105\nG1 X76 Y93 F1105\nG1 X0 Y93 F1105\nG1 X0 Y0 F1105<|endoftext|>"}
+{"prompt": "draw a full circle of radius 16 mm around current position at speed 1398", "completion": "G2 I16 J0 F1398\nG2 I-16 J0 F1398<|endoftext|>"}
+{"prompt": "draw a rectangle 91 by 72 mm starting from current position at speed 386", "completion": "G1 X91 Y0 F386\nG1 X91 Y72 F386\nG1 X0 Y72 F386\nG1 X0 Y0 F386<|endoftext|>"}
+{"prompt": "draw a rectangle 54 by 62 mm starting from current position at speed 882", "completion": "G1 X54 Y0 F882\nG1 X54 Y62 F882\nG1 X0 Y62 F882\nG1 X0 Y0 F882<|endoftext|>"}
+{"prompt": "draw a full circle of radius 47 mm around current position at speed 414", "completion": "G2 I47 J0 F414\nG2 I-47 J0 F414<|endoftext|>"}
+{"prompt": "draw a 180 degree counterclockwise arc with radius 15 mm at speed 1620", "completion": "G3 X-15 Y0 I0 J15 F1620<|endoftext|>"}
+{"prompt": "draw a rectangle 46 by 94 mm starting from current position at speed 1020", "completion": "G1 X46 Y0 F1020\nG1 X46 Y94 F1020\nG1 X0 Y94 F1020\nG1 X0 Y0 F1020<|endoftext|>"}
+{"prompt": "draw a 90 degree counterclockwise arc with radius 40 mm at speed 380", "completion": "G3 X0 Y40 I0 J40 F380<|endoftext|>"}
+{"prompt": "draw a full circle of radius 21 mm around current position at speed 862", "completion": "G2 I21 J0 F862\nG2 I-21 J0 F862<|endoftext|>"}
+{"prompt": "move to (97, 3) at speed 1971", "completion": "G1 X97 Y3 F1971<|endoftext|>"}
+{"prompt": "draw a square with side 10 mm at speed 1546", "completion": "G1 X10 Y0 F1546\nG1 X10 Y10 F1546\nG1 X0 Y10 F1546\nG1 X0 Y0 F1546<|endoftext|>"}
+{"prompt": "draw a 180 degree counterclockwise arc with radius 39 mm at speed 311", "completion": "G3 X-39 Y0 I0 J39 F311<|endoftext|>"}
+{"prompt": "draw a line of length 67 mm at 45 degrees with speed 1475", "completion": "G1 X47 Y47 F1475<|endoftext|>"}
+{"prompt": "draw a 270 degree counterclockwise arc with radius 36 mm at speed 1756", "completion": "G3 X0 Y-36 I0 J36 F1756<|endoftext|>"}
+{"prompt": "move to (-48, -32) at speed 1324", "completion": "G1 X-48 Y-32 F1324<|endoftext|>"}
+{"prompt": "draw a line of length 37 mm at 135 degrees with speed 1630", "completion": "G1 X-26 Y26 F1630<|endoftext|>"}
+{"prompt": "draw a rectangle 25 by 13 mm starting from current position at speed 1490", "completion": "G1 X25 Y0 F1490\nG1 X25 Y13 F1490\nG1 X0 Y13 F1490\nG1 X0 Y0 F1490<|endoftext|>"}
+{"prompt": "draw a square with side 40 mm at speed 1653", "completion": "G1 X40 Y0 F1653\nG1 X40 Y40 F1653\nG1 X0 Y40 F1653\nG1 X0 Y0 F1653<|endoftext|>"}
+{"prompt": "draw a line of length 40 mm at 180 degrees with speed 228", "completion": "G1 X-40 Y0 F228<|endoftext|>"}
+{"prompt": "draw a square with side 62 mm at speed 390", "completion": "G1 X62 Y0 F390\nG1 X62 Y62 F390\nG1 X0 Y62 F390\nG1 X0 Y0 F390<|endoftext|>"}
+{"prompt": "draw a line of length 15 mm at 135 degrees with speed 440", "completion": "G1 X-11 Y11 F440<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 29 mm at speed 1220", "completion": "G1 X29 Y0 F1220\nG1 X14 Y25 F1220\nG1 X0 Y0 F1220<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 47 mm at speed 1242", "completion": "G1 X47 Y0 F1242\nG1 X23 Y41 F1242\nG1 X0 Y0 F1242<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 44 mm at speed 1050", "completion": "G1 X44 Y0 F1050\nG1 X22 Y38 F1050\nG1 X0 Y0 F1050<|endoftext|>"}
+{"prompt": "draw a 180 degree clockwise arc with radius 35 mm at speed 1135", "completion": "G2 X-35 Y0 I0 J-35 F1135<|endoftext|>"}
+{"prompt": "draw a square with side 28 mm at speed 985", "completion": "G1 X28 Y0 F985\nG1 X28 Y28 F985\nG1 X0 Y28 F985\nG1 X0 Y0 F985<|endoftext|>"}
+{"prompt": "draw a line of length 77 mm at 180 degrees with speed 1728", "completion": "G1 X-77 Y0 F1728<|endoftext|>"}
+{"prompt": "draw a line of length 9 mm at 45 degrees with speed 1782", "completion": "G1 X6 Y6 F1782<|endoftext|>"}
+{"prompt": "draw a 180 degree counterclockwise arc with radius 31 mm at speed 1880", "completion": "G3 X-31 Y0 I0 J31 F1880<|endoftext|>"}
+{"prompt": "move to (-28, 85) at speed 811", "completion": "G1 X-28 Y85 F811<|endoftext|>"}
+{"prompt": "draw a 270 degree counterclockwise arc with radius 42 mm at speed 1972", "completion": "G3 X0 Y-42 I0 J42 F1972<|endoftext|>"}
+{"prompt": "draw a line of length 58 mm at 180 degrees with speed 1191", "completion": "G1 X-58 Y0 F1191<|endoftext|>"}
+{"prompt": "draw a full circle of radius 26 mm around current position at speed 1330", "completion": "G2 I26 J0 F1330\nG2 I-26 J0 F1330<|endoftext|>"}
+{"prompt": "draw a 180 degree counterclockwise arc with radius 39 mm at speed 859", "completion": "G3 X-39 Y0 I0 J39 F859<|endoftext|>"}
+{"prompt": "draw a 270 degree clockwise arc with radius 17 mm at speed 1371", "completion": "G2 X0 Y17 I0 J-17 F1371<|endoftext|>"}
+{"prompt": "draw a rectangle 39 by 62 mm starting from current position at speed 289", "completion": "G1 X39 Y0 F289\nG1 X39 Y62 F289\nG1 X0 Y62 F289\nG1 X0 Y0 F289<|endoftext|>"}
+{"prompt": "draw a full circle of radius 35 mm around current position at speed 1644", "completion": "G2 I35 J0 F1644\nG2 I-35 J0 F1644<|endoftext|>"}
+{"prompt": "draw a 180 degree clockwise arc with radius 29 mm at speed 1214", "completion": "G2 X-29 Y0 I0 J-29 F1214<|endoftext|>"}
+{"prompt": "move to (-68, 28) at speed 1408", "completion": "G1 X-68 Y28 F1408<|endoftext|>"}
+{"prompt": "draw a full circle of radius 11 mm around current position at speed 1990", "completion": "G2 I11 J0 F1990\nG2 I-11 J0 F1990<|endoftext|>"}
+{"prompt": "draw a 90 degree counterclockwise arc with radius 33 mm at speed 231", "completion": "G3 X0 Y33 I0 J33 F231<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 28 mm at speed 1039", "completion": "G1 X28 Y0 F1039\nG1 X14 Y24 F1039\nG1 X0 Y0 F1039<|endoftext|>"}
+{"prompt": "draw a 90 degree clockwise arc with radius 46 mm at speed 1161", "completion": "G2 X0 Y-46 I0 J-46 F1161<|endoftext|>"}
+{"prompt": "draw a 180 degree counterclockwise arc with radius 21 mm at speed 1530", "completion": "G3 X-21 Y0 I0 J21 F1530<|endoftext|>"}
+{"prompt": "move to (-16, 72) at speed 1959", "completion": "G1 X-16 Y72 F1959<|endoftext|>"}
+{"prompt": "draw a square with side 58 mm at speed 848", "completion": "G1 X58 Y0 F848\nG1 X58 Y58 F848\nG1 X0 Y58 F848\nG1 X0 Y0 F848<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 72 mm at speed 1986", "completion": "G1 X72 Y0 F1986\nG1 X36 Y62 F1986\nG1 X0 Y0 F1986<|endoftext|>"}
+{"prompt": "draw a square with side 14 mm at speed 1464", "completion": "G1 X14 Y0 F1464\nG1 X14 Y14 F1464\nG1 X0 Y14 F1464\nG1 X0 Y0 F1464<|endoftext|>"}
+{"prompt": "move to (-40, 61) at speed 1601", "completion": "G1 X-40 Y61 F1601<|endoftext|>"}
+{"prompt": "draw a full circle of radius 19 mm around current position at speed 1729", "completion": "G2 I19 J0 F1729\nG2 I-19 J0 F1729<|endoftext|>"}
+{"prompt": "move to (11, -75) at speed 1757", "completion": "G1 X11 Y-75 F1757<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 100 mm at speed 1987", "completion": "G1 X100 Y0 F1987\nG1 X50 Y87 F1987\nG1 X0 Y0 F1987<|endoftext|>"}
+{"prompt": "move to (13, -58) at speed 1621", "completion": "G1 X13 Y-58 F1621<|endoftext|>"}
+{"prompt": "draw a full circle of radius 6 mm around current position at speed 294", "completion": "G2 I6 J0 F294\nG2 I-6 J0 F294<|endoftext|>"}
+{"prompt": "draw a full circle of radius 8 mm around current position at speed 800", "completion": "G2 I8 J0 F800\nG2 I-8 J0 F800<|endoftext|>"}
+{"prompt": "draw a full circle of radius 28 mm around current position at speed 1082", "completion": "G2 I28 J0 F1082\nG2 I-28 J0 F1082<|endoftext|>"}
+{"prompt": "draw a line of length 32 mm at 180 degrees with speed 1043", "completion": "G1 X-32 Y0 F1043<|endoftext|>"}
+{"prompt": "draw a square with side 97 mm at speed 1823", "completion": "G1 X97 Y0 F1823\nG1 X97 Y97 F1823\nG1 X0 Y97 F1823\nG1 X0 Y0 F1823<|endoftext|>"}
+{"prompt": "draw a line of length 22 mm at 90 degrees with speed 361", "completion": "G1 X0 Y22 F361<|endoftext|>"}
+{"prompt": "draw a square with side 58 mm at speed 1469", "completion": "G1 X58 Y0 F1469\nG1 X58 Y58 F1469\nG1 X0 Y58 F1469\nG1 X0 Y0 F1469<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 40 mm at speed 1219", "completion": "G1 X40 Y0 F1219\nG1 X20 Y35 F1219\nG1 X0 Y0 F1219<|endoftext|>"}
+{"prompt": "draw a square with side 28 mm at speed 675", "completion": "G1 X28 Y0 F675\nG1 X28 Y28 F675\nG1 X0 Y28 F675\nG1 X0 Y0 F675<|endoftext|>"}
+{"prompt": "draw a rectangle 91 by 42 mm starting from current position at speed 1141", "completion": "G1 X91 Y0 F1141\nG1 X91 Y42 F1141\nG1 X0 Y42 F1141\nG1 X0 Y0 F1141<|endoftext|>"}
+{"prompt": "draw a full circle of radius 47 mm around current position at speed 219", "completion": "G2 I47 J0 F219\nG2 I-47 J0 F219<|endoftext|>"}
+{"prompt": "draw a 180 degree clockwise arc with radius 34 mm at speed 351", "completion": "G2 X-34 Y0 I0 J-34 F351<|endoftext|>"}
+{"prompt": "draw a rectangle 54 by 85 mm starting from current position at speed 812", "completion": "G1 X54 Y0 F812\nG1 X54 Y85 F812\nG1 X0 Y85 F812\nG1 X0 Y0 F812<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 64 mm at speed 1613", "completion": "G1 X64 Y0 F1613\nG1 X32 Y55 F1613\nG1 X0 Y0 F1613<|endoftext|>"}
+{"prompt": "draw a full circle of radius 34 mm around current position at speed 1931", "completion": "G2 I34 J0 F1931\nG2 I-34 J0 F1931<|endoftext|>"}
+{"prompt": "draw a full circle of radius 17 mm around current position at speed 987", "completion": "G2 I17 J0 F987\nG2 I-17 J0 F987<|endoftext|>"}
+{"prompt": "draw a 90 degree clockwise arc with radius 35 mm at speed 981", "completion": "G2 X0 Y-35 I0 J-35 F981<|endoftext|>"}
+{"prompt": "draw a square with side 55 mm at speed 1377", "completion": "G1 X55 Y0 F1377\nG1 X55 Y55 F1377\nG1 X0 Y55 F1377\nG1 X0 Y0 F1377<|endoftext|>"}
+{"prompt": "draw a full circle of radius 49 mm around current position at speed 804", "completion": "G2 I49 J0 F804\nG2 I-49 J0 F804<|endoftext|>"}
+{"prompt": "move to (68, 1) at speed 762", "completion": "G1 X68 Y1 F762<|endoftext|>"}
+{"prompt": "move to (44, 75) at speed 1793", "completion": "G1 X44 Y75 F1793<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 16 mm at speed 1441", "completion": "G1 X16 Y0 F1441\nG1 X8 Y14 F1441\nG1 X0 Y0 F1441<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 73 mm at speed 1905", "completion": "G1 X73 Y0 F1905\nG1 X36 Y63 F1905\nG1 X0 Y0 F1905<|endoftext|>"}
+{"prompt": "draw a full circle of radius 19 mm around current position at speed 1443", "completion": "G2 I19 J0 F1443\nG2 I-19 J0 F1443<|endoftext|>"}
+{"prompt": "draw a 90 degree clockwise arc with radius 27 mm at speed 1471", "completion": "G2 X0 Y-27 I0 J-27 F1471<|endoftext|>"}
+{"prompt": "draw a full circle of radius 48 mm around current position at speed 1747", "completion": "G2 I48 J0 F1747\nG2 I-48 J0 F1747<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 94 mm at speed 1594", "completion": "G1 X94 Y0 F1594\nG1 X47 Y81 F1594\nG1 X0 Y0 F1594<|endoftext|>"}
+{"prompt": "draw a 270 degree clockwise arc with radius 13 mm at speed 1485", "completion": "G2 X0 Y13 I0 J-13 F1485<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 15 mm at speed 832", "completion": "G1 X15 Y0 F832\nG1 X7 Y13 F832\nG1 X0 Y0 F832<|endoftext|>"}
+{"prompt": "draw a 90 degree counterclockwise arc with radius 33 mm at speed 1699", "completion": "G3 X0 Y33 I0 J33 F1699<|endoftext|>"}
+{"prompt": "draw a line of length 12 mm at 45 degrees with speed 869", "completion": "G1 X8 Y8 F869<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 63 mm at speed 559", "completion": "G1 X63 Y0 F559\nG1 X31 Y55 F559\nG1 X0 Y0 F559<|endoftext|>"}
+{"prompt": "draw a line of length 17 mm at 180 degrees with speed 1994", "completion": "G1 X-17 Y0 F1994<|endoftext|>"}
+{"prompt": "draw a full circle of radius 38 mm around current position at speed 1227", "completion": "G2 I38 J0 F1227\nG2 I-38 J0 F1227<|endoftext|>"}
+{"prompt": "draw a full circle of radius 15 mm around current position at speed 726", "completion": "G2 I15 J0 F726\nG2 I-15 J0 F726<|endoftext|>"}
+{"prompt": "draw a 180 degree counterclockwise arc with radius 35 mm at speed 1847", "completion": "G3 X-35 Y0 I0 J35 F1847<|endoftext|>"}
+{"prompt": "move to (19, -81) at speed 488", "completion": "G1 X19 Y-81 F488<|endoftext|>"}
+{"prompt": "draw a 270 degree counterclockwise arc with radius 19 mm at speed 1932", "completion": "G3 X0 Y-19 I0 J19 F1932<|endoftext|>"}
+{"prompt": "draw a 180 degree clockwise arc with radius 40 mm at speed 1819", "completion": "G2 X-40 Y0 I0 J-40 F1819<|endoftext|>"}
+{"prompt": "draw a rectangle 11 by 43 mm starting from current position at speed 1298", "completion": "G1 X11 Y0 F1298\nG1 X11 Y43 F1298\nG1 X0 Y43 F1298\nG1 X0 Y0 F1298<|endoftext|>"}
+{"prompt": "move to (16, -6) at speed 1577", "completion": "G1 X16 Y-6 F1577<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 96 mm at speed 736", "completion": "G1 X96 Y0 F736\nG1 X48 Y83 F736\nG1 X0 Y0 F736<|endoftext|>"}
+{"prompt": "draw a square with side 58 mm at speed 1884", "completion": "G1 X58 Y0 F1884\nG1 X58 Y58 F1884\nG1 X0 Y58 F1884\nG1 X0 Y0 F1884<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 57 mm at speed 421", "completion": "G1 X57 Y0 F421\nG1 X28 Y49 F421\nG1 X0 Y0 F421<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 39 mm at speed 1165", "completion": "G1 X39 Y0 F1165\nG1 X19 Y34 F1165\nG1 X0 Y0 F1165<|endoftext|>"}
+{"prompt": "move to (58, 43) at speed 871", "completion": "G1 X58 Y43 F871<|endoftext|>"}
+{"prompt": "draw a square with side 38 mm at speed 1526", "completion": "G1 X38 Y0 F1526\nG1 X38 Y38 F1526\nG1 X0 Y38 F1526\nG1 X0 Y0 F1526<|endoftext|>"}
+{"prompt": "move to (62, 18) at speed 1635", "completion": "G1 X62 Y18 F1635<|endoftext|>"}
+{"prompt": "draw a full circle of radius 46 mm around current position at speed 1036", "completion": "G2 I46 J0 F1036\nG2 I-46 J0 F1036<|endoftext|>"}
+{"prompt": "move to (-65, -89) at speed 276", "completion": "G1 X-65 Y-89 F276<|endoftext|>"}
+{"prompt": "draw a full circle of radius 36 mm around current position at speed 437", "completion": "G2 I36 J0 F437\nG2 I-36 J0 F437<|endoftext|>"}
+{"prompt": "move to (-40, 37) at speed 477", "completion": "G1 X-40 Y37 F477<|endoftext|>"}
+{"prompt": "draw a rectangle 68 by 57 mm starting from current position at speed 1573", "completion": "G1 X68 Y0 F1573\nG1 X68 Y57 F1573\nG1 X0 Y57 F1573\nG1 X0 Y0 F1573<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 99 mm at speed 1306", "completion": "G1 X99 Y0 F1306\nG1 X49 Y86 F1306\nG1 X0 Y0 F1306<|endoftext|>"}
+{"prompt": "draw a rectangle 85 by 29 mm starting from current position at speed 1049", "completion": "G1 X85 Y0 F1049\nG1 X85 Y29 F1049\nG1 X0 Y29 F1049\nG1 X0 Y0 F1049<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 22 mm at speed 1907", "completion": "G1 X22 Y0 F1907\nG1 X11 Y19 F1907\nG1 X0 Y0 F1907<|endoftext|>"}
+{"prompt": "draw a rectangle 88 by 62 mm starting from current position at speed 772", "completion": "G1 X88 Y0 F772\nG1 X88 Y62 F772\nG1 X0 Y62 F772\nG1 X0 Y0 F772<|endoftext|>"}
+{"prompt": "move to (76, -6) at speed 644", "completion": "G1 X76 Y-6 F644<|endoftext|>"}
+{"prompt": "draw a rectangle 66 by 40 mm starting from current position at speed 1951", "completion": "G1 X66 Y0 F1951\nG1 X66 Y40 F1951\nG1 X0 Y40 F1951\nG1 X0 Y0 F1951<|endoftext|>"}
+{"prompt": "draw a full circle of radius 11 mm around current position at speed 1604", "completion": "G2 I11 J0 F1604\nG2 I-11 J0 F1604<|endoftext|>"}
+{"prompt": "draw a full circle of radius 39 mm around current position at speed 1520", "completion": "G2 I39 J0 F1520\nG2 I-39 J0 F1520<|endoftext|>"}
+{"prompt": "draw a full circle of radius 8 mm around current position at speed 1015", "completion": "G2 I8 J0 F1015\nG2 I-8 J0 F1015<|endoftext|>"}
+{"prompt": "draw a full circle of radius 17 mm around current position at speed 450", "completion": "G2 I17 J0 F450\nG2 I-17 J0 F450<|endoftext|>"}
+{"prompt": "draw a 90 degree clockwise arc with radius 34 mm at speed 1514", "completion": "G2 X0 Y-34 I0 J-34 F1514<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 86 mm at speed 243", "completion": "G1 X86 Y0 F243\nG1 X43 Y74 F243\nG1 X0 Y0 F243<|endoftext|>"}
+{"prompt": "move to (-15, -38) at speed 457", "completion": "G1 X-15 Y-38 F457<|endoftext|>"}
+{"prompt": "draw a 90 degree clockwise arc with radius 41 mm at speed 1899", "completion": "G2 X0 Y-41 I0 J-41 F1899<|endoftext|>"}
+{"prompt": "draw a 90 degree clockwise arc with radius 40 mm at speed 1865", "completion": "G2 X0 Y-40 I0 J-40 F1865<|endoftext|>"}
+{"prompt": "draw a 180 degree clockwise arc with radius 19 mm at speed 1815", "completion": "G2 X-19 Y0 I0 J-19 F1815<|endoftext|>"}
+{"prompt": "draw a square with side 10 mm at speed 767", "completion": "G1 X10 Y0 F767\nG1 X10 Y10 F767\nG1 X0 Y10 F767\nG1 X0 Y0 F767<|endoftext|>"}
+{"prompt": "draw a 90 degree counterclockwise arc with radius 14 mm at speed 1835", "completion": "G3 X0 Y14 I0 J14 F1835<|endoftext|>"}
+{"prompt": "draw a line of length 15 mm at 270 degrees with speed 1974", "completion": "G1 X0 Y-15 F1974<|endoftext|>"}
+{"prompt": "move to (-67, -97) at speed 933", "completion": "G1 X-67 Y-97 F933<|endoftext|>"}
+{"prompt": "draw a 270 degree counterclockwise arc with radius 20 mm at speed 232", "completion": "G3 X0 Y-20 I0 J20 F232<|endoftext|>"}
+{"prompt": "draw a line of length 34 mm at 0 degrees with speed 459", "completion": "G1 X34 Y0 F459<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 63 mm at speed 1277", "completion": "G1 X63 Y0 F1277\nG1 X31 Y55 F1277\nG1 X0 Y0 F1277<|endoftext|>"}
+{"prompt": "move to (90, -84) at speed 1175", "completion": "G1 X90 Y-84 F1175<|endoftext|>"}
+{"prompt": "draw a rectangle 56 by 75 mm starting from current position at speed 1415", "completion": "G1 X56 Y0 F1415\nG1 X56 Y75 F1415\nG1 X0 Y75 F1415\nG1 X0 Y0 F1415<|endoftext|>"}
+{"prompt": "move to (15, 28) at speed 653", "completion": "G1 X15 Y28 F653<|endoftext|>"}
+{"prompt": "draw a square with side 15 mm at speed 1689", "completion": "G1 X15 Y0 F1689\nG1 X15 Y15 F1689\nG1 X0 Y15 F1689\nG1 X0 Y0 F1689<|endoftext|>"}
+{"prompt": "draw a 270 degree counterclockwise arc with radius 47 mm at speed 1138", "completion": "G3 X0 Y-47 I0 J47 F1138<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 13 mm at speed 324", "completion": "G1 X13 Y0 F324\nG1 X6 Y11 F324\nG1 X0 Y0 F324<|endoftext|>"}
+{"prompt": "draw a rectangle 61 by 64 mm starting from current position at speed 1605", "completion": "G1 X61 Y0 F1605\nG1 X61 Y64 F1605\nG1 X0 Y64 F1605\nG1 X0 Y0 F1605<|endoftext|>"}
+{"prompt": "move to (25, 82) at speed 1108", "completion": "G1 X25 Y82 F1108<|endoftext|>"}
+{"prompt": "move to (-80, -18) at speed 1445", "completion": "G1 X-80 Y-18 F1445<|endoftext|>"}
+{"prompt": "draw a line of length 9 mm at 90 degrees with speed 763", "completion": "G1 X0 Y9 F763<|endoftext|>"}
+{"prompt": "draw a square with side 91 mm at speed 1398", "completion": "G1 X91 Y0 F1398\nG1 X91 Y91 F1398\nG1 X0 Y91 F1398\nG1 X0 Y0 F1398<|endoftext|>"}
+{"prompt": "draw a square with side 51 mm at speed 980", "completion": "G1 X51 Y0 F980\nG1 X51 Y51 F980\nG1 X0 Y51 F980\nG1 X0 Y0 F980<|endoftext|>"}
+{"prompt": "draw a square with side 77 mm at speed 803", "completion": "G1 X77 Y0 F803\nG1 X77 Y77 F803\nG1 X0 Y77 F803\nG1 X0 Y0 F803<|endoftext|>"}
+{"prompt": "draw a rectangle 74 by 87 mm starting from current position at speed 1081", "completion": "G1 X74 Y0 F1081\nG1 X74 Y87 F1081\nG1 X0 Y87 F1081\nG1 X0 Y0 F1081<|endoftext|>"}
+{"prompt": "move to (79, -71) at speed 1946", "completion": "G1 X79 Y-71 F1946<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 93 mm at speed 1997", "completion": "G1 X93 Y0 F1997\nG1 X46 Y81 F1997\nG1 X0 Y0 F1997<|endoftext|>"}
+{"prompt": "draw a 270 degree clockwise arc with radius 40 mm at speed 1080", "completion": "G2 X0 Y40 I0 J-40 F1080<|endoftext|>"}
+{"prompt": "draw a rectangle 39 by 62 mm starting from current position at speed 894", "completion": "G1 X39 Y0 F894\nG1 X39 Y62 F894\nG1 X0 Y62 F894\nG1 X0 Y0 F894<|endoftext|>"}
+{"prompt": "draw a 180 degree counterclockwise arc with radius 34 mm at speed 1694", "completion": "G3 X-34 Y0 I0 J34 F1694<|endoftext|>"}
+{"prompt": "move to (-20, 9) at speed 840", "completion": "G1 X-20 Y9 F840<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 42 mm at speed 966", "completion": "G1 X42 Y0 F966\nG1 X21 Y36 F966\nG1 X0 Y0 F966<|endoftext|>"}
+{"prompt": "draw a line of length 88 mm at 135 degrees with speed 337", "completion": "G1 X-62 Y62 F337<|endoftext|>"}
+{"prompt": "move to (-79, -77) at speed 1084", "completion": "G1 X-79 Y-77 F1084<|endoftext|>"}
+{"prompt": "move to (90, 89) at speed 963", "completion": "G1 X90 Y89 F963<|endoftext|>"}
+{"prompt": "draw a 270 degree clockwise arc with radius 13 mm at speed 1401", "completion": "G2 X0 Y13 I0 J-13 F1401<|endoftext|>"}
+{"prompt": "draw a square with side 81 mm at speed 875", "completion": "G1 X81 Y0 F875\nG1 X81 Y81 F875\nG1 X0 Y81 F875\nG1 X0 Y0 F875<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 25 mm at speed 1041", "completion": "G1 X25 Y0 F1041\nG1 X12 Y22 F1041\nG1 X0 Y0 F1041<|endoftext|>"}
+{"prompt": "draw a full circle of radius 47 mm around current position at speed 1736", "completion": "G2 I47 J0 F1736\nG2 I-47 J0 F1736<|endoftext|>"}
+{"prompt": "draw a rectangle 16 by 46 mm starting from current position at speed 1429", "completion": "G1 X16 Y0 F1429\nG1 X16 Y46 F1429\nG1 X0 Y46 F1429\nG1 X0 Y0 F1429<|endoftext|>"}
+{"prompt": "draw a full circle of radius 27 mm around current position at speed 412", "completion": "G2 I27 J0 F412\nG2 I-27 J0 F412<|endoftext|>"}
+{"prompt": "draw a square with side 74 mm at speed 635", "completion": "G1 X74 Y0 F635\nG1 X74 Y74 F635\nG1 X0 Y74 F635\nG1 X0 Y0 F635<|endoftext|>"}
+{"prompt": "draw a line of length 85 mm at 135 degrees with speed 659", "completion": "G1 X-60 Y60 F659<|endoftext|>"}
+{"prompt": "draw a 180 degree counterclockwise arc with radius 11 mm at speed 435", "completion": "G3 X-11 Y0 I0 J11 F435<|endoftext|>"}
+{"prompt": "draw a 270 degree clockwise arc with radius 22 mm at speed 1853", "completion": "G2 X0 Y22 I0 J-22 F1853<|endoftext|>"}
+{"prompt": "draw a rectangle 81 by 89 mm starting from current position at speed 1456", "completion": "G1 X81 Y0 F1456\nG1 X81 Y89 F1456\nG1 X0 Y89 F1456\nG1 X0 Y0 F1456<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 92 mm at speed 1340", "completion": "G1 X92 Y0 F1340\nG1 X46 Y80 F1340\nG1 X0 Y0 F1340<|endoftext|>"}
+{"prompt": "move to (55, 68) at speed 1898", "completion": "G1 X55 Y68 F1898<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 44 mm at speed 259", "completion": "G1 X44 Y0 F259\nG1 X22 Y38 F259\nG1 X0 Y0 F259<|endoftext|>"}
+{"prompt": "draw a line of length 35 mm at 270 degrees with speed 1761", "completion": "G1 X0 Y-35 F1761<|endoftext|>"}
+{"prompt": "draw a full circle of radius 26 mm around current position at speed 918", "completion": "G2 I26 J0 F918\nG2 I-26 J0 F918<|endoftext|>"}
+{"prompt": "move to (-54, -64) at speed 1359", "completion": "G1 X-54 Y-64 F1359<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 61 mm at speed 342", "completion": "G1 X61 Y0 F342\nG1 X30 Y53 F342\nG1 X0 Y0 F342<|endoftext|>"}
+{"prompt": "draw a line of length 95 mm at 270 degrees with speed 262", "completion": "G1 X0 Y-95 F262<|endoftext|>"}
+{"prompt": "move to (91, 35) at speed 640", "completion": "G1 X91 Y35 F640<|endoftext|>"}
+{"prompt": "draw a rectangle 63 by 68 mm starting from current position at speed 898", "completion": "G1 X63 Y0 F898\nG1 X63 Y68 F898\nG1 X0 Y68 F898\nG1 X0 Y0 F898<|endoftext|>"}
+{"prompt": "draw a line of length 48 mm at 45 degrees with speed 1677", "completion": "G1 X34 Y34 F1677<|endoftext|>"}
+{"prompt": "draw a full circle of radius 41 mm around current position at speed 1421", "completion": "G2 I41 J0 F1421\nG2 I-41 J0 F1421<|endoftext|>"}
+{"prompt": "move to (-87, -61) at speed 522", "completion": "G1 X-87 Y-61 F522<|endoftext|>"}
+{"prompt": "draw a 90 degree clockwise arc with radius 44 mm at speed 757", "completion": "G2 X0 Y-44 I0 J-44 F757<|endoftext|>"}
+{"prompt": "draw a rectangle 94 by 64 mm starting from current position at speed 1194", "completion": "G1 X94 Y0 F1194\nG1 X94 Y64 F1194\nG1 X0 Y64 F1194\nG1 X0 Y0 F1194<|endoftext|>"}
+{"prompt": "draw a square with side 66 mm at speed 1048", "completion": "G1 X66 Y0 F1048\nG1 X66 Y66 F1048\nG1 X0 Y66 F1048\nG1 X0 Y0 F1048<|endoftext|>"}
+{"prompt": "draw a full circle of radius 18 mm around current position at speed 1746", "completion": "G2 I18 J0 F1746\nG2 I-18 J0 F1746<|endoftext|>"}
+{"prompt": "draw a square with side 24 mm at speed 906", "completion": "G1 X24 Y0 F906\nG1 X24 Y24 F906\nG1 X0 Y24 F906\nG1 X0 Y0 F906<|endoftext|>"}
+{"prompt": "draw a rectangle 24 by 46 mm starting from current position at speed 1588", "completion": "G1 X24 Y0 F1588\nG1 X24 Y46 F1588\nG1 X0 Y46 F1588\nG1 X0 Y0 F1588<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 85 mm at speed 1196", "completion": "G1 X85 Y0 F1196\nG1 X42 Y74 F1196\nG1 X0 Y0 F1196<|endoftext|>"}
+{"prompt": "draw a square with side 95 mm at speed 831", "completion": "G1 X95 Y0 F831\nG1 X95 Y95 F831\nG1 X0 Y95 F831\nG1 X0 Y0 F831<|endoftext|>"}
+{"prompt": "move to (-44, 1) at speed 1427", "completion": "G1 X-44 Y1 F1427<|endoftext|>"}
+{"prompt": "move to (-99, -48) at speed 817", "completion": "G1 X-99 Y-48 F817<|endoftext|>"}
+{"prompt": "draw a line of length 99 mm at 90 degrees with speed 1765", "completion": "G1 X0 Y99 F1765<|endoftext|>"}
+{"prompt": "draw a full circle of radius 23 mm around current position at speed 871", "completion": "G2 I23 J0 F871\nG2 I-23 J0 F871<|endoftext|>"}
+{"prompt": "move to (-99, 27) at speed 1729", "completion": "G1 X-99 Y27 F1729<|endoftext|>"}
+{"prompt": "draw a rectangle 32 by 26 mm starting from current position at speed 978", "completion": "G1 X32 Y0 F978\nG1 X32 Y26 F978\nG1 X0 Y26 F978\nG1 X0 Y0 F978<|endoftext|>"}
+{"prompt": "draw a square with side 100 mm at speed 671", "completion": "G1 X100 Y0 F671\nG1 X100 Y100 F671\nG1 X0 Y100 F671\nG1 X0 Y0 F671<|endoftext|>"}
+{"prompt": "draw a square with side 81 mm at speed 1906", "completion": "G1 X81 Y0 F1906\nG1 X81 Y81 F1906\nG1 X0 Y81 F1906\nG1 X0 Y0 F1906<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 55 mm at speed 347", "completion": "G1 X55 Y0 F347\nG1 X27 Y48 F347\nG1 X0 Y0 F347<|endoftext|>"}
+{"prompt": "draw a rectangle 15 by 65 mm starting from current position at speed 238", "completion": "G1 X15 Y0 F238\nG1 X15 Y65 F238\nG1 X0 Y65 F238\nG1 X0 Y0 F238<|endoftext|>"}
+{"prompt": "draw a rectangle 19 by 50 mm starting from current position at speed 1379", "completion": "G1 X19 Y0 F1379\nG1 X19 Y50 F1379\nG1 X0 Y50 F1379\nG1 X0 Y0 F1379<|endoftext|>"}
+{"prompt": "draw a rectangle 83 by 61 mm starting from current position at speed 1653", "completion": "G1 X83 Y0 F1653\nG1 X83 Y61 F1653\nG1 X0 Y61 F1653\nG1 X0 Y0 F1653<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 63 mm at speed 792", "completion": "G1 X63 Y0 F792\nG1 X31 Y55 F792\nG1 X0 Y0 F792<|endoftext|>"}
+{"prompt": "move to (3, -95) at speed 865", "completion": "G1 X3 Y-95 F865<|endoftext|>"}
+{"prompt": "draw a line of length 80 mm at 135 degrees with speed 1903", "completion": "G1 X-57 Y57 F1903<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 56 mm at speed 380", "completion": "G1 X56 Y0 F380\nG1 X28 Y48 F380\nG1 X0 Y0 F380<|endoftext|>"}
+{"prompt": "draw a rectangle 23 by 41 mm starting from current position at speed 1092", "completion": "G1 X23 Y0 F1092\nG1 X23 Y41 F1092\nG1 X0 Y41 F1092\nG1 X0 Y0 F1092<|endoftext|>"}
+{"prompt": "draw a square with side 61 mm at speed 1273", "completion": "G1 X61 Y0 F1273\nG1 X61 Y61 F1273\nG1 X0 Y61 F1273\nG1 X0 Y0 F1273<|endoftext|>"}
+{"prompt": "move to (1, -21) at speed 1727", "completion": "G1 X1 Y-21 F1727<|endoftext|>"}
+{"prompt": "draw a full circle of radius 19 mm around current position at speed 882", "completion": "G2 I19 J0 F882\nG2 I-19 J0 F882<|endoftext|>"}
+{"prompt": "draw a 90 degree clockwise arc with radius 15 mm at speed 1286", "completion": "G2 X0 Y-15 I0 J-15 F1286<|endoftext|>"}
+{"prompt": "draw a square with side 34 mm at speed 1789", "completion": "G1 X34 Y0 F1789\nG1 X34 Y34 F1789\nG1 X0 Y34 F1789\nG1 X0 Y0 F1789<|endoftext|>"}
+{"prompt": "draw a full circle of radius 27 mm around current position at speed 1689", "completion": "G2 I27 J0 F1689\nG2 I-27 J0 F1689<|endoftext|>"}
+{"prompt": "draw a 90 degree clockwise arc with radius 46 mm at speed 410", "completion": "G2 X0 Y-46 I0 J-46 F410<|endoftext|>"}
+{"prompt": "draw a line of length 33 mm at 90 degrees with speed 555", "completion": "G1 X0 Y33 F555<|endoftext|>"}
+{"prompt": "draw a square with side 29 mm at speed 1756", "completion": "G1 X29 Y0 F1756\nG1 X29 Y29 F1756\nG1 X0 Y29 F1756\nG1 X0 Y0 F1756<|endoftext|>"}
+{"prompt": "draw a 90 degree clockwise arc with radius 46 mm at speed 1782", "completion": "G2 X0 Y-46 I0 J-46 F1782<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 73 mm at speed 1150", "completion": "G1 X73 Y0 F1150\nG1 X36 Y63 F1150\nG1 X0 Y0 F1150<|endoftext|>"}
+{"prompt": "draw a 270 degree counterclockwise arc with radius 41 mm at speed 1594", "completion": "G3 X0 Y-41 I0 J41 F1594<|endoftext|>"}
+{"prompt": "draw a square with side 92 mm at speed 1501", "completion": "G1 X92 Y0 F1501\nG1 X92 Y92 F1501\nG1 X0 Y92 F1501\nG1 X0 Y0 F1501<|endoftext|>"}
+{"prompt": "draw a square with side 51 mm at speed 1969", "completion": "G1 X51 Y0 F1969\nG1 X51 Y51 F1969\nG1 X0 Y51 F1969\nG1 X0 Y0 F1969<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 50 mm at speed 509", "completion": "G1 X50 Y0 F509\nG1 X25 Y43 F509\nG1 X0 Y0 F509<|endoftext|>"}
+{"prompt": "draw a rectangle 18 by 70 mm starting from current position at speed 1105", "completion": "G1 X18 Y0 F1105\nG1 X18 Y70 F1105\nG1 X0 Y70 F1105\nG1 X0 Y0 F1105<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 48 mm at speed 1830", "completion": "G1 X48 Y0 F1830\nG1 X24 Y42 F1830\nG1 X0 Y0 F1830<|endoftext|>"}
+{"prompt": "draw a full circle of radius 42 mm around current position at speed 315", "completion": "G2 I42 J0 F315\nG2 I-42 J0 F315<|endoftext|>"}
+{"prompt": "draw a full circle of radius 37 mm around current position at speed 351", "completion": "G2 I37 J0 F351\nG2 I-37 J0 F351<|endoftext|>"}
+{"prompt": "draw a full circle of radius 34 mm around current position at speed 1125", "completion": "G2 I34 J0 F1125\nG2 I-34 J0 F1125<|endoftext|>"}
+{"prompt": "move to (-86, -6) at speed 1903", "completion": "G1 X-86 Y-6 F1903<|endoftext|>"}
+{"prompt": "draw a full circle of radius 9 mm around current position at speed 1520", "completion": "G2 I9 J0 F1520\nG2 I-9 J0 F1520<|endoftext|>"}
+{"prompt": "draw a 270 degree counterclockwise arc with radius 10 mm at speed 1147", "completion": "G3 X0 Y-10 I0 J10 F1147<|endoftext|>"}
+{"prompt": "draw a square with side 80 mm at speed 1821", "completion": "G1 X80 Y0 F1821\nG1 X80 Y80 F1821\nG1 X0 Y80 F1821\nG1 X0 Y0 F1821<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 15 mm at speed 1121", "completion": "G1 X15 Y0 F1121\nG1 X7 Y13 F1121\nG1 X0 Y0 F1121<|endoftext|>"}
+{"prompt": "draw a 270 degree clockwise arc with radius 41 mm at speed 858", "completion": "G2 X0 Y41 I0 J-41 F858<|endoftext|>"}
+{"prompt": "draw a square with side 70 mm at speed 1226", "completion": "G1 X70 Y0 F1226\nG1 X70 Y70 F1226\nG1 X0 Y70 F1226\nG1 X0 Y0 F1226<|endoftext|>"}
+{"prompt": "draw a line of length 8 mm at 135 degrees with speed 411", "completion": "G1 X-6 Y6 F411<|endoftext|>"}
+{"prompt": "draw a 270 degree clockwise arc with radius 26 mm at speed 1233", "completion": "G2 X0 Y26 I0 J-26 F1233<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 32 mm at speed 280", "completion": "G1 X32 Y0 F280\nG1 X16 Y28 F280\nG1 X0 Y0 F280<|endoftext|>"}
+{"prompt": "draw a line of length 91 mm at 135 degrees with speed 1099", "completion": "G1 X-64 Y64 F1099<|endoftext|>"}
+{"prompt": "draw a square with side 76 mm at speed 1448", "completion": "G1 X76 Y0 F1448\nG1 X76 Y76 F1448\nG1 X0 Y76 F1448\nG1 X0 Y0 F1448<|endoftext|>"}
+{"prompt": "draw a line of length 47 mm at 45 degrees with speed 779", "completion": "G1 X33 Y33 F779<|endoftext|>"}
+{"prompt": "draw a rectangle 62 by 53 mm starting from current position at speed 1590", "completion": "G1 X62 Y0 F1590\nG1 X62 Y53 F1590\nG1 X0 Y53 F1590\nG1 X0 Y0 F1590<|endoftext|>"}
+{"prompt": "draw a square with side 16 mm at speed 1816", "completion": "G1 X16 Y0 F1816\nG1 X16 Y16 F1816\nG1 X0 Y16 F1816\nG1 X0 Y0 F1816<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 92 mm at speed 885", "completion": "G1 X92 Y0 F885\nG1 X46 Y80 F885\nG1 X0 Y0 F885<|endoftext|>"}
+{"prompt": "move to (-16, -76) at speed 1342", "completion": "G1 X-16 Y-76 F1342<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 59 mm at speed 781", "completion": "G1 X59 Y0 F781\nG1 X29 Y51 F781\nG1 X0 Y0 F781<|endoftext|>"}
+{"prompt": "draw a full circle of radius 47 mm around current position at speed 1434", "completion": "G2 I47 J0 F1434\nG2 I-47 J0 F1434<|endoftext|>"}
+{"prompt": "draw a 180 degree clockwise arc with radius 14 mm at speed 1393", "completion": "G2 X-14 Y0 I0 J-14 F1393<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 28 mm at speed 916", "completion": "G1 X28 Y0 F916\nG1 X14 Y24 F916\nG1 X0 Y0 F916<|endoftext|>"}
+{"prompt": "draw a full circle of radius 46 mm around current position at speed 1630", "completion": "G2 I46 J0 F1630\nG2 I-46 J0 F1630<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 60 mm at speed 464", "completion": "G1 X60 Y0 F464\nG1 X30 Y52 F464\nG1 X0 Y0 F464<|endoftext|>"}
+{"prompt": "draw a square with side 100 mm at speed 373", "completion": "G1 X100 Y0 F373\nG1 X100 Y100 F373\nG1 X0 Y100 F373\nG1 X0 Y0 F373<|endoftext|>"}
+{"prompt": "draw a full circle of radius 40 mm around current position at speed 971", "completion": "G2 I40 J0 F971\nG2 I-40 J0 F971<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 52 mm at speed 1865", "completion": "G1 X52 Y0 F1865\nG1 X26 Y45 F1865\nG1 X0 Y0 F1865<|endoftext|>"}
+{"prompt": "draw a line of length 86 mm at 270 degrees with speed 1897", "completion": "G1 X0 Y-86 F1897<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 97 mm at speed 1278", "completion": "G1 X97 Y0 F1278\nG1 X48 Y84 F1278\nG1 X0 Y0 F1278<|endoftext|>"}
+{"prompt": "move to (65, 71) at speed 1067", "completion": "G1 X65 Y71 F1067<|endoftext|>"}
+{"prompt": "draw a square with side 56 mm at speed 237", "completion": "G1 X56 Y0 F237\nG1 X56 Y56 F237\nG1 X0 Y56 F237\nG1 X0 Y0 F237<|endoftext|>"}
+{"prompt": "draw a full circle of radius 24 mm around current position at speed 569", "completion": "G2 I24 J0 F569\nG2 I-24 J0 F569<|endoftext|>"}
+{"prompt": "draw a line of length 44 mm at 135 degrees with speed 593", "completion": "G1 X-31 Y31 F593<|endoftext|>"}
+{"prompt": "draw a line of length 18 mm at 90 degrees with speed 358", "completion": "G1 X0 Y18 F358<|endoftext|>"}
+{"prompt": "draw a full circle of radius 11 mm around current position at speed 1239", "completion": "G2 I11 J0 F1239\nG2 I-11 J0 F1239<|endoftext|>"}
+{"prompt": "draw a 270 degree clockwise arc with radius 39 mm at speed 1555", "completion": "G2 X0 Y39 I0 J-39 F1555<|endoftext|>"}
+{"prompt": "draw a full circle of radius 44 mm around current position at speed 468", "completion": "G2 I44 J0 F468\nG2 I-44 J0 F468<|endoftext|>"}
+{"prompt": "draw a square with side 58 mm at speed 515", "completion": "G1 X58 Y0 F515\nG1 X58 Y58 F515\nG1 X0 Y58 F515\nG1 X0 Y0 F515<|endoftext|>"}
+{"prompt": "draw a line of length 24 mm at 270 degrees with speed 1779", "completion": "G1 X0 Y-24 F1779<|endoftext|>"}
+{"prompt": "draw a square with side 31 mm at speed 1676", "completion": "G1 X31 Y0 F1676\nG1 X31 Y31 F1676\nG1 X0 Y31 F1676\nG1 X0 Y0 F1676<|endoftext|>"}
+{"prompt": "draw a rectangle 15 by 62 mm starting from current position at speed 946", "completion": "G1 X15 Y0 F946\nG1 X15 Y62 F946\nG1 X0 Y62 F946\nG1 X0 Y0 F946<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 40 mm at speed 1109", "completion": "G1 X40 Y0 F1109\nG1 X20 Y35 F1109\nG1 X0 Y0 F1109<|endoftext|>"}
+{"prompt": "draw a square with side 46 mm at speed 1740", "completion": "G1 X46 Y0 F1740\nG1 X46 Y46 F1740\nG1 X0 Y46 F1740\nG1 X0 Y0 F1740<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 67 mm at speed 679", "completion": "G1 X67 Y0 F679\nG1 X33 Y58 F679\nG1 X0 Y0 F679<|endoftext|>"}
+{"prompt": "draw a square with side 40 mm at speed 833", "completion": "G1 X40 Y0 F833\nG1 X40 Y40 F833\nG1 X0 Y40 F833\nG1 X0 Y0 F833<|endoftext|>"}
+{"prompt": "draw a 90 degree counterclockwise arc with radius 35 mm at speed 1589", "completion": "G3 X0 Y35 I0 J35 F1589<|endoftext|>"}
+{"prompt": "draw a square with side 66 mm at speed 1145", "completion": "G1 X66 Y0 F1145\nG1 X66 Y66 F1145\nG1 X0 Y66 F1145\nG1 X0 Y0 F1145<|endoftext|>"}
+{"prompt": "draw a 180 degree counterclockwise arc with radius 23 mm at speed 531", "completion": "G3 X-23 Y0 I0 J23 F531<|endoftext|>"}
+{"prompt": "draw a 270 degree clockwise arc with radius 17 mm at speed 1987", "completion": "G2 X0 Y17 I0 J-17 F1987<|endoftext|>"}
+{"prompt": "draw a full circle of radius 8 mm around current position at speed 1513", "completion": "G2 I8 J0 F1513\nG2 I-8 J0 F1513<|endoftext|>"}
+{"prompt": "draw a rectangle 57 by 80 mm starting from current position at speed 410", "completion": "G1 X57 Y0 F410\nG1 X57 Y80 F410\nG1 X0 Y80 F410\nG1 X0 Y0 F410<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 76 mm at speed 1943", "completion": "G1 X76 Y0 F1943\nG1 X38 Y66 F1943\nG1 X0 Y0 F1943<|endoftext|>"}
+{"prompt": "move to (-28, -79) at speed 1762", "completion": "G1 X-28 Y-79 F1762<|endoftext|>"}
+{"prompt": "draw a line of length 35 mm at 135 degrees with speed 1251", "completion": "G1 X-25 Y25 F1251<|endoftext|>"}
+{"prompt": "draw a line of length 56 mm at 0 degrees with speed 654", "completion": "G1 X56 Y0 F654<|endoftext|>"}
+{"prompt": "draw a 180 degree clockwise arc with radius 33 mm at speed 1049", "completion": "G2 X-33 Y0 I0 J-33 F1049<|endoftext|>"}
+{"prompt": "move to (1, 28) at speed 965", "completion": "G1 X1 Y28 F965<|endoftext|>"}
+{"prompt": "draw a line of length 50 mm at 0 degrees with speed 967", "completion": "G1 X50 Y0 F967<|endoftext|>"}
+{"prompt": "draw a line of length 4 mm at 45 degrees with speed 402", "completion": "G1 X3 Y3 F402<|endoftext|>"}
+{"prompt": "draw a 270 degree counterclockwise arc with radius 50 mm at speed 1820", "completion": "G3 X0 Y-50 I0 J50 F1820<|endoftext|>"}
+{"prompt": "draw a line of length 18 mm at 0 degrees with speed 787", "completion": "G1 X18 Y0 F787<|endoftext|>"}
+{"prompt": "draw a 270 degree clockwise arc with radius 35 mm at speed 1754", "completion": "G2 X0 Y35 I0 J-35 F1754<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 70 mm at speed 1118", "completion": "G1 X70 Y0 F1118\nG1 X35 Y61 F1118\nG1 X0 Y0 F1118<|endoftext|>"}
+{"prompt": "draw a square with side 10 mm at speed 362", "completion": "G1 X10 Y0 F362\nG1 X10 Y10 F362\nG1 X0 Y10 F362\nG1 X0 Y0 F362<|endoftext|>"}
+{"prompt": "move to (-35, -45) at speed 1910", "completion": "G1 X-35 Y-45 F1910<|endoftext|>"}
+{"prompt": "draw a line of length 71 mm at 270 degrees with speed 1446", "completion": "G1 X0 Y-71 F1446<|endoftext|>"}
+{"prompt": "draw a square with side 64 mm at speed 427", "completion": "G1 X64 Y0 F427\nG1 X64 Y64 F427\nG1 X0 Y64 F427\nG1 X0 Y0 F427<|endoftext|>"}
+{"prompt": "draw a 90 degree counterclockwise arc with radius 23 mm at speed 449", "completion": "G3 X0 Y23 I0 J23 F449<|endoftext|>"}
+{"prompt": "move to (-39, 7) at speed 1508", "completion": "G1 X-39 Y7 F1508<|endoftext|>"}
+{"prompt": "draw a 180 degree clockwise arc with radius 44 mm at speed 427", "completion": "G2 X-44 Y0 I0 J-44 F427<|endoftext|>"}
+{"prompt": "draw a 270 degree clockwise arc with radius 36 mm at speed 1494", "completion": "G2 X0 Y36 I0 J-36 F1494<|endoftext|>"}
+{"prompt": "draw a square with side 83 mm at speed 695", "completion": "G1 X83 Y0 F695\nG1 X83 Y83 F695\nG1 X0 Y83 F695\nG1 X0 Y0 F695<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 28 mm at speed 796", "completion": "G1 X28 Y0 F796\nG1 X14 Y24 F796\nG1 X0 Y0 F796<|endoftext|>"}
+{"prompt": "draw a rectangle 10 by 88 mm starting from current position at speed 922", "completion": "G1 X10 Y0 F922\nG1 X10 Y88 F922\nG1 X0 Y88 F922\nG1 X0 Y0 F922<|endoftext|>"}
+{"prompt": "draw a line of length 74 mm at 135 degrees with speed 583", "completion": "G1 X-52 Y52 F583<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 95 mm at speed 375", "completion": "G1 X95 Y0 F375\nG1 X47 Y82 F375\nG1 X0 Y0 F375<|endoftext|>"}
+{"prompt": "draw a square with side 56 mm at speed 338", "completion": "G1 X56 Y0 F338\nG1 X56 Y56 F338\nG1 X0 Y56 F338\nG1 X0 Y0 F338<|endoftext|>"}
+{"prompt": "draw a square with side 79 mm at speed 1239", "completion": "G1 X79 Y0 F1239\nG1 X79 Y79 F1239\nG1 X0 Y79 F1239\nG1 X0 Y0 F1239<|endoftext|>"}
+{"prompt": "draw a 270 degree clockwise arc with radius 37 mm at speed 999", "completion": "G2 X0 Y37 I0 J-37 F999<|endoftext|>"}
+{"prompt": "draw a 90 degree counterclockwise arc with radius 35 mm at speed 964", "completion": "G3 X0 Y35 I0 J35 F964<|endoftext|>"}
+{"prompt": "draw a full circle of radius 6 mm around current position at speed 931", "completion": "G2 I6 J0 F931\nG2 I-6 J0 F931<|endoftext|>"}
+{"prompt": "draw a 180 degree clockwise arc with radius 9 mm at speed 1701", "completion": "G2 X-9 Y0 I0 J-9 F1701<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 90 mm at speed 412", "completion": "G1 X90 Y0 F412\nG1 X45 Y78 F412\nG1 X0 Y0 F412<|endoftext|>"}
+{"prompt": "draw a 270 degree counterclockwise arc with radius 42 mm at speed 473", "completion": "G3 X0 Y-42 I0 J42 F473<|endoftext|>"}
+{"prompt": "move to (-10, 39) at speed 893", "completion": "G1 X-10 Y39 F893<|endoftext|>"}
+{"prompt": "draw a 90 degree counterclockwise arc with radius 46 mm at speed 1624", "completion": "G3 X0 Y46 I0 J46 F1624<|endoftext|>"}
+{"prompt": "draw a rectangle 90 by 33 mm starting from current position at speed 1861", "completion": "G1 X90 Y0 F1861\nG1 X90 Y33 F1861\nG1 X0 Y33 F1861\nG1 X0 Y0 F1861<|endoftext|>"}
+{"prompt": "draw a line of length 9 mm at 270 degrees with speed 1789", "completion": "G1 X0 Y-9 F1789<|endoftext|>"}
+{"prompt": "draw a rectangle 14 by 47 mm starting from current position at speed 612", "completion": "G1 X14 Y0 F612\nG1 X14 Y47 F612\nG1 X0 Y47 F612\nG1 X0 Y0 F612<|endoftext|>"}
+{"prompt": "move to (-49, -90) at speed 846", "completion": "G1 X-49 Y-90 F846<|endoftext|>"}
+{"prompt": "draw a full circle of radius 37 mm around current position at speed 1015", "completion": "G2 I37 J0 F1015\nG2 I-37 J0 F1015<|endoftext|>"}
+{"prompt": "draw a 180 degree counterclockwise arc with radius 39 mm at speed 274", "completion": "G3 X-39 Y0 I0 J39 F274<|endoftext|>"}
+{"prompt": "draw a 90 degree counterclockwise arc with radius 46 mm at speed 931", "completion": "G3 X0 Y46 I0 J46 F931<|endoftext|>"}
+{"prompt": "draw a 270 degree counterclockwise arc with radius 8 mm at speed 759", "completion": "G3 X0 Y-8 I0 J8 F759<|endoftext|>"}
+{"prompt": "move to (-6, 11) at speed 1019", "completion": "G1 X-6 Y11 F1019<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 66 mm at speed 991", "completion": "G1 X66 Y0 F991\nG1 X33 Y57 F991\nG1 X0 Y0 F991<|endoftext|>"}
+{"prompt": "draw a full circle of radius 16 mm around current position at speed 1216", "completion": "G2 I16 J0 F1216\nG2 I-16 J0 F1216<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 73 mm at speed 952", "completion": "G1 X73 Y0 F952\nG1 X36 Y63 F952\nG1 X0 Y0 F952<|endoftext|>"}
+{"prompt": "draw a 180 degree clockwise arc with radius 38 mm at speed 1689", "completion": "G2 X-38 Y0 I0 J-38 F1689<|endoftext|>"}
+{"prompt": "draw a rectangle 20 by 65 mm starting from current position at speed 1433", "completion": "G1 X20 Y0 F1433\nG1 X20 Y65 F1433\nG1 X0 Y65 F1433\nG1 X0 Y0 F1433<|endoftext|>"}
+{"prompt": "draw a 270 degree counterclockwise arc with radius 16 mm at speed 857", "completion": "G3 X0 Y-16 I0 J16 F857<|endoftext|>"}
+{"prompt": "move to (-80, -17) at speed 1553", "completion": "G1 X-80 Y-17 F1553<|endoftext|>"}
+{"prompt": "draw a full circle of radius 24 mm around current position at speed 1113", "completion": "G2 I24 J0 F1113\nG2 I-24 J0 F1113<|endoftext|>"}
+{"prompt": "draw a square with side 64 mm at speed 541", "completion": "G1 X64 Y0 F541\nG1 X64 Y64 F541\nG1 X0 Y64 F541\nG1 X0 Y0 F541<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 66 mm at speed 919", "completion": "G1 X66 Y0 F919\nG1 X33 Y57 F919\nG1 X0 Y0 F919<|endoftext|>"}
+{"prompt": "draw a rectangle 15 by 55 mm starting from current position at speed 1459", "completion": "G1 X15 Y0 F1459\nG1 X15 Y55 F1459\nG1 X0 Y55 F1459\nG1 X0 Y0 F1459<|endoftext|>"}
+{"prompt": "draw a rectangle 45 by 91 mm starting from current position at speed 1820", "completion": "G1 X45 Y0 F1820\nG1 X45 Y91 F1820\nG1 X0 Y91 F1820\nG1 X0 Y0 F1820<|endoftext|>"}
+{"prompt": "move to (-81, 71) at speed 1505", "completion": "G1 X-81 Y71 F1505<|endoftext|>"}
+{"prompt": "draw a rectangle 56 by 75 mm starting from current position at speed 1840", "completion": "G1 X56 Y0 F1840\nG1 X56 Y75 F1840\nG1 X0 Y75 F1840\nG1 X0 Y0 F1840<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 96 mm at speed 527", "completion": "G1 X96 Y0 F527\nG1 X48 Y83 F527\nG1 X0 Y0 F527<|endoftext|>"}
+{"prompt": "move to (-64, 55) at speed 1588", "completion": "G1 X-64 Y55 F1588<|endoftext|>"}
+{"prompt": "draw a 90 degree clockwise arc with radius 33 mm at speed 337", "completion": "G2 X0 Y-33 I0 J-33 F337<|endoftext|>"}
+{"prompt": "draw a line of length 100 mm at 270 degrees with speed 950", "completion": "G1 X0 Y-100 F950<|endoftext|>"}
+{"prompt": "draw a full circle of radius 29 mm around current position at speed 1361", "completion": "G2 I29 J0 F1361\nG2 I-29 J0 F1361<|endoftext|>"}
+{"prompt": "move to (54, -61) at speed 1590", "completion": "G1 X54 Y-61 F1590<|endoftext|>"}
+{"prompt": "draw a rectangle 57 by 57 mm starting from current position at speed 1109", "completion": "G1 X57 Y0 F1109\nG1 X57 Y57 F1109\nG1 X0 Y57 F1109\nG1 X0 Y0 F1109<|endoftext|>"}
+{"prompt": "draw a 270 degree clockwise arc with radius 9 mm at speed 1284", "completion": "G2 X0 Y9 I0 J-9 F1284<|endoftext|>"}
+{"prompt": "draw a full circle of radius 30 mm around current position at speed 843", "completion": "G2 I30 J0 F843\nG2 I-30 J0 F843<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 45 mm at speed 711", "completion": "G1 X45 Y0 F711\nG1 X22 Y39 F711\nG1 X0 Y0 F711<|endoftext|>"}
+{"prompt": "move to (-94, 88) at speed 581", "completion": "G1 X-94 Y88 F581<|endoftext|>"}
+{"prompt": "draw a rectangle 76 by 59 mm starting from current position at speed 1350", "completion": "G1 X76 Y0 F1350\nG1 X76 Y59 F1350\nG1 X0 Y59 F1350\nG1 X0 Y0 F1350<|endoftext|>"}
+{"prompt": "move to (-33, 98) at speed 733", "completion": "G1 X-33 Y98 F733<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 67 mm at speed 639", "completion": "G1 X67 Y0 F639\nG1 X33 Y58 F639\nG1 X0 Y0 F639<|endoftext|>"}
+{"prompt": "draw a square with side 46 mm at speed 1621", "completion": "G1 X46 Y0 F1621\nG1 X46 Y46 F1621\nG1 X0 Y46 F1621\nG1 X0 Y0 F1621<|endoftext|>"}
+{"prompt": "draw a rectangle 35 by 25 mm starting from current position at speed 477", "completion": "G1 X35 Y0 F477\nG1 X35 Y25 F477\nG1 X0 Y25 F477\nG1 X0 Y0 F477<|endoftext|>"}
+{"prompt": "draw a 180 degree clockwise arc with radius 9 mm at speed 1660", "completion": "G2 X-9 Y0 I0 J-9 F1660<|endoftext|>"}
+{"prompt": "draw a rectangle 21 by 97 mm starting from current position at speed 1931", "completion": "G1 X21 Y0 F1931\nG1 X21 Y97 F1931\nG1 X0 Y97 F1931\nG1 X0 Y0 F1931<|endoftext|>"}
+{"prompt": "draw a full circle of radius 47 mm around current position at speed 911", "completion": "G2 I47 J0 F911\nG2 I-47 J0 F911<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 18 mm at speed 1326", "completion": "G1 X18 Y0 F1326\nG1 X9 Y16 F1326\nG1 X0 Y0 F1326<|endoftext|>"}
+{"prompt": "draw a square with side 47 mm at speed 814", "completion": "G1 X47 Y0 F814\nG1 X47 Y47 F814\nG1 X0 Y47 F814\nG1 X0 Y0 F814<|endoftext|>"}
+{"prompt": "draw a 270 degree clockwise arc with radius 15 mm at speed 1825", "completion": "G2 X0 Y15 I0 J-15 F1825<|endoftext|>"}
+{"prompt": "draw a full circle of radius 37 mm around current position at speed 659", "completion": "G2 I37 J0 F659\nG2 I-37 J0 F659<|endoftext|>"}
+{"prompt": "move to (-49, -65) at speed 684", "completion": "G1 X-49 Y-65 F684<|endoftext|>"}
+{"prompt": "draw a 90 degree counterclockwise arc with radius 36 mm at speed 1334", "completion": "G3 X0 Y36 I0 J36 F1334<|endoftext|>"}
+{"prompt": "draw a square with side 57 mm at speed 1157", "completion": "G1 X57 Y0 F1157\nG1 X57 Y57 F1157\nG1 X0 Y57 F1157\nG1 X0 Y0 F1157<|endoftext|>"}
+{"prompt": "draw a 90 degree clockwise arc with radius 40 mm at speed 334", "completion": "G2 X0 Y-40 I0 J-40 F334<|endoftext|>"}
+{"prompt": "draw a full circle of radius 30 mm around current position at speed 1668", "completion": "G2 I30 J0 F1668\nG2 I-30 J0 F1668<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 71 mm at speed 1276", "completion": "G1 X71 Y0 F1276\nG1 X35 Y61 F1276\nG1 X0 Y0 F1276<|endoftext|>"}
+{"prompt": "draw a rectangle 62 by 83 mm starting from current position at speed 351", "completion": "G1 X62 Y0 F351\nG1 X62 Y83 F351\nG1 X0 Y83 F351\nG1 X0 Y0 F351<|endoftext|>"}
+{"prompt": "draw a line of length 41 mm at 270 degrees with speed 351", "completion": "G1 X0 Y-41 F351<|endoftext|>"}
+{"prompt": "draw a rectangle 69 by 97 mm starting from current position at speed 1259", "completion": "G1 X69 Y0 F1259\nG1 X69 Y97 F1259\nG1 X0 Y97 F1259\nG1 X0 Y0 F1259<|endoftext|>"}
+{"prompt": "draw a full circle of radius 13 mm around current position at speed 1998", "completion": "G2 I13 J0 F1998\nG2 I-13 J0 F1998<|endoftext|>"}
+{"prompt": "draw a 270 degree clockwise arc with radius 40 mm at speed 1772", "completion": "G2 X0 Y40 I0 J-40 F1772<|endoftext|>"}
+{"prompt": "draw a line of length 56 mm at 180 degrees with speed 1978", "completion": "G1 X-56 Y0 F1978<|endoftext|>"}
+{"prompt": "move to (-69, 32) at speed 513", "completion": "G1 X-69 Y32 F513<|endoftext|>"}
+{"prompt": "draw a full circle of radius 15 mm around current position at speed 531", "completion": "G2 I15 J0 F531\nG2 I-15 J0 F531<|endoftext|>"}
+{"prompt": "draw a full circle of radius 50 mm around current position at speed 661", "completion": "G2 I50 J0 F661\nG2 I-50 J0 F661<|endoftext|>"}
+{"prompt": "draw a full circle of radius 38 mm around current position at speed 781", "completion": "G2 I38 J0 F781\nG2 I-38 J0 F781<|endoftext|>"}
+{"prompt": "draw a 180 degree clockwise arc with radius 10 mm at speed 1500", "completion": "G2 X-10 Y0 I0 J-10 F1500<|endoftext|>"}
+{"prompt": "draw a square with side 45 mm at speed 456", "completion": "G1 X45 Y0 F456\nG1 X45 Y45 F456\nG1 X0 Y45 F456\nG1 X0 Y0 F456<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 48 mm at speed 1458", "completion": "G1 X48 Y0 F1458\nG1 X24 Y42 F1458\nG1 X0 Y0 F1458<|endoftext|>"}
+{"prompt": "draw a square with side 21 mm at speed 1229", "completion": "G1 X21 Y0 F1229\nG1 X21 Y21 F1229\nG1 X0 Y21 F1229\nG1 X0 Y0 F1229<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 31 mm at speed 1412", "completion": "G1 X31 Y0 F1412\nG1 X15 Y27 F1412\nG1 X0 Y0 F1412<|endoftext|>"}
+{"prompt": "draw a square with side 29 mm at speed 550", "completion": "G1 X29 Y0 F550\nG1 X29 Y29 F550\nG1 X0 Y29 F550\nG1 X0 Y0 F550<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 89 mm at speed 1675", "completion": "G1 X89 Y0 F1675\nG1 X44 Y77 F1675\nG1 X0 Y0 F1675<|endoftext|>"}
+{"prompt": "draw a square with side 53 mm at speed 1925", "completion": "G1 X53 Y0 F1925\nG1 X53 Y53 F1925\nG1 X0 Y53 F1925\nG1 X0 Y0 F1925<|endoftext|>"}
+{"prompt": "draw a square with side 15 mm at speed 1890", "completion": "G1 X15 Y0 F1890\nG1 X15 Y15 F1890\nG1 X0 Y15 F1890\nG1 X0 Y0 F1890<|endoftext|>"}
+{"prompt": "draw a 90 degree clockwise arc with radius 6 mm at speed 1513", "completion": "G2 X0 Y-6 I0 J-6 F1513<|endoftext|>"}
+{"prompt": "draw a 180 degree clockwise arc with radius 41 mm at speed 1770", "completion": "G2 X-41 Y0 I0 J-41 F1770<|endoftext|>"}
+{"prompt": "draw a square with side 63 mm at speed 1465", "completion": "G1 X63 Y0 F1465\nG1 X63 Y63 F1465\nG1 X0 Y63 F1465\nG1 X0 Y0 F1465<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 13 mm at speed 1219", "completion": "G1 X13 Y0 F1219\nG1 X6 Y11 F1219\nG1 X0 Y0 F1219<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 79 mm at speed 793", "completion": "G1 X79 Y0 F793\nG1 X39 Y68 F793\nG1 X0 Y0 F793<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 48 mm at speed 1189", "completion": "G1 X48 Y0 F1189\nG1 X24 Y42 F1189\nG1 X0 Y0 F1189<|endoftext|>"}
+{"prompt": "draw a line of length 88 mm at 135 degrees with speed 809", "completion": "G1 X-62 Y62 F809<|endoftext|>"}
+{"prompt": "draw a rectangle 19 by 98 mm starting from current position at speed 322", "completion": "G1 X19 Y0 F322\nG1 X19 Y98 F322\nG1 X0 Y98 F322\nG1 X0 Y0 F322<|endoftext|>"}
+{"prompt": "draw a line of length 57 mm at 135 degrees with speed 1191", "completion": "G1 X-40 Y40 F1191<|endoftext|>"}
+{"prompt": "draw a rectangle 36 by 53 mm starting from current position at speed 1442", "completion": "G1 X36 Y0 F1442\nG1 X36 Y53 F1442\nG1 X0 Y53 F1442\nG1 X0 Y0 F1442<|endoftext|>"}
+{"prompt": "draw a line of length 41 mm at 270 degrees with speed 853", "completion": "G1 X0 Y-41 F853<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 54 mm at speed 1016", "completion": "G1 X54 Y0 F1016\nG1 X27 Y47 F1016\nG1 X0 Y0 F1016<|endoftext|>"}
+{"prompt": "draw a line of length 98 mm at 45 degrees with speed 1254", "completion": "G1 X69 Y69 F1254<|endoftext|>"}
+{"prompt": "draw a square with side 23 mm at speed 853", "completion": "G1 X23 Y0 F853\nG1 X23 Y23 F853\nG1 X0 Y23 F853\nG1 X0 Y0 F853<|endoftext|>"}
+{"prompt": "draw a line of length 60 mm at 0 degrees with speed 747", "completion": "G1 X60 Y0 F747<|endoftext|>"}
+{"prompt": "draw a rectangle 41 by 28 mm starting from current position at speed 398", "completion": "G1 X41 Y0 F398\nG1 X41 Y28 F398\nG1 X0 Y28 F398\nG1 X0 Y0 F398<|endoftext|>"}
+{"prompt": "move to (-26, -2) at speed 1969", "completion": "G1 X-26 Y-2 F1969<|endoftext|>"}
+{"prompt": "draw a square with side 63 mm at speed 708", "completion": "G1 X63 Y0 F708\nG1 X63 Y63 F708\nG1 X0 Y63 F708\nG1 X0 Y0 F708<|endoftext|>"}
+{"prompt": "draw a 180 degree counterclockwise arc with radius 15 mm at speed 588", "completion": "G3 X-15 Y0 I0 J15 F588<|endoftext|>"}
+{"prompt": "draw a 180 degree counterclockwise arc with radius 15 mm at speed 1221", "completion": "G3 X-15 Y0 I0 J15 F1221<|endoftext|>"}
+{"prompt": "draw a full circle of radius 36 mm around current position at speed 247", "completion": "G2 I36 J0 F247\nG2 I-36 J0 F247<|endoftext|>"}
+{"prompt": "move to (0, 29) at speed 1136", "completion": "G1 X0 Y29 F1136<|endoftext|>"}
+{"prompt": "draw a line of length 28 mm at 180 degrees with speed 922", "completion": "G1 X-28 Y0 F922<|endoftext|>"}
+{"prompt": "move to (-88, -28) at speed 1213", "completion": "G1 X-88 Y-28 F1213<|endoftext|>"}
+{"prompt": "draw a square with side 93 mm at speed 1577", "completion": "G1 X93 Y0 F1577\nG1 X93 Y93 F1577\nG1 X0 Y93 F1577\nG1 X0 Y0 F1577<|endoftext|>"}
+{"prompt": "draw a rectangle 46 by 78 mm starting from current position at speed 216", "completion": "G1 X46 Y0 F216\nG1 X46 Y78 F216\nG1 X0 Y78 F216\nG1 X0 Y0 F216<|endoftext|>"}
+{"prompt": "draw a 180 degree clockwise arc with radius 11 mm at speed 741", "completion": "G2 X-11 Y0 I0 J-11 F741<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 56 mm at speed 1764", "completion": "G1 X56 Y0 F1764\nG1 X28 Y48 F1764\nG1 X0 Y0 F1764<|endoftext|>"}
+{"prompt": "draw a rectangle 56 by 15 mm starting from current position at speed 1020", "completion": "G1 X56 Y0 F1020\nG1 X56 Y15 F1020\nG1 X0 Y15 F1020\nG1 X0 Y0 F1020<|endoftext|>"}
+{"prompt": "move to (45, 43) at speed 598", "completion": "G1 X45 Y43 F598<|endoftext|>"}
+{"prompt": "draw a full circle of radius 40 mm around current position at speed 791", "completion": "G2 I40 J0 F791\nG2 I-40 J0 F791<|endoftext|>"}
+{"prompt": "move to (-2, 29) at speed 1122", "completion": "G1 X-2 Y29 F1122<|endoftext|>"}
+{"prompt": "draw a 180 degree clockwise arc with radius 40 mm at speed 463", "completion": "G2 X-40 Y0 I0 J-40 F463<|endoftext|>"}
+{"prompt": "move to (0, -5) at speed 1827", "completion": "G1 X0 Y-5 F1827<|endoftext|>"}
+{"prompt": "draw a full circle of radius 40 mm around current position at speed 948", "completion": "G2 I40 J0 F948\nG2 I-40 J0 F948<|endoftext|>"}
+{"prompt": "draw a 90 degree counterclockwise arc with radius 14 mm at speed 1224", "completion": "G3 X0 Y14 I0 J14 F1224<|endoftext|>"}
+{"prompt": "move to (-89, -91) at speed 480", "completion": "G1 X-89 Y-91 F480<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 52 mm at speed 1846", "completion": "G1 X52 Y0 F1846\nG1 X26 Y45 F1846\nG1 X0 Y0 F1846<|endoftext|>"}
+{"prompt": "draw a rectangle 76 by 68 mm starting from current position at speed 505", "completion": "G1 X76 Y0 F505\nG1 X76 Y68 F505\nG1 X0 Y68 F505\nG1 X0 Y0 F505<|endoftext|>"}
+{"prompt": "draw a square with side 75 mm at speed 486", "completion": "G1 X75 Y0 F486\nG1 X75 Y75 F486\nG1 X0 Y75 F486\nG1 X0 Y0 F486<|endoftext|>"}
+{"prompt": "draw a full circle of radius 44 mm around current position at speed 852", "completion": "G2 I44 J0 F852\nG2 I-44 J0 F852<|endoftext|>"}
+{"prompt": "draw a line of length 51 mm at 180 degrees with speed 1714", "completion": "G1 X-51 Y0 F1714<|endoftext|>"}
+{"prompt": "draw a 270 degree counterclockwise arc with radius 24 mm at speed 1238", "completion": "G3 X0 Y-24 I0 J24 F1238<|endoftext|>"}
+{"prompt": "draw a 270 degree counterclockwise arc with radius 37 mm at speed 1651", "completion": "G3 X0 Y-37 I0 J37 F1651<|endoftext|>"}
+{"prompt": "draw a square with side 48 mm at speed 1172", "completion": "G1 X48 Y0 F1172\nG1 X48 Y48 F1172\nG1 X0 Y48 F1172\nG1 X0 Y0 F1172<|endoftext|>"}
+{"prompt": "draw a 180 degree counterclockwise arc with radius 6 mm at speed 1579", "completion": "G3 X-6 Y0 I0 J6 F1579<|endoftext|>"}
+{"prompt": "move to (6, 49) at speed 830", "completion": "G1 X6 Y49 F830<|endoftext|>"}
+{"prompt": "draw a 270 degree clockwise arc with radius 49 mm at speed 1422", "completion": "G2 X0 Y49 I0 J-49 F1422<|endoftext|>"}
+{"prompt": "draw a rectangle 43 by 93 mm starting from current position at speed 1803", "completion": "G1 X43 Y0 F1803\nG1 X43 Y93 F1803\nG1 X0 Y93 F1803\nG1 X0 Y0 F1803<|endoftext|>"}
+{"prompt": "draw a 270 degree clockwise arc with radius 42 mm at speed 1677", "completion": "G2 X0 Y42 I0 J-42 F1677<|endoftext|>"}
+{"prompt": "move to (49, 22) at speed 549", "completion": "G1 X49 Y22 F549<|endoftext|>"}
+{"prompt": "draw a square with side 90 mm at speed 1676", "completion": "G1 X90 Y0 F1676\nG1 X90 Y90 F1676\nG1 X0 Y90 F1676\nG1 X0 Y0 F1676<|endoftext|>"}
+{"prompt": "draw a square with side 58 mm at speed 502", "completion": "G1 X58 Y0 F502\nG1 X58 Y58 F502\nG1 X0 Y58 F502\nG1 X0 Y0 F502<|endoftext|>"}
+{"prompt": "draw a 90 degree clockwise arc with radius 48 mm at speed 1372", "completion": "G2 X0 Y-48 I0 J-48 F1372<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 24 mm at speed 590", "completion": "G1 X24 Y0 F590\nG1 X12 Y21 F590\nG1 X0 Y0 F590<|endoftext|>"}
+{"prompt": "move to (12, -20) at speed 1057", "completion": "G1 X12 Y-20 F1057<|endoftext|>"}
+{"prompt": "draw a line of length 53 mm at 270 degrees with speed 617", "completion": "G1 X0 Y-53 F617<|endoftext|>"}
+{"prompt": "draw a rectangle 74 by 88 mm starting from current position at speed 1165", "completion": "G1 X74 Y0 F1165\nG1 X74 Y88 F1165\nG1 X0 Y88 F1165\nG1 X0 Y0 F1165<|endoftext|>"}
+{"prompt": "draw a 270 degree clockwise arc with radius 8 mm at speed 1262", "completion": "G2 X0 Y8 I0 J-8 F1262<|endoftext|>"}
+{"prompt": "draw a line of length 72 mm at 45 degrees with speed 1556", "completion": "G1 X51 Y51 F1556<|endoftext|>"}
+{"prompt": "draw a rectangle 77 by 58 mm starting from current position at speed 842", "completion": "G1 X77 Y0 F842\nG1 X77 Y58 F842\nG1 X0 Y58 F842\nG1 X0 Y0 F842<|endoftext|>"}
+{"prompt": "draw a line of length 59 mm at 180 degrees with speed 901", "completion": "G1 X-59 Y0 F901<|endoftext|>"}
+{"prompt": "draw a square with side 55 mm at speed 1584", "completion": "G1 X55 Y0 F1584\nG1 X55 Y55 F1584\nG1 X0 Y55 F1584\nG1 X0 Y0 F1584<|endoftext|>"}
+{"prompt": "draw a 270 degree counterclockwise arc with radius 48 mm at speed 1449", "completion": "G3 X0 Y-48 I0 J48 F1449<|endoftext|>"}
+{"prompt": "draw a rectangle 34 by 41 mm starting from current position at speed 771", "completion": "G1 X34 Y0 F771\nG1 X34 Y41 F771\nG1 X0 Y41 F771\nG1 X0 Y0 F771<|endoftext|>"}
+{"prompt": "draw a square with side 48 mm at speed 660", "completion": "G1 X48 Y0 F660\nG1 X48 Y48 F660\nG1 X0 Y48 F660\nG1 X0 Y0 F660<|endoftext|>"}
+{"prompt": "draw a full circle of radius 23 mm around current position at speed 1643", "completion": "G2 I23 J0 F1643\nG2 I-23 J0 F1643<|endoftext|>"}
+{"prompt": "draw a line of length 89 mm at 270 degrees with speed 1201", "completion": "G1 X0 Y-89 F1201<|endoftext|>"}
+{"prompt": "draw a full circle of radius 35 mm around current position at speed 914", "completion": "G2 I35 J0 F914\nG2 I-35 J0 F914<|endoftext|>"}
+{"prompt": "draw a square with side 45 mm at speed 789", "completion": "G1 X45 Y0 F789\nG1 X45 Y45 F789\nG1 X0 Y45 F789\nG1 X0 Y0 F789<|endoftext|>"}
+{"prompt": "move to (46, 73) at speed 1312", "completion": "G1 X46 Y73 F1312<|endoftext|>"}
+{"prompt": "draw a rectangle 60 by 54 mm starting from current position at speed 1783", "completion": "G1 X60 Y0 F1783\nG1 X60 Y54 F1783\nG1 X0 Y54 F1783\nG1 X0 Y0 F1783<|endoftext|>"}
+{"prompt": "draw a 180 degree clockwise arc with radius 14 mm at speed 789", "completion": "G2 X-14 Y0 I0 J-14 F789<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 20 mm at speed 909", "completion": "G1 X20 Y0 F909\nG1 X10 Y17 F909\nG1 X0 Y0 F909<|endoftext|>"}
+{"prompt": "draw a rectangle 93 by 42 mm starting from current position at speed 1730", "completion": "G1 X93 Y0 F1730\nG1 X93 Y42 F1730\nG1 X0 Y42 F1730\nG1 X0 Y0 F1730<|endoftext|>"}
+{"prompt": "draw a rectangle 37 by 35 mm starting from current position at speed 1895", "completion": "G1 X37 Y0 F1895\nG1 X37 Y35 F1895\nG1 X0 Y35 F1895\nG1 X0 Y0 F1895<|endoftext|>"}
+{"prompt": "draw a square with side 44 mm at speed 1351", "completion": "G1 X44 Y0 F1351\nG1 X44 Y44 F1351\nG1 X0 Y44 F1351\nG1 X0 Y0 F1351<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 44 mm at speed 481", "completion": "G1 X44 Y0 F481\nG1 X22 Y38 F481\nG1 X0 Y0 F481<|endoftext|>"}
+{"prompt": "move to (57, 89) at speed 1401", "completion": "G1 X57 Y89 F1401<|endoftext|>"}
+{"prompt": "draw a line of length 32 mm at 0 degrees with speed 1571", "completion": "G1 X32 Y0 F1571<|endoftext|>"}
+{"prompt": "draw a square with side 38 mm at speed 1506", "completion": "G1 X38 Y0 F1506\nG1 X38 Y38 F1506\nG1 X0 Y38 F1506\nG1 X0 Y0 F1506<|endoftext|>"}
+{"prompt": "draw a line of length 7 mm at 0 degrees with speed 1046", "completion": "G1 X7 Y0 F1046<|endoftext|>"}
+{"prompt": "draw a full circle of radius 50 mm around current position at speed 1167", "completion": "G2 I50 J0 F1167\nG2 I-50 J0 F1167<|endoftext|>"}
+{"prompt": "move to (74, 97) at speed 481", "completion": "G1 X74 Y97 F481<|endoftext|>"}
+{"prompt": "move to (40, -60) at speed 1033", "completion": "G1 X40 Y-60 F1033<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 70 mm at speed 1177", "completion": "G1 X70 Y0 F1177\nG1 X35 Y61 F1177\nG1 X0 Y0 F1177<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 35 mm at speed 1748", "completion": "G1 X35 Y0 F1748\nG1 X17 Y30 F1748\nG1 X0 Y0 F1748<|endoftext|>"}
+{"prompt": "draw a full circle of radius 25 mm around current position at speed 784", "completion": "G2 I25 J0 F784\nG2 I-25 J0 F784<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 17 mm at speed 1774", "completion": "G1 X17 Y0 F1774\nG1 X8 Y15 F1774\nG1 X0 Y0 F1774<|endoftext|>"}
+{"prompt": "move to (66, 46) at speed 675", "completion": "G1 X66 Y46 F675<|endoftext|>"}
+{"prompt": "draw a square with side 14 mm at speed 558", "completion": "G1 X14 Y0 F558\nG1 X14 Y14 F558\nG1 X0 Y14 F558\nG1 X0 Y0 F558<|endoftext|>"}
+{"prompt": "draw a rectangle 32 by 14 mm starting from current position at speed 1912", "completion": "G1 X32 Y0 F1912\nG1 X32 Y14 F1912\nG1 X0 Y14 F1912\nG1 X0 Y0 F1912<|endoftext|>"}
+{"prompt": "draw a rectangle 73 by 33 mm starting from current position at speed 1733", "completion": "G1 X73 Y0 F1733\nG1 X73 Y33 F1733\nG1 X0 Y33 F1733\nG1 X0 Y0 F1733<|endoftext|>"}
+{"prompt": "draw a 90 degree clockwise arc with radius 23 mm at speed 811", "completion": "G2 X0 Y-23 I0 J-23 F811<|endoftext|>"}
+{"prompt": "draw a square with side 87 mm at speed 419", "completion": "G1 X87 Y0 F419\nG1 X87 Y87 F419\nG1 X0 Y87 F419\nG1 X0 Y0 F419<|endoftext|>"}
+{"prompt": "draw a full circle of radius 23 mm around current position at speed 1130", "completion": "G2 I23 J0 F1130\nG2 I-23 J0 F1130<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 79 mm at speed 1273", "completion": "G1 X79 Y0 F1273\nG1 X39 Y68 F1273\nG1 X0 Y0 F1273<|endoftext|>"}
+{"prompt": "draw a rectangle 27 by 74 mm starting from current position at speed 1158", "completion": "G1 X27 Y0 F1158\nG1 X27 Y74 F1158\nG1 X0 Y74 F1158\nG1 X0 Y0 F1158<|endoftext|>"}
+{"prompt": "draw a full circle of radius 17 mm around current position at speed 1856", "completion": "G2 I17 J0 F1856\nG2 I-17 J0 F1856<|endoftext|>"}
+{"prompt": "move to (-16, -59) at speed 1697", "completion": "G1 X-16 Y-59 F1697<|endoftext|>"}
+{"prompt": "draw a rectangle 92 by 42 mm starting from current position at speed 1671", "completion": "G1 X92 Y0 F1671\nG1 X92 Y42 F1671\nG1 X0 Y42 F1671\nG1 X0 Y0 F1671<|endoftext|>"}
+{"prompt": "draw a line of length 2 mm at 270 degrees with speed 890", "completion": "G1 X0 Y-2 F890<|endoftext|>"}
+{"prompt": "draw a 270 degree clockwise arc with radius 23 mm at speed 559", "completion": "G2 X0 Y23 I0 J-23 F559<|endoftext|>"}
+{"prompt": "draw a square with side 91 mm at speed 1030", "completion": "G1 X91 Y0 F1030\nG1 X91 Y91 F1030\nG1 X0 Y91 F1030\nG1 X0 Y0 F1030<|endoftext|>"}
+{"prompt": "draw a 270 degree counterclockwise arc with radius 32 mm at speed 377", "completion": "G3 X0 Y-32 I0 J32 F377<|endoftext|>"}
+{"prompt": "draw a rectangle 95 by 22 mm starting from current position at speed 578", "completion": "G1 X95 Y0 F578\nG1 X95 Y22 F578\nG1 X0 Y22 F578\nG1 X0 Y0 F578<|endoftext|>"}
+{"prompt": "draw a line of length 62 mm at 45 degrees with speed 708", "completion": "G1 X44 Y44 F708<|endoftext|>"}
+{"prompt": "move to (-34, -2) at speed 682", "completion": "G1 X-34 Y-2 F682<|endoftext|>"}
+{"prompt": "draw a rectangle 44 by 52 mm starting from current position at speed 818", "completion": "G1 X44 Y0 F818\nG1 X44 Y52 F818\nG1 X0 Y52 F818\nG1 X0 Y0 F818<|endoftext|>"}
+{"prompt": "draw a square with side 83 mm at speed 223", "completion": "G1 X83 Y0 F223\nG1 X83 Y83 F223\nG1 X0 Y83 F223\nG1 X0 Y0 F223<|endoftext|>"}
+{"prompt": "draw a full circle of radius 46 mm around current position at speed 936", "completion": "G2 I46 J0 F936\nG2 I-46 J0 F936<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 40 mm at speed 327", "completion": "G1 X40 Y0 F327\nG1 X20 Y35 F327\nG1 X0 Y0 F327<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 25 mm at speed 1153", "completion": "G1 X25 Y0 F1153\nG1 X12 Y22 F1153\nG1 X0 Y0 F1153<|endoftext|>"}
+{"prompt": "draw a full circle of radius 15 mm around current position at speed 1030", "completion": "G2 I15 J0 F1030\nG2 I-15 J0 F1030<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 74 mm at speed 1640", "completion": "G1 X74 Y0 F1640\nG1 X37 Y64 F1640\nG1 X0 Y0 F1640<|endoftext|>"}
+{"prompt": "draw a 270 degree clockwise arc with radius 24 mm at speed 1508", "completion": "G2 X0 Y24 I0 J-24 F1508<|endoftext|>"}
+{"prompt": "draw a full circle of radius 28 mm around current position at speed 1458", "completion": "G2 I28 J0 F1458\nG2 I-28 J0 F1458<|endoftext|>"}
+{"prompt": "draw a line of length 29 mm at 90 degrees with speed 1179", "completion": "G1 X0 Y29 F1179<|endoftext|>"}
+{"prompt": "draw a line of length 59 mm at 270 degrees with speed 1440", "completion": "G1 X0 Y-59 F1440<|endoftext|>"}
+{"prompt": "draw a full circle of radius 31 mm around current position at speed 1637", "completion": "G2 I31 J0 F1637\nG2 I-31 J0 F1637<|endoftext|>"}
+{"prompt": "draw a square with side 70 mm at speed 1751", "completion": "G1 X70 Y0 F1751\nG1 X70 Y70 F1751\nG1 X0 Y70 F1751\nG1 X0 Y0 F1751<|endoftext|>"}
+{"prompt": "draw a square with side 95 mm at speed 1890", "completion": "G1 X95 Y0 F1890\nG1 X95 Y95 F1890\nG1 X0 Y95 F1890\nG1 X0 Y0 F1890<|endoftext|>"}
+{"prompt": "draw a line of length 98 mm at 90 degrees with speed 1593", "completion": "G1 X0 Y98 F1593<|endoftext|>"}
+{"prompt": "draw a 90 degree counterclockwise arc with radius 43 mm at speed 1281", "completion": "G3 X0 Y43 I0 J43 F1281<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 56 mm at speed 359", "completion": "G1 X56 Y0 F359\nG1 X28 Y48 F359\nG1 X0 Y0 F359<|endoftext|>"}
+{"prompt": "draw a square with side 24 mm at speed 326", "completion": "G1 X24 Y0 F326\nG1 X24 Y24 F326\nG1 X0 Y24 F326\nG1 X0 Y0 F326<|endoftext|>"}
+{"prompt": "draw a 270 degree clockwise arc with radius 40 mm at speed 1372", "completion": "G2 X0 Y40 I0 J-40 F1372<|endoftext|>"}
+{"prompt": "draw a square with side 29 mm at speed 536", "completion": "G1 X29 Y0 F536\nG1 X29 Y29 F536\nG1 X0 Y29 F536\nG1 X0 Y0 F536<|endoftext|>"}
+{"prompt": "draw a full circle of radius 38 mm around current position at speed 1104", "completion": "G2 I38 J0 F1104\nG2 I-38 J0 F1104<|endoftext|>"}
+{"prompt": "move to (74, -48) at speed 1668", "completion": "G1 X74 Y-48 F1668<|endoftext|>"}
+{"prompt": "draw a square with side 72 mm at speed 386", "completion": "G1 X72 Y0 F386\nG1 X72 Y72 F386\nG1 X0 Y72 F386\nG1 X0 Y0 F386<|endoftext|>"}
+{"prompt": "draw a square with side 67 mm at speed 1856", "completion": "G1 X67 Y0 F1856\nG1 X67 Y67 F1856\nG1 X0 Y67 F1856\nG1 X0 Y0 F1856<|endoftext|>"}
+{"prompt": "move to (16, -67) at speed 1251", "completion": "G1 X16 Y-67 F1251<|endoftext|>"}
+{"prompt": "draw a rectangle 68 by 82 mm starting from current position at speed 318", "completion": "G1 X68 Y0 F318\nG1 X68 Y82 F318\nG1 X0 Y82 F318\nG1 X0 Y0 F318<|endoftext|>"}
+{"prompt": "draw a square with side 69 mm at speed 1577", "completion": "G1 X69 Y0 F1577\nG1 X69 Y69 F1577\nG1 X0 Y69 F1577\nG1 X0 Y0 F1577<|endoftext|>"}
+{"prompt": "draw a 270 degree clockwise arc with radius 24 mm at speed 1010", "completion": "G2 X0 Y24 I0 J-24 F1010<|endoftext|>"}
+{"prompt": "draw a full circle of radius 5 mm around current position at speed 1727", "completion": "G2 I5 J0 F1727\nG2 I-5 J0 F1727<|endoftext|>"}
+{"prompt": "draw a line of length 75 mm at 0 degrees with speed 292", "completion": "G1 X75 Y0 F292<|endoftext|>"}
+{"prompt": "draw a rectangle 54 by 99 mm starting from current position at speed 330", "completion": "G1 X54 Y0 F330\nG1 X54 Y99 F330\nG1 X0 Y99 F330\nG1 X0 Y0 F330<|endoftext|>"}
+{"prompt": "draw a square with side 17 mm at speed 341", "completion": "G1 X17 Y0 F341\nG1 X17 Y17 F341\nG1 X0 Y17 F341\nG1 X0 Y0 F341<|endoftext|>"}
+{"prompt": "draw a rectangle 14 by 46 mm starting from current position at speed 1037", "completion": "G1 X14 Y0 F1037\nG1 X14 Y46 F1037\nG1 X0 Y46 F1037\nG1 X0 Y0 F1037<|endoftext|>"}
+{"prompt": "draw a line of length 99 mm at 90 degrees with speed 1768", "completion": "G1 X0 Y99 F1768<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 92 mm at speed 1060", "completion": "G1 X92 Y0 F1060\nG1 X46 Y80 F1060\nG1 X0 Y0 F1060<|endoftext|>"}
+{"prompt": "draw a full circle of radius 29 mm around current position at speed 1118", "completion": "G2 I29 J0 F1118\nG2 I-29 J0 F1118<|endoftext|>"}
+{"prompt": "draw a 180 degree clockwise arc with radius 29 mm at speed 1598", "completion": "G2 X-29 Y0 I0 J-29 F1598<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 79 mm at speed 472", "completion": "G1 X79 Y0 F472\nG1 X39 Y68 F472\nG1 X0 Y0 F472<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 54 mm at speed 442", "completion": "G1 X54 Y0 F442\nG1 X27 Y47 F442\nG1 X0 Y0 F442<|endoftext|>"}
+{"prompt": "draw a line of length 69 mm at 135 degrees with speed 1283", "completion": "G1 X-49 Y49 F1283<|endoftext|>"}
+{"prompt": "draw a line of length 94 mm at 90 degrees with speed 1909", "completion": "G1 X0 Y94 F1909<|endoftext|>"}
+{"prompt": "move to (93, -95) at speed 811", "completion": "G1 X93 Y-95 F811<|endoftext|>"}
+{"prompt": "draw a rectangle 96 by 79 mm starting from current position at speed 1068", "completion": "G1 X96 Y0 F1068\nG1 X96 Y79 F1068\nG1 X0 Y79 F1068\nG1 X0 Y0 F1068<|endoftext|>"}
+{"prompt": "draw a square with side 58 mm at speed 1886", "completion": "G1 X58 Y0 F1886\nG1 X58 Y58 F1886\nG1 X0 Y58 F1886\nG1 X0 Y0 F1886<|endoftext|>"}
+{"prompt": "draw a line of length 32 mm at 135 degrees with speed 908", "completion": "G1 X-23 Y23 F908<|endoftext|>"}
+{"prompt": "draw a line of length 36 mm at 90 degrees with speed 1992", "completion": "G1 X0 Y36 F1992<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 24 mm at speed 265", "completion": "G1 X24 Y0 F265\nG1 X12 Y21 F265\nG1 X0 Y0 F265<|endoftext|>"}
+{"prompt": "draw a 180 degree clockwise arc with radius 47 mm at speed 692", "completion": "G2 X-47 Y0 I0 J-47 F692<|endoftext|>"}
+{"prompt": "draw a line of length 9 mm at 0 degrees with speed 1416", "completion": "G1 X9 Y0 F1416<|endoftext|>"}
+{"prompt": "move to (14, 53) at speed 1576", "completion": "G1 X14 Y53 F1576<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 16 mm at speed 701", "completion": "G1 X16 Y0 F701\nG1 X8 Y14 F701\nG1 X0 Y0 F701<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 15 mm at speed 1023", "completion": "G1 X15 Y0 F1023\nG1 X7 Y13 F1023\nG1 X0 Y0 F1023<|endoftext|>"}
+{"prompt": "draw a rectangle 39 by 79 mm starting from current position at speed 644", "completion": "G1 X39 Y0 F644\nG1 X39 Y79 F644\nG1 X0 Y79 F644\nG1 X0 Y0 F644<|endoftext|>"}
+{"prompt": "draw a 90 degree counterclockwise arc with radius 8 mm at speed 679", "completion": "G3 X0 Y8 I0 J8 F679<|endoftext|>"}
+{"prompt": "draw a 180 degree counterclockwise arc with radius 41 mm at speed 685", "completion": "G3 X-41 Y0 I0 J41 F685<|endoftext|>"}
+{"prompt": "draw a full circle of radius 14 mm around current position at speed 1552", "completion": "G2 I14 J0 F1552\nG2 I-14 J0 F1552<|endoftext|>"}
+{"prompt": "draw a square with side 38 mm at speed 1046", "completion": "G1 X38 Y0 F1046\nG1 X38 Y38 F1046\nG1 X0 Y38 F1046\nG1 X0 Y0 F1046<|endoftext|>"}
+{"prompt": "draw a full circle of radius 22 mm around current position at speed 324", "completion": "G2 I22 J0 F324\nG2 I-22 J0 F324<|endoftext|>"}
+{"prompt": "draw a square with side 85 mm at speed 1705", "completion": "G1 X85 Y0 F1705\nG1 X85 Y85 F1705\nG1 X0 Y85 F1705\nG1 X0 Y0 F1705<|endoftext|>"}
+{"prompt": "draw a line of length 81 mm at 270 degrees with speed 1074", "completion": "G1 X0 Y-81 F1074<|endoftext|>"}
+{"prompt": "draw a square with side 73 mm at speed 296", "completion": "G1 X73 Y0 F296\nG1 X73 Y73 F296\nG1 X0 Y73 F296\nG1 X0 Y0 F296<|endoftext|>"}
+{"prompt": "draw a full circle of radius 46 mm around current position at speed 1574", "completion": "G2 I46 J0 F1574\nG2 I-46 J0 F1574<|endoftext|>"}
+{"prompt": "draw a rectangle 77 by 50 mm starting from current position at speed 1626", "completion": "G1 X77 Y0 F1626\nG1 X77 Y50 F1626\nG1 X0 Y50 F1626\nG1 X0 Y0 F1626<|endoftext|>"}
+{"prompt": "draw a rectangle 62 by 29 mm starting from current position at speed 814", "completion": "G1 X62 Y0 F814\nG1 X62 Y29 F814\nG1 X0 Y29 F814\nG1 X0 Y0 F814<|endoftext|>"}
+{"prompt": "draw a rectangle 33 by 78 mm starting from current position at speed 1169", "completion": "G1 X33 Y0 F1169\nG1 X33 Y78 F1169\nG1 X0 Y78 F1169\nG1 X0 Y0 F1169<|endoftext|>"}
+{"prompt": "draw a line of length 29 mm at 45 degrees with speed 1956", "completion": "G1 X21 Y21 F1956<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 28 mm at speed 1850", "completion": "G1 X28 Y0 F1850\nG1 X14 Y24 F1850\nG1 X0 Y0 F1850<|endoftext|>"}
+{"prompt": "draw a rectangle 17 by 81 mm starting from current position at speed 1045", "completion": "G1 X17 Y0 F1045\nG1 X17 Y81 F1045\nG1 X0 Y81 F1045\nG1 X0 Y0 F1045<|endoftext|>"}
+{"prompt": "draw a rectangle 81 by 77 mm starting from current position at speed 474", "completion": "G1 X81 Y0 F474\nG1 X81 Y77 F474\nG1 X0 Y77 F474\nG1 X0 Y0 F474<|endoftext|>"}
+{"prompt": "draw a rectangle 41 by 42 mm starting from current position at speed 616", "completion": "G1 X41 Y0 F616\nG1 X41 Y42 F616\nG1 X0 Y42 F616\nG1 X0 Y0 F616<|endoftext|>"}
+{"prompt": "draw a full circle of radius 46 mm around current position at speed 361", "completion": "G2 I46 J0 F361\nG2 I-46 J0 F361<|endoftext|>"}
+{"prompt": "draw a rectangle 57 by 21 mm starting from current position at speed 1296", "completion": "G1 X57 Y0 F1296\nG1 X57 Y21 F1296\nG1 X0 Y21 F1296\nG1 X0 Y0 F1296<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 34 mm at speed 305", "completion": "G1 X34 Y0 F305\nG1 X17 Y29 F305\nG1 X0 Y0 F305<|endoftext|>"}
+{"prompt": "draw a full circle of radius 29 mm around current position at speed 1579", "completion": "G2 I29 J0 F1579\nG2 I-29 J0 F1579<|endoftext|>"}
+{"prompt": "draw a square with side 87 mm at speed 280", "completion": "G1 X87 Y0 F280\nG1 X87 Y87 F280\nG1 X0 Y87 F280\nG1 X0 Y0 F280<|endoftext|>"}
+{"prompt": "draw a 90 degree clockwise arc with radius 9 mm at speed 1181", "completion": "G2 X0 Y-9 I0 J-9 F1181<|endoftext|>"}
+{"prompt": "draw a line of length 43 mm at 45 degrees with speed 231", "completion": "G1 X30 Y30 F231<|endoftext|>"}
+{"prompt": "draw a line of length 25 mm at 270 degrees with speed 440", "completion": "G1 X0 Y-25 F440<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 71 mm at speed 696", "completion": "G1 X71 Y0 F696\nG1 X35 Y61 F696\nG1 X0 Y0 F696<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 87 mm at speed 1641", "completion": "G1 X87 Y0 F1641\nG1 X43 Y75 F1641\nG1 X0 Y0 F1641<|endoftext|>"}
+{"prompt": "draw a line of length 51 mm at 90 degrees with speed 1330", "completion": "G1 X0 Y51 F1330<|endoftext|>"}
+{"prompt": "draw a full circle of radius 23 mm around current position at speed 979", "completion": "G2 I23 J0 F979\nG2 I-23 J0 F979<|endoftext|>"}
+{"prompt": "draw a rectangle 78 by 93 mm starting from current position at speed 935", "completion": "G1 X78 Y0 F935\nG1 X78 Y93 F935\nG1 X0 Y93 F935\nG1 X0 Y0 F935<|endoftext|>"}
+{"prompt": "draw a full circle of radius 21 mm around current position at speed 936", "completion": "G2 I21 J0 F936\nG2 I-21 J0 F936<|endoftext|>"}
+{"prompt": "draw a square with side 73 mm at speed 1154", "completion": "G1 X73 Y0 F1154\nG1 X73 Y73 F1154\nG1 X0 Y73 F1154\nG1 X0 Y0 F1154<|endoftext|>"}
+{"prompt": "move to (84, 20) at speed 1759", "completion": "G1 X84 Y20 F1759<|endoftext|>"}
+{"prompt": "draw a 90 degree counterclockwise arc with radius 25 mm at speed 840", "completion": "G3 X0 Y25 I0 J25 F840<|endoftext|>"}
+{"prompt": "draw a rectangle 15 by 82 mm starting from current position at speed 1969", "completion": "G1 X15 Y0 F1969\nG1 X15 Y82 F1969\nG1 X0 Y82 F1969\nG1 X0 Y0 F1969<|endoftext|>"}
+{"prompt": "draw a line of length 95 mm at 90 degrees with speed 233", "completion": "G1 X0 Y95 F233<|endoftext|>"}
+{"prompt": "draw a full circle of radius 40 mm around current position at speed 1396", "completion": "G2 I40 J0 F1396\nG2 I-40 J0 F1396<|endoftext|>"}
+{"prompt": "draw a square with side 63 mm at speed 804", "completion": "G1 X63 Y0 F804\nG1 X63 Y63 F804\nG1 X0 Y63 F804\nG1 X0 Y0 F804<|endoftext|>"}
+{"prompt": "draw a line of length 26 mm at 45 degrees with speed 671", "completion": "G1 X18 Y18 F671<|endoftext|>"}
+{"prompt": "draw a rectangle 82 by 41 mm starting from current position at speed 1222", "completion": "G1 X82 Y0 F1222\nG1 X82 Y41 F1222\nG1 X0 Y41 F1222\nG1 X0 Y0 F1222<|endoftext|>"}
+{"prompt": "draw a square with side 93 mm at speed 1602", "completion": "G1 X93 Y0 F1602\nG1 X93 Y93 F1602\nG1 X0 Y93 F1602\nG1 X0 Y0 F1602<|endoftext|>"}
+{"prompt": "draw a full circle of radius 21 mm around current position at speed 1763", "completion": "G2 I21 J0 F1763\nG2 I-21 J0 F1763<|endoftext|>"}
+{"prompt": "draw a 270 degree counterclockwise arc with radius 36 mm at speed 1143", "completion": "G3 X0 Y-36 I0 J36 F1143<|endoftext|>"}
+{"prompt": "draw a line of length 94 mm at 45 degrees with speed 546", "completion": "G1 X66 Y66 F546<|endoftext|>"}
+{"prompt": "draw a line of length 93 mm at 180 degrees with speed 1200", "completion": "G1 X-93 Y0 F1200<|endoftext|>"}
+{"prompt": "draw a line of length 70 mm at 270 degrees with speed 320", "completion": "G1 X0 Y-70 F320<|endoftext|>"}
+{"prompt": "draw a square with side 14 mm at speed 1918", "completion": "G1 X14 Y0 F1918\nG1 X14 Y14 F1918\nG1 X0 Y14 F1918\nG1 X0 Y0 F1918<|endoftext|>"}
+{"prompt": "draw a 270 degree clockwise arc with radius 9 mm at speed 1765", "completion": "G2 X0 Y9 I0 J-9 F1765<|endoftext|>"}
+{"prompt": "move to (5, -65) at speed 1925", "completion": "G1 X5 Y-65 F1925<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 39 mm at speed 339", "completion": "G1 X39 Y0 F339\nG1 X19 Y34 F339\nG1 X0 Y0 F339<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 29 mm at speed 218", "completion": "G1 X29 Y0 F218\nG1 X14 Y25 F218\nG1 X0 Y0 F218<|endoftext|>"}
+{"prompt": "draw a line of length 65 mm at 135 degrees with speed 964", "completion": "G1 X-46 Y46 F964<|endoftext|>"}
+{"prompt": "move to (58, 63) at speed 1565", "completion": "G1 X58 Y63 F1565<|endoftext|>"}
+{"prompt": "draw a square with side 71 mm at speed 1550", "completion": "G1 X71 Y0 F1550\nG1 X71 Y71 F1550\nG1 X0 Y71 F1550\nG1 X0 Y0 F1550<|endoftext|>"}
+{"prompt": "draw a rectangle 12 by 10 mm starting from current position at speed 1289", "completion": "G1 X12 Y0 F1289\nG1 X12 Y10 F1289\nG1 X0 Y10 F1289\nG1 X0 Y0 F1289<|endoftext|>"}
+{"prompt": "draw a square with side 62 mm at speed 224", "completion": "G1 X62 Y0 F224\nG1 X62 Y62 F224\nG1 X0 Y62 F224\nG1 X0 Y0 F224<|endoftext|>"}
+{"prompt": "move to (35, 84) at speed 762", "completion": "G1 X35 Y84 F762<|endoftext|>"}
+{"prompt": "draw a square with side 46 mm at speed 235", "completion": "G1 X46 Y0 F235\nG1 X46 Y46 F235\nG1 X0 Y46 F235\nG1 X0 Y0 F235<|endoftext|>"}
+{"prompt": "draw a square with side 99 mm at speed 1580", "completion": "G1 X99 Y0 F1580\nG1 X99 Y99 F1580\nG1 X0 Y99 F1580\nG1 X0 Y0 F1580<|endoftext|>"}
+{"prompt": "draw a rectangle 32 by 23 mm starting from current position at speed 397", "completion": "G1 X32 Y0 F397\nG1 X32 Y23 F397\nG1 X0 Y23 F397\nG1 X0 Y0 F397<|endoftext|>"}
+{"prompt": "draw a square with side 29 mm at speed 693", "completion": "G1 X29 Y0 F693\nG1 X29 Y29 F693\nG1 X0 Y29 F693\nG1 X0 Y0 F693<|endoftext|>"}
+{"prompt": "draw a line of length 80 mm at 180 degrees with speed 716", "completion": "G1 X-80 Y0 F716<|endoftext|>"}
+{"prompt": "draw a 180 degree counterclockwise arc with radius 27 mm at speed 361", "completion": "G3 X-27 Y0 I0 J27 F361<|endoftext|>"}
+{"prompt": "draw a full circle of radius 30 mm around current position at speed 1140", "completion": "G2 I30 J0 F1140\nG2 I-30 J0 F1140<|endoftext|>"}
+{"prompt": "draw a square with side 41 mm at speed 1627", "completion": "G1 X41 Y0 F1627\nG1 X41 Y41 F1627\nG1 X0 Y41 F1627\nG1 X0 Y0 F1627<|endoftext|>"}
+{"prompt": "draw a line of length 39 mm at 270 degrees with speed 1895", "completion": "G1 X0 Y-39 F1895<|endoftext|>"}
+{"prompt": "draw a 270 degree clockwise arc with radius 10 mm at speed 391", "completion": "G2 X0 Y10 I0 J-10 F391<|endoftext|>"}
+{"prompt": "draw a rectangle 58 by 58 mm starting from current position at speed 1331", "completion": "G1 X58 Y0 F1331\nG1 X58 Y58 F1331\nG1 X0 Y58 F1331\nG1 X0 Y0 F1331<|endoftext|>"}
+{"prompt": "draw a rectangle 17 by 91 mm starting from current position at speed 219", "completion": "G1 X17 Y0 F219\nG1 X17 Y91 F219\nG1 X0 Y91 F219\nG1 X0 Y0 F219<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 31 mm at speed 369", "completion": "G1 X31 Y0 F369\nG1 X15 Y27 F369\nG1 X0 Y0 F369<|endoftext|>"}
+{"prompt": "draw a rectangle 65 by 92 mm starting from current position at speed 1806", "completion": "G1 X65 Y0 F1806\nG1 X65 Y92 F1806\nG1 X0 Y92 F1806\nG1 X0 Y0 F1806<|endoftext|>"}
+{"prompt": "draw a full circle of radius 41 mm around current position at speed 1957", "completion": "G2 I41 J0 F1957\nG2 I-41 J0 F1957<|endoftext|>"}
+{"prompt": "move to (35, -90) at speed 670", "completion": "G1 X35 Y-90 F670<|endoftext|>"}
+{"prompt": "draw a line of length 89 mm at 180 degrees with speed 1173", "completion": "G1 X-89 Y0 F1173<|endoftext|>"}
+{"prompt": "draw a full circle of radius 7 mm around current position at speed 352", "completion": "G2 I7 J0 F352\nG2 I-7 J0 F352<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 45 mm at speed 1312", "completion": "G1 X45 Y0 F1312\nG1 X22 Y39 F1312\nG1 X0 Y0 F1312<|endoftext|>"}
+{"prompt": "draw a square with side 94 mm at speed 267", "completion": "G1 X94 Y0 F267\nG1 X94 Y94 F267\nG1 X0 Y94 F267\nG1 X0 Y0 F267<|endoftext|>"}
+{"prompt": "draw a line of length 41 mm at 0 degrees with speed 624", "completion": "G1 X41 Y0 F624<|endoftext|>"}
+{"prompt": "draw a square with side 28 mm at speed 1740", "completion": "G1 X28 Y0 F1740\nG1 X28 Y28 F1740\nG1 X0 Y28 F1740\nG1 X0 Y0 F1740<|endoftext|>"}
+{"prompt": "draw a 180 degree clockwise arc with radius 50 mm at speed 812", "completion": "G2 X-50 Y0 I0 J-50 F812<|endoftext|>"}
+{"prompt": "draw a line of length 73 mm at 90 degrees with speed 1360", "completion": "G1 X0 Y73 F1360<|endoftext|>"}
+{"prompt": "draw a 270 degree counterclockwise arc with radius 29 mm at speed 986", "completion": "G3 X0 Y-29 I0 J29 F986<|endoftext|>"}
+{"prompt": "draw a 270 degree clockwise arc with radius 13 mm at speed 1225", "completion": "G2 X0 Y13 I0 J-13 F1225<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 54 mm at speed 309", "completion": "G1 X54 Y0 F309\nG1 X27 Y47 F309\nG1 X0 Y0 F309<|endoftext|>"}
+{"prompt": "move to (11, -41) at speed 1917", "completion": "G1 X11 Y-41 F1917<|endoftext|>"}
+{"prompt": "move to (-13, 54) at speed 1774", "completion": "G1 X-13 Y54 F1774<|endoftext|>"}
+{"prompt": "draw a square with side 86 mm at speed 1012", "completion": "G1 X86 Y0 F1012\nG1 X86 Y86 F1012\nG1 X0 Y86 F1012\nG1 X0 Y0 F1012<|endoftext|>"}
+{"prompt": "draw a 90 degree counterclockwise arc with radius 25 mm at speed 1804", "completion": "G3 X0 Y25 I0 J25 F1804<|endoftext|>"}
+{"prompt": "draw a rectangle 72 by 39 mm starting from current position at speed 928", "completion": "G1 X72 Y0 F928\nG1 X72 Y39 F928\nG1 X0 Y39 F928\nG1 X0 Y0 F928<|endoftext|>"}
+{"prompt": "draw a square with side 58 mm at speed 1084", "completion": "G1 X58 Y0 F1084\nG1 X58 Y58 F1084\nG1 X0 Y58 F1084\nG1 X0 Y0 F1084<|endoftext|>"}
+{"prompt": "draw a line of length 88 mm at 180 degrees with speed 1553", "completion": "G1 X-88 Y0 F1553<|endoftext|>"}
+{"prompt": "draw a rectangle 20 by 89 mm starting from current position at speed 804", "completion": "G1 X20 Y0 F804\nG1 X20 Y89 F804\nG1 X0 Y89 F804\nG1 X0 Y0 F804<|endoftext|>"}
+{"prompt": "draw a 270 degree clockwise arc with radius 20 mm at speed 368", "completion": "G2 X0 Y20 I0 J-20 F368<|endoftext|>"}
+{"prompt": "draw a full circle of radius 14 mm around current position at speed 978", "completion": "G2 I14 J0 F978\nG2 I-14 J0 F978<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 91 mm at speed 515", "completion": "G1 X91 Y0 F515\nG1 X45 Y79 F515\nG1 X0 Y0 F515<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 59 mm at speed 848", "completion": "G1 X59 Y0 F848\nG1 X29 Y51 F848\nG1 X0 Y0 F848<|endoftext|>"}
+{"prompt": "draw a full circle of radius 11 mm around current position at speed 387", "completion": "G2 I11 J0 F387\nG2 I-11 J0 F387<|endoftext|>"}
+{"prompt": "move to (-22, 13) at speed 937", "completion": "G1 X-22 Y13 F937<|endoftext|>"}
+{"prompt": "draw a 90 degree clockwise arc with radius 22 mm at speed 378", "completion": "G2 X0 Y-22 I0 J-22 F378<|endoftext|>"}
+{"prompt": "draw a line of length 56 mm at 135 degrees with speed 1340", "completion": "G1 X-40 Y40 F1340<|endoftext|>"}
+{"prompt": "draw a square with side 75 mm at speed 1035", "completion": "G1 X75 Y0 F1035\nG1 X75 Y75 F1035\nG1 X0 Y75 F1035\nG1 X0 Y0 F1035<|endoftext|>"}
+{"prompt": "move to (-94, -78) at speed 924", "completion": "G1 X-94 Y-78 F924<|endoftext|>"}
+{"prompt": "draw a square with side 21 mm at speed 1422", "completion": "G1 X21 Y0 F1422\nG1 X21 Y21 F1422\nG1 X0 Y21 F1422\nG1 X0 Y0 F1422<|endoftext|>"}
+{"prompt": "draw a square with side 51 mm at speed 1968", "completion": "G1 X51 Y0 F1968\nG1 X51 Y51 F1968\nG1 X0 Y51 F1968\nG1 X0 Y0 F1968<|endoftext|>"}
+{"prompt": "draw a rectangle 11 by 47 mm starting from current position at speed 1047", "completion": "G1 X11 Y0 F1047\nG1 X11 Y47 F1047\nG1 X0 Y47 F1047\nG1 X0 Y0 F1047<|endoftext|>"}
+{"prompt": "draw a rectangle 20 by 81 mm starting from current position at speed 697", "completion": "G1 X20 Y0 F697\nG1 X20 Y81 F697\nG1 X0 Y81 F697\nG1 X0 Y0 F697<|endoftext|>"}
+{"prompt": "draw a square with side 76 mm at speed 547", "completion": "G1 X76 Y0 F547\nG1 X76 Y76 F547\nG1 X0 Y76 F547\nG1 X0 Y0 F547<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 58 mm at speed 547", "completion": "G1 X58 Y0 F547\nG1 X29 Y50 F547\nG1 X0 Y0 F547<|endoftext|>"}
+{"prompt": "draw a line of length 35 mm at 45 degrees with speed 749", "completion": "G1 X25 Y25 F749<|endoftext|>"}
+{"prompt": "draw a rectangle 28 by 18 mm starting from current position at speed 542", "completion": "G1 X28 Y0 F542\nG1 X28 Y18 F542\nG1 X0 Y18 F542\nG1 X0 Y0 F542<|endoftext|>"}
+{"prompt": "draw a rectangle 45 by 63 mm starting from current position at speed 813", "completion": "G1 X45 Y0 F813\nG1 X45 Y63 F813\nG1 X0 Y63 F813\nG1 X0 Y0 F813<|endoftext|>"}
+{"prompt": "draw a rectangle 19 by 56 mm starting from current position at speed 715", "completion": "G1 X19 Y0 F715\nG1 X19 Y56 F715\nG1 X0 Y56 F715\nG1 X0 Y0 F715<|endoftext|>"}
+{"prompt": "draw a line of length 93 mm at 270 degrees with speed 1215", "completion": "G1 X0 Y-93 F1215<|endoftext|>"}
+{"prompt": "draw a square with side 88 mm at speed 600", "completion": "G1 X88 Y0 F600\nG1 X88 Y88 F600\nG1 X0 Y88 F600\nG1 X0 Y0 F600<|endoftext|>"}
+{"prompt": "draw a rectangle 23 by 27 mm starting from current position at speed 823", "completion": "G1 X23 Y0 F823\nG1 X23 Y27 F823\nG1 X0 Y27 F823\nG1 X0 Y0 F823<|endoftext|>"}
+{"prompt": "move to (1, -15) at speed 1923", "completion": "G1 X1 Y-15 F1923<|endoftext|>"}
+{"prompt": "draw a square with side 58 mm at speed 1846", "completion": "G1 X58 Y0 F1846\nG1 X58 Y58 F1846\nG1 X0 Y58 F1846\nG1 X0 Y0 F1846<|endoftext|>"}
+{"prompt": "draw a 180 degree counterclockwise arc with radius 26 mm at speed 1081", "completion": "G3 X-26 Y0 I0 J26 F1081<|endoftext|>"}
+{"prompt": "draw a 270 degree clockwise arc with radius 46 mm at speed 815", "completion": "G2 X0 Y46 I0 J-46 F815<|endoftext|>"}
+{"prompt": "draw a full circle of radius 43 mm around current position at speed 1623", "completion": "G2 I43 J0 F1623\nG2 I-43 J0 F1623<|endoftext|>"}
+{"prompt": "draw a line of length 62 mm at 45 degrees with speed 563", "completion": "G1 X44 Y44 F563<|endoftext|>"}
+{"prompt": "draw a rectangle 50 by 47 mm starting from current position at speed 1705", "completion": "G1 X50 Y0 F1705\nG1 X50 Y47 F1705\nG1 X0 Y47 F1705\nG1 X0 Y0 F1705<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 91 mm at speed 1205", "completion": "G1 X91 Y0 F1205\nG1 X45 Y79 F1205\nG1 X0 Y0 F1205<|endoftext|>"}
+{"prompt": "draw a square with side 41 mm at speed 867", "completion": "G1 X41 Y0 F867\nG1 X41 Y41 F867\nG1 X0 Y41 F867\nG1 X0 Y0 F867<|endoftext|>"}
+{"prompt": "draw a rectangle 45 by 60 mm starting from current position at speed 947", "completion": "G1 X45 Y0 F947\nG1 X45 Y60 F947\nG1 X0 Y60 F947\nG1 X0 Y0 F947<|endoftext|>"}
+{"prompt": "move to (44, -49) at speed 1412", "completion": "G1 X44 Y-49 F1412<|endoftext|>"}
+{"prompt": "draw a square with side 33 mm at speed 1596", "completion": "G1 X33 Y0 F1596\nG1 X33 Y33 F1596\nG1 X0 Y33 F1596\nG1 X0 Y0 F1596<|endoftext|>"}
+{"prompt": "draw a 90 degree counterclockwise arc with radius 40 mm at speed 1650", "completion": "G3 X0 Y40 I0 J40 F1650<|endoftext|>"}
+{"prompt": "draw a line of length 57 mm at 45 degrees with speed 1902", "completion": "G1 X40 Y40 F1902<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 18 mm at speed 1877", "completion": "G1 X18 Y0 F1877\nG1 X9 Y16 F1877\nG1 X0 Y0 F1877<|endoftext|>"}
+{"prompt": "draw a 270 degree counterclockwise arc with radius 31 mm at speed 485", "completion": "G3 X0 Y-31 I0 J31 F485<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 48 mm at speed 695", "completion": "G1 X48 Y0 F695\nG1 X24 Y42 F695\nG1 X0 Y0 F695<|endoftext|>"}
+{"prompt": "draw a full circle of radius 47 mm around current position at speed 515", "completion": "G2 I47 J0 F515\nG2 I-47 J0 F515<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 64 mm at speed 1816", "completion": "G1 X64 Y0 F1816\nG1 X32 Y55 F1816\nG1 X0 Y0 F1816<|endoftext|>"}
+{"prompt": "draw a rectangle 19 by 67 mm starting from current position at speed 1424", "completion": "G1 X19 Y0 F1424\nG1 X19 Y67 F1424\nG1 X0 Y67 F1424\nG1 X0 Y0 F1424<|endoftext|>"}
+{"prompt": "draw a rectangle 84 by 61 mm starting from current position at speed 1294", "completion": "G1 X84 Y0 F1294\nG1 X84 Y61 F1294\nG1 X0 Y61 F1294\nG1 X0 Y0 F1294<|endoftext|>"}
+{"prompt": "draw a square with side 98 mm at speed 1056", "completion": "G1 X98 Y0 F1056\nG1 X98 Y98 F1056\nG1 X0 Y98 F1056\nG1 X0 Y0 F1056<|endoftext|>"}
+{"prompt": "draw a square with side 14 mm at speed 1819", "completion": "G1 X14 Y0 F1819\nG1 X14 Y14 F1819\nG1 X0 Y14 F1819\nG1 X0 Y0 F1819<|endoftext|>"}
+{"prompt": "draw a full circle of radius 49 mm around current position at speed 1863", "completion": "G2 I49 J0 F1863\nG2 I-49 J0 F1863<|endoftext|>"}
+{"prompt": "draw a circle of radius 93 mm centered at the origin, then inside it draw a rectangle 32 by 54 mm", "completion": "G2 I93 J0 F945\nG2 I-93 J0 F945\nG1 X-16 Y-27 F620\nG1 X16 Y-27 F620\nG1 X16 Y27 F620\nG1 X-16 Y27 F620\nG1 X-16 Y-27 F620<|endoftext|>"}
+{"prompt": "draw a equilateral triangle with side 97 mm centered at the origin, then inside it draw a rectangle 51 by 65 mm", "completion": "G1 X-48 Y-28 F506\nG1 X48 Y-28 F506\nG1 X0 Y56 F506\nG1 X-48 Y-28 F506\nG1 X-26 Y-32 F726\nG1 X26 Y-32 F726\nG1 X26 Y32 F726\nG1 X-26 Y32 F726\nG1 X-26 Y-32 F726<|endoftext|>"}
+{"prompt": "draw a rectangle 91 by 128 mm centered at the origin, then inside it draw a circle of radius 24 mm", "completion": "G1 X-46 Y-64 F403\nG1 X46 Y-64 F403\nG1 X46 Y64 F403\nG1 X-46 Y64 F403\nG1 X-46 Y-64 F403\nG2 I24 J0 F1293\nG2 I-24 J0 F1293<|endoftext|>"}
+{"prompt": "draw a circle of radius 45 mm centered at the origin, then inside it draw a equilateral triangle with side 39 mm", "completion": "G2 I45 J0 F608\nG2 I-45 J0 F608\nG1 X-20 Y-11 F489\nG1 X20 Y-11 F489\nG1 X0 Y23 F489\nG1 X-20 Y-11 F489<|endoftext|>"}
+{"prompt": "draw a circle of radius 76 mm centered at the origin, then inside it draw a rectangle 60 by 46 mm", "completion": "G2 I76 J0 F997\nG2 I-76 J0 F997\nG1 X-30 Y-23 F1281\nG1 X30 Y-23 F1281\nG1 X30 Y23 F1281\nG1 X-30 Y23 F1281\nG1 X-30 Y-23 F1281<|endoftext|>"}
+{"prompt": "draw a rectangle 141 by 106 mm centered at the origin, then inside it draw a equilateral triangle with side 68 mm", "completion": "G1 X-70 Y-53 F1103\nG1 X70 Y-53 F1103\nG1 X70 Y53 F1103\nG1 X-70 Y53 F1103\nG1 X-70 Y-53 F1103\nG1 X-34 Y-20 F1468\nG1 X34 Y-20 F1468\nG1 X0 Y39 F1468\nG1 X-34 Y-20 F1468<|endoftext|>"}
+{"prompt": "draw a equilateral triangle with side 145 mm centered at the origin, then inside it draw a rectangle 57 by 64 mm", "completion": "G1 X-72 Y-42 F425\nG1 X72 Y-42 F425\nG1 X0 Y84 F425\nG1 X-72 Y-42 F425\nG1 X-28 Y-32 F1215\nG1 X28 Y-32 F1215\nG1 X28 Y32 F1215\nG1 X-28 Y32 F1215\nG1 X-28 Y-32 F1215<|endoftext|>"}
+{"prompt": "draw a equilateral triangle with side 127 mm centered at the origin, then inside it draw a rectangle 62 by 32 mm", "completion": "G1 X-64 Y-37 F1466\nG1 X64 Y-37 F1466\nG1 X0 Y73 F1466\nG1 X-64 Y-37 F1466\nG1 X-31 Y-16 F1259\nG1 X31 Y-16 F1259\nG1 X31 Y16 F1259\nG1 X-31 Y16 F1259\nG1 X-31 Y-16 F1259<|endoftext|>"}
+{"prompt": "draw a equilateral triangle with side 101 mm centered at the origin, then inside it draw a circle of radius 41 mm", "completion": "G1 X-50 Y-29 F1397\nG1 X50 Y-29 F1397\nG1 X0 Y58 F1397\nG1 X-50 Y-29 F1397\nG2 I41 J0 F936\nG2 I-41 J0 F936<|endoftext|>"}
+{"prompt": "draw a rectangle 123 by 82 mm centered at the origin, then inside it draw a circle of radius 32 mm", "completion": "G1 X-62 Y-41 F1335\nG1 X62 Y-41 F1335\nG1 X62 Y41 F1335\nG1 X-62 Y41 F1335\nG1 X-62 Y-41 F1335\nG2 I32 J0 F1193\nG2 I-32 J0 F1193<|endoftext|>"}
+{"prompt": "draw a equilateral triangle with side 125 mm centered at the origin, then inside it draw a equilateral triangle with side 62 mm", "completion": "G1 X-62 Y-36 F1144\nG1 X62 Y-36 F1144\nG1 X0 Y72 F1144\nG1 X-62 Y-36 F1144\nG1 X-31 Y-18 F426\nG1 X31 Y-18 F426\nG1 X0 Y36 F426\nG1 X-31 Y-18 F426<|endoftext|>"}
+{"prompt": "draw a rectangle 109 by 149 mm centered at the origin, then inside it draw a circle of radius 50 mm", "completion": "G1 X-54 Y-74 F989\nG1 X54 Y-74 F989\nG1 X54 Y74 F989\nG1 X-54 Y74 F989\nG1 X-54 Y-74 F989\nG2 I50 J0 F1413\nG2 I-50 J0 F1413<|endoftext|>"}
+{"prompt": "draw a circle of radius 88 mm centered at the origin, then inside it draw a equilateral triangle with side 59 mm", "completion": "G2 I88 J0 F1310\nG2 I-88 J0 F1310\nG1 X-30 Y-17 F1175\nG1 X30 Y-17 F1175\nG1 X0 Y34 F1175\nG1 X-30 Y-17 F1175<|endoftext|>"}
+{"prompt": "draw a circle of radius 56 mm centered at the origin, then inside it draw a rectangle 52 by 47 mm", "completion": "G2 I56 J0 F795\nG2 I-56 J0 F795\nG1 X-26 Y-24 F443\nG1 X26 Y-24 F443\nG1 X26 Y24 F443\nG1 X-26 Y24 F443\nG1 X-26 Y-24 F443<|endoftext|>"}
+{"prompt": "draw a rectangle 145 by 125 mm centered at the origin, then inside it draw a circle of radius 25 mm", "completion": "G1 X-72 Y-62 F622\nG1 X72 Y-62 F622\nG1 X72 Y62 F622\nG1 X-72 Y62 F622\nG1 X-72 Y-62 F622\nG2 I25 J0 F528\nG2 I-25 J0 F528<|endoftext|>"}
+{"prompt": "draw a circle of radius 44 mm centered at the origin, then inside it draw a rectangle 64 by 70 mm", "completion": "G2 I44 J0 F1497\nG2 I-44 J0 F1497\nG1 X-32 Y-35 F1173\nG1 X32 Y-35 F1173\nG1 X32 Y35 F1173\nG1 X-32 Y35 F1173\nG1 X-32 Y-35 F1173<|endoftext|>"}
+{"prompt": "draw a rectangle 84 by 122 mm centered at the origin, then inside it draw a rectangle 50 by 52 mm", "completion": "G1 X-42 Y-61 F937\nG1 X42 Y-61 F937\nG1 X42 Y61 F937\nG1 X-42 Y61 F937\nG1 X-42 Y-61 F937\nG1 X-25 Y-26 F1367\nG1 X25 Y-26 F1367\nG1 X25 Y26 F1367\nG1 X-25 Y26 F1367\nG1 X-25 Y-26 F1367<|endoftext|>"}
+{"prompt": "draw a circle of radius 85 mm centered at the origin, then inside it draw a rectangle 39 by 53 mm", "completion": "G2 I85 J0 F1258\nG2 I-85 J0 F1258\nG1 X-20 Y-26 F531\nG1 X20 Y-26 F531\nG1 X20 Y26 F531\nG1 X-20 Y26 F531\nG1 X-20 Y-26 F531<|endoftext|>"}
+{"prompt": "draw a equilateral triangle with side 129 mm centered at the origin, then inside it draw a circle of radius 54 mm", "completion": "G1 X-64 Y-37 F517\nG1 X64 Y-37 F517\nG1 X0 Y74 F517\nG1 X-64 Y-37 F517\nG2 I54 J0 F1462\nG2 I-54 J0 F1462<|endoftext|>"}
+{"prompt": "draw a rectangle 127 by 96 mm centered at the origin, then inside it draw a equilateral triangle with side 64 mm", "completion": "G1 X-64 Y-48 F996\nG1 X64 Y-48 F996\nG1 X64 Y48 F996\nG1 X-64 Y48 F996\nG1 X-64 Y-48 F996\nG1 X-32 Y-18 F1197\nG1 X32 Y-18 F1197\nG1 X0 Y37 F1197\nG1 X-32 Y-18 F1197<|endoftext|>"}
+{"prompt": "draw a rectangle 87 by 97 mm centered at the origin, then inside it draw a circle of radius 49 mm", "completion": "G1 X-44 Y-48 F1191\nG1 X44 Y-48 F1191\nG1 X44 Y48 F1191\nG1 X-44 Y48 F1191\nG1 X-44 Y-48 F1191\nG2 I49 J0 F1285\nG2 I-49 J0 F1285<|endoftext|>"}
+{"prompt": "draw a equilateral triangle with side 134 mm centered at the origin, then inside it draw a rectangle 31 by 40 mm", "completion": "G1 X-67 Y-39 F1323\nG1 X67 Y-39 F1323\nG1 X0 Y77 F1323\nG1 X-67 Y-39 F1323\nG1 X-16 Y-20 F1022\nG1 X16 Y-20 F1022\nG1 X16 Y20 F1022\nG1 X-16 Y20 F1022\nG1 X-16 Y-20 F1022<|endoftext|>"}
+{"prompt": "draw a equilateral triangle with side 93 mm centered at the origin, then inside it draw a circle of radius 54 mm", "completion": "G1 X-46 Y-27 F1103\nG1 X46 Y-27 F1103\nG1 X0 Y54 F1103\nG1 X-46 Y-27 F1103\nG2 I54 J0 F1424\nG2 I-54 J0 F1424<|endoftext|>"}
+{"prompt": "draw a equilateral triangle with side 144 mm centered at the origin, then inside it draw a rectangle 45 by 43 mm", "completion": "G1 X-72 Y-42 F590\nG1 X72 Y-42 F590\nG1 X0 Y83 F590\nG1 X-72 Y-42 F590\nG1 X-22 Y-22 F956\nG1 X22 Y-22 F956\nG1 X22 Y22 F956\nG1 X-22 Y22 F956\nG1 X-22 Y-22 F956<|endoftext|>"}
+{"prompt": "draw a rectangle 105 by 144 mm centered at the origin, then inside it draw a circle of radius 32 mm", "completion": "G1 X-52 Y-72 F1425\nG1 X52 Y-72 F1425\nG1 X52 Y72 F1425\nG1 X-52 Y72 F1425\nG1 X-52 Y-72 F1425\nG2 I32 J0 F564\nG2 I-32 J0 F564<|endoftext|>"}
+{"prompt": "draw a circle of radius 78 mm centered at the origin, then inside it draw a equilateral triangle with side 50 mm", "completion": "G2 I78 J0 F872\nG2 I-78 J0 F872\nG1 X-25 Y-14 F574\nG1 X25 Y-14 F574\nG1 X0 Y29 F574\nG1 X-25 Y-14 F574<|endoftext|>"}
+{"prompt": "draw a circle of radius 90 mm centered at the origin, then inside it draw a rectangle 60 by 61 mm", "completion": "G2 I90 J0 F1494\nG2 I-90 J0 F1494\nG1 X-30 Y-30 F677\nG1 X30 Y-30 F677\nG1 X30 Y30 F677\nG1 X-30 Y30 F677\nG1 X-30 Y-30 F677<|endoftext|>"}
+{"prompt": "draw a equilateral triangle with side 123 mm centered at the origin, then inside it draw a circle of radius 45 mm", "completion": "G1 X-62 Y-36 F926\nG1 X62 Y-36 F926\nG1 X0 Y71 F926\nG1 X-62 Y-36 F926\nG2 I45 J0 F1395\nG2 I-45 J0 F1395<|endoftext|>"}
+{"prompt": "draw a circle of radius 61 mm centered at the origin, then inside it draw a rectangle 67 by 37 mm", "completion": "G2 I61 J0 F412\nG2 I-61 J0 F412\nG1 X-34 Y-18 F1412\nG1 X34 Y-18 F1412\nG1 X34 Y18 F1412\nG1 X-34 Y18 F1412\nG1 X-34 Y-18 F1412<|endoftext|>"}
+{"prompt": "draw a equilateral triangle with side 120 mm centered at the origin, then inside it draw a rectangle 52 by 43 mm", "completion": "G1 X-60 Y-35 F1141\nG1 X60 Y-35 F1141\nG1 X0 Y69 F1141\nG1 X-60 Y-35 F1141\nG1 X-26 Y-22 F1261\nG1 X26 Y-22 F1261\nG1 X26 Y22 F1261\nG1 X-26 Y22 F1261\nG1 X-26 Y-22 F1261<|endoftext|>"}
+{"prompt": "draw a rectangle 87 by 133 mm centered at the origin, then inside it draw a circle of radius 44 mm", "completion": "G1 X-44 Y-66 F770\nG1 X44 Y-66 F770\nG1 X44 Y66 F770\nG1 X-44 Y66 F770\nG1 X-44 Y-66 F770\nG2 I44 J0 F1183\nG2 I-44 J0 F1183<|endoftext|>"}
+{"prompt": "draw a equilateral triangle with side 88 mm centered at the origin, then inside it draw a circle of radius 38 mm", "completion": "G1 X-44 Y-25 F1170\nG1 X44 Y-25 F1170\nG1 X0 Y51 F1170\nG1 X-44 Y-25 F1170\nG2 I38 J0 F1154\nG2 I-38 J0 F1154<|endoftext|>"}
+{"prompt": "draw a circle of radius 43 mm centered at the origin, then inside it draw a equilateral triangle with side 67 mm", "completion": "G2 I43 J0 F512\nG2 I-43 J0 F512\nG1 X-34 Y-19 F1179\nG1 X34 Y-19 F1179\nG1 X0 Y39 F1179\nG1 X-34 Y-19 F1179<|endoftext|>"}
+{"prompt": "draw a rectangle 137 by 114 mm centered at the origin, then inside it draw a rectangle 58 by 66 mm", "completion": "G1 X-68 Y-57 F1064\nG1 X68 Y-57 F1064\nG1 X68 Y57 F1064\nG1 X-68 Y57 F1064\nG1 X-68 Y-57 F1064\nG1 X-29 Y-33 F896\nG1 X29 Y-33 F896\nG1 X29 Y33 F896\nG1 X-29 Y33 F896\nG1 X-29 Y-33 F896<|endoftext|>"}
+{"prompt": "draw a equilateral triangle with side 123 mm centered at the origin, then inside it draw a rectangle 33 by 41 mm", "completion": "G1 X-62 Y-36 F1426\nG1 X62 Y-36 F1426\nG1 X0 Y71 F1426\nG1 X-62 Y-36 F1426\nG1 X-16 Y-20 F963\nG1 X16 Y-20 F963\nG1 X16 Y20 F963\nG1 X-16 Y20 F963\nG1 X-16 Y-20 F963<|endoftext|>"}
+{"prompt": "draw a circle of radius 70 mm centered at the origin, then inside it draw a equilateral triangle with side 64 mm", "completion": "G2 I70 J0 F1416\nG2 I-70 J0 F1416\nG1 X-32 Y-18 F670\nG1 X32 Y-18 F670\nG1 X0 Y37 F670\nG1 X-32 Y-18 F670<|endoftext|>"}
+{"prompt": "draw a circle of radius 97 mm centered at the origin, then inside it draw a rectangle 44 by 68 mm", "completion": "G2 I97 J0 F1067\nG2 I-97 J0 F1067\nG1 X-22 Y-34 F1157\nG1 X22 Y-34 F1157\nG1 X22 Y34 F1157\nG1 X-22 Y34 F1157\nG1 X-22 Y-34 F1157<|endoftext|>"}
+{"prompt": "draw a circle of radius 86 mm centered at the origin, then inside it draw a equilateral triangle with side 54 mm", "completion": "G2 I86 J0 F428\nG2 I-86 J0 F428\nG1 X-27 Y-16 F1056\nG1 X27 Y-16 F1056\nG1 X0 Y31 F1056\nG1 X-27 Y-16 F1056<|endoftext|>"}
+{"prompt": "draw a circle of radius 50 mm centered at the origin, then inside it draw a rectangle 56 by 52 mm", "completion": "G2 I50 J0 F918\nG2 I-50 J0 F918\nG1 X-28 Y-26 F983\nG1 X28 Y-26 F983\nG1 X28 Y26 F983\nG1 X-28 Y26 F983\nG1 X-28 Y-26 F983<|endoftext|>"}
+{"prompt": "draw a rectangle 105 by 85 mm centered at the origin, then inside it draw a circle of radius 37 mm", "completion": "G1 X-52 Y-42 F1417\nG1 X52 Y-42 F1417\nG1 X52 Y42 F1417\nG1 X-52 Y42 F1417\nG1 X-52 Y-42 F1417\nG2 I37 J0 F737\nG2 I-37 J0 F737<|endoftext|>"}
+{"prompt": "draw a equilateral triangle with side 118 mm centered at the origin, then inside it draw a equilateral triangle with side 59 mm", "completion": "G1 X-59 Y-34 F1487\nG1 X59 Y-34 F1487\nG1 X0 Y68 F1487\nG1 X-59 Y-34 F1487\nG1 X-30 Y-17 F797\nG1 X30 Y-17 F797\nG1 X0 Y34 F797\nG1 X-30 Y-17 F797<|endoftext|>"}
+{"prompt": "draw a rectangle 136 by 149 mm centered at the origin, then inside it draw a equilateral triangle with side 65 mm", "completion": "G1 X-68 Y-74 F588\nG1 X68 Y-74 F588\nG1 X68 Y74 F588\nG1 X-68 Y74 F588\nG1 X-68 Y-74 F588\nG1 X-32 Y-19 F611\nG1 X32 Y-19 F611\nG1 X0 Y38 F611\nG1 X-32 Y-19 F611<|endoftext|>"}
+{"prompt": "draw a rectangle 137 by 94 mm centered at the origin, then inside it draw a circle of radius 23 mm", "completion": "G1 X-68 Y-47 F1203\nG1 X68 Y-47 F1203\nG1 X68 Y47 F1203\nG1 X-68 Y47 F1203\nG1 X-68 Y-47 F1203\nG2 I23 J0 F1232\nG2 I-23 J0 F1232<|endoftext|>"}
+{"prompt": "draw a equilateral triangle with side 99 mm centered at the origin, then inside it draw a rectangle 61 by 38 mm", "completion": "G1 X-50 Y-29 F1459\nG1 X50 Y-29 F1459\nG1 X0 Y57 F1459\nG1 X-50 Y-29 F1459\nG1 X-30 Y-19 F1130\nG1 X30 Y-19 F1130\nG1 X30 Y19 F1130\nG1 X-30 Y19 F1130\nG1 X-30 Y-19 F1130<|endoftext|>"}
+{"prompt": "draw a circle of radius 98 mm centered at the origin, then inside it draw a rectangle 43 by 34 mm", "completion": "G2 I98 J0 F476\nG2 I-98 J0 F476\nG1 X-22 Y-17 F900\nG1 X22 Y-17 F900\nG1 X22 Y17 F900\nG1 X-22 Y17 F900\nG1 X-22 Y-17 F900<|endoftext|>"}
+{"prompt": "draw a rectangle 150 by 83 mm centered at the origin, then inside it draw a circle of radius 22 mm", "completion": "G1 X-75 Y-42 F1244\nG1 X75 Y-42 F1244\nG1 X75 Y42 F1244\nG1 X-75 Y42 F1244\nG1 X-75 Y-42 F1244\nG2 I22 J0 F1059\nG2 I-22 J0 F1059<|endoftext|>"}
+{"prompt": "draw a circle of radius 59 mm centered at the origin, then inside it draw a equilateral triangle with side 37 mm", "completion": "G2 I59 J0 F996\nG2 I-59 J0 F996\nG1 X-18 Y-11 F780\nG1 X18 Y-11 F780\nG1 X0 Y21 F780\nG1 X-18 Y-11 F780<|endoftext|>"}
+{"prompt": "draw a rectangle 83 by 126 mm centered at the origin, then inside it draw a equilateral triangle with side 39 mm", "completion": "G1 X-42 Y-63 F834\nG1 X42 Y-63 F834\nG1 X42 Y63 F834\nG1 X-42 Y63 F834\nG1 X-42 Y-63 F834\nG1 X-20 Y-11 F1455\nG1 X20 Y-11 F1455\nG1 X0 Y23 F1455\nG1 X-20 Y-11 F1455<|endoftext|>"}
+{"prompt": "draw a rectangle 130 by 104 mm centered at the origin, then inside it draw a circle of radius 44 mm", "completion": "G1 X-65 Y-52 F1445\nG1 X65 Y-52 F1445\nG1 X65 Y52 F1445\nG1 X-65 Y52 F1445\nG1 X-65 Y-52 F1445\nG2 I44 J0 F1290\nG2 I-44 J0 F1290<|endoftext|>"}
+{"prompt": "draw a circle of radius 48 mm centered at the origin, then inside it draw a equilateral triangle with side 60 mm", "completion": "G2 I48 J0 F487\nG2 I-48 J0 F487\nG1 X-30 Y-17 F987\nG1 X30 Y-17 F987\nG1 X0 Y35 F987\nG1 X-30 Y-17 F987<|endoftext|>"}
+{"prompt": "draw a equilateral triangle with side 138 mm centered at the origin, then inside it draw a circle of radius 42 mm", "completion": "G1 X-69 Y-40 F658\nG1 X69 Y-40 F658\nG1 X0 Y80 F658\nG1 X-69 Y-40 F658\nG2 I42 J0 F649\nG2 I-42 J0 F649<|endoftext|>"}
+{"prompt": "draw a equilateral triangle with side 116 mm centered at the origin, then inside it draw a rectangle 53 by 43 mm", "completion": "G1 X-58 Y-33 F1466\nG1 X58 Y-33 F1466\nG1 X0 Y67 F1466\nG1 X-58 Y-33 F1466\nG1 X-26 Y-22 F1122\nG1 X26 Y-22 F1122\nG1 X26 Y22 F1122\nG1 X-26 Y22 F1122\nG1 X-26 Y-22 F1122<|endoftext|>"}
+{"prompt": "draw a rectangle 121 by 90 mm centered at the origin, then inside it draw a circle of radius 33 mm", "completion": "G1 X-60 Y-45 F1441\nG1 X60 Y-45 F1441\nG1 X60 Y45 F1441\nG1 X-60 Y45 F1441\nG1 X-60 Y-45 F1441\nG2 I33 J0 F594\nG2 I-33 J0 F594<|endoftext|>"}
+{"prompt": "draw a rectangle 80 by 100 mm centered at the origin, then inside it draw a circle of radius 25 mm", "completion": "G1 X-40 Y-50 F1373\nG1 X40 Y-50 F1373\nG1 X40 Y50 F1373\nG1 X-40 Y50 F1373\nG1 X-40 Y-50 F1373\nG2 I25 J0 F687\nG2 I-25 J0 F687<|endoftext|>"}
+{"prompt": "draw a rectangle 135 by 105 mm centered at the origin, then inside it draw a circle of radius 45 mm", "completion": "G1 X-68 Y-52 F848\nG1 X68 Y-52 F848\nG1 X68 Y52 F848\nG1 X-68 Y52 F848\nG1 X-68 Y-52 F848\nG2 I45 J0 F1337\nG2 I-45 J0 F1337<|endoftext|>"}
+{"prompt": "draw a circle of radius 48 mm centered at the origin, then inside it draw a circle of radius 24 mm", "completion": "G2 I48 J0 F1344\nG2 I-48 J0 F1344\nG2 I24 J0 F584\nG2 I-24 J0 F584<|endoftext|>"}
+{"prompt": "draw a equilateral triangle with side 110 mm centered at the origin, then inside it draw a rectangle 57 by 51 mm", "completion": "G1 X-55 Y-32 F822\nG1 X55 Y-32 F822\nG1 X0 Y64 F822\nG1 X-55 Y-32 F822\nG1 X-28 Y-26 F889\nG1 X28 Y-26 F889\nG1 X28 Y26 F889\nG1 X-28 Y26 F889\nG1 X-28 Y-26 F889<|endoftext|>"}
+{"prompt": "draw a equilateral triangle with side 121 mm centered at the origin, then inside it draw a equilateral triangle with side 60 mm", "completion": "G1 X-60 Y-35 F419\nG1 X60 Y-35 F419\nG1 X0 Y70 F419\nG1 X-60 Y-35 F419\nG1 X-30 Y-17 F997\nG1 X30 Y-17 F997\nG1 X0 Y35 F997\nG1 X-30 Y-17 F997<|endoftext|>"}
+{"prompt": "draw a rectangle 94 by 111 mm centered at the origin, then inside it draw a circle of radius 38 mm", "completion": "G1 X-47 Y-56 F518\nG1 X47 Y-56 F518\nG1 X47 Y56 F518\nG1 X-47 Y56 F518\nG1 X-47 Y-56 F518\nG2 I38 J0 F532\nG2 I-38 J0 F532<|endoftext|>"}
+{"prompt": "draw a circle of radius 75 mm centered at the origin, then inside it draw a circle of radius 37 mm", "completion": "G2 I75 J0 F939\nG2 I-75 J0 F939\nG2 I37 J0 F1261\nG2 I-37 J0 F1261<|endoftext|>"}
+{"prompt": "draw a rectangle 117 by 124 mm centered at the origin, then inside it draw a circle of radius 40 mm", "completion": "G1 X-58 Y-62 F1253\nG1 X58 Y-62 F1253\nG1 X58 Y62 F1253\nG1 X-58 Y62 F1253\nG1 X-58 Y-62 F1253\nG2 I40 J0 F468\nG2 I-40 J0 F468<|endoftext|>"}
+{"prompt": "draw a equilateral triangle with side 117 mm centered at the origin, then inside it draw a rectangle 35 by 54 mm", "completion": "G1 X-58 Y-34 F1437\nG1 X58 Y-34 F1437\nG1 X0 Y68 F1437\nG1 X-58 Y-34 F1437\nG1 X-18 Y-27 F405\nG1 X18 Y-27 F405\nG1 X18 Y27 F405\nG1 X-18 Y27 F405\nG1 X-18 Y-27 F405<|endoftext|>"}
+{"prompt": "draw a equilateral triangle with side 148 mm centered at the origin, then inside it draw a rectangle 42 by 55 mm", "completion": "G1 X-74 Y-43 F1310\nG1 X74 Y-43 F1310\nG1 X0 Y85 F1310\nG1 X-74 Y-43 F1310\nG1 X-21 Y-28 F614\nG1 X21 Y-28 F614\nG1 X21 Y28 F614\nG1 X-21 Y28 F614\nG1 X-21 Y-28 F614<|endoftext|>"}
+{"prompt": "draw a equilateral triangle with side 134 mm centered at the origin, then inside it draw a circle of radius 50 mm", "completion": "G1 X-67 Y-39 F820\nG1 X67 Y-39 F820\nG1 X0 Y77 F820\nG1 X-67 Y-39 F820\nG2 I50 J0 F1133\nG2 I-50 J0 F1133<|endoftext|>"}
+{"prompt": "draw a rectangle 113 by 83 mm centered at the origin, then inside it draw a circle of radius 60 mm", "completion": "G1 X-56 Y-42 F1193\nG1 X56 Y-42 F1193\nG1 X56 Y42 F1193\nG1 X-56 Y42 F1193\nG1 X-56 Y-42 F1193\nG2 I60 J0 F454\nG2 I-60 J0 F454<|endoftext|>"}
+{"prompt": "draw a equilateral triangle with side 92 mm centered at the origin, then inside it draw a circle of radius 28 mm", "completion": "G1 X-46 Y-27 F1148\nG1 X46 Y-27 F1148\nG1 X0 Y53 F1148\nG1 X-46 Y-27 F1148\nG2 I28 J0 F776\nG2 I-28 J0 F776<|endoftext|>"}
+{"prompt": "draw a equilateral triangle with side 126 mm centered at the origin, then inside it draw a rectangle 33 by 46 mm", "completion": "G1 X-63 Y-36 F648\nG1 X63 Y-36 F648\nG1 X0 Y73 F648\nG1 X-63 Y-36 F648\nG1 X-16 Y-23 F550\nG1 X16 Y-23 F550\nG1 X16 Y23 F550\nG1 X-16 Y23 F550\nG1 X-16 Y-23 F550<|endoftext|>"}
+{"prompt": "draw a rectangle 146 by 150 mm centered at the origin, then inside it draw a rectangle 37 by 64 mm", "completion": "G1 X-73 Y-75 F589\nG1 X73 Y-75 F589\nG1 X73 Y75 F589\nG1 X-73 Y75 F589\nG1 X-73 Y-75 F589\nG1 X-18 Y-32 F932\nG1 X18 Y-32 F932\nG1 X18 Y32 F932\nG1 X-18 Y32 F932\nG1 X-18 Y-32 F932<|endoftext|>"}
+{"prompt": "draw a circle of radius 68 mm centered at the origin, then inside it draw a equilateral triangle with side 45 mm", "completion": "G2 I68 J0 F987\nG2 I-68 J0 F987\nG1 X-22 Y-13 F1031\nG1 X22 Y-13 F1031\nG1 X0 Y26 F1031\nG1 X-22 Y-13 F1031<|endoftext|>"}
+{"prompt": "draw a circle of radius 93 mm centered at the origin, then inside it draw a circle of radius 46 mm", "completion": "G2 I93 J0 F606\nG2 I-93 J0 F606\nG2 I46 J0 F1303\nG2 I-46 J0 F1303<|endoftext|>"}
+{"prompt": "draw a rectangle 129 by 80 mm centered at the origin, then inside it draw a equilateral triangle with side 56 mm", "completion": "G1 X-64 Y-40 F769\nG1 X64 Y-40 F769\nG1 X64 Y40 F769\nG1 X-64 Y40 F769\nG1 X-64 Y-40 F769\nG1 X-28 Y-16 F670\nG1 X28 Y-16 F670\nG1 X0 Y32 F670\nG1 X-28 Y-16 F670<|endoftext|>"}
+{"prompt": "draw a circle of radius 91 mm centered at the origin, then inside it draw a circle of radius 45 mm", "completion": "G2 I91 J0 F1254\nG2 I-91 J0 F1254\nG2 I45 J0 F665\nG2 I-45 J0 F665<|endoftext|>"}
+{"prompt": "draw a circle of radius 89 mm centered at the origin, then inside it draw a rectangle 54 by 49 mm", "completion": "G2 I89 J0 F1262\nG2 I-89 J0 F1262\nG1 X-27 Y-24 F744\nG1 X27 Y-24 F744\nG1 X27 Y24 F744\nG1 X-27 Y24 F744\nG1 X-27 Y-24 F744<|endoftext|>"}
+{"prompt": "draw a circle of radius 76 mm centered at the origin, then inside it draw a rectangle 33 by 70 mm", "completion": "G2 I76 J0 F1206\nG2 I-76 J0 F1206\nG1 X-16 Y-35 F945\nG1 X16 Y-35 F945\nG1 X16 Y35 F945\nG1 X-16 Y35 F945\nG1 X-16 Y-35 F945<|endoftext|>"}
+{"prompt": "draw a equilateral triangle with side 150 mm centered at the origin, then inside it draw a circle of radius 41 mm", "completion": "G1 X-75 Y-43 F1035\nG1 X75 Y-43 F1035\nG1 X0 Y87 F1035\nG1 X-75 Y-43 F1035\nG2 I41 J0 F1037\nG2 I-41 J0 F1037<|endoftext|>"}
+{"prompt": "draw a circle of radius 67 mm centered at the origin, then inside it draw a equilateral triangle with side 43 mm", "completion": "G2 I67 J0 F983\nG2 I-67 J0 F983\nG1 X-22 Y-12 F809\nG1 X22 Y-12 F809\nG1 X0 Y25 F809\nG1 X-22 Y-12 F809<|endoftext|>"}
+{"prompt": "draw a rectangle 86 by 150 mm centered at the origin, then inside it draw a circle of radius 34 mm", "completion": "G1 X-43 Y-75 F715\nG1 X43 Y-75 F715\nG1 X43 Y75 F715\nG1 X-43 Y75 F715\nG1 X-43 Y-75 F715\nG2 I34 J0 F748\nG2 I-34 J0 F748<|endoftext|>"}
+{"prompt": "draw a circle of radius 85 mm centered at the origin, then inside it draw a rectangle 64 by 53 mm", "completion": "G2 I85 J0 F1220\nG2 I-85 J0 F1220\nG1 X-32 Y-26 F1288\nG1 X32 Y-26 F1288\nG1 X32 Y26 F1288\nG1 X-32 Y26 F1288\nG1 X-32 Y-26 F1288<|endoftext|>"}
+{"prompt": "draw a circle of radius 42 mm centered at the origin, then inside it draw a rectangle 64 by 49 mm", "completion": "G2 I42 J0 F583\nG2 I-42 J0 F583\nG1 X-32 Y-24 F1299\nG1 X32 Y-24 F1299\nG1 X32 Y24 F1299\nG1 X-32 Y24 F1299\nG1 X-32 Y-24 F1299<|endoftext|>"}
+{"prompt": "draw a equilateral triangle with side 147 mm centered at the origin, then inside it draw a equilateral triangle with side 73 mm", "completion": "G1 X-74 Y-42 F472\nG1 X74 Y-42 F472\nG1 X0 Y85 F472\nG1 X-74 Y-42 F472\nG1 X-36 Y-21 F719\nG1 X36 Y-21 F719\nG1 X0 Y42 F719\nG1 X-36 Y-21 F719<|endoftext|>"}
+{"prompt": "draw a equilateral triangle with side 122 mm centered at the origin, then inside it draw a rectangle 41 by 55 mm", "completion": "G1 X-61 Y-35 F1367\nG1 X61 Y-35 F1367\nG1 X0 Y70 F1367\nG1 X-61 Y-35 F1367\nG1 X-20 Y-28 F1187\nG1 X20 Y-28 F1187\nG1 X20 Y28 F1187\nG1 X-20 Y28 F1187\nG1 X-20 Y-28 F1187<|endoftext|>"}
+{"prompt": "draw a rectangle 107 by 99 mm centered at the origin, then inside it draw a circle of radius 28 mm", "completion": "G1 X-54 Y-50 F578\nG1 X54 Y-50 F578\nG1 X54 Y50 F578\nG1 X-54 Y50 F578\nG1 X-54 Y-50 F578\nG2 I28 J0 F489\nG2 I-28 J0 F489<|endoftext|>"}
+{"prompt": "draw a equilateral triangle with side 133 mm centered at the origin, then inside it draw a rectangle 46 by 48 mm", "completion": "G1 X-66 Y-38 F1147\nG1 X66 Y-38 F1147\nG1 X0 Y77 F1147\nG1 X-66 Y-38 F1147\nG1 X-23 Y-24 F1444\nG1 X23 Y-24 F1444\nG1 X23 Y24 F1444\nG1 X-23 Y24 F1444\nG1 X-23 Y-24 F1444<|endoftext|>"}
+{"prompt": "draw a rectangle 146 by 92 mm centered at the origin, then inside it draw a circle of radius 49 mm", "completion": "G1 X-73 Y-46 F404\nG1 X73 Y-46 F404\nG1 X73 Y46 F404\nG1 X-73 Y46 F404\nG1 X-73 Y-46 F404\nG2 I49 J0 F694\nG2 I-49 J0 F694<|endoftext|>"}
+{"prompt": "draw a equilateral triangle with side 127 mm centered at the origin, then inside it draw a equilateral triangle with side 63 mm", "completion": "G1 X-64 Y-37 F1381\nG1 X64 Y-37 F1381\nG1 X0 Y73 F1381\nG1 X-64 Y-37 F1381\nG1 X-32 Y-18 F460\nG1 X32 Y-18 F460\nG1 X0 Y36 F460\nG1 X-32 Y-18 F460<|endoftext|>"}
+{"prompt": "draw a rectangle 101 by 85 mm centered at the origin, then inside it draw a equilateral triangle with side 53 mm", "completion": "G1 X-50 Y-42 F1093\nG1 X50 Y-42 F1093\nG1 X50 Y42 F1093\nG1 X-50 Y42 F1093\nG1 X-50 Y-42 F1093\nG1 X-26 Y-15 F806\nG1 X26 Y-15 F806\nG1 X0 Y31 F806\nG1 X-26 Y-15 F806<|endoftext|>"}
+{"prompt": "draw a circle of radius 82 mm centered at the origin, then inside it draw a equilateral triangle with side 41 mm", "completion": "G2 I82 J0 F1162\nG2 I-82 J0 F1162\nG1 X-20 Y-12 F1262\nG1 X20 Y-12 F1262\nG1 X0 Y24 F1262\nG1 X-20 Y-12 F1262<|endoftext|>"}
+{"prompt": "draw a circle of radius 48 mm centered at the origin, then inside it draw a rectangle 62 by 36 mm", "completion": "G2 I48 J0 F874\nG2 I-48 J0 F874\nG1 X-31 Y-18 F1185\nG1 X31 Y-18 F1185\nG1 X31 Y18 F1185\nG1 X-31 Y18 F1185\nG1 X-31 Y-18 F1185<|endoftext|>"}
+{"prompt": "draw a rectangle 122 by 120 mm centered at the origin, then inside it draw a circle of radius 58 mm", "completion": "G1 X-61 Y-60 F1475\nG1 X61 Y-60 F1475\nG1 X61 Y60 F1475\nG1 X-61 Y60 F1475\nG1 X-61 Y-60 F1475\nG2 I58 J0 F1418\nG2 I-58 J0 F1418<|endoftext|>"}
+{"prompt": "draw a equilateral triangle with side 102 mm centered at the origin, then inside it draw a rectangle 45 by 36 mm", "completion": "G1 X-51 Y-29 F1091\nG1 X51 Y-29 F1091\nG1 X0 Y59 F1091\nG1 X-51 Y-29 F1091\nG1 X-22 Y-18 F1384\nG1 X22 Y-18 F1384\nG1 X22 Y18 F1384\nG1 X-22 Y18 F1384\nG1 X-22 Y-18 F1384<|endoftext|>"}
+{"prompt": "draw a equilateral triangle with side 127 mm centered at the origin, then inside it draw a circle of radius 22 mm", "completion": "G1 X-64 Y-37 F1456\nG1 X64 Y-37 F1456\nG1 X0 Y73 F1456\nG1 X-64 Y-37 F1456\nG2 I22 J0 F694\nG2 I-22 J0 F694<|endoftext|>"}
+{"prompt": "draw a circle of radius 87 mm centered at the origin, then inside it draw a equilateral triangle with side 41 mm", "completion": "G2 I87 J0 F742\nG2 I-87 J0 F742\nG1 X-20 Y-12 F1217\nG1 X20 Y-12 F1217\nG1 X0 Y24 F1217\nG1 X-20 Y-12 F1217<|endoftext|>"}
+{"prompt": "draw a equilateral triangle with side 80 mm centered at the origin, then inside it draw a circle of radius 50 mm", "completion": "G1 X-40 Y-23 F1395\nG1 X40 Y-23 F1395\nG1 X0 Y46 F1395\nG1 X-40 Y-23 F1395\nG2 I50 J0 F1424\nG2 I-50 J0 F1424<|endoftext|>"}
+{"prompt": "draw a circle of radius 54 mm centered at the origin, then inside it draw a equilateral triangle with side 34 mm", "completion": "G2 I54 J0 F1434\nG2 I-54 J0 F1434\nG1 X-17 Y-10 F1298\nG1 X17 Y-10 F1298\nG1 X0 Y20 F1298\nG1 X-17 Y-10 F1298<|endoftext|>"}
+{"prompt": "draw a rectangle 86 by 134 mm centered at the origin, then inside it draw a equilateral triangle with side 56 mm", "completion": "G1 X-43 Y-67 F1211\nG1 X43 Y-67 F1211\nG1 X43 Y67 F1211\nG1 X-43 Y67 F1211\nG1 X-43 Y-67 F1211\nG1 X-28 Y-16 F1052\nG1 X28 Y-16 F1052\nG1 X0 Y32 F1052\nG1 X-28 Y-16 F1052<|endoftext|>"}
+{"prompt": "draw a equilateral triangle with side 81 mm centered at the origin, then inside it draw a rectangle 37 by 32 mm", "completion": "G1 X-40 Y-23 F1308\nG1 X40 Y-23 F1308\nG1 X0 Y47 F1308\nG1 X-40 Y-23 F1308\nG1 X-18 Y-16 F1349\nG1 X18 Y-16 F1349\nG1 X18 Y16 F1349\nG1 X-18 Y16 F1349\nG1 X-18 Y-16 F1349<|endoftext|>"}
+{"prompt": "draw a equilateral triangle with side 150 mm centered at the origin, then inside it draw a rectangle 65 by 60 mm", "completion": "G1 X-75 Y-43 F1056\nG1 X75 Y-43 F1056\nG1 X0 Y87 F1056\nG1 X-75 Y-43 F1056\nG1 X-32 Y-30 F888\nG1 X32 Y-30 F888\nG1 X32 Y30 F888\nG1 X-32 Y30 F888\nG1 X-32 Y-30 F888<|endoftext|>"}
+{"prompt": "draw a equilateral triangle with side 103 mm centered at the origin, then inside it draw a rectangle 38 by 58 mm", "completion": "G1 X-52 Y-30 F878\nG1 X52 Y-30 F878\nG1 X0 Y59 F878\nG1 X-52 Y-30 F878\nG1 X-19 Y-29 F466\nG1 X19 Y-29 F466\nG1 X19 Y29 F466\nG1 X-19 Y29 F466\nG1 X-19 Y-29 F466<|endoftext|>"}
+{"prompt": "draw a circle of radius 62 mm centered at the origin, then inside it draw a equilateral triangle with side 38 mm", "completion": "G2 I62 J0 F1277\nG2 I-62 J0 F1277\nG1 X-19 Y-11 F429\nG1 X19 Y-11 F429\nG1 X0 Y22 F429\nG1 X-19 Y-11 F429<|endoftext|>"}
+{"prompt": "draw a rectangle 124 by 106 mm centered at the origin, then inside it draw a equilateral triangle with side 33 mm", "completion": "G1 X-62 Y-53 F1036\nG1 X62 Y-53 F1036\nG1 X62 Y53 F1036\nG1 X-62 Y53 F1036\nG1 X-62 Y-53 F1036\nG1 X-16 Y-10 F546\nG1 X16 Y-10 F546\nG1 X0 Y19 F546\nG1 X-16 Y-10 F546<|endoftext|>"}

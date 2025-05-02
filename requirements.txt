@@ -6,3 +6,4 @@ accelerate
 bitsandbytes>=0.41.0
 scikit-learn
 tqdm
+huggingface-hub

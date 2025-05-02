@@ -111,7 +111,6 @@ def write_to_jsonl(file_handle, prompt, completion):
 
 def main(train_lines=100000, dev_lines=10000, train_file="train.jsonl", dev_file="dev.jsonl", dev_ratio=0.1):
     """Main function to download G-code and save to training and development files."""
-    # Load just the metadata for G-code files
     ds = load_dataset("bigcode/the-stack-v2", "G-code", streaming=True, split="train")
     
     train_total_lines = 0
@@ -131,22 +130,18 @@ def main(train_lines=100000, dev_lines=10000, train_file="train.jsonl", dev_file
             print(f"  Path: {file_path}")
             print(f"  Repository: {repo_name}")
             
-            # Download the G-code content
             gcode_content = download_gcode_content(repo_name, file_path)
             
             if gcode_content:
                 # Generate user command
                 user_command = generate_user_command(repo_name, file_path, gcode_content)
                 
-                # Decide whether to add to train or dev set
                 if dev_total_lines < dev_lines and (train_total_lines >= train_lines or 
                                                    random.random() < dev_ratio):
-                    # Add to dev set
                     write_to_jsonl(dev_f, user_command, gcode_content)
                     dev_total_lines += 1
                     print(f"  Added to dev set (Total dev: {dev_total_lines})")
                 else:
-                    # Add to train set
                     write_to_jsonl(train_f, user_command, gcode_content)
                     train_total_lines += 1
                     print(f"  Added to train set (Total train: {train_total_lines})")

@@ -86,9 +86,8 @@ G2 X10 Y0 I10 J0 # draw a circle with radius 10 cm from the center of the board
 }
 ```
 
-#### Dataset Statistics
-- Training set: 1000 examples in data/train_1000.jsonl
-- Development set: 100 examples in data/dev_100.jsonl
+#### Sample Data For Running
+train_synthetic_1100.jsonl and dev_100.jsonl are generated using the data/stacks_gcode_jsonl.py script.
 
 ## Models
 
@@ -98,6 +97,42 @@ G2 X10 Y0 I10 J0 # draw a circle with radius 10 cm from the center of the board
 - RNN architecture: 1 hidden layer with 64 nodes
 - Technique: next token prediction
 
+### Transformer
+
+Run:
+```
+python model/transformer/train_test_transformer.py
+```
+
 ### StarCoder2 3B
 - Documentation available in docs/starcoder.md
+
+
+Run:
+1. Install requirements
+```
+pip install -r requirements.txt
+```
+2. Install cudatoolkit, torch according to your hardware
+3. Training: Run changing according to your hardware:
+```
+accelerate launch model\starcoder-3b\train_starcoder.py \
+--model_id "bigcode/starcoder2-3b" \
+--dataset_name "json" \
+--dataset_path "data/train_synthetic_1100.jsonl" \
+--dataset_text_field "completion" \
+--prompt_field "prompt" \
+--max_seq_length 4096 \
+--max_steps 1000 \
+--micro_batch_size 1 \
+--gradient_accumulation_steps 4 \
+--learning_rate 2e-4 \
+--warmup_steps 100 \
+--num_proc 8
+
+```
+4. Inference:
+Change the checkpoint path in the script
+```
+python model/starcoder-3b/starcoder_gcode_inference.py
 ```

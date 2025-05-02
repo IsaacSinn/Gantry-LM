@@ -1,10 +1,7 @@
 *.pyc
 *.model
 .env
-data/train_1000.jsonl
-data/dev_100.jsonl
-*.jsonl
+data/train_2200.jsonl
 wandb/
 starcoder2-3b-gcode/
-graph.py
-StarCoder_model/
+starcoder2-7b-gcode/

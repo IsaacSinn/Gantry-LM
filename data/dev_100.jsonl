@@ -1,0 +1,100 @@
+{"prompt": "inside a rectangle 104×130 mm, draw a rectangle 32×69 mm", "completion": "G1 X-52 Y-65 F1220\nG1 X52 Y-65 F1220\nG1 X52 Y65 F1220\nG1 X-52 Y65 F1220\nG1 X-52 Y-65 F1220\nG1 X-16 Y-34 F1220\nG1 X16 Y-34 F1220\nG1 X16 Y34 F1220\nG1 X-16 Y34 F1220\nG1 X-16 Y-34 F1220<|endoftext|>"}
+{"prompt": "inside a equilateral triangle side 100 mm, draw a circle radius 51 mm", "completion": "G1 X-50 Y-29 F1984\nG1 X50 Y-29 F1984\nG1 X0 Y58 F1984\nG1 X-50 Y-29 F1984\nG2 I51 J0 F1984\nG2 I-51 J0 F1984<|endoftext|>"}
+{"prompt": "move to (-79,22) then draw a rectangle 32×46 mm", "completion": "G1 X-79 Y22 F535\nG1 X-16 Y-23 F535\nG1 X16 Y-23 F535\nG1 X16 Y23 F535\nG1 X-16 Y23 F535\nG1 X-16 Y-23 F535<|endoftext|>"}
+{"prompt": "draw a 44 mm line at 90°", "completion": "G1 X0 Y44 F559<|endoftext|>"}
+{"prompt": "inside a equilateral triangle side 130 mm, draw a equilateral triangle side 64 mm", "completion": "G1 X-65 Y-38 F1099\nG1 X65 Y-38 F1099\nG1 X0 Y75 F1099\nG1 X-65 Y-38 F1099\nG1 X-32 Y-18 F1099\nG1 X32 Y-18 F1099\nG1 X0 Y37 F1099\nG1 X-32 Y-18 F1099<|endoftext|>"}
+{"prompt": "inside a equilateral triangle side 124 mm, draw a equilateral triangle side 60 mm", "completion": "G1 X-62 Y-36 F1643\nG1 X62 Y-36 F1643\nG1 X0 Y72 F1643\nG1 X-62 Y-36 F1643\nG1 X-30 Y-17 F1643\nG1 X30 Y-17 F1643\nG1 X0 Y35 F1643\nG1 X-30 Y-17 F1643<|endoftext|>"}
+{"prompt": "move to (-82,46) then draw a circle radius 43 mm", "completion": "G1 X-82 Y46 F995\nG2 I43 J0 F995\nG2 I-43 J0 F995<|endoftext|>"}
+{"prompt": "move to (85,-21) then draw a rectangle 42×52 mm", "completion": "G1 X85 Y-21 F1711\nG1 X-21 Y-26 F1711\nG1 X21 Y-26 F1711\nG1 X21 Y26 F1711\nG1 X-21 Y26 F1711\nG1 X-21 Y-26 F1711<|endoftext|>"}
+{"prompt": "move to (-42,14) then draw a circle radius 60 mm", "completion": "G1 X-42 Y14 F564\nG2 I60 J0 F564\nG2 I-60 J0 F564<|endoftext|>"}
+{"prompt": "draw a circle of radius 75 mm", "completion": "G2 I75 J0 F949\nG2 I-75 J0 F949<|endoftext|>"}
+{"prompt": "move to (80,-44) at feed 942", "completion": "G1 X80 Y-44 F942<|endoftext|>"}
+{"prompt": "move to (79,50) then draw a rectangle 80×35 mm", "completion": "G1 X79 Y50 F642\nG1 X-40 Y-18 F642\nG1 X40 Y-18 F642\nG1 X40 Y18 F642\nG1 X-40 Y18 F642\nG1 X-40 Y-18 F642<|endoftext|>"}
+{"prompt": "draw a rectangle 111 by 115 mm centered at origin", "completion": "G1 X-56 Y-58 F1302\nG1 X56 Y-58 F1302\nG1 X56 Y58 F1302\nG1 X-56 Y58 F1302\nG1 X-56 Y-58 F1302<|endoftext|>"}
+{"prompt": "inside a rectangle 82×109 mm, draw a equilateral triangle side 45 mm", "completion": "G1 X-41 Y-54 F1862\nG1 X41 Y-54 F1862\nG1 X41 Y54 F1862\nG1 X-41 Y54 F1862\nG1 X-41 Y-54 F1862\nG1 X-22 Y-13 F1862\nG1 X22 Y-13 F1862\nG1 X0 Y26 F1862\nG1 X-22 Y-13 F1862<|endoftext|>"}
+{"prompt": "draw a rectangle 55 by 57 mm centered at origin", "completion": "G1 X-28 Y-28 F1417\nG1 X28 Y-28 F1417\nG1 X28 Y28 F1417\nG1 X-28 Y28 F1417\nG1 X-28 Y-28 F1417<|endoftext|>"}
+{"prompt": "draw a 81 mm line at 135°", "completion": "G1 X-57 Y57 F1908<|endoftext|>"}
+{"prompt": "draw a circle of radius 61 mm", "completion": "G2 I61 J0 F1569\nG2 I-61 J0 F1569<|endoftext|>"}
+{"prompt": "move to (99,-67) then draw a rectangle 74×80 mm", "completion": "G1 X99 Y-67 F1362\nG1 X-37 Y-40 F1362\nG1 X37 Y-40 F1362\nG1 X37 Y40 F1362\nG1 X-37 Y40 F1362\nG1 X-37 Y-40 F1362<|endoftext|>"}
+{"prompt": "move to (43,-55) then draw a circle radius 37 mm", "completion": "G1 X43 Y-55 F588\nG2 I37 J0 F588\nG2 I-37 J0 F588<|endoftext|>"}
+{"prompt": "move to (-24,18) then draw a circle radius 20 mm", "completion": "G1 X-24 Y18 F1491\nG2 I20 J0 F1491\nG2 I-20 J0 F1491<|endoftext|>"}
+{"prompt": "move to (-114,-120) at feed 1774", "completion": "G1 X-114 Y-120 F1774<|endoftext|>"}
+{"prompt": "draw a circle of radius 30 mm", "completion": "G2 I30 J0 F889\nG2 I-30 J0 F889<|endoftext|>"}
+{"prompt": "inside a rectangle 87×121 mm, draw a rectangle 34×61 mm", "completion": "G1 X-44 Y-60 F796\nG1 X44 Y-60 F796\nG1 X44 Y60 F796\nG1 X-44 Y60 F796\nG1 X-44 Y-60 F796\nG1 X-17 Y-30 F796\nG1 X17 Y-30 F796\nG1 X17 Y30 F796\nG1 X-17 Y30 F796\nG1 X-17 Y-30 F796<|endoftext|>"}
+{"prompt": "draw a rectangle 74 by 69 mm centered at origin", "completion": "G1 X-37 Y-34 F765\nG1 X37 Y-34 F765\nG1 X37 Y34 F765\nG1 X-37 Y34 F765\nG1 X-37 Y-34 F765<|endoftext|>"}
+{"prompt": "draw a circle of radius 23 mm", "completion": "G2 I23 J0 F456\nG2 I-23 J0 F456<|endoftext|>"}
+{"prompt": "inside a rectangle 123×105 mm, draw a rectangle 34×30 mm", "completion": "G1 X-62 Y-52 F457\nG1 X62 Y-52 F457\nG1 X62 Y52 F457\nG1 X-62 Y52 F457\nG1 X-62 Y-52 F457\nG1 X-17 Y-15 F457\nG1 X17 Y-15 F457\nG1 X17 Y15 F457\nG1 X-17 Y15 F457\nG1 X-17 Y-15 F457<|endoftext|>"}
+{"prompt": "move to (73,-120) at feed 1430", "completion": "G1 X73 Y-120 F1430<|endoftext|>"}
+{"prompt": "draw a 85 mm line at 90°", "completion": "G1 X0 Y85 F1056<|endoftext|>"}
+{"prompt": "inside a circle of radius 95 mm, draw a equilateral triangle side 46 mm", "completion": "G2 I95 J0 F1136\nG2 I-95 J0 F1136\nG1 X-23 Y-13 F1136\nG1 X23 Y-13 F1136\nG1 X0 Y27 F1136\nG1 X-23 Y-13 F1136<|endoftext|>"}
+{"prompt": "draw a rectangle 51 by 71 mm centered at origin", "completion": "G1 X-26 Y-36 F932\nG1 X26 Y-36 F932\nG1 X26 Y36 F932\nG1 X-26 Y36 F932\nG1 X-26 Y-36 F932<|endoftext|>"}
+{"prompt": "move to (57,37) then draw a rectangle 75×31 mm", "completion": "G1 X57 Y37 F1367\nG1 X-38 Y-16 F1367\nG1 X38 Y-16 F1367\nG1 X38 Y16 F1367\nG1 X-38 Y16 F1367\nG1 X-38 Y-16 F1367<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 114 mm", "completion": "G1 X-57 Y-33 F1908\nG1 X57 Y-33 F1908\nG1 X0 Y66 F1908\nG1 X-57 Y-33 F1908<|endoftext|>"}
+{"prompt": "draw a rectangle 55 by 113 mm centered at origin", "completion": "G1 X-28 Y-56 F1915\nG1 X28 Y-56 F1915\nG1 X28 Y56 F1915\nG1 X-28 Y56 F1915\nG1 X-28 Y-56 F1915<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 49 mm", "completion": "G1 X-24 Y-14 F636\nG1 X24 Y-14 F636\nG1 X0 Y28 F636\nG1 X-24 Y-14 F636<|endoftext|>"}
+{"prompt": "draw a rectangle 89 by 65 mm centered at origin", "completion": "G1 X-44 Y-32 F1088\nG1 X44 Y-32 F1088\nG1 X44 Y32 F1088\nG1 X-44 Y32 F1088\nG1 X-44 Y-32 F1088<|endoftext|>"}
+{"prompt": "draw a 54 mm line at 0°", "completion": "G1 X54 Y0 F1229<|endoftext|>"}
+{"prompt": "draw a rectangle 106 by 69 mm centered at origin", "completion": "G1 X-53 Y-34 F1289\nG1 X53 Y-34 F1289\nG1 X53 Y34 F1289\nG1 X-53 Y34 F1289\nG1 X-53 Y-34 F1289<|endoftext|>"}
+{"prompt": "move to (17,24) then draw a rectangle 62×35 mm", "completion": "G1 X17 Y24 F597\nG1 X-31 Y-18 F597\nG1 X31 Y-18 F597\nG1 X31 Y18 F597\nG1 X-31 Y18 F597\nG1 X-31 Y-18 F597<|endoftext|>"}
+{"prompt": "inside a equilateral triangle side 87 mm, draw a rectangle 34×66 mm", "completion": "G1 X-44 Y-25 F1292\nG1 X44 Y-25 F1292\nG1 X0 Y50 F1292\nG1 X-44 Y-25 F1292\nG1 X-17 Y-33 F1292\nG1 X17 Y-33 F1292\nG1 X17 Y33 F1292\nG1 X-17 Y33 F1292\nG1 X-17 Y-33 F1292<|endoftext|>"}
+{"prompt": "inside a circle of radius 86 mm, draw a rectangle 50×60 mm", "completion": "G2 I86 J0 F504\nG2 I-86 J0 F504\nG1 X-25 Y-30 F504\nG1 X25 Y-30 F504\nG1 X25 Y30 F504\nG1 X-25 Y30 F504\nG1 X-25 Y-30 F504<|endoftext|>"}
+{"prompt": "draw a 55 mm line at 90°", "completion": "G1 X0 Y55 F385<|endoftext|>"}
+{"prompt": "move to (77,-91) then draw a circle radius 21 mm", "completion": "G1 X77 Y-91 F1656\nG2 I21 J0 F1656\nG2 I-21 J0 F1656<|endoftext|>"}
+{"prompt": "draw a rectangle 58 by 64 mm centered at origin", "completion": "G1 X-29 Y-32 F1617\nG1 X29 Y-32 F1617\nG1 X29 Y32 F1617\nG1 X-29 Y32 F1617\nG1 X-29 Y-32 F1617<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 51 mm", "completion": "G1 X-26 Y-15 F536\nG1 X26 Y-15 F536\nG1 X0 Y29 F536\nG1 X-26 Y-15 F536<|endoftext|>"}
+{"prompt": "inside a rectangle 131×90 mm, draw a circle radius 50 mm", "completion": "G1 X-66 Y-45 F415\nG1 X66 Y-45 F415\nG1 X66 Y45 F415\nG1 X-66 Y45 F415\nG1 X-66 Y-45 F415\nG2 I50 J0 F415\nG2 I-50 J0 F415<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 62 mm", "completion": "G1 X-31 Y-18 F382\nG1 X31 Y-18 F382\nG1 X0 Y36 F382\nG1 X-31 Y-18 F382<|endoftext|>"}
+{"prompt": "draw a 94 mm line at 270°", "completion": "G1 X0 Y-94 F681<|endoftext|>"}
+{"prompt": "move to (49,105) at feed 809", "completion": "G1 X49 Y105 F809<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 118 mm", "completion": "G1 X-59 Y-34 F1300\nG1 X59 Y-34 F1300\nG1 X0 Y68 F1300\nG1 X-59 Y-34 F1300<|endoftext|>"}
+{"prompt": "draw a 39 mm line at 315°", "completion": "G1 X28 Y-28 F1008<|endoftext|>"}
+{"prompt": "move to (59,-8) then draw a circle radius 24 mm", "completion": "G1 X59 Y-8 F1852\nG2 I24 J0 F1852\nG2 I-24 J0 F1852<|endoftext|>"}
+{"prompt": "inside a equilateral triangle side 129 mm, draw a rectangle 54×32 mm", "completion": "G1 X-64 Y-37 F356\nG1 X64 Y-37 F356\nG1 X0 Y74 F356\nG1 X-64 Y-37 F356\nG1 X-27 Y-16 F356\nG1 X27 Y-16 F356\nG1 X27 Y16 F356\nG1 X-27 Y16 F356\nG1 X-27 Y-16 F356<|endoftext|>"}
+{"prompt": "draw a rectangle 59 by 71 mm centered at origin", "completion": "G1 X-30 Y-36 F1798\nG1 X30 Y-36 F1798\nG1 X30 Y36 F1798\nG1 X-30 Y36 F1798\nG1 X-30 Y-36 F1798<|endoftext|>"}
+{"prompt": "move to (28,8) at feed 1151", "completion": "G1 X28 Y8 F1151<|endoftext|>"}
+{"prompt": "inside a rectangle 110×92 mm, draw a rectangle 65×32 mm", "completion": "G1 X-55 Y-46 F1560\nG1 X55 Y-46 F1560\nG1 X55 Y46 F1560\nG1 X-55 Y46 F1560\nG1 X-55 Y-46 F1560\nG1 X-32 Y-16 F1560\nG1 X32 Y-16 F1560\nG1 X32 Y16 F1560\nG1 X-32 Y16 F1560\nG1 X-32 Y-16 F1560<|endoftext|>"}
+{"prompt": "draw a rectangle 96 by 90 mm centered at origin", "completion": "G1 X-48 Y-45 F1532\nG1 X48 Y-45 F1532\nG1 X48 Y45 F1532\nG1 X-48 Y45 F1532\nG1 X-48 Y-45 F1532<|endoftext|>"}
+{"prompt": "draw a circle of radius 37 mm", "completion": "G2 I37 J0 F1063\nG2 I-37 J0 F1063<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 49 mm", "completion": "G1 X-24 Y-14 F1096\nG1 X24 Y-14 F1096\nG1 X0 Y28 F1096\nG1 X-24 Y-14 F1096<|endoftext|>"}
+{"prompt": "move to (-78,73) then draw a rectangle 40×30 mm", "completion": "G1 X-78 Y73 F1197\nG1 X-20 Y-15 F1197\nG1 X20 Y-15 F1197\nG1 X20 Y15 F1197\nG1 X-20 Y15 F1197\nG1 X-20 Y-15 F1197<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 57 mm", "completion": "G1 X-28 Y-16 F425\nG1 X28 Y-16 F425\nG1 X0 Y33 F425\nG1 X-28 Y-16 F425<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 53 mm", "completion": "G1 X-26 Y-15 F544\nG1 X26 Y-15 F544\nG1 X0 Y31 F544\nG1 X-26 Y-15 F544<|endoftext|>"}
+{"prompt": "draw a rectangle 73 by 113 mm centered at origin", "completion": "G1 X-36 Y-56 F1307\nG1 X36 Y-56 F1307\nG1 X36 Y56 F1307\nG1 X-36 Y56 F1307\nG1 X-36 Y-56 F1307<|endoftext|>"}
+{"prompt": "move to (-29,-39) at feed 1804", "completion": "G1 X-29 Y-39 F1804<|endoftext|>"}
+{"prompt": "draw a circle of radius 54 mm", "completion": "G2 I54 J0 F1923\nG2 I-54 J0 F1923<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 48 mm", "completion": "G1 X-24 Y-14 F557\nG1 X24 Y-14 F557\nG1 X0 Y28 F557\nG1 X-24 Y-14 F557<|endoftext|>"}
+{"prompt": "draw a 46 mm line at 315°", "completion": "G1 X33 Y-33 F1317<|endoftext|>"}
+{"prompt": "inside a equilateral triangle side 108 mm, draw a rectangle 46×53 mm", "completion": "G1 X-54 Y-31 F575\nG1 X54 Y-31 F575\nG1 X0 Y62 F575\nG1 X-54 Y-31 F575\nG1 X-23 Y-26 F575\nG1 X23 Y-26 F575\nG1 X23 Y26 F575\nG1 X-23 Y26 F575\nG1 X-23 Y-26 F575<|endoftext|>"}
+{"prompt": "move to (38,-1) then draw a circle radius 39 mm", "completion": "G1 X38 Y-1 F1043\nG2 I39 J0 F1043\nG2 I-39 J0 F1043<|endoftext|>"}
+{"prompt": "draw a rectangle 46 by 92 mm centered at origin", "completion": "G1 X-23 Y-46 F326\nG1 X23 Y-46 F326\nG1 X23 Y46 F326\nG1 X-23 Y46 F326\nG1 X-23 Y-46 F326<|endoftext|>"}
+{"prompt": "draw a rectangle 54 by 104 mm centered at origin", "completion": "G1 X-27 Y-52 F672\nG1 X27 Y-52 F672\nG1 X27 Y52 F672\nG1 X-27 Y52 F672\nG1 X-27 Y-52 F672<|endoftext|>"}
+{"prompt": "inside a equilateral triangle side 124 mm, draw a equilateral triangle side 55 mm", "completion": "G1 X-62 Y-36 F1688\nG1 X62 Y-36 F1688\nG1 X0 Y72 F1688\nG1 X-62 Y-36 F1688\nG1 X-28 Y-16 F1688\nG1 X28 Y-16 F1688\nG1 X0 Y32 F1688\nG1 X-28 Y-16 F1688<|endoftext|>"}
+{"prompt": "inside a equilateral triangle side 98 mm, draw a circle radius 24 mm", "completion": "G1 X-49 Y-28 F1465\nG1 X49 Y-28 F1465\nG1 X0 Y57 F1465\nG1 X-49 Y-28 F1465\nG2 I24 J0 F1465\nG2 I-24 J0 F1465<|endoftext|>"}
+{"prompt": "draw a rectangle 84 by 87 mm centered at origin", "completion": "G1 X-42 Y-44 F1590\nG1 X42 Y-44 F1590\nG1 X42 Y44 F1590\nG1 X-42 Y44 F1590\nG1 X-42 Y-44 F1590<|endoftext|>"}
+{"prompt": "inside a circle of radius 76 mm, draw a equilateral triangle side 51 mm", "completion": "G2 I76 J0 F1854\nG2 I-76 J0 F1854\nG1 X-26 Y-15 F1854\nG1 X26 Y-15 F1854\nG1 X0 Y29 F1854\nG1 X-26 Y-15 F1854<|endoftext|>"}
+{"prompt": "draw a 77 mm line at 315°", "completion": "G1 X54 Y-54 F786<|endoftext|>"}
+{"prompt": "move to (23,-52) at feed 1471", "completion": "G1 X23 Y-52 F1471<|endoftext|>"}
+{"prompt": "move to (53,14) then draw a rectangle 31×58 mm", "completion": "G1 X53 Y14 F892\nG1 X-16 Y-29 F892\nG1 X16 Y-29 F892\nG1 X16 Y29 F892\nG1 X-16 Y29 F892\nG1 X-16 Y-29 F892<|endoftext|>"}
+{"prompt": "move to (57,86) at feed 1547", "completion": "G1 X57 Y86 F1547<|endoftext|>"}
+{"prompt": "move to (84,20) at feed 1842", "completion": "G1 X84 Y20 F1842<|endoftext|>"}
+{"prompt": "draw a circle of radius 20 mm", "completion": "G2 I20 J0 F613\nG2 I-20 J0 F613<|endoftext|>"}
+{"prompt": "draw a circle of radius 36 mm", "completion": "G2 I36 J0 F1112\nG2 I-36 J0 F1112<|endoftext|>"}
+{"prompt": "inside a circle of radius 73 mm, draw a equilateral triangle side 33 mm", "completion": "G2 I73 J0 F923\nG2 I-73 J0 F923\nG1 X-16 Y-10 F923\nG1 X16 Y-10 F923\nG1 X0 Y19 F923\nG1 X-16 Y-10 F923<|endoftext|>"}
+{"prompt": "move to (-94,52) at feed 365", "completion": "G1 X-94 Y52 F365<|endoftext|>"}
+{"prompt": "move to (21,-104) at feed 1011", "completion": "G1 X21 Y-104 F1011<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 85 mm", "completion": "G1 X-42 Y-25 F1796\nG1 X42 Y-25 F1796\nG1 X0 Y49 F1796\nG1 X-42 Y-25 F1796<|endoftext|>"}
+{"prompt": "move to (4,3) at feed 1325", "completion": "G1 X4 Y3 F1325<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 80 mm", "completion": "G1 X-40 Y-23 F1629\nG1 X40 Y-23 F1629\nG1 X0 Y46 F1629\nG1 X-40 Y-23 F1629<|endoftext|>"}
+{"prompt": "move to (80,23) then draw a circle radius 53 mm", "completion": "G1 X80 Y23 F1161\nG2 I53 J0 F1161\nG2 I-53 J0 F1161<|endoftext|>"}
+{"prompt": "move to (-19,-11) at feed 1872", "completion": "G1 X-19 Y-11 F1872<|endoftext|>"}
+{"prompt": "draw a circle of radius 35 mm", "completion": "G2 I35 J0 F1344\nG2 I-35 J0 F1344<|endoftext|>"}
+{"prompt": "move to (-57,3) then draw a circle radius 31 mm", "completion": "G1 X-57 Y3 F1536\nG2 I31 J0 F1536\nG2 I-31 J0 F1536<|endoftext|>"}
+{"prompt": "draw a rectangle 49 by 66 mm centered at origin", "completion": "G1 X-24 Y-33 F999\nG1 X24 Y-33 F999\nG1 X24 Y33 F999\nG1 X-24 Y33 F999\nG1 X-24 Y-33 F999<|endoftext|>"}
+{"prompt": "inside a equilateral triangle side 88 mm, draw a circle radius 44 mm", "completion": "G1 X-44 Y-25 F1980\nG1 X44 Y-25 F1980\nG1 X0 Y51 F1980\nG1 X-44 Y-25 F1980\nG2 I44 J0 F1980\nG2 I-44 J0 F1980<|endoftext|>"}
+{"prompt": "draw a rectangle 110 by 82 mm centered at origin", "completion": "G1 X-55 Y-41 F660\nG1 X55 Y-41 F660\nG1 X55 Y41 F660\nG1 X-55 Y41 F660\nG1 X-55 Y-41 F660<|endoftext|>"}
+{"prompt": "inside a circle of radius 83 mm, draw a equilateral triangle side 36 mm", "completion": "G2 I83 J0 F1331\nG2 I-83 J0 F1331\nG1 X-18 Y-10 F1331\nG1 X18 Y-10 F1331\nG1 X0 Y21 F1331\nG1 X-18 Y-10 F1331<|endoftext|>"}
+{"prompt": "draw a 98 mm line at 315°", "completion": "G1 X69 Y-69 F1555<|endoftext|>"}
+{"prompt": "move to (-102,-39) at feed 1992", "completion": "G1 X-102 Y-39 F1992<|endoftext|>"}
+{"prompt": "move to (48,-72) then draw a circle radius 59 mm", "completion": "G1 X48 Y-72 F624\nG2 I59 J0 F624\nG2 I-59 J0 F624<|endoftext|>"}
+{"prompt": "move to (60,-43) at feed 638", "completion": "G1 X60 Y-43 F638<|endoftext|>"}
+{"prompt": "draw an equilateral triangle with side 62 mm", "completion": "G1 X-31 Y-18 F643\nG1 X31 Y-18 F643\nG1 X0 Y36 F643\nG1 X-31 Y-18 F643<|endoftext|>"}
