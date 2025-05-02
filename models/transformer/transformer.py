@@ -1,5 +1,10 @@
 '''
 Transformer model to control a XY gantry with natural language commands
+
+To Run inference on this model, use the following command:
+python models/transformer/train_test_transformer.py
+
+!Note! Some imports may need to be changed depending on your directory structure.
 '''
 
 import torch as pt
@@ -26,9 +31,6 @@ class TransformerModel(nn.Module):
         except FileNotFoundError:
             print("Vocab file not found. Creating a new vocab.")
             self.vocab = vocab_builder()
-
-        print("UNK token index:", self.vocab.word_to_num[UNK_TOKEN])
-        print("Vocab size:", len(self.vocab))
 
         self.vocab_size = len(self.vocab)
         self.embedding_dim = 256
@@ -82,8 +84,6 @@ class TransformerModel(nn.Module):
         )
 
         logits = self.output_layer(output)
-
-        print("Logits shape:", logits.shape)
 
         return logits
     
@@ -185,7 +185,7 @@ class TransformerModel(nn.Module):
             print(f"Epoch {epoch_count} | Token-level Avg Loss: {avg_loss:.4f}")
 
             if epoch_count % 10 == 0:
-                pt.save(self, f"model_epoch_{epoch_count}.pt")
+                pt.save(self.state_dict(), f"model_epoch_{epoch_count}.pt")
 
             with open("loss2.txt", "a") as f:
                 f.write(f"{avg_loss}\n")
@@ -207,6 +207,50 @@ class TransformerModel(nn.Module):
         tgt_padded = nn.utils.rnn.pad_sequence(tgt_batch, batch_first=True, padding_value=self.vocab.numberize(PADDING_TOKEN))
 
         return src_padded.to(device), tgt_padded.to(device)
+    
+    # Generate function for inference
+    def generate(self, instruction: str, device, max_len: int = 2048) -> str:
+        '''
+        Generate a sequence from the model given an instruction.
+        instruction: instruction to generate a sequence for
+        device: device to use for inference (CPU or GPU)
+        max_len: maximum length of the generated sequence
+        '''
+
+        # Set model to eval mode
+        self.eval()
+
+        with pt.no_grad():
+            # Convert sequence into IDs
+            input_ids = [self.vocab.numberize(token) for token in instruction.split()][:self.max_seq_len]
+            src = pt.tensor(input_ids, dtype=pt.long).unsqueeze(0).to(device)
+
+            # Generated starts with only the start token
+            generated = [self.vocab.numberize(START_TOKEN)]
+
+            for _ in range(max_len):
+                tgt = pt.tensor(generated, dtype=pt.long).unsqueeze(0).to(device)
+
+                # Pass through model
+                logits = self(src, tgt)
+
+                next_token_logits = logits[:, -1, :]    
+                next_token_id = pt.argmax(next_token_logits, dim=-1).item()
+
+                if next_token_id == self.vocab.numberize(END_TOKEN):
+                    break
+
+                generated.append(next_token_id)
+                
+        result_str = ""
+
+        for token_id in generated:
+            token = self.vocab.denumberize(token_id)
+
+            result_str = result_str + "" + token
+
+        return result_str
+
 
 
 
