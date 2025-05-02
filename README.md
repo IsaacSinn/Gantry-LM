@@ -99,14 +99,13 @@ train_synthetic_1100.jsonl and dev_100.jsonl are generated using the data/stacks
 
 ### Transformer
 
+Some imports may depend on directory structure.
 Run:
 ```
 python model/transformer/train_test_transformer.py
 ```
 
 ### StarCoder2 3B
-- Documentation available in docs/starcoder.md
-
 
 Run:
 1. Install requirements
