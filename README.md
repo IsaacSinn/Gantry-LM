@@ -102,7 +102,7 @@ train_synthetic_1100.jsonl and dev_100.jsonl are generated using the data/stacks
 Some imports may depend on directory structure.
 Run:
 ```
-python model/transformer/train_test_transformer.py
+python models/transformer/train_test_transformer.py
 ```
 
 ### StarCoder2 3B
@@ -115,7 +115,7 @@ pip install -r requirements.txt
 2. Install cudatoolkit, torch according to your hardware
 3. Training: Run changing according to your hardware:
 ```
-accelerate launch model\starcoder-3b\train_starcoder.py \
+accelerate launch models\starcoder-3b\train_starcoder.py \
 --model_id "bigcode/starcoder2-3b" \
 --dataset_name "json" \
 --dataset_path "data/train_synthetic_1100.jsonl" \
@@ -133,5 +133,5 @@ accelerate launch model\starcoder-3b\train_starcoder.py \
 4. Inference:
 Change the checkpoint path in the script
 ```
-python model/starcoder-3b/starcoder_gcode_inference.py
+python models/starcoder-3b/starcoder_gcode_inference.py
 ```

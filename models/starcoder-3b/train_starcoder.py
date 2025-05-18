@@ -5,7 +5,7 @@ We also use the SFTTrainer from TRL.
 
 Use command:
 run in main directory
-accelerate launch model\starcoder-3b\train_starcoder.py --model_id "bigcode/starcoder2-3b" --dataset_name "json" --dataset_path "data/train_2200.jsonl" --dataset_text_field "completion" --prompt_field "prompt" --max_seq_length 4096 --max_steps 1000 --micro_batch_size 1 --gradient_accumulation_steps 4 --learning_rate 2e-4 --warmup_steps 100 --num_proc 8
+accelerate launch models\starcoder-3b\train_starcoder.py --model_id "bigcode/starcoder2-3b" --dataset_name "json" --dataset_path "data/train_2200.jsonl" --dataset_text_field "completion" --prompt_field "prompt" --max_seq_length 4096 --max_steps 1000 --micro_batch_size 1 --gradient_accumulation_steps 4 --learning_rate 2e-4 --warmup_steps 100 --num_proc 8
 
 
 '''
