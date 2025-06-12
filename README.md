@@ -2,6 +2,8 @@
 
 Fine-tuned StarCoder2 3B language model to control an XY gantry with natural language commands by generating G-code.
 
+*More details in Research Paper.pdf and Research Poster.pdf*
+
 ## Goal and Gantry Setup
 
 The system operates on a 50cm x 50cm 2D plane:
